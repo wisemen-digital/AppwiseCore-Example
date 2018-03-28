@@ -19,9 +19,9 @@
 	<key>CFBundleVersion</key>
 	<string>0</string>
 	<key>NSCameraUsageDescription</key>
-	<string>Example needs access to your camera for uploading photos for caes, or for your profile picture.</string>
+	<string>Example Project needs access to your camera for uploading photos for caes, or for your profile picture.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Example needs access to your photo library for uploading photos for caes, or for your profile picture.</string>
+	<string>Example Project needs access to your photo library for uploading photos for caes, or for your profile picture.</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>ITSAppUsesNonExemptEncryption</key>

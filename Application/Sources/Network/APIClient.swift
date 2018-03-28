@@ -1,6 +1,6 @@
 //
 //  APIClient.swift
-//  Example
+//  Example Project
 //
 //  Created by David Jennes on 04/01/2017.
 //  Copyright © 2017 Appwise. All rights reserved.

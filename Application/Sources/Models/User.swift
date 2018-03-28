@@ -1,6 +1,6 @@
 //
 //  User.swift
-//  Example
+//  Example Project
 //
 //  Created by David Jennes on 18/02/2018.
 //  Copyright © 2018 Appwise. All rights reserved.

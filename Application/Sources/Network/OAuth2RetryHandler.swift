@@ -1,6 +1,6 @@
 //
 //  OAuth2RetryHandler.swift
-//  Example
+//  Example Project
 //
 //  Created by David Jennes on 20/03/2017.
 //  Copyright © 2017 Appwise. All rights reserved.

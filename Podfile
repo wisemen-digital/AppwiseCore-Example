@@ -3,8 +3,8 @@ platform :ios, '10.0'
 inhibit_all_warnings!
 use_frameworks!
 
-target 'Example' do
-	project 'Example',
+target 'Example Project' do
+	project 'Example Project',
 		'Development (Debug)' => :debug,
 		'Development (Release)' => :release,
 		'Staging (Debug)' => :debug,
@@ -66,5 +66,5 @@ post_install do | installer |
 	require 'fileutils'
 
 	# generate acknowledgements
-	FileUtils.cp_r('Pods/Target Support Files/Pods-Example/Pods-Example-Acknowledgements.plist', 'Application/Resources/Settings.bundle/Acknowledgements.plist', :remove_destination => true)
+	FileUtils.cp_r('Pods/Target Support Files/Pods-Example Project/Pods-Example Project-Acknowledgements.plist', 'Application/Resources/Settings.bundle/Acknowledgements.plist', :remove_destination => true)
 end

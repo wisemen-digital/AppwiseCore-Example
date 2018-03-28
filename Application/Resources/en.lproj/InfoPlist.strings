@@ -1,8 +1,8 @@
 /* Display name */
-"CFBundleDisplayName" = "Example";
+"CFBundleDisplayName" = "Example Project";
 
 /* Camera permission */
-"NSCameraUsageDescription" = "Example needs access to your camera for uploading photos for caes, or for your profile picture.";
+"NSCameraUsageDescription" = "Example Project needs access to your camera for uploading photos for caes, or for your profile picture.";
 
 /* Photo library permission */
-"NSPhotoLibraryUsageDescription" = "Example needs access to your photo library for uploading photos for caes, or for your profile picture.";
+"NSPhotoLibraryUsageDescription" = "Example Project needs access to your photo library for uploading photos for caes, or for your profile picture.";

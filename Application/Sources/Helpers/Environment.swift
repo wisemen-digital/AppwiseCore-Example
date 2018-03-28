@@ -1,6 +1,6 @@
 //
 //  Environment.swift
-//  Example
+//  Example Project
 //
 //  Created by David Jennes on 29/03/2017.
 //  Copyright © 2017 Appwise. All rights reserved.

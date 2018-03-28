@@ -15,15 +15,15 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D95E1C401D88E71A00F94976"
-               BuildableName = "Example.app"
-               BlueprintName = "Example"
-               ReferencedContainer = "container:Example.xcodeproj">
+               BuildableName = "Example Project.app"
+               BlueprintName = "Example Project"
+               ReferencedContainer = "container:Example Project.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
-      buildConfiguration = "Production (Debug)"
+      buildConfiguration = "Development (Debug)"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       language = ""
@@ -34,16 +34,16 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D95E1C401D88E71A00F94976"
-            BuildableName = "Example.app"
-            BlueprintName = "Example"
-            ReferencedContainer = "container:Example.xcodeproj">
+            BuildableName = "Example Project.app"
+            BlueprintName = "Example Project"
+            ReferencedContainer = "container:Example Project.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Production (Debug)"
+      buildConfiguration = "Development (Debug)"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       language = ""
@@ -58,16 +58,16 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D95E1C401D88E71A00F94976"
-            BuildableName = "Example.app"
-            BlueprintName = "Example"
-            ReferencedContainer = "container:Example.xcodeproj">
+            BuildableName = "Example Project.app"
+            BlueprintName = "Example Project"
+            ReferencedContainer = "container:Example Project.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
-      buildConfiguration = "Production (Release)"
+      buildConfiguration = "Development (Release)"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
@@ -77,17 +77,17 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D95E1C401D88E71A00F94976"
-            BuildableName = "Example.app"
-            BlueprintName = "Example"
-            ReferencedContainer = "container:Example.xcodeproj">
+            BuildableName = "Example Project.app"
+            BlueprintName = "Example Project"
+            ReferencedContainer = "container:Example Project.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
-      buildConfiguration = "Production (Debug)">
+      buildConfiguration = "Development (Debug)">
    </AnalyzeAction>
    <ArchiveAction
-      buildConfiguration = "Production (Release)"
+      buildConfiguration = "Development (Release)"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>
