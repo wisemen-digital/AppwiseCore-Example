@@ -47,7 +47,7 @@ target 'Example Project' do
 
 	script_phase :name => 'Sourcery',
 		:execution_position => :before_compile,
-		:script => '"${PODS_ROOT}/Sourcery/bin/sourcery" --sources "${SRCROOT}/Application/Sources" --sources "$DERIVED_SOURCES_DIR" --templates "${PODS_ROOT}/AppwiseCore/Sourcery" --output "${SRCROOT}/Application/Sources/Generated/Sourcery"'
+		:script => 'if [ $ACTION != "install" ]; then "${PODS_ROOT}/Sourcery/bin/sourcery" --sources "${SRCROOT}/Application/Sources" --sources "$DERIVED_SOURCES_DIR" --templates "${PODS_ROOT}/AppwiseCore/Sourcery" --output "${SRCROOT}/Application/Sources/Generated/Sourcery"; fi'
 
 	script_phase :name => 'SwiftLint',
 		:execution_position => :before_compile,

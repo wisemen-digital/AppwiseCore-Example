@@ -59,10 +59,10 @@ PODS:
   - Then (2.3.0)
 
 DEPENDENCIES:
-  - AppwiseCore (from `../`)
-  - AppwiseCore/CoreData (from `../`)
-  - AppwiseCore/DeepLink (from `../`)
-  - AppwiseCore/UI (from `../`)
+  - AppwiseCore
+  - AppwiseCore/CoreData
+  - AppwiseCore/DeepLink
+  - AppwiseCore/UI
   - BonMot
   - Crashlytics
   - IQKeyboardManagerSwift
@@ -81,6 +81,7 @@ SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - AlamofireCoreData
+    - AppwiseCore
     - BonMot
     - CocoaLumberjack
     - Crashlytics
@@ -103,14 +104,10 @@ SPEC REPOS:
     - SwiftLint
     - Then
 
-EXTERNAL SOURCES:
-  AppwiseCore:
-    :path: "../"
-
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   AlamofireCoreData: e7366aef23927626e8cf2f1039eaf47209c1f183
-  AppwiseCore: 9bfdce1c90e76dc86d54b52be6ff917e92970585
+  AppwiseCore: 1aca70320e23cdf9c153d9d3602429167428088f
   BonMot: 68da0bd7c2f602aca85511bedabd211eb0fae666
   CocoaLumberjack: db7cc9e464771f12054c22ff6947c5a58d43a0fd
   Crashlytics: aee1a064cbbf99b32efa3f056a5f458d846bc8ff
@@ -133,6 +130,6 @@ SPEC CHECKSUMS:
   SwiftLint: ce933681be10c3266e82576dad676fa815a602e9
   Then: ee21c97b85ff6062b9b0080c9abb1eea46743345
 
-PODFILE CHECKSUM: 4b9e40a2b86c049a9e99bb7cc9078da9f1d2ea32
+PODFILE CHECKSUM: 1efe130ae3ef31fa490c33687074f3d53fb989ea
 
 COCOAPODS: 1.5.0
