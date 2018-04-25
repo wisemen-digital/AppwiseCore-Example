@@ -24,6 +24,10 @@ After it's moved some files and replaced some identifiers, you can install the p
 
 **NOTE:** Only install the pods AFTER you've run the rename script. If you do it before, there's a high chance you might get a broken project, especially for projects with more special names (start with a number, contain spaces, etc...).
 
+## Updating
+
+This example project will regularly be updated with new practices, structures, etc... Check the [changelog](https://github.com/appwise-labs/AppwiseCore-Example/blob/master/CHANGELOG.md) to see what's changed since you based off this project.
+
 ## Author
 
 [David Jennes](https://github.com/djbe)
