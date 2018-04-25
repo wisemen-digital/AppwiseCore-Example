@@ -11,7 +11,7 @@ import IQKeyboardManagerSwift
 
 final class KeyboardManagerApplicationService: NSObject, ApplicationService {
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-		IQKeyboardManager.sharedManager().enable = true
+		IQKeyboardManager.shared.enable = true
 
 		return true
 	}

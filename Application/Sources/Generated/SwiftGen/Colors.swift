@@ -2,17 +2,17 @@
 
 #if os(OSX)
   import AppKit
-  enum ColorName { }
+  internal enum ColorName { }
 #elseif os(iOS) || os(tvOS) || os(watchOS)
   import UIKit
-  enum ColorName { }
+  internal enum ColorName { }
 #endif
 
 // swiftlint:disable superfluous_disable_command
 // swiftlint:disable file_length
 
 // swiftlint:disable identifier_name line_length type_body_length
-extension ColorName {
+internal extension ColorName {
   /// 0xd8011bff (r: 216, g: 1, b: 27, a: 255)
   static let barRed = #colorLiteral(red: 0.847059, green: 0.00392157, blue: 0.105882, alpha: 1.0)
   /// 0x16182aff (r: 22, g: 24, b: 42, a: 255)

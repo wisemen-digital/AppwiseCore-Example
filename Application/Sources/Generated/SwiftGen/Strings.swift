@@ -6,55 +6,55 @@ import Foundation
 // swiftlint:disable file_length
 
 // swiftlint:disable explicit_type_interface identifier_name line_length nesting type_body_length type_name
-enum L10n {
+internal enum L10n {
 
-  enum Common {
+  internal enum Common {
 
-    enum Button {
+    internal enum Button {
       /// Cancel
-      static let cancel = L10n.tr("Localizable", "common.button.cancel")
+      internal static let cancel = L10n.tr("Localizable", "common.button.cancel")
       /// No
-      static let no = L10n.tr("Localizable", "common.button.no")
+      internal static let no = L10n.tr("Localizable", "common.button.no")
       /// OK
-      static let ok = L10n.tr("Localizable", "common.button.ok")
+      internal static let ok = L10n.tr("Localizable", "common.button.ok")
       /// Save
-      static let save = L10n.tr("Localizable", "common.button.save")
+      internal static let save = L10n.tr("Localizable", "common.button.save")
       /// Yes
-      static let yes = L10n.tr("Localizable", "common.button.yes")
+      internal static let yes = L10n.tr("Localizable", "common.button.yes")
     }
 
-    enum Message {
+    internal enum Message {
       /// Error: %@
-      static func error(_ p1: String) -> String {
+      internal static func error(_ p1: String) -> String {
         return L10n.tr("Localizable", "common.message.error", p1)
       }
       /// Loading...
-      static let loading = L10n.tr("Localizable", "common.message.loading")
+      internal static let loading = L10n.tr("Localizable", "common.message.loading")
       /// Tap to refresh...
-      static let tapToRefresh = L10n.tr("Localizable", "common.message.tap-to-refresh")
+      internal static let tapToRefresh = L10n.tr("Localizable", "common.message.tap-to-refresh")
     }
   }
 
-  enum Example {
+  internal enum Example {
 
-    enum Stuff {
+    internal enum Stuff {
       /// %ld items
-      static func items(_ p1: Int) -> String {
+      internal static func items(_ p1: Int) -> String {
         return L10n.tr("Localizable", "example.stuff.items", p1)
       }
     }
   }
 
-  enum Login {
+  internal enum Login {
 
-    enum Button {
+    internal enum Button {
       /// Sign-in
-      static let signIn = L10n.tr("Localizable", "login.button.sign-in")
+      internal static let signIn = L10n.tr("Localizable", "login.button.sign-in")
     }
 
-    enum Message {
+    internal enum Message {
       /// Logging in...
-      static let loggingIn = L10n.tr("Localizable", "login.message.logging-in")
+      internal static let loggingIn = L10n.tr("Localizable", "login.message.logging-in")
     }
   }
 }

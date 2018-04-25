@@ -15,7 +15,7 @@ extension User {
 	}
 
 	static func current(in moc: NSManagedObjectContext) -> User? {
-		guard let id = Settings.shared.currentUserID else { return nil }
-		return moc.object(with: id) as? User
+		guard let userID = Settings.shared.currentUserID else { return nil }
+		return moc.object(with: userID) as? User
 	}
 }
