@@ -1,0 +1,16 @@
+apple_id ENV['USER_APPLE_ID'] # Your Apple email address
+
+team_name 'Appwise BVBA'
+itc_team_name 'Appwise BVBA'
+
+for_platform :ios do
+  app_identifier 'be.appwise.Example-Project'
+
+  for_lane :development do
+    app_identifier 'be.appwise.Example-Project-Development'
+  end
+
+  for_lane :staging do
+    app_identifier 'be.appwise.Example-Project-Staging'
+  end
+end
