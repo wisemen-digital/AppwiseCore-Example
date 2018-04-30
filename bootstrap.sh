@@ -2,12 +2,17 @@
 
 unset newName
 while [ -z "$newName" ]; do
-     read -p "Please provide a new project name: " newName
+     read -p "Please provide a new project name (My Project): " newName
 done
 
 unset newBundle
 while [ -z "$newBundle" ]; do
-     read -p "Please provide a new bundle identifier: " newBundle
+     read -p "Please provide a new bundle identifier (be.appwise.My-Project): " newBundle
+done
+
+unset appleID
+while [ -z "$appleID" ]; do
+     read -p "Please provide your Apple ID (your.email@address.com): " appleID
 done
 
 # constants
@@ -21,10 +26,12 @@ if [[ $newModuleName =~ ^[0-9] ]]; then
 	newModuleName="_${newModuleName:1}"
 fi
 
-echo "Renaming to:"
+echo "Bootstrapping project:"
 echo "- Target: $newName"
 echo "- Module: $newModuleName"
 echo "- Bundle: $newBundle"
+echo "- Apple ID: $appleID"
+read -rsn1 -p "Press any key to continue";echo
 
 # move files to new locations, we handle up to 2 levels deep of renaming
 echo "Moving files..."
@@ -49,5 +56,12 @@ grep -rl --null "$oldModuleName" --exclude-dir="$podsDir" --exclude="rename.sh" 
 
 echo "Replacing '$oldBundle' with '$newBundle'..."
 grep -rl --null "$oldBundle" --exclude-dir="$podsDir" --exclude="rename.sh" "." | xargs -0 sed -i '' "s/$oldBundle/$newBundle/g"
+
+# configure fastlane environment
+echo "Creating Fastlane environment file..."
+cat >.env <<EOL
+# Your Apple email address
+USER_APPLE_ID=$appleID
+EOL
 
 echo "Done!"
