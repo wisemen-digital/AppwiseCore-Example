@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+### 30 April 2018
+
+* Added fastlane configuratione example.
+* Bootstrap script now also configures the app identifier and the user's apple ID.
+
 ### 26 April 2018
 
 * Build phases: disable sourcery during archive, otherwise it keeps resetting the generated code.

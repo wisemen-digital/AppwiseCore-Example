@@ -33,6 +33,11 @@ echo "- Bundle: $newBundle"
 echo "- Apple ID: $appleID"
 read -rsn1 -p "Press any key to continue";echo
 
+# pod deintegrate
+echo "Deintegrating CocoaPods before renaming..."
+command -v pod >/dev/null 2>&1 || { echo >&2 "I require CocoaPods but it's not installed.  Aborting."; exit 1; }
+pod deintegrate >/dev/null
+
 # move files to new locations, we handle up to 2 levels deep of renaming
 echo "Moving files..."
 find . -path "$podsDir" -prune -o -name "*${oldName}*" -print0 | while IFS= read -r -d '' file; do
@@ -64,4 +69,13 @@ cat >.env <<EOL
 USER_APPLE_ID=$appleID
 EOL
 
+# cleanup
+echo "Cleaning up..."
+rm -f "CHANGELOG.md"
+rm -f "LICENSE"
+rm -f "README.md"
+rm -f "bootstrap.sh"
+
 echo "Done!"
+echo
+echo "You can now run 'pod install' and get started!"
