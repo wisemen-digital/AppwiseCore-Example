@@ -4,10 +4,10 @@ This is an example project with some basic setup for using the AppwiseCore libra
 
 ## Getting started
 
-To get started with your new project, run the `rename.sh` script. It will prompt you for a new project name as follows:
+To get started with your new project, run the `bootstrap.sh` script. It will prompt you for a new project name as follows:
 
 ```bash
-$ ./rename.sh
+$ ./bootstrap.sh
 Please provide a new project name: My Example
 Renaming to:
 - Target: My Example

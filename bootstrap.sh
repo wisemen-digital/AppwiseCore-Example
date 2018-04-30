@@ -5,18 +5,18 @@ while [ -z "$newName" ]; do
      read -p "Please provide a new project name: " newName
 done
 
+unset newBundle
+while [ -z "$newBundle" ]; do
+     read -p "Please provide a new bundle identifier: " newBundle
+done
+
 # constants
 podsDir="./Pods"
-
 oldName="Example Project"
-oldModuleName=${oldName// /_}
-oldBundleName=${oldName// /-}
-if [[ $oldModuleName =~ ^[0-9] ]]; then
-	oldModuleName="_${oldModuleName:1}"
-fi
+oldModuleName="Example_Project"
+oldBundle="be.appwise.Example-Project"
 
 newModuleName=${newName// /_}
-newBundleName=${newName// /-}
 if [[ $newModuleName =~ ^[0-9] ]]; then
 	newModuleName="_${newModuleName:1}"
 fi
@@ -24,7 +24,7 @@ fi
 echo "Renaming to:"
 echo "- Target: $newName"
 echo "- Module: $newModuleName"
-echo "- Bundle part: $newBundleName"
+echo "- Bundle: $newBundle"
 
 # move files to new locations, we handle up to 2 levels deep of renaming
 echo "Moving files..."
@@ -47,7 +47,7 @@ grep -rl --null "$oldName" --exclude-dir="$podsDir" --exclude="rename.sh" . | xa
 echo "Replacing '$oldModuleName' with '$newModuleName'..."
 grep -rl --null "$oldModuleName" --exclude-dir="$podsDir" --exclude="rename.sh" . | xargs -0 sed -i '' "s/$oldModuleName/$newModuleName/g"
 
-echo "Replacing '$oldBundleName' with '$newBundleName'..."
-grep -rl --null "$oldBundleName" --exclude-dir="$podsDir" --exclude="rename.sh" "." | xargs -0 sed -i '' "s/$oldBundleName/$newBundleName/g"
+echo "Replacing '$oldBundle' with '$newBundle'..."
+grep -rl --null "$oldBundle" --exclude-dir="$podsDir" --exclude="rename.sh" "." | xargs -0 sed -i '' "s/$oldBundle/$newBundle/g"
 
 echo "Done!"
