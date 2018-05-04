@@ -12,10 +12,10 @@ target 'Example Project' do
 		'Production (Debug)' => :debug,
 		'Production (Release)' => :release
 
-	pod 'AppwiseCore'
-	pod 'AppwiseCore/CoreData'
-	pod 'AppwiseCore/DeepLink'
-	pod 'AppwiseCore/UI'
+	pod 'AppwiseCore', :path => '../'
+	pod 'AppwiseCore/CoreData', :path => '../'
+	pod 'AppwiseCore/DeepLink', :path => '../'
+	pod 'AppwiseCore/UI', :path => '../'
 
 	# Tools
 	pod 'LocalizableCheck'
@@ -47,7 +47,7 @@ target 'Example Project' do
 
 	script_phase :name => 'Sourcery',
 		:execution_position => :before_compile,
-		:script => 'if [ $ACTION != "install" ]; then "${PODS_ROOT}/Sourcery/bin/sourcery" --sources "${SRCROOT}/Application/Sources" --sources "$DERIVED_SOURCES_DIR" --templates "${PODS_ROOT}/AppwiseCore/Sourcery" --output "${SRCROOT}/Application/Sources/Generated/Sourcery"; fi'
+		:script => 'if [ $ACTION != "install" ]; then "${PODS_ROOT}/Sourcery/bin/sourcery" --sources "${SRCROOT}/Application/Sources" --sources "$DERIVED_SOURCES_DIR" --templates "../Sourcery" --output "${SRCROOT}/Application/Sources/Generated/Sourcery"; fi'
 
 	script_phase :name => 'SwiftLint',
 		:execution_position => :before_compile,
@@ -55,7 +55,7 @@ target 'Example Project' do
 
 	script_phase :name => 'Update Version Number',
 		:execution_position => :after_compile,
-		:script => '"${PODS_ROOT}/AppwiseCore/Scripts/update_build_number.sh"'
+		:script => '"../Scripts/update_build_number.sh"'
 
 	script_phase :name => 'Fabric',
 		:execution_position => :after_compile,
