@@ -1,20 +1,20 @@
-fastlane_version '2.93.0'
+fastlane_version '2.99.0'
 default_platform :ios
 
 platform :ios do
   desc 'Submit a new Development Build to Apple TestFlight'
   lane :development do
-    archiveAndUpload('Example Project (Development)')
+    archiveAndUpload(scheme: 'Example Project (Development)')
   end
 
   desc 'Submit a new Development Build to Apple TestFlight'
   lane :staging do
-    archiveAndUpload('Example Project (Staging)')
+    archiveAndUpload(scheme: 'Example Project (Staging)')
   end
 
   desc 'Submit a new Production Build to Apple TestFlight'
   lane :production do
-    archiveAndUpload('Example Project (Production)')
+    archiveAndUpload(scheme: 'Example Project (Production)')
   end
 
   desc 'Deploy a new version to the App Store'
@@ -33,17 +33,15 @@ platform :ios do
       'be.appwise.Example-Project-Staging',
       'be.appwise.Example-Project'
     ]
+    
     identifiers.each do |identifier|
-      download_dsyms(
-        app_identifier: identifier,
-        output_directory: 'fastlane/build'
-      )
-      upload_symbols_to_crashlytics
-      clean_build_artifacts
+      syncDsyms(identifier: identifier)
     end
   end
 
-  def archiveAndUpload(scheme)
+  private_lane :archiveAndUpload do |options|
+    scheme = options[:scheme]
+
     get_provisioning_profile(
       output_path: 'fastlane/build'
     )
@@ -51,10 +49,22 @@ platform :ios do
       scheme: scheme,
       include_bitcode: true,
       output_directory: 'fastlane/build',
+      output_name: "#{scheme}.ipa",
       silent: true
     )
     upload_to_testflight(
       skip_waiting_for_build_processing: true
     )
+  end
+
+  private_lane :syncDsyms do |options|
+    identifier = options[:identifier]
+
+    download_dsyms(
+      app_identifier: identifier,
+      output_directory: 'fastlane/build'
+    )
+    upload_symbols_to_crashlytics
+    clean_build_artifacts
   end
 end
