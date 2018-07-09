@@ -17,7 +17,7 @@ class OAuth2RetryHandler: RequestRetrier, RequestAdapter {
 	}
 
 	/// Intercept 401 and do an OAuth2 authorization.
-	public func should(_ manager: SessionManager, retry request: Request, with error: Error, completion: @escaping RequestRetryCompletion) {
+	func should(_ manager: SessionManager, retry request: Request, with error: Error, completion: @escaping RequestRetryCompletion) {
 		guard let response = request.task?.response as? HTTPURLResponse,
 			response.statusCode == 401,
 			let req = request.request else {
@@ -41,8 +41,8 @@ class OAuth2RetryHandler: RequestRetrier, RequestAdapter {
 	}
 
 	/// Sign the request with the access token.
-	public func adapt(_ urlRequest: URLRequest) throws -> URLRequest {
-		guard nil != loader.oauth2.accessToken else {
+	func adapt(_ urlRequest: URLRequest) throws -> URLRequest {
+		guard loader.oauth2.accessToken != nil else {
 			return urlRequest
 		}
 		return try urlRequest.signed(with: loader.oauth2)

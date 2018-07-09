@@ -10,6 +10,7 @@ import AppwiseCore
 import IQKeyboardManagerSwift
 
 final class KeyboardManagerApplicationService: NSObject, ApplicationService {
+	// swiftlint:disable:next discouraged_optional_collection
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 		IQKeyboardManager.shared.enable = true
 

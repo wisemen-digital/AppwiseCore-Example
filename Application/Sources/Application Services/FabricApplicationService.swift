@@ -12,6 +12,7 @@ import CrashlyticsRecorder
 import Fabric
 
 final class FabricApplicationService: NSObject, ApplicationService {
+	// swiftlint:disable:next discouraged_optional_collection
 	func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]? = nil) -> Bool {
 		Fabric.with([Crashlytics()])
 		_ = CrashlyticsRecorder.createSharedInstance(crashlytics: Crashlytics.sharedInstance())

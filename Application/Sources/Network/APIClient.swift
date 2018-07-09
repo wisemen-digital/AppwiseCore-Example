@@ -55,10 +55,15 @@ final class APIClient: Client {
 		$0.retrier = retrier
 	}
 
-	lazy private(set) var nuke: Nuke.Manager = {
-		let loader = Nuke.Loader(loader: NukeAlamofirePlugin.DataLoader(manager: self.sessionManager))
-		return Nuke.Manager(loader: loader, cache: Cache.shared)
-	}()
+	lazy private(set) var nuke: Nuke.ImagePipeline = Nuke.ImagePipeline {
+		$0.dataLoader = NukeAlamofirePlugin.AlamofireDataLoader(manager: self.sessionManager)
+	}
+
+	func nukeOptions(placeholder: Image? = nil, transition: ImageLoadingOptions.Transition? = nil, failureImage: Image? = nil, failureImageTransition: ImageLoadingOptions.Transition? = nil, contentModes: ImageLoadingOptions.ContentModes? = nil) -> ImageLoadingOptions {
+		var options = ImageLoadingOptions(placeholder: placeholder, transition: transition, failureImage: failureImage, failureImageTransition: failureImageTransition, contentModes: contentModes)
+		options.pipeline = self.nuke
+		return options
+	}
 }
 
 extension APIClient {
