@@ -7,7 +7,6 @@
 //
 
 import Alamofire
-import AlamofireCoreData
 import AppwiseCore
 import CocoaLumberjack
 import Nuke
