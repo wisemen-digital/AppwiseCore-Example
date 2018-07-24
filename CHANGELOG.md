@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+### 24 July 2018
+
+* APIClient: Removed `ServerError` and `extract(from:error:)` as these are built-in now.
+
+### 9 July 2018
+
+* New SwiftLint rules.
+* Updated for latest Nuke changes.
+
+### 5 July 2018
+
+* Refactored the Fastfile a bit for better maintainability.
+
 ### 30 April 2018
 
 * Added fastlane configuratione example.

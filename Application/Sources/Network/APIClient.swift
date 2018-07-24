@@ -64,35 +64,3 @@ final class APIClient: Client {
 		return options
 	}
 }
-
-extension APIClient {
-	enum ServerError: Swift.Error, LocalizedError {
-		case invalidData
-		case message(String)
-		case unauthorized
-
-		var errorDescription: String? {
-			switch self {
-			case .invalidData:
-				return "Invalid data response."
-			case .message(let message):
-				return message
-			case .unauthorized:
-				return "Unauthorized access, session may have expired."
-			}
-		}
-	}
-
-	static func extract<T>(from response: DataResponse<T>, error: Error) -> Error {
-		if let status = response.response?.statusCode, status == 401 || status == 403 {
-			return ServerError.unauthorized
-		}
-
-		guard let data = response.data,
-			let json = try? JSONSerialization.jsonObject(with: data, options: []),
-			let result = json as? [[String: String]],
-			let message = result.first?["message"] else { return error }
-
-		return ServerError.message(message)
-	}
-}
