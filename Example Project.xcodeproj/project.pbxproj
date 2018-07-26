@@ -84,6 +84,8 @@
 		DD3473852039095A0035A2CD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DD347387203909720035A2CD /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		DD9F476B206BFC25006B0DCA /* Example Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Example Project.xcdatamodel"; sourceTree = "<group>"; };
+		DDF718A32109DAC70011DEAE /* Settings (Release).xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Settings (Release).xcconfig"; sourceTree = "<group>"; };
+		DDF718A42109DAC70011DEAE /* Settings (Debug).xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Settings (Debug).xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,8 @@
 				DD347325203734DD0035A2CD /* Settings-Staging (Release).xcconfig */,
 				DD34731A203730540035A2CD /* Settings-Staging.xcconfig */,
 				DD347319203730540035A2CD /* Settings.xcconfig */,
+				DDF718A42109DAC70011DEAE /* Settings (Debug).xcconfig */,
+				DDF718A32109DAC70011DEAE /* Settings (Release).xcconfig */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -509,7 +513,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\" lint --config \"${PROJECT_DIR}/.swiftlint.yml\" --path \"${PROJECT_DIR}\"";
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\" lint --config \"${PROJECT_DIR}/.swiftlint.yml\" --path \"${PROJECT_DIR}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B125D8ACB6B416B3319D5ED8 /* [CP-User] Check Strings */ = {
@@ -556,7 +560,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ $ACTION != \"install\" ]; then \"${PODS_ROOT}/Sourcery/bin/sourcery\" --sources \"${SRCROOT}/Application/Sources\" --sources \"$DERIVED_SOURCES_DIR\" --templates \"../Sourcery\" --output \"${SRCROOT}/Application/Sources/Generated/Sourcery\"; fi";
+			shellScript = "if [ $ACTION != \"install\" ]; then \"${PODS_ROOT}/Sourcery/bin/sourcery\" --sources \"${SRCROOT}/Application/Sources\" --sources \"$DERIVED_SOURCES_DIR\" --templates \"../Sourcery\" --output \"${SRCROOT}/Application/Sources/Generated/Sourcery\"; fi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
