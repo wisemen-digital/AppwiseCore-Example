@@ -30,7 +30,7 @@ PODS:
   - CocoaLumberjack/Default (3.4.2)
   - CocoaLumberjack/Swift (3.4.2):
     - CocoaLumberjack/Default
-  - Crashlytics (3.10.4):
+  - Crashlytics (3.10.5):
     - Fabric (~> 1.7.9)
   - CrashlyticsRecorder (2.2.0)
   - Fabric (1.7.9)
@@ -38,9 +38,9 @@ PODS:
     - Groot/Swift (= 3.0.1)
   - Groot/Swift (3.0.1)
   - IBAnimatable (5.1.0)
-  - IQKeyboardManagerSwift (6.0.4)
+  - IQKeyboardManagerSwift (6.1.1)
   - LocalizableCheck (0.1.1)
-  - Nuke (7.3)
+  - Nuke (7.3.2)
   - Nuke-Alamofire-Plugin (4.0):
     - Alamofire (~> 4.0)
     - Nuke (~> 7.0)
@@ -57,7 +57,7 @@ PODS:
   - SugarRecord/CoreData (3.1.2):
     - Result (~> 3.0)
   - SwiftGen (5.3.0)
-  - SwiftLint (0.26.0)
+  - SwiftLint (0.27.0)
   - Then (2.3.0)
 
 DEPENDENCIES:
@@ -113,14 +113,14 @@ SPEC CHECKSUMS:
   AppwiseCore: 7e8b8679b25e399405d571f2f3b8ac7d73764a83
   BonMot: 68da0bd7c2f602aca85511bedabd211eb0fae666
   CocoaLumberjack: db7cc9e464771f12054c22ff6947c5a58d43a0fd
-  Crashlytics: 915a7787b84f635fb2a81f92a90e265c2c413f76
+  Crashlytics: 7f2e38d302d9da96475b3d64d86fb29e31a542b7
   CrashlyticsRecorder: 5f132a14135b37bfa674e8b4dc0957313ecdb30c
   Fabric: a2917d3895e4c1569b9c3170de7320ea1b1e6661
   Groot: a668afbcf0be88d76c0a26c714cfa4638ceaca66
   IBAnimatable: dd81f8f22e9982b05e8ac50794e4c8988cc300f2
-  IQKeyboardManagerSwift: 36dbe324b4f9793f5f41ba5227f3e7c76dfefd50
+  IQKeyboardManagerSwift: 977affaeb4d6e971975c7790a6850f31d38f1207
   LocalizableCheck: 44c5e378bf8879284b95981860c2303bd2713d35
-  Nuke: 3680b7186b18f84a5e9e283bfce4357bfd70fdf9
+  Nuke: a9a31bbd6c6723753ab024ef22057dcaaf046c1b
   Nuke-Alamofire-Plugin: 58319cafeaf6b4ea7431e48189de4618759a2c3c
   OneSignal: 42dae269c7eca517aee34963820e1eb922390031
   p2.OAuth2: fdc2effef37793a8f775dd4760bc4c1ea906c956
@@ -130,7 +130,7 @@ SPEC CHECKSUMS:
   Sourcery: 9ef51b8777516f204d82996441f293813158d0d7
   SugarRecord: be6aa5c18b4a4dec0de4c1f49fc61c85eabb5328
   SwiftGen: 4379bd3640b0a212a0f6ea3c494adba385513d10
-  SwiftLint: f6b83e8d95ee1e91e11932d843af4fdcbf3fc764
+  SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
   Then: ee21c97b85ff6062b9b0080c9abb1eea46743345
 
 PODFILE CHECKSUM: 4b9e40a2b86c049a9e99bb7cc9078da9f1d2ea32

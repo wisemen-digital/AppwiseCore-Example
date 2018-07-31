@@ -513,7 +513,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\" lint --config \"${PROJECT_DIR}/.swiftlint.yml\" --path \"${PROJECT_DIR}\"\n";
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\" lint --config \"${PROJECT_DIR}/.swiftlint.yml\" --path \"${PROJECT_DIR}\"";
 			showEnvVarsInLog = 0;
 		};
 		B125D8ACB6B416B3319D5ED8 /* [CP-User] Check Strings */ = {
@@ -560,7 +560,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ $ACTION != \"install\" ]; then \"${PODS_ROOT}/Sourcery/bin/sourcery\" --sources \"${SRCROOT}/Application/Sources\" --sources \"$DERIVED_SOURCES_DIR\" --templates \"../Sourcery\" --output \"${SRCROOT}/Application/Sources/Generated/Sourcery\"; fi\n";
+			shellScript = "if [ $ACTION != \"install\" ]; then \"${PODS_ROOT}/Sourcery/bin/sourcery\" --sources \"${SRCROOT}/Application/Sources\" --sources \"$DERIVED_SOURCES_DIR\" --templates \"../Sourcery\" --output \"${SRCROOT}/Application/Sources/Generated/Sourcery\"; fi";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
