@@ -37,13 +37,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		36AE9C72BFF271A9F2C1440E /* Pods-Example Project.production (debug).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example Project.production (debug).xcconfig"; path = "Pods/Target Support Files/Pods-Example Project/Pods-Example Project.production (debug).xcconfig"; sourceTree = "<group>"; };
+		172B36B6F4CFE37892249A44 /* Pods-Example Project.production - release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example Project.production - release.xcconfig"; path = "Pods/Target Support Files/Pods-Example Project/Pods-Example Project.production - release.xcconfig"; sourceTree = "<group>"; };
+		1FA700368FEA022B8AC9C30B /* Pods-Example Project.staging - release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example Project.staging - release.xcconfig"; path = "Pods/Target Support Files/Pods-Example Project/Pods-Example Project.staging - release.xcconfig"; sourceTree = "<group>"; };
 		49512D13FE222BCA9699C9FB /* Pods_Example_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C86F6DB5E7D03DF03934108 /* Pods-Example Project.development (release).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example Project.development (release).xcconfig"; path = "Pods/Target Support Files/Pods-Example Project/Pods-Example Project.development (release).xcconfig"; sourceTree = "<group>"; };
-		69E5180B6FAD9F8D0F604382 /* Pods-Example Project.production (release).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example Project.production (release).xcconfig"; path = "Pods/Target Support Files/Pods-Example Project/Pods-Example Project.production (release).xcconfig"; sourceTree = "<group>"; };
-		75D2CE86E62FB20731DAB6CE /* Pods-Example Project.staging (release).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example Project.staging (release).xcconfig"; path = "Pods/Target Support Files/Pods-Example Project/Pods-Example Project.staging (release).xcconfig"; sourceTree = "<group>"; };
-		C7C064E546763378EE31ECB4 /* Pods-Example Project.development (debug).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example Project.development (debug).xcconfig"; path = "Pods/Target Support Files/Pods-Example Project/Pods-Example Project.development (debug).xcconfig"; sourceTree = "<group>"; };
-		CC1D2AD4E56F1E0ADDD6A743 /* Pods-Example Project.staging (debug).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example Project.staging (debug).xcconfig"; path = "Pods/Target Support Files/Pods-Example Project/Pods-Example Project.staging (debug).xcconfig"; sourceTree = "<group>"; };
+		6BE22DB065690C2A7C177057 /* Pods-Example Project.production - debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example Project.production - debug.xcconfig"; path = "Pods/Target Support Files/Pods-Example Project/Pods-Example Project.production - debug.xcconfig"; sourceTree = "<group>"; };
+		B22059179B839F9A55AC0109 /* Pods-Example Project.staging - debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example Project.staging - debug.xcconfig"; path = "Pods/Target Support Files/Pods-Example Project/Pods-Example Project.staging - debug.xcconfig"; sourceTree = "<group>"; };
+		C188B2F092DFA4728A94AE3D /* Pods-Example Project.development - release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example Project.development - release.xcconfig"; path = "Pods/Target Support Files/Pods-Example Project/Pods-Example Project.development - release.xcconfig"; sourceTree = "<group>"; };
 		D95E1C411D88E71A00F94976 /* Example Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D95E1C891D88F39300F94976 /* AppwiseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppwiseCore.framework; path = "../build/Debug-iphoneos/AppwiseCore.framework"; sourceTree = "<group>"; };
 		DD34730A20372FFE0035A2CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -86,6 +85,7 @@
 		DD9F476B206BFC25006B0DCA /* Example Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Example Project.xcdatamodel"; sourceTree = "<group>"; };
 		DDF718A32109DAC70011DEAE /* Settings (Release).xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Settings (Release).xcconfig"; sourceTree = "<group>"; };
 		DDF718A42109DAC70011DEAE /* Settings (Debug).xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Settings (Debug).xcconfig"; sourceTree = "<group>"; };
+		ED871E37410B1588CE8E58AA /* Pods-Example Project.development - debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example Project.development - debug.xcconfig"; path = "Pods/Target Support Files/Pods-Example Project/Pods-Example Project.development - debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -313,12 +313,12 @@
 		EBA233E0481BA9E31F75325F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C7C064E546763378EE31ECB4 /* Pods-Example Project.development (debug).xcconfig */,
-				5C86F6DB5E7D03DF03934108 /* Pods-Example Project.development (release).xcconfig */,
-				CC1D2AD4E56F1E0ADDD6A743 /* Pods-Example Project.staging (debug).xcconfig */,
-				75D2CE86E62FB20731DAB6CE /* Pods-Example Project.staging (release).xcconfig */,
-				36AE9C72BFF271A9F2C1440E /* Pods-Example Project.production (debug).xcconfig */,
-				69E5180B6FAD9F8D0F604382 /* Pods-Example Project.production (release).xcconfig */,
+				ED871E37410B1588CE8E58AA /* Pods-Example Project.development - debug.xcconfig */,
+				C188B2F092DFA4728A94AE3D /* Pods-Example Project.development - release.xcconfig */,
+				B22059179B839F9A55AC0109 /* Pods-Example Project.staging - debug.xcconfig */,
+				1FA700368FEA022B8AC9C30B /* Pods-Example Project.staging - release.xcconfig */,
+				6BE22DB065690C2A7C177057 /* Pods-Example Project.production - debug.xcconfig */,
+				172B36B6F4CFE37892249A44 /* Pods-Example Project.production - release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -640,23 +640,23 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		D95E1C511D88E71A00F94976 /* Development (Debug) */ = {
+		D95E1C511D88E71A00F94976 /* Development - Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DD347326203734DE0035A2CD /* Settings-Development (Debug).xcconfig */;
 			buildSettings = {
 			};
-			name = "Development (Debug)";
+			name = "Development - Debug";
 		};
-		D95E1C521D88E71A00F94976 /* Staging (Release) */ = {
+		D95E1C521D88E71A00F94976 /* Staging - Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DD347325203734DD0035A2CD /* Settings-Staging (Release).xcconfig */;
 			buildSettings = {
 			};
-			name = "Staging (Release)";
+			name = "Staging - Release";
 		};
-		D95E1C541D88E71A00F94976 /* Development (Debug) */ = {
+		D95E1C541D88E71A00F94976 /* Development - Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7C064E546763378EE31ECB4 /* Pods-Example Project.development (debug).xcconfig */;
+			baseConfigurationReference = ED871E37410B1588CE8E58AA /* Pods-Example Project.development - debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = JF4JXY8D87;
 				INFOPLIST_FILE = Application/Resources/Info.plist;
@@ -664,11 +664,11 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
-			name = "Development (Debug)";
+			name = "Development - Debug";
 		};
-		D95E1C551D88E71A00F94976 /* Staging (Release) */ = {
+		D95E1C551D88E71A00F94976 /* Staging - Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 75D2CE86E62FB20731DAB6CE /* Pods-Example Project.staging (release).xcconfig */;
+			baseConfigurationReference = 1FA700368FEA022B8AC9C30B /* Pods-Example Project.staging - release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = JF4JXY8D87;
 				INFOPLIST_FILE = Application/Resources/Info.plist;
@@ -676,18 +676,18 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
-			name = "Staging (Release)";
+			name = "Staging - Release";
 		};
-		DD347320203730920035A2CD /* Production (Debug) */ = {
+		DD347320203730920035A2CD /* Production - Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DD347324203734DD0035A2CD /* Settings-Production (Debug).xcconfig */;
 			buildSettings = {
 			};
-			name = "Production (Debug)";
+			name = "Production - Debug";
 		};
-		DD347321203730920035A2CD /* Production (Debug) */ = {
+		DD347321203730920035A2CD /* Production - Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 36AE9C72BFF271A9F2C1440E /* Pods-Example Project.production (debug).xcconfig */;
+			baseConfigurationReference = 6BE22DB065690C2A7C177057 /* Pods-Example Project.production - debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = JF4JXY8D87;
 				INFOPLIST_FILE = Application/Resources/Info.plist;
@@ -695,18 +695,18 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
-			name = "Production (Debug)";
+			name = "Production - Debug";
 		};
-		DD3473282037353E0035A2CD /* Development (Release) */ = {
+		DD3473282037353E0035A2CD /* Development - Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DD347327203734DE0035A2CD /* Settings-Development (Release).xcconfig */;
 			buildSettings = {
 			};
-			name = "Development (Release)";
+			name = "Development - Release";
 		};
-		DD3473292037353E0035A2CD /* Development (Release) */ = {
+		DD3473292037353E0035A2CD /* Development - Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C86F6DB5E7D03DF03934108 /* Pods-Example Project.development (release).xcconfig */;
+			baseConfigurationReference = C188B2F092DFA4728A94AE3D /* Pods-Example Project.development - release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = JF4JXY8D87;
 				INFOPLIST_FILE = Application/Resources/Info.plist;
@@ -714,18 +714,18 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
-			name = "Development (Release)";
+			name = "Development - Release";
 		};
-		DD34732A2037355B0035A2CD /* Staging (Debug) */ = {
+		DD34732A2037355B0035A2CD /* Staging - Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DD347323203734DD0035A2CD /* Settings-Staging (Debug).xcconfig */;
 			buildSettings = {
 			};
-			name = "Staging (Debug)";
+			name = "Staging - Debug";
 		};
-		DD34732B2037355B0035A2CD /* Staging (Debug) */ = {
+		DD34732B2037355B0035A2CD /* Staging - Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC1D2AD4E56F1E0ADDD6A743 /* Pods-Example Project.staging (debug).xcconfig */;
+			baseConfigurationReference = B22059179B839F9A55AC0109 /* Pods-Example Project.staging - debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = JF4JXY8D87;
 				INFOPLIST_FILE = Application/Resources/Info.plist;
@@ -733,18 +733,18 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
-			name = "Staging (Debug)";
+			name = "Staging - Debug";
 		};
-		DD34732E203735850035A2CD /* Production (Release) */ = {
+		DD34732E203735850035A2CD /* Production - Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DD347322203734DD0035A2CD /* Settings-Production (Release).xcconfig */;
 			buildSettings = {
 			};
-			name = "Production (Release)";
+			name = "Production - Release";
 		};
-		DD34732F203735850035A2CD /* Production (Release) */ = {
+		DD34732F203735850035A2CD /* Production - Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 69E5180B6FAD9F8D0F604382 /* Pods-Example Project.production (release).xcconfig */;
+			baseConfigurationReference = 172B36B6F4CFE37892249A44 /* Pods-Example Project.production - release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = JF4JXY8D87;
 				INFOPLIST_FILE = Application/Resources/Info.plist;
@@ -752,7 +752,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
-			name = "Production (Release)";
+			name = "Production - Release";
 		};
 /* End XCBuildConfiguration section */
 
@@ -760,28 +760,28 @@
 		D95E1C3C1D88E71A00F94976 /* Build configuration list for PBXProject "Example Project" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D95E1C511D88E71A00F94976 /* Development (Debug) */,
-				DD3473282037353E0035A2CD /* Development (Release) */,
-				DD34732A2037355B0035A2CD /* Staging (Debug) */,
-				D95E1C521D88E71A00F94976 /* Staging (Release) */,
-				DD347320203730920035A2CD /* Production (Debug) */,
-				DD34732E203735850035A2CD /* Production (Release) */,
+				D95E1C511D88E71A00F94976 /* Development - Debug */,
+				DD3473282037353E0035A2CD /* Development - Release */,
+				DD34732A2037355B0035A2CD /* Staging - Debug */,
+				D95E1C521D88E71A00F94976 /* Staging - Release */,
+				DD347320203730920035A2CD /* Production - Debug */,
+				DD34732E203735850035A2CD /* Production - Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Production (Release)";
+			defaultConfigurationName = "Production - Release";
 		};
 		D95E1C531D88E71A00F94976 /* Build configuration list for PBXNativeTarget "Example Project" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D95E1C541D88E71A00F94976 /* Development (Debug) */,
-				DD3473292037353E0035A2CD /* Development (Release) */,
-				DD34732B2037355B0035A2CD /* Staging (Debug) */,
-				D95E1C551D88E71A00F94976 /* Staging (Release) */,
-				DD347321203730920035A2CD /* Production (Debug) */,
-				DD34732F203735850035A2CD /* Production (Release) */,
+				D95E1C541D88E71A00F94976 /* Development - Debug */,
+				DD3473292037353E0035A2CD /* Development - Release */,
+				DD34732B2037355B0035A2CD /* Staging - Debug */,
+				D95E1C551D88E71A00F94976 /* Staging - Release */,
+				DD347321203730920035A2CD /* Production - Debug */,
+				DD34732F203735850035A2CD /* Production - Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Production (Release)";
+			defaultConfigurationName = "Production - Release";
 		};
 /* End XCConfigurationList section */
 

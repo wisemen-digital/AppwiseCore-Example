@@ -4,17 +4,17 @@ default_platform :ios
 platform :ios do
   desc 'Submit a new Development Build to Apple TestFlight'
   lane :development do
-    archiveAndUpload(scheme: 'Example Project (Development)')
+    archiveAndUpload(scheme: 'Example Project - Development')
   end
 
   desc 'Submit a new Development Build to Apple TestFlight'
   lane :staging do
-    archiveAndUpload(scheme: 'Example Project (Staging)')
+    archiveAndUpload(scheme: 'Example Project - Staging')
   end
 
   desc 'Submit a new Production Build to Apple TestFlight'
   lane :production do
-    archiveAndUpload(scheme: 'Example Project (Production)')
+    archiveAndUpload(scheme: 'Example Project - Production')
   end
 
   desc 'Deploy a new version to the App Store'
