@@ -47,16 +47,16 @@ PODS:
   - Nuke-Alamofire-Plugin (4.0):
     - Alamofire (~> 4.0)
     - Nuke (~> 7.0)
-  - OneSignal (2.8.6)
+  - OneSignal (2.8.8)
   - p2.OAuth2 (4.0.1)
   - Result (3.2.4)
-  - Reusable (4.0.2):
-    - Reusable/Storyboard (= 4.0.2)
-    - Reusable/View (= 4.0.2)
-  - Reusable/Storyboard (4.0.2)
-  - Reusable/View (4.0.2)
+  - Reusable (4.0.3):
+    - Reusable/Storyboard (= 4.0.3)
+    - Reusable/View (= 4.0.3)
+  - Reusable/Storyboard (4.0.3)
+  - Reusable/View (4.0.3)
   - SnapKit (4.0.0)
-  - Sourcery (0.13.1)
+  - Sourcery (0.14.0)
   - SugarRecord/CoreData (3.1.2):
     - Result (~> 3.0)
   - SwiftGen (5.3.0)
@@ -127,12 +127,12 @@ SPEC CHECKSUMS:
   LocalizableCheck: 44c5e378bf8879284b95981860c2303bd2713d35
   Nuke: a9a31bbd6c6723753ab024ef22057dcaaf046c1b
   Nuke-Alamofire-Plugin: 58319cafeaf6b4ea7431e48189de4618759a2c3c
-  OneSignal: 0173a4e48c620089e4a1aba44c82d4148547d812
+  OneSignal: 7d2571e9fce1d961b882e1bd9f1f242802e9c8b1
   p2.OAuth2: fdc2effef37793a8f775dd4760bc4c1ea906c956
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
-  Reusable: 584a5629747c52e0f6a77841b400dc2643f6fa0f
+  Reusable: 12b67a60e1f3e8c523cc910795dab733f58fbc7e
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
-  Sourcery: 9ef51b8777516f204d82996441f293813158d0d7
+  Sourcery: 51332d15c2fc40e4ac5956e149a5d95607c63154
   SugarRecord: be6aa5c18b4a4dec0de4c1f49fc61c85eabb5328
   SwiftGen: 4379bd3640b0a212a0f6ea3c494adba385513d10
   SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
