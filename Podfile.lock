@@ -33,21 +33,21 @@ PODS:
     - CocoaLumberjack/Default
   - CodableAlamofire (1.1.0):
     - Alamofire (~> 4.0)
-  - Crashlytics (3.10.7):
-    - Fabric (~> 1.7.11)
+  - Crashlytics (3.10.8):
+    - Fabric (~> 1.7.12)
   - CrashlyticsRecorder (2.2.0)
-  - Fabric (1.7.11)
+  - Fabric (1.7.12)
   - Groot (3.0.1):
     - Groot/Swift (= 3.0.1)
   - Groot/Swift (3.0.1)
-  - IBAnimatable (5.2.0)
+  - IBAnimatable (5.2.1)
   - IQKeyboardManagerSwift (6.1.1)
   - LocalizableCheck (0.1.1)
-  - Nuke (7.3.2)
+  - Nuke (7.4.2)
   - Nuke-Alamofire-Plugin (4.0):
     - Alamofire (~> 4.0)
     - Nuke (~> 7.0)
-  - OneSignal (2.8.8)
+  - OneSignal (2.8.9)
   - p2.OAuth2 (4.0.1)
   - Result (3.2.4)
   - Reusable (4.0.3):
@@ -56,12 +56,12 @@ PODS:
   - Reusable/Storyboard (4.0.3)
   - Reusable/View (4.0.3)
   - SnapKit (4.0.1)
-  - Sourcery (0.14.0)
+  - Sourcery (0.15.0)
   - SugarRecord/CoreData (3.1.2):
     - Result (~> 3.0)
   - SwiftGen (5.3.0)
   - SwiftLint (0.27.0)
-  - Then (2.3.0)
+  - Then (2.4.0)
 
 DEPENDENCIES:
   - AppwiseCore (from `../`)
@@ -118,25 +118,25 @@ SPEC CHECKSUMS:
   BonMot: 0104d1b4eda54f4a4b7393d6559539ef25498fbd
   CocoaLumberjack: db7cc9e464771f12054c22ff6947c5a58d43a0fd
   CodableAlamofire: e2d2edcec7cf413f7862c30c8fa98eded27a83f9
-  Crashlytics: ccaac42660eb9351b9960c0d66106b0bcf99f4fa
+  Crashlytics: 058dc1ba579f6c100bc60a6878703779bff383c4
   CrashlyticsRecorder: 5f132a14135b37bfa674e8b4dc0957313ecdb30c
-  Fabric: f233c9492b3bbc1f04e3882986740f7988a58edb
+  Fabric: d7387db9a31aadff63b147a4b91d982c53afaa4f
   Groot: a668afbcf0be88d76c0a26c714cfa4638ceaca66
-  IBAnimatable: 9e41a929529ba10548c99d3fe2db60e6272fc06d
+  IBAnimatable: a46b835ec6875178516cf7e014a40194d6bfa3fc
   IQKeyboardManagerSwift: 977affaeb4d6e971975c7790a6850f31d38f1207
   LocalizableCheck: 44c5e378bf8879284b95981860c2303bd2713d35
-  Nuke: a9a31bbd6c6723753ab024ef22057dcaaf046c1b
+  Nuke: aee5c42001369902798f7b844611b8ae930ce333
   Nuke-Alamofire-Plugin: 58319cafeaf6b4ea7431e48189de4618759a2c3c
-  OneSignal: 7d2571e9fce1d961b882e1bd9f1f242802e9c8b1
+  OneSignal: 0fb3522620d392195ed8e90e4e96717c6085df45
   p2.OAuth2: fdc2effef37793a8f775dd4760bc4c1ea906c956
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
   Reusable: 12b67a60e1f3e8c523cc910795dab733f58fbc7e
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
-  Sourcery: 51332d15c2fc40e4ac5956e149a5d95607c63154
+  Sourcery: 5895672cae353cdbfa95f3f4aaeb75a664d76f6a
   SugarRecord: be6aa5c18b4a4dec0de4c1f49fc61c85eabb5328
   SwiftGen: 4379bd3640b0a212a0f6ea3c494adba385513d10
   SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
-  Then: ee21c97b85ff6062b9b0080c9abb1eea46743345
+  Then: 71866660c7af35a7343831f7668e7cd2b62ee0f2
 
 PODFILE CHECKSUM: 74caa432c96faa6085b12a8a862bf01981c1f50c
 

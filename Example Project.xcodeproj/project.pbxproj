@@ -513,11 +513,9 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Application/Resources",
 			);
 			name = "[CP-User] SwiftGen";
 			outputPaths = (
-				"${SRCROOT}/Application/Sources/Generated/SwiftGen/*",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

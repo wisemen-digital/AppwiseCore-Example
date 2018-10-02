@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+### 2 October 2018
+
+* SwiftGen: Remove input/output paths from SwiftGen build step, to ensure it always runs.
+
 ### 24 July 2018
 
 * APIClient: Removed `ServerError` and `extract(from:error:)` as these are built-in now.

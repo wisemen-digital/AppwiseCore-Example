@@ -40,8 +40,6 @@ target 'Example Project' do
 
 	script_phase :name => 'SwiftGen',
 		:execution_position => :before_compile,
-		:input_files => ['${SRCROOT}/Application/Resources'],
-		:output_files => ['${SRCROOT}/Application/Sources/Generated/SwiftGen/*'],
 		:script => '"${PODS_ROOT}/SwiftGen/bin/swiftgen"'
 
 	script_phase :name => 'Sourcery',
