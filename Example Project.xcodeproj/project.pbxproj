@@ -26,12 +26,13 @@
 		DD3473732038FE3D0035A2CD /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = DD3473752038FE3D0035A2CD /* Localizable.stringsdict */; };
 		DD347377203906B00035A2CD /* Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD347376203906B00035A2CD /* Then.swift */; };
 		DD34737F203908E90035A2CD /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD34737B203908E90035A2CD /* Strings.swift */; };
-		DD347380203908E90035A2CD /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD34737C203908E90035A2CD /* Storyboards.swift */; };
+		DD347380203908E90035A2CD /* Storyboards Scenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD34737C203908E90035A2CD /* Storyboards Scenes.swift */; };
 		DD347381203908EA0035A2CD /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD34737D203908E90035A2CD /* Assets.swift */; };
 		DD347382203908EA0035A2CD /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD34737E203908E90035A2CD /* Colors.swift */; };
 		DD347384203908F20035A2CD /* AutoViewModel.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD347383203908F20035A2CD /* AutoViewModel.generated.swift */; };
 		DD3473862039095A0035A2CD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3473852039095A0035A2CD /* User.swift */; };
 		DD347388203909720035A2CD /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD347387203909720035A2CD /* UserViewModel.swift */; };
+		DD4BF0C72163B0A9008475E3 /* Storyboards Segues.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4BF0C62163B0A9008475E3 /* Storyboards Segues.swift */; };
 		DD9F476C206BFC26006B0DCA /* Example Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD9F476A206BFC25006B0DCA /* Example Project.xcdatamodeld */; };
 		FCFF21A5B3E91894BC1C63CF /* libPods-Example Project.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6078A4AC38E5DDA829F792 /* libPods-Example Project.a */; };
 /* End PBXBuildFile section */
@@ -76,12 +77,13 @@
 		DD3473742038FE3D0035A2CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		DD347376203906B00035A2CD /* Then.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Then.swift; sourceTree = "<group>"; };
 		DD34737B203908E90035A2CD /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
-		DD34737C203908E90035A2CD /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
+		DD34737C203908E90035A2CD /* Storyboards Scenes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Storyboards Scenes.swift"; sourceTree = "<group>"; };
 		DD34737D203908E90035A2CD /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		DD34737E203908E90035A2CD /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		DD347383203908F20035A2CD /* AutoViewModel.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoViewModel.generated.swift; sourceTree = "<group>"; };
 		DD3473852039095A0035A2CD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DD347387203909720035A2CD /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		DD4BF0C62163B0A9008475E3 /* Storyboards Segues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Storyboards Segues.swift"; sourceTree = "<group>"; };
 		DD9F476B206BFC25006B0DCA /* Example Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Example Project.xcdatamodel"; sourceTree = "<group>"; };
 		DDF718A32109DAC70011DEAE /* Settings (Release).xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Settings (Release).xcconfig"; sourceTree = "<group>"; };
 		DDF718A42109DAC70011DEAE /* Settings (Debug).xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Settings (Debug).xcconfig"; sourceTree = "<group>"; };
@@ -255,7 +257,8 @@
 			children = (
 				DD34737D203908E90035A2CD /* Assets.swift */,
 				DD34737E203908E90035A2CD /* Colors.swift */,
-				DD34737C203908E90035A2CD /* Storyboards.swift */,
+				DD34737C203908E90035A2CD /* Storyboards Scenes.swift */,
+				DD4BF0C62163B0A9008475E3 /* Storyboards Segues.swift */,
 				DD34737B203908E90035A2CD /* Strings.swift */,
 			);
 			path = SwiftGen;
@@ -550,7 +553,7 @@
 				DD34735020373EC60035A2CD /* Config.swift in Sources */,
 				DD34735620373F250035A2CD /* Environment.swift in Sources */,
 				DD34735520373F250035A2CD /* Settings.swift in Sources */,
-				DD347380203908E90035A2CD /* Storyboards.swift in Sources */,
+				DD347380203908E90035A2CD /* Storyboards Scenes.swift in Sources */,
 				DD34734920373EC60035A2CD /* OAuth2RetryHandler.swift in Sources */,
 				DD347381203908EA0035A2CD /* Assets.swift in Sources */,
 				DD347382203908EA0035A2CD /* Colors.swift in Sources */,
@@ -559,6 +562,7 @@
 				DD34734F20373EC60035A2CD /* ViewController.swift in Sources */,
 				DD347388203909720035A2CD /* UserViewModel.swift in Sources */,
 				DD34734E20373EC60035A2CD /* FabricApplicationService.swift in Sources */,
+				DD4BF0C72163B0A9008475E3 /* Storyboards Segues.swift in Sources */,
 				DD3473862039095A0035A2CD /* User.swift in Sources */,
 				DD34734420373EC60035A2CD /* APIClient.swift in Sources */,
 				DD347377203906B00035A2CD /* Then.swift in Sources */,

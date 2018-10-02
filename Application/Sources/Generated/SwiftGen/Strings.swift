@@ -1,3 +1,4 @@
+// swiftlint:disable all
 // Generated using SwiftGen, by O.Halligon — https://github.com/SwiftGen/SwiftGen
 
 import Foundation
@@ -5,11 +6,13 @@ import Foundation
 // swiftlint:disable superfluous_disable_command
 // swiftlint:disable file_length
 
-// swiftlint:disable explicit_type_interface identifier_name line_length nesting type_body_length type_name
+// MARK: - Strings
+
+// swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
+// swiftlint:disable nesting type_body_length type_name
 internal enum L10n {
 
   internal enum Common {
-
     internal enum Button {
       /// Cancel
       internal static let cancel = L10n.tr("Localizable", "common.button.cancel")
@@ -22,7 +25,6 @@ internal enum L10n {
       /// Yes
       internal static let yes = L10n.tr("Localizable", "common.button.yes")
     }
-
     internal enum Message {
       /// Error: %@
       internal static func error(_ p1: String) -> String {
@@ -36,7 +38,6 @@ internal enum L10n {
   }
 
   internal enum Example {
-
     internal enum Stuff {
       /// %ld items
       internal static func items(_ p1: Int) -> String {
@@ -46,21 +47,26 @@ internal enum L10n {
   }
 
   internal enum Login {
-
     internal enum Button {
       /// Sign-in
       internal static let signIn = L10n.tr("Localizable", "login.button.sign-in")
     }
-
     internal enum Message {
       /// Logging in...
       internal static let loggingIn = L10n.tr("Localizable", "login.message.logging-in")
     }
   }
 }
-// swiftlint:enable explicit_type_interface identifier_name line_length nesting type_body_length type_name
+// swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
+// swiftlint:enable nesting type_body_length type_name
+
+// MARK: - Implementation Details
 
 extension L10n {
+  private static func tr(_ table: String, _ key: String) -> String {
+    return NSLocalizedString(key, tableName: table, bundle: Bundle(for: BundleToken.self), comment: "")
+  }
+
   private static func tr(_ table: String, _ key: String, _ args: CVarArg...) -> String {
     let format = NSLocalizedString(key, tableName: table, bundle: Bundle(for: BundleToken.self), comment: "")
     return String(format: format, locale: Locale.current, arguments: args)

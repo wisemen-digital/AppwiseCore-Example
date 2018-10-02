@@ -1,18 +1,24 @@
 input_dir: Application/Resources
 output_dir: Application/Sources/Generated/SwiftGen
 colors:
-  paths: Colors.json
-  templateName: literals-swift4
-  output: Colors.swift
-storyboards:
-  paths: .
-  templateName: swift4
-  output: Storyboards.swift
+  inputs: Colors.json
+  outputs:
+    templateName: literals-swift4
+    output: Colors.swift
+ib:
+  inputs: .
+  outputs:
+    - templateName: scenes-swift4
+      output: Storyboards Scenes.swift
+    - templateName: segues-swift4
+      output: Storyboards Segues.swift
 strings:
-  paths: en.lproj/Localizable.strings
-  templateName: structured-swift4
-  output: Strings.swift
+  inputs: en.lproj/Localizable.strings
+  outputs:
+    templateName: structured-swift4
+    output: Strings.swift
 xcassets:
-  paths: Assets.xcassets
-  templateName: swift4
-  output: Assets.swift
+  inputs: Assets.xcassets
+  outputs:
+    templateName: swift4
+    output: Assets.swift

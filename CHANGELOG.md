@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 ### 2 October 2018
 
 * SwiftGen: Remove input/output paths from SwiftGen build step, to ensure it always runs.
+* SwiftGen: Update to 6.0.0, split up the generated storyboard files.
 
 ### 24 July 2018
 
