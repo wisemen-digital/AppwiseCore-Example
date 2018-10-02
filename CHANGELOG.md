@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 * SwiftGen: Remove input/output paths from SwiftGen build step, to ensure it always runs.
 * SwiftGen: Update to 6.0.0, split up the generated storyboard files.
+* SwiftLint: Add rules to enforce SwiftGen use.
 
 ### 24 July 2018
 
