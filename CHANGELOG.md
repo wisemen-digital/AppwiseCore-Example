@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+### 11 October 2018
+
+* Removed spaces from the configurations and schemes' names, to avoid an Xcode path bug.
+
 ### 2 October 2018
 
 * SwiftGen: Remove input/output paths from SwiftGen build step, to ensure it always runs.

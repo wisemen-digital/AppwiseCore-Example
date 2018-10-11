@@ -4,12 +4,12 @@ inhibit_all_warnings!
 
 target 'Example Project' do
 	project 'Example Project',
-		'Development - Debug' => :debug,
-		'Development - Release' => :release,
-		'Staging - Debug' => :debug,
-		'Staging - Release' => :release,
-		'Production - Debug' => :debug,
-		'Production - Release' => :release
+		'Development-Debug' => :debug,
+		'Development-Release' => :release,
+		'Staging-Debug' => :debug,
+		'Staging-Release' => :release,
+		'Production-Debug' => :debug,
+		'Production-Release' => :release
 
 	pod 'AppwiseCore', :path => '../'
 	pod 'AppwiseCore/CoreData', :path => '../'
