@@ -6,7 +6,7 @@ IPHONEOS_DEPLOYMENT_TARGET = 10.0
 COCOAPODS_PARALLEL_CODE_SIGN = true
 DEBUG_INFORMATION_FORMAT = dwarf-with-dsym
 OTHER_SWIFT_FLAGS = $(inherited) -Xfrontend -warn-long-function-bodies=200
-SWIFT_VERSION = 4.0
+SWIFT_VERSION = 4.2
 
 // Linking & Code generation
 OTHER_LDFLAGS = $(inherited) -ObjC

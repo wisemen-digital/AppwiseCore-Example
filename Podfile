@@ -62,6 +62,13 @@ end
 post_install do | installer |
 	require 'fileutils'
 
-	# generate acknowledgements
-	FileUtils.cp_r('Pods/Target Support Files/Pods-Example Project/Pods-Example Project-Acknowledgements.plist', 'Application/Resources/Settings.bundle/Acknowledgements.plist', :remove_destination => true)
+	swift40_pods = %w(p2.OAuth2)
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['SWIFT_VERSION'] = '4.0' if swift40_pods.include?(target.name)
+        end
+    end
+
+    # generate acknowledgements
+    FileUtils.cp_r('Pods/Target Support Files/Pods-Example Project/Pods-Example Project-Acknowledgements.plist', 'Application/Resources/Settings.bundle/Acknowledgements.plist', :remove_destination => true)
 end

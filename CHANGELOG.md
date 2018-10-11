@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 ### 11 October 2018
 
 * Removed spaces from the configurations and schemes' names, to avoid an Xcode path bug.
+* Upgraded to Swift 4.2, and added an exception to the Podfile for older libraries.
 
 ### 2 October 2018
 
