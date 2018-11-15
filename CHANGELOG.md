@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+### 15 November 2018
+
+* New SwiftLint rules.
+
 ### 11 October 2018
 
 * Removed spaces from the configurations and schemes' names, to avoid an Xcode path bug.
