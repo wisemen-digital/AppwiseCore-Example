@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 ### 15 November 2018
 
 * New SwiftLint rules.
+* Add a small fix for warnings due to pods with no (or old) deployment targets.
 
 ### 11 October 2018
 
