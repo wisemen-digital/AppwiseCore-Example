@@ -11,7 +11,7 @@ import CoreData
 
 extension User {
 	static var current: User? {
-		return current(in: DB.main)
+		return current(in: DB.shared.view)
 	}
 
 	static func current(in moc: NSManagedObjectContext) -> User? {

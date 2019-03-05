@@ -17,7 +17,7 @@ extension Settings {
 	var currentUserID: NSManagedObjectID? {
 		get {
 			guard let url = defaults.url(forKey: DefaultsKey.currentUserID.rawValue),
-				let coordinator = DB.main.persistentStoreCoordinator else { return nil }
+				let coordinator = DB.shared.view.persistentStoreCoordinator else { return nil }
 			return coordinator.managedObjectID(forURIRepresentation: url)
 		}
 		set {

@@ -20,7 +20,6 @@ PODS:
     - AppwiseCore/Common
     - AppwiseCore/Core
     - Groot (~> 3.0)
-    - SugarRecord/CoreData (~> 3.1)
   - AppwiseCore/DeepLink (0.12.0):
     - AppwiseCore/Behaviours
     - AppwiseCore/Common
@@ -52,7 +51,6 @@ PODS:
     - Nuke (~> 7.0)
   - OneSignal (2.9.5)
   - p2.OAuth2 (4.2.0)
-  - Result (3.2.4)
   - Reusable (4.0.5):
     - Reusable/Storyboard (= 4.0.5)
     - Reusable/View (= 4.0.5)
@@ -60,8 +58,6 @@ PODS:
   - Reusable/View (4.0.5)
   - SnapKit (4.2.0)
   - Sourcery (0.15.0)
-  - SugarRecord/CoreData (3.1.2):
-    - Result (~> 3.0)
   - SwiftGen (6.1.0)
   - SwiftLint (0.31.0)
   - Then (2.4.0)
@@ -102,11 +98,9 @@ SPEC REPOS:
     - Nuke-Alamofire-Plugin
     - OneSignal
     - p2.OAuth2
-    - Result
     - Reusable
     - SnapKit
     - Sourcery
-    - SugarRecord
     - SwiftGen
     - SwiftLint
     - Then
@@ -117,7 +111,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
-  AppwiseCore: 5ab43ba777ef660aab18781a2b9d36eec3efc8ee
+  AppwiseCore: cc6d28fef7dddd2b0b0e745edf0f27261030975b
   BonMot: 0104d1b4eda54f4a4b7393d6559539ef25498fbd
   CocoaLumberjack: 2101f8a5508197a305e737d16c5c2e9e2157628c
   CodableAlamofire: e2d2edcec7cf413f7862c30c8fa98eded27a83f9
@@ -132,11 +126,9 @@ SPEC CHECKSUMS:
   Nuke-Alamofire-Plugin: 58319cafeaf6b4ea7431e48189de4618759a2c3c
   OneSignal: ccdeb961882f8668305e5b694e2cb7cb325fc907
   p2.OAuth2: d5ea9b928fc5d10d088d419db6f3380578b6f866
-  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
   Reusable: 188be1a54ac0691bc66e5bb24ec6eb91971b315b
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   Sourcery: 5895672cae353cdbfa95f3f4aaeb75a664d76f6a
-  SugarRecord: be6aa5c18b4a4dec0de4c1f49fc61c85eabb5328
   SwiftGen: f872ca75cbd17bf7103c17f13dcfa0d9a15667b0
   SwiftLint: 7a0227733d786395817373b2d0ca799fd0093ff3
   Then: 71866660c7af35a7343831f7668e7cd2b62ee0f2
