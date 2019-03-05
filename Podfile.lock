@@ -1,39 +1,39 @@
 PODS:
-  - Alamofire (4.8.0)
-  - AppwiseCore (0.10.7):
-    - AppwiseCore/Behaviours (= 0.10.7)
-    - AppwiseCore/Core (= 0.10.7)
-    - AppwiseCore/UI (= 0.10.7)
-    - AppwiseCore/UIApplication (= 0.10.7)
-  - AppwiseCore/Behaviours (0.10.7):
+  - Alamofire (4.8.1)
+  - AppwiseCore (0.11.3):
+    - AppwiseCore/Behaviours (= 0.11.3)
+    - AppwiseCore/Core (= 0.11.3)
+    - AppwiseCore/UI (= 0.11.3)
+    - AppwiseCore/UIApplication (= 0.11.3)
+  - AppwiseCore/Behaviours (0.11.3):
     - AppwiseCore/Common
-    - Then (~> 2.3)
-  - AppwiseCore/Common (0.10.7)
-  - AppwiseCore/Core (0.10.7):
-    - Alamofire (~> 4.7)
-    - AppwiseCore/Common
-    - CocoaLumberjack/Swift (~> 3.4)
-    - CodableAlamofire (~> 1.1)
-    - CrashlyticsRecorder (~> 2.2)
     - Then (~> 2.4)
-  - AppwiseCore/CoreData (0.10.7):
+  - AppwiseCore/Common (0.11.3)
+  - AppwiseCore/Core (0.11.3):
+    - Alamofire (~> 4.8)
+    - AppwiseCore/Common
+    - CocoaLumberjack/Swift (~> 3.5)
+    - CodableAlamofire (~> 1.1)
+    - CrashlyticsRecorder (~> 2.3)
+    - Then (~> 2.4)
+  - AppwiseCore/CoreData (0.11.3):
     - AppwiseCore/Common
     - AppwiseCore/Core
     - Groot (~> 3.0)
     - SugarRecord/CoreData (~> 3.1)
-  - AppwiseCore/DeepLink (0.10.7):
+  - AppwiseCore/DeepLink (0.11.3):
     - AppwiseCore/Behaviours
     - AppwiseCore/Common
-  - AppwiseCore/UI (0.10.7):
+  - AppwiseCore/UI (0.11.3):
     - AppwiseCore/Behaviours
     - AppwiseCore/Core
     - IBAnimatable (~> 5.2)
-  - AppwiseCore/UIApplication (0.10.7):
+  - AppwiseCore/UIApplication (0.11.3):
     - AppwiseCore/Core
   - BonMot (5.3)
-  - CocoaLumberjack/Default (3.4.2)
-  - CocoaLumberjack/Swift (3.4.2):
-    - CocoaLumberjack/Default
+  - CocoaLumberjack/Core (3.5.1)
+  - CocoaLumberjack/Swift (3.5.1):
+    - CocoaLumberjack/Core
   - CodableAlamofire (1.1.0):
     - Alamofire (~> 4.0)
   - Crashlytics (3.12.0):
@@ -50,7 +50,7 @@ PODS:
   - Nuke-Alamofire-Plugin (4.0):
     - Alamofire (~> 4.0)
     - Nuke (~> 7.0)
-  - OneSignal (2.9.4)
+  - OneSignal (2.9.5)
   - p2.OAuth2 (4.2.0)
   - Result (3.2.4)
   - Reusable (4.0.5):
@@ -62,8 +62,8 @@ PODS:
   - Sourcery (0.15.0)
   - SugarRecord/CoreData (3.1.2):
     - Result (~> 3.0)
-  - SwiftGen (6.0.2)
-  - SwiftLint (0.29.3)
+  - SwiftGen (6.1.0)
+  - SwiftLint (0.31.0)
   - Then (2.4.0)
 
 DEPENDENCIES:
@@ -116,10 +116,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
-  AppwiseCore: 1aaa3e85bc04f687756eeddf873b99cfd57b02e9
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  AppwiseCore: 222f9e1b0427f1c961c1a97204351658d8eec03e
   BonMot: 0104d1b4eda54f4a4b7393d6559539ef25498fbd
-  CocoaLumberjack: db7cc9e464771f12054c22ff6947c5a58d43a0fd
+  CocoaLumberjack: 2101f8a5508197a305e737d16c5c2e9e2157628c
   CodableAlamofire: e2d2edcec7cf413f7862c30c8fa98eded27a83f9
   Crashlytics: 07fb167b1694128c1c9a5a5cc319b0e9c3ca0933
   CrashlyticsRecorder: 842adffa8b0ddc0099bcc23ad4930b9803fdacff
@@ -130,15 +130,15 @@ SPEC CHECKSUMS:
   LocalizableCheck: 44c5e378bf8879284b95981860c2303bd2713d35
   Nuke: 0350d346a688426e8f2331253ef28dc2fc4f6178
   Nuke-Alamofire-Plugin: 58319cafeaf6b4ea7431e48189de4618759a2c3c
-  OneSignal: a41f5a896177275662da07e23d6a809c0e105a89
+  OneSignal: ccdeb961882f8668305e5b694e2cb7cb325fc907
   p2.OAuth2: d5ea9b928fc5d10d088d419db6f3380578b6f866
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
   Reusable: 188be1a54ac0691bc66e5bb24ec6eb91971b315b
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   Sourcery: 5895672cae353cdbfa95f3f4aaeb75a664d76f6a
   SugarRecord: be6aa5c18b4a4dec0de4c1f49fc61c85eabb5328
-  SwiftGen: e5b047067aa84082826a0c4f1c4c2ddc95bcf74c
-  SwiftLint: bfa7ca7b4d170cfaf0d236ca3ffd969e88a2f002
+  SwiftGen: f872ca75cbd17bf7103c17f13dcfa0d9a15667b0
+  SwiftLint: 7a0227733d786395817373b2d0ca799fd0093ff3
   Then: 71866660c7af35a7343831f7668e7cd2b62ee0f2
 
 PODFILE CHECKSUM: 16bceefa69c1e61fd6738a1f359616b6ff40004a
