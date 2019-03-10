@@ -1,0 +1,8 @@
+sources:
+  - Application/Sources
+templates:
+  - ../Sourcery
+output:
+  Application/Sources/Generated/Sourcery
+args:
+  module: Example_Project

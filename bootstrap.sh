@@ -30,6 +30,12 @@ function fixPodfile {
 	sed -i.bak -e "s/\\\"\.\.\//\\\"\\\${PODS_ROOT}\/AppwiseCore\//g" Podfile && rm Podfile.bak
 }
 
+function fixSourcery {
+	echo "Fixing Sourcery..."
+
+	sed -i.bak -e "s/\.\.\//Pods\/AppwiseCore\//g" .sourcery.yml && rm .sourcery.yml.bak
+}
+
 # move files to new locations, we handle up to 2 levels deep of renaming
 function relocateFiles {
 	echo "Moving files..."

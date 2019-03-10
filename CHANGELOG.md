@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 * Generate Core Data files using SwiftGen.
 * Tweaked SwiftLint rules.
+* Use a Sourcery config file (instead of a bunch of parameters).
 
 ### 12 January 2019
 

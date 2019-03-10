@@ -540,7 +540,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ $ACTION != \"install\" ]; then \"${PODS_ROOT}/Sourcery/bin/sourcery\" --sources \"${SRCROOT}/Application/Sources\" --sources \"$DERIVED_SOURCES_DIR\" --templates \"../Sourcery\" --output \"${SRCROOT}/Application/Sources/Generated/Sourcery\"; fi";
+			shellScript = "\"${PODS_ROOT}/Sourcery/bin/sourcery\"";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

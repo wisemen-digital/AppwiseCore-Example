@@ -1,34 +1,34 @@
 PODS:
   - Alamofire (4.8.1)
-  - AppwiseCore (0.11.3):
-    - AppwiseCore/Behaviours (= 0.11.3)
-    - AppwiseCore/Core (= 0.11.3)
-    - AppwiseCore/UI (= 0.11.3)
-    - AppwiseCore/UIApplication (= 0.11.3)
-  - AppwiseCore/Behaviours (0.11.3):
+  - AppwiseCore (0.12.0):
+    - AppwiseCore/Behaviours (= 0.12.0)
+    - AppwiseCore/Core (= 0.12.0)
+    - AppwiseCore/UI (= 0.12.0)
+    - AppwiseCore/UIApplication (= 0.12.0)
+  - AppwiseCore/Behaviours (0.12.0):
     - AppwiseCore/Common
     - Then (~> 2.4)
-  - AppwiseCore/Common (0.11.3)
-  - AppwiseCore/Core (0.11.3):
+  - AppwiseCore/Common (0.12.0)
+  - AppwiseCore/Core (0.12.0):
     - Alamofire (~> 4.8)
     - AppwiseCore/Common
     - CocoaLumberjack/Swift (~> 3.5)
     - CodableAlamofire (~> 1.1)
     - CrashlyticsRecorder (~> 2.3)
     - Then (~> 2.4)
-  - AppwiseCore/CoreData (0.11.3):
+  - AppwiseCore/CoreData (0.12.0):
     - AppwiseCore/Common
     - AppwiseCore/Core
     - Groot (~> 3.0)
     - SugarRecord/CoreData (~> 3.1)
-  - AppwiseCore/DeepLink (0.11.3):
+  - AppwiseCore/DeepLink (0.12.0):
     - AppwiseCore/Behaviours
     - AppwiseCore/Common
-  - AppwiseCore/UI (0.11.3):
+  - AppwiseCore/UI (0.12.0):
     - AppwiseCore/Behaviours
     - AppwiseCore/Core
     - IBAnimatable (~> 5.2)
-  - AppwiseCore/UIApplication (0.11.3):
+  - AppwiseCore/UIApplication (0.12.0):
     - AppwiseCore/Core
   - BonMot (5.3)
   - CocoaLumberjack/Core (3.5.1)
@@ -117,7 +117,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
-  AppwiseCore: 222f9e1b0427f1c961c1a97204351658d8eec03e
+  AppwiseCore: 5ab43ba777ef660aab18781a2b9d36eec3efc8ee
   BonMot: 0104d1b4eda54f4a4b7393d6559539ef25498fbd
   CocoaLumberjack: 2101f8a5508197a305e737d16c5c2e9e2157628c
   CodableAlamofire: e2d2edcec7cf413f7862c30c8fa98eded27a83f9
@@ -141,6 +141,6 @@ SPEC CHECKSUMS:
   SwiftLint: 7a0227733d786395817373b2d0ca799fd0093ff3
   Then: 71866660c7af35a7343831f7668e7cd2b62ee0f2
 
-PODFILE CHECKSUM: 16bceefa69c1e61fd6738a1f359616b6ff40004a
+PODFILE CHECKSUM: 3edf6f517295a18b9fbfe1ea0a20c8675631cf27
 
 COCOAPODS: 1.6.0.beta.2
