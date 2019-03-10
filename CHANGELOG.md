@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 ### 10 March 2019
 
 * Generate Core Data files using SwiftGen.
+* Tweaked SwiftLint rules.
 
 ### 12 January 2019
 
