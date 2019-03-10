@@ -3,6 +3,9 @@
 
 import AppwiseCore
 
+enum ViewModels {
+}
+
 // MARK: - UserViewModel
 
 extension UserViewModel {

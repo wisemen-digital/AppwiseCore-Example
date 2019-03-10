@@ -34,6 +34,7 @@
 		DD347388203909720035A2CD /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD347387203909720035A2CD /* UserViewModel.swift */; };
 		DD4BF0C72163B0A9008475E3 /* Storyboards Segues.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4BF0C62163B0A9008475E3 /* Storyboards Segues.swift */; };
 		DD9F476C206BFC26006B0DCA /* Example Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD9F476A206BFC25006B0DCA /* Example Project.xcdatamodeld */; };
+		DDA4D02C2235AF28005EE2B6 /* AutoModel.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4D02B2235AF28005EE2B6 /* AutoModel.generated.swift */; };
 		DDA4D02E2235AFF6005EE2B6 /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4D02D2235AFF6005EE2B6 /* CoreData.swift */; };
 		FCFF21A5B3E91894BC1C63CF /* libPods-Example Project.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6078A4AC38E5DDA829F792 /* libPods-Example Project.a */; };
 /* End PBXBuildFile section */
@@ -85,6 +86,7 @@
 		DD347387203909720035A2CD /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		DD4BF0C62163B0A9008475E3 /* Storyboards Segues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Storyboards Segues.swift"; sourceTree = "<group>"; };
 		DD9F476B206BFC25006B0DCA /* Example Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Example Project.xcdatamodel"; sourceTree = "<group>"; };
+		DDA4D02B2235AF28005EE2B6 /* AutoModel.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoModel.generated.swift; sourceTree = "<group>"; };
 		DDA4D02D2235AFF6005EE2B6 /* CoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
 		DDF718A32109DAC70011DEAE /* Settings (Release).xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Settings (Release).xcconfig"; sourceTree = "<group>"; };
 		DDF718A42109DAC70011DEAE /* Settings (Debug).xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Settings (Debug).xcconfig"; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 		DD34735A20373FC80035A2CD /* Sourcery */ = {
 			isa = PBXGroup;
 			children = (
+				DDA4D02B2235AF28005EE2B6 /* AutoModel.generated.swift */,
 				DD347383203908F20035A2CD /* AutoViewModel.generated.swift */,
 			);
 			path = Sourcery;
@@ -563,6 +566,7 @@
 				DD347382203908EA0035A2CD /* Colors.swift in Sources */,
 				DD34737F203908E90035A2CD /* Strings.swift in Sources */,
 				DD34734520373EC60035A2CD /* APIRouter.swift in Sources */,
+				DDA4D02C2235AF28005EE2B6 /* AutoModel.generated.swift in Sources */,
 				DD34734F20373EC60035A2CD /* ViewController.swift in Sources */,
 				DD347388203909720035A2CD /* UserViewModel.swift in Sources */,
 				DD34734E20373EC60035A2CD /* FabricApplicationService.swift in Sources */,
