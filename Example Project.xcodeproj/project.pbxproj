@@ -34,6 +34,7 @@
 		DD347388203909720035A2CD /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD347387203909720035A2CD /* UserViewModel.swift */; };
 		DD4BF0C72163B0A9008475E3 /* Storyboards Segues.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4BF0C62163B0A9008475E3 /* Storyboards Segues.swift */; };
 		DD9F476C206BFC26006B0DCA /* Example Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD9F476A206BFC25006B0DCA /* Example Project.xcdatamodeld */; };
+		DDA4D02E2235AFF6005EE2B6 /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4D02D2235AFF6005EE2B6 /* CoreData.swift */; };
 		FCFF21A5B3E91894BC1C63CF /* libPods-Example Project.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6078A4AC38E5DDA829F792 /* libPods-Example Project.a */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +85,7 @@
 		DD347387203909720035A2CD /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		DD4BF0C62163B0A9008475E3 /* Storyboards Segues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Storyboards Segues.swift"; sourceTree = "<group>"; };
 		DD9F476B206BFC25006B0DCA /* Example Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Example Project.xcdatamodel"; sourceTree = "<group>"; };
+		DDA4D02D2235AFF6005EE2B6 /* CoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
 		DDF718A32109DAC70011DEAE /* Settings (Release).xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Settings (Release).xcconfig"; sourceTree = "<group>"; };
 		DDF718A42109DAC70011DEAE /* Settings (Debug).xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Settings (Debug).xcconfig"; sourceTree = "<group>"; };
 		E6D5962A85FD8AE138F6CBF4 /* Pods-Example Project.production-debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example Project.production-debug.xcconfig"; path = "Pods/Target Support Files/Pods-Example Project/Pods-Example Project.production-debug.xcconfig"; sourceTree = "<group>"; };
@@ -257,6 +259,7 @@
 			children = (
 				DD34737D203908E90035A2CD /* Assets.swift */,
 				DD34737E203908E90035A2CD /* Colors.swift */,
+				DDA4D02D2235AFF6005EE2B6 /* CoreData.swift */,
 				DD34737C203908E90035A2CD /* Storyboards Scenes.swift */,
 				DD4BF0C62163B0A9008475E3 /* Storyboards Segues.swift */,
 				DD34737B203908E90035A2CD /* Strings.swift */,
@@ -551,6 +554,7 @@
 				DD9F476C206BFC26006B0DCA /* Example Project.xcdatamodeld in Sources */,
 				DD34735120373EC60035A2CD /* AppDelegate.swift in Sources */,
 				DD34735020373EC60035A2CD /* Config.swift in Sources */,
+				DDA4D02E2235AFF6005EE2B6 /* CoreData.swift in Sources */,
 				DD34735620373F250035A2CD /* Environment.swift in Sources */,
 				DD34735520373F250035A2CD /* Settings.swift in Sources */,
 				DD347380203908E90035A2CD /* Storyboards Scenes.swift in Sources */,

@@ -5,6 +5,11 @@ colors:
   outputs:
     templateName: literals-swift4
     output: Colors.swift
+coredata:
+  inputs: Example Project.xcdatamodeld
+  outputs:
+    templateName: swift4
+    output: CoreData.swift
 ib:
   inputs: .
   outputs:
