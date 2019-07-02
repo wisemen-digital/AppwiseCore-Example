@@ -3,8 +3,10 @@ output_dir: Application/Sources/Generated/SwiftGen
 coredata:
   inputs: Example Project.xcdatamodeld
   outputs:
-    templateName: swift4
-    output: CoreData.swift
+    - templatePath: ../SwiftGen/CoreData.stencil
+      output: CoreData.swift
+    - templatePath: ../SwiftGen/CoreData (KeyPaths).stencil
+      output: CoreData (KeyPaths).swift
 ib:
   inputs: .
   outputs:
