@@ -450,11 +450,7 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-			);
 			name = "[CP-User] Update Version Number";
-			outputPaths = (
-			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"../Scripts/update_build_number.sh\"";
@@ -465,11 +461,7 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-			);
 			name = "[CP-User] Fabric";
-			outputPaths = (
-			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Fabric/run\" 0000000000000000000000000000000000000000 0000000000000000000000000000000000000000000000000000000000000000";
@@ -480,11 +472,7 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-			);
 			name = "[CP-User] SwiftLint";
-			outputPaths = (
-			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\" lint --config \"${PROJECT_DIR}/.swiftlint.yml\" --path \"${PROJECT_DIR}\"";
@@ -495,11 +483,7 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-			);
 			name = "[CP-User] Check Strings";
-			outputPaths = (
-			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/BartyCrouch/bartycrouch\" update -x;\"${PODS_ROOT}/BartyCrouch/bartycrouch\" lint -x";
@@ -510,16 +494,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Example Project/Pods-Example Project-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/AppwiseCore/AppwiseCore-Core.bundle",
 				"${PODS_ROOT}/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Resources/IQKeyboardManager.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AppwiseCore-Core.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
@@ -534,11 +514,7 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-			);
 			name = "[CP-User] SwiftGen";
-			outputPaths = (
-			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/SwiftGen/bin/swiftgen\"";
@@ -549,11 +525,7 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-			);
 			name = "[CP-User] Sourcery";
-			outputPaths = (
-			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Sourcery/bin/sourcery\"";

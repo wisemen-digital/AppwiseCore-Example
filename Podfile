@@ -1,6 +1,7 @@
 platform :ios, '11.0'
 
 inhibit_all_warnings!
+source 'https://cdn.cocoapods.org/'
 
 target 'Example Project' do
 	project 'Example Project',
