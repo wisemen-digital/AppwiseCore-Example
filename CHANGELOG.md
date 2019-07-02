@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+### 2 July 2019
+
+* Split up asset catalog into one for images and one for style (colors). Also get rid of old `Colors.json` file. Updated SwiftGen accordingly.
+
 ### 10 March 2019
 
 * Generate Core Data files using SwiftGen.
