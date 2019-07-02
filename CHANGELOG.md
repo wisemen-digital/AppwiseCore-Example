@@ -10,6 +10,7 @@ All notable changes to this project will be documented in this file.
 * Add Bagel for easier network debugging.
 * CocoaPods 1.7 with a CDN source (for quicker installs/updates).
 * SwiftLint 0.33 with new rules.
+* Add a CoreData application service with some sample transformers.
 
 ### 10 March 2019
 

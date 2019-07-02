@@ -12,6 +12,7 @@ import AppwiseCore
 final class AppDelegate: AppwiseCore.AppDelegate<Config> {
 	override var services: [ApplicationService] {
 		return [
+			CoreDataApplicationService(),
 			FabricApplicationService(),
 			KeyboardManagerApplicationService(),
 			NetworkDebugApplicationService(),
