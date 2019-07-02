@@ -8,6 +8,8 @@
 
 import AppwiseCore
 
-struct UserViewModel: ViewModel {
-	let data: User
+extension ViewModel {
+	struct User: ViewModelType {
+		let data: Model.User
+	}
 }

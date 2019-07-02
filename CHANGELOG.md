@@ -16,6 +16,7 @@ All notable changes to this project will be documented in this file.
 * Set Swift version to 5.0.
 * Use new CoreData SwiftGen templates.
 * Use new `Identifiable` protocol.
+* Move view models into `ViewModel` namespace.
 
 ### 10 March 2019
 

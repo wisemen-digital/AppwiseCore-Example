@@ -3,13 +3,10 @@
 
 import AppwiseCore
 
-enum ViewModels {
-}
+// MARK: - ViewModel.User
 
-// MARK: - UserViewModel
-
-extension UserViewModel {
-	init(_ data: User) {
+extension ViewModel.User {
+	init(_ data: Model.User) {
 		self.data = data
 	}
 
