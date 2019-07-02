@@ -17,7 +17,7 @@ target 'Example Project' do
 	pod 'AppwiseCore/UI', :path => '../'
 
 	# Tools
-	pod 'LocalizableCheck'
+	pod 'BartyCrouch'
 	pod 'Sourcery'
 	pod 'SwiftGen'
 	pod 'SwiftLint'
@@ -36,7 +36,7 @@ target 'Example Project' do
 	# Scripts
 	script_phase :name => 'Check Strings',
 		:execution_position => :before_compile,
-		:script => '"${PODS_ROOT}/LocalizableCheck/bin/LocalizableCheck" "${SRCROOT}/Application/Resources"'
+		:script => '"${PODS_ROOT}/BartyCrouch/bartycrouch" update -x;"${PODS_ROOT}/BartyCrouch/bartycrouch" lint -x'
 
 	script_phase :name => 'SwiftGen',
 		:execution_position => :before_compile,

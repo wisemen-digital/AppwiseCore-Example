@@ -488,7 +488,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/LocalizableCheck/bin/LocalizableCheck\" \"${SRCROOT}/Application/Resources\"";
+			shellScript = "\"${PODS_ROOT}/BartyCrouch/bartycrouch\" update -x;\"${PODS_ROOT}/BartyCrouch/bartycrouch\" lint -x";
 			showEnvVarsInLog = 0;
 		};
 		D8AFDBB5298E16A421756E0A /* [CP] Copy Pods Resources */ = {
