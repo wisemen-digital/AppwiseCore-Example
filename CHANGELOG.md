@@ -14,7 +14,8 @@ All notable changes to this project will be documented in this file.
 * Update the keyboard application service to only enable IQKeyboardManager in specific view controllers.
 * Add push handling example code.
 * Set Swift version to 5.0.
-* Use new CoreData SwiftGen templates and Identifiable protocol.
+* Use new CoreData SwiftGen templates.
+* Use new `Identifiable` protocol.
 
 ### 10 March 2019
 

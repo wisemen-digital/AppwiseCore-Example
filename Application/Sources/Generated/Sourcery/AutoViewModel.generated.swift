@@ -13,7 +13,7 @@ extension UserViewModel {
 		self.data = data
 	}
 
-	var id: Int64 {
+	var id: User.ID {
 		return data.id
 	}
 }
