@@ -22,6 +22,8 @@ target 'Example Project' do
 	pod 'SwiftFormat/CLI'
 	pod 'SwiftGen'
 	pod 'SwiftLint'
+	pod 'Bagel', :modular_headers => true, :configurations => ['Development-Debug', 'Staging-Debug', 'Production-Debug']
+	pod 'CocoaAsyncSocket', :modular_headers => true, :configurations => ['Development-Debug', 'Staging-Debug', 'Production-Debug']
 
 	# Other
 	pod 'BonMot'

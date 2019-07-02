@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 * Split up asset catalog into one for images and one for style (colors). Also get rid of old `Colors.json` file. Updated SwiftGen accordingly.
 * Switch to BartyCrouch instead of LocalizableCheck.
 * Add SwiftFormat to ensure styling is the same everywhere.
+* Add Bagel for easier network debugging.
 
 ### 10 March 2019
 

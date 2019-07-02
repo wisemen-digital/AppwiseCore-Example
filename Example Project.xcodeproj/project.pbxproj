@@ -31,6 +31,7 @@
 		DD347384203908F20035A2CD /* AutoViewModel.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD347383203908F20035A2CD /* AutoViewModel.generated.swift */; };
 		DD3473862039095A0035A2CD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3473852039095A0035A2CD /* User.swift */; };
 		DD347388203909720035A2CD /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD347387203909720035A2CD /* UserViewModel.swift */; };
+		DD372A7022CBF95700F68B25 /* NetworkDebugApplicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD372A6F22CBF95700F68B25 /* NetworkDebugApplicationService.swift */; };
 		DD372A7822CBFC1500F68B25 /* Style.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD372A7722CBFC1500F68B25 /* Style.xcassets */; };
 		DD4BF0C72163B0A9008475E3 /* Storyboards Segues.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4BF0C62163B0A9008475E3 /* Storyboards Segues.swift */; };
 		DD9F476C206BFC26006B0DCA /* Example Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD9F476A206BFC25006B0DCA /* Example Project.xcdatamodeld */; };
@@ -82,6 +83,7 @@
 		DD347383203908F20035A2CD /* AutoViewModel.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoViewModel.generated.swift; sourceTree = "<group>"; };
 		DD3473852039095A0035A2CD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DD347387203909720035A2CD /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		DD372A6F22CBF95700F68B25 /* NetworkDebugApplicationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDebugApplicationService.swift; sourceTree = "<group>"; };
 		DD372A7722CBFC1500F68B25 /* Style.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Style.xcassets; sourceTree = "<group>"; };
 		DD4BF0C62163B0A9008475E3 /* Storyboards Segues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Storyboards Segues.swift"; sourceTree = "<group>"; };
 		DD9F476B206BFC25006B0DCA /* Example Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Example Project.xcdatamodel"; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 			children = (
 				DD34733C20373EC50035A2CD /* KeyboardManagerApplicationService.swift */,
 				DD34733D20373EC50035A2CD /* FabricApplicationService.swift */,
+				DD372A6F22CBF95700F68B25 /* NetworkDebugApplicationService.swift */,
 			);
 			path = "Application Services";
 			sourceTree = "<group>";
@@ -583,6 +586,7 @@
 				DD3473862039095A0035A2CD /* User.swift in Sources */,
 				DD34734420373EC60035A2CD /* APIClient.swift in Sources */,
 				DD347377203906B00035A2CD /* Then.swift in Sources */,
+				DD372A7022CBF95700F68B25 /* NetworkDebugApplicationService.swift in Sources */,
 				DD347384203908F20035A2CD /* AutoViewModel.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
