@@ -21,11 +21,11 @@ func env<T>(_ envs: EnvironmentValue<T>...) -> T {
 		switch environment {
 		case .dev(let value):
 			#if ENVIRONMENT_DEVELOPMENT
-				return value
+			return value
 			#endif
 		case .stg(let value):
 			#if ENVIRONMENT_STAGING
-				return value
+			return value
 			#endif
 		case .prd(let value):
 			defaultValue = value

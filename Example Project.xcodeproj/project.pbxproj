@@ -341,6 +341,7 @@
 				B125D8ACB6B416B3319D5ED8 /* [CP-User] Check Strings */,
 				E5A9F7588AD60C53668CB142 /* [CP-User] SwiftGen */,
 				FD07CF5B36E34FF92EF79A78 /* [CP-User] Sourcery */,
+				015364D8B2121D4FC14E4DC4 /* [CP-User] SwiftFormat */,
 				A4BD1FEE0158802547C32541 /* [CP-User] SwiftLint */,
 				D95E1C3D1D88E71A00F94976 /* Sources */,
 				D95E1C3E1D88E71A00F94976 /* Frameworks */,
@@ -413,6 +414,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		015364D8B2121D4FC14E4DC4 /* [CP-User] SwiftFormat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] SwiftFormat";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat\" .";
+		};
 		327ED3EA505C1F8958BF4340 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

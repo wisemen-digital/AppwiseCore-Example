@@ -21,8 +21,8 @@ class OAuth2RetryHandler: RequestRetrier, RequestAdapter {
 		guard let response = request.task?.response as? HTTPURLResponse,
 			response.statusCode == 401,
 			let req = request.request else {
-				completion(false, 0.0)
-				return
+			completion(false, 0.0)
+			return
 		}
 
 		// delete access token
@@ -34,7 +34,7 @@ class OAuth2RetryHandler: RequestRetrier, RequestAdapter {
 		loader.attemptToAuthorize { authParams, _ in
 			self.loader.dequeueAndApply { req in
 				if let comp = req.context as? RequestRetryCompletion {
-					comp(nil != authParams, 0.0)
+					comp(authParams != nil, 0.0)
 				}
 			}
 		}

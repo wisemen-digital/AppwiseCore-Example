@@ -19,6 +19,7 @@ target 'Example Project' do
 	# Tools
 	pod 'BartyCrouch'
 	pod 'Sourcery'
+	pod 'SwiftFormat/CLI'
 	pod 'SwiftGen'
 	pod 'SwiftLint'
 
@@ -45,6 +46,10 @@ target 'Example Project' do
 	script_phase :name => 'Sourcery',
 		:execution_position => :before_compile,
 		:script => '"${PODS_ROOT}/Sourcery/bin/sourcery"'
+
+	script_phase :name => 'SwiftFormat',
+		:execution_position => :before_compile,
+		:script => '"${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat" .'
 
 	script_phase :name => 'SwiftLint',
 		:execution_position => :before_compile,

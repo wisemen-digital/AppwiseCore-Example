@@ -10,9 +10,11 @@ import Alamofire
 import AppwiseCore
 
 enum APIRouter: AppwiseCore.Router {
-	static var baseURLString = env(.dev("https://test.com"),
-	                               .stg("https://test.com"),
-	                               .prd("https://test.com"))
+	static var baseURLString = env(
+		.dev("https://test.com"),
+		.stg("https://test.com"),
+		.prd("https://test.com")
+	)
 
 	case test
 	case tester(user: User)
@@ -23,7 +25,7 @@ extension APIRouter {
 		switch self {
 		case .test:
 			return "/test/test"
-		case let .tester(user):
+		case .tester(let user):
 			return "/tester/\(user.id)"
 		}
 	}
