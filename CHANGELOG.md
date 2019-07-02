@@ -12,6 +12,7 @@ All notable changes to this project will be documented in this file.
 * SwiftLint 0.33 with new rules.
 * Add a CoreData application service with some sample transformers.
 * Update the keyboard application service to only enable IQKeyboardManager in specific view controllers.
+* Add push handling example code.
 
 ### 10 March 2019
 

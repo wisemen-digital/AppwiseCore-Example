@@ -33,7 +33,11 @@
 		DD347388203909720035A2CD /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD347387203909720035A2CD /* UserViewModel.swift */; };
 		DD372A7022CBF95700F68B25 /* NetworkDebugApplicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD372A6F22CBF95700F68B25 /* NetworkDebugApplicationService.swift */; };
 		DD372A7422CBFA1700F68B25 /* CoreDataApplicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD372A7322CBFA1700F68B25 /* CoreDataApplicationService.swift */; };
+		DD372A7622CBFA6900F68B25 /* PushNotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD372A7522CBFA6900F68B25 /* PushNotificationService.swift */; };
 		DD372A7822CBFC1500F68B25 /* Style.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD372A7722CBFC1500F68B25 /* Style.xcassets */; };
+		DD372A7B22CC073600F68B25 /* Local Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD372A7A22CC073600F68B25 /* Local Notifications.swift */; };
+		DD372A7D22CC083600F68B25 /* Push Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD372A7C22CC083600F68B25 /* Push Notifications.swift */; };
+		DD372A8022CC09CC00F68B25 /* NewsItemPushNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD372A7F22CC09CC00F68B25 /* NewsItemPushNotification.swift */; };
 		DD4BF0C72163B0A9008475E3 /* Storyboards Segues.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4BF0C62163B0A9008475E3 /* Storyboards Segues.swift */; };
 		DD9F476C206BFC26006B0DCA /* Example Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD9F476A206BFC25006B0DCA /* Example Project.xcdatamodeld */; };
 		DDA4D02C2235AF28005EE2B6 /* AutoModel.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4D02B2235AF28005EE2B6 /* AutoModel.generated.swift */; };
@@ -86,7 +90,11 @@
 		DD347387203909720035A2CD /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		DD372A6F22CBF95700F68B25 /* NetworkDebugApplicationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDebugApplicationService.swift; sourceTree = "<group>"; };
 		DD372A7322CBFA1700F68B25 /* CoreDataApplicationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataApplicationService.swift; sourceTree = "<group>"; };
+		DD372A7522CBFA6900F68B25 /* PushNotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationService.swift; sourceTree = "<group>"; };
 		DD372A7722CBFC1500F68B25 /* Style.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Style.xcassets; sourceTree = "<group>"; };
+		DD372A7A22CC073600F68B25 /* Local Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Local Notifications.swift"; sourceTree = "<group>"; };
+		DD372A7C22CC083600F68B25 /* Push Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Push Notifications.swift"; sourceTree = "<group>"; };
+		DD372A7F22CC09CC00F68B25 /* NewsItemPushNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItemPushNotification.swift; sourceTree = "<group>"; };
 		DD4BF0C62163B0A9008475E3 /* Storyboards Segues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Storyboards Segues.swift"; sourceTree = "<group>"; };
 		DD9F476B206BFC25006B0DCA /* Example Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Example Project.xcdatamodel"; sourceTree = "<group>"; };
 		DDA4D02B2235AF28005EE2B6 /* AutoModel.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoModel.generated.swift; sourceTree = "<group>"; };
@@ -156,6 +164,7 @@
 				DD34735920373FC80035A2CD /* Generated */,
 				DD34735C20373FC80035A2CD /* Models */,
 				DD34733020373EC50035A2CD /* Network */,
+				DD372A7922CC071400F68B25 /* Notifications */,
 				DD34735F20373FC80035A2CD /* Other */,
 				DD34735D20373FC80035A2CD /* ViewModels */,
 				DD34735E20373FC80035A2CD /* Views */,
@@ -213,6 +222,7 @@
 				DD34733D20373EC50035A2CD /* FabricApplicationService.swift */,
 				DD34733C20373EC50035A2CD /* KeyboardManagerApplicationService.swift */,
 				DD372A6F22CBF95700F68B25 /* NetworkDebugApplicationService.swift */,
+				DD372A7522CBFA6900F68B25 /* PushNotificationService.swift */,
 			);
 			path = "Application Services";
 			sourceTree = "<group>";
@@ -321,6 +331,24 @@
 				DD3473752038FE3D0035A2CD /* Localizable.stringsdict */,
 			);
 			name = Localization;
+			sourceTree = "<group>";
+		};
+		DD372A7922CC071400F68B25 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				DD372A7E22CC09A800F68B25 /* Push Notifications */,
+				DD372A7A22CC073600F68B25 /* Local Notifications.swift */,
+				DD372A7C22CC083600F68B25 /* Push Notifications.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		DD372A7E22CC09A800F68B25 /* Push Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				DD372A7F22CC09CC00F68B25 /* NewsItemPushNotification.swift */,
+			);
+			path = "Push Notifications";
 			sourceTree = "<group>";
 		};
 		EBA233E0481BA9E31F75325F /* Pods */ = {
@@ -545,6 +573,7 @@
 				DD9F476C206BFC26006B0DCA /* Example Project.xcdatamodeld in Sources */,
 				DD34735120373EC60035A2CD /* AppDelegate.swift in Sources */,
 				DD34735020373EC60035A2CD /* Config.swift in Sources */,
+				DD372A7D22CC083600F68B25 /* Push Notifications.swift in Sources */,
 				DDA4D02E2235AFF6005EE2B6 /* CoreData.swift in Sources */,
 				DD372A7422CBFA1700F68B25 /* CoreDataApplicationService.swift in Sources */,
 				DD34735620373F250035A2CD /* Environment.swift in Sources */,
@@ -557,9 +586,12 @@
 				DDA4D02C2235AF28005EE2B6 /* AutoModel.generated.swift in Sources */,
 				DD34734F20373EC60035A2CD /* ViewController.swift in Sources */,
 				DD347388203909720035A2CD /* UserViewModel.swift in Sources */,
+				DD372A7622CBFA6900F68B25 /* PushNotificationService.swift in Sources */,
 				DD34734E20373EC60035A2CD /* FabricApplicationService.swift in Sources */,
+				DD372A8022CC09CC00F68B25 /* NewsItemPushNotification.swift in Sources */,
 				DD4BF0C72163B0A9008475E3 /* Storyboards Segues.swift in Sources */,
 				DD3473862039095A0035A2CD /* User.swift in Sources */,
+				DD372A7B22CC073600F68B25 /* Local Notifications.swift in Sources */,
 				DD34734420373EC60035A2CD /* APIClient.swift in Sources */,
 				DD347377203906B00035A2CD /* Then.swift in Sources */,
 				DD372A7022CBF95700F68B25 /* NetworkDebugApplicationService.swift in Sources */,
