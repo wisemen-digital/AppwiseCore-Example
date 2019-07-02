@@ -8,6 +8,8 @@ All notable changes to this project will be documented in this file.
 * Switch to BartyCrouch instead of LocalizableCheck.
 * Add SwiftFormat to ensure styling is the same everywhere.
 * Add Bagel for easier network debugging.
+* CocoaPods 1.7 with a CDN source (for quicker installs/updates).
+* SwiftLint 0.33 with new rules.
 
 ### 10 March 2019
 
