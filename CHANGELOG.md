@@ -13,6 +13,7 @@ All notable changes to this project will be documented in this file.
 * Add a CoreData application service with some sample transformers.
 * Update the keyboard application service to only enable IQKeyboardManager in specific view controllers.
 * Add push handling example code.
+* Set Swift version to 5.0.
 
 ### 10 March 2019
 
