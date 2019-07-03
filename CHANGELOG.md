@@ -21,6 +21,7 @@ All notable changes to this project will be documented in this file.
 * Move OAuth2 grant into it's own file.
 * Add an example hack file.
 * Add an example user repository.
+* Add some example formatters.
 
 ### 10 March 2019
 

@@ -44,6 +44,7 @@
 		DD372A8822CC294C00F68B25 /* Hack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD372A8722CC294C00F68B25 /* Hack.swift */; };
 		DD372A8B22CC29FF00F68B25 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD372A8A22CC29FF00F68B25 /* UserRepository.swift */; };
 		DD372A8D22CC2AA300F68B25 /* APIClient (User).swift in Sources */ = {isa = PBXBuildFile; fileRef = DD372A8C22CC2AA300F68B25 /* APIClient (User).swift */; };
+		DD372A8F22CCB3EC00F68B25 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD372A8E22CCB3EC00F68B25 /* Formatter.swift */; };
 		DD4BF0C72163B0A9008475E3 /* Storyboards Segues.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4BF0C62163B0A9008475E3 /* Storyboards Segues.swift */; };
 		DD9F476C206BFC26006B0DCA /* Example Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD9F476A206BFC25006B0DCA /* Example Project.xcdatamodeld */; };
 		DDA4D02C2235AF28005EE2B6 /* AutoModel.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4D02B2235AF28005EE2B6 /* AutoModel.generated.swift */; };
@@ -107,6 +108,7 @@
 		DD372A8722CC294C00F68B25 /* Hack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hack.swift; sourceTree = "<group>"; };
 		DD372A8A22CC29FF00F68B25 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 		DD372A8C22CC2AA300F68B25 /* APIClient (User).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIClient (User).swift"; sourceTree = "<group>"; };
+		DD372A8E22CCB3EC00F68B25 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
 		DD4BF0C62163B0A9008475E3 /* Storyboards Segues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Storyboards Segues.swift"; sourceTree = "<group>"; };
 		DD9F476B206BFC25006B0DCA /* Example Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Example Project.xcdatamodel"; sourceTree = "<group>"; };
 		DDA4D02B2235AF28005EE2B6 /* AutoModel.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoModel.generated.swift; sourceTree = "<group>"; };
@@ -264,6 +266,7 @@
 		DD34735820373FA20035A2CD /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				DD372A8E22CCB3EC00F68B25 /* Formatter.swift */,
 				DD347376203906B00035A2CD /* Then.swift */,
 			);
 			path = Extensions;
@@ -612,6 +615,7 @@
 				DD372A8422CC281600F68B25 /* OAuth2Grant.swift in Sources */,
 				DD347381203908EA0035A2CD /* Assets.swift in Sources */,
 				DD34737F203908E90035A2CD /* Strings.swift in Sources */,
+				DD372A8F22CCB3EC00F68B25 /* Formatter.swift in Sources */,
 				DD34734520373EC60035A2CD /* APIRouter.swift in Sources */,
 				DDA4D02C2235AF28005EE2B6 /* AutoModel.generated.swift in Sources */,
 				DD34734F20373EC60035A2CD /* ViewController.swift in Sources */,
