@@ -17,7 +17,7 @@ struct Config: AppwiseCore.Config {
 
 	func teardownForReset() {
 		// do some reset stuff
-		APIClient.shared.oauth2.forgetTokens()
+		OAuth2Grant.grant.forgetTokens()
 	}
 
 	func handleUpdate(from old: Version, to new: Version) {

@@ -39,6 +39,8 @@
 		DD372A7D22CC083600F68B25 /* Push Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD372A7C22CC083600F68B25 /* Push Notifications.swift */; };
 		DD372A8022CC09CC00F68B25 /* NewsItemPushNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD372A7F22CC09CC00F68B25 /* NewsItemPushNotification.swift */; };
 		DD372A8222CC247900F68B25 /* CoreData (KeyPaths).swift in Sources */ = {isa = PBXBuildFile; fileRef = DD372A8122CC247900F68B25 /* CoreData (KeyPaths).swift */; };
+		DD372A8422CC281600F68B25 /* OAuth2Grant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD372A8322CC281600F68B25 /* OAuth2Grant.swift */; };
+		DD372A8622CC286500F68B25 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD372A8522CC286500F68B25 /* TestData.swift */; };
 		DD4BF0C72163B0A9008475E3 /* Storyboards Segues.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4BF0C62163B0A9008475E3 /* Storyboards Segues.swift */; };
 		DD9F476C206BFC26006B0DCA /* Example Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD9F476A206BFC25006B0DCA /* Example Project.xcdatamodeld */; };
 		DDA4D02C2235AF28005EE2B6 /* AutoModel.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4D02B2235AF28005EE2B6 /* AutoModel.generated.swift */; };
@@ -97,6 +99,8 @@
 		DD372A7C22CC083600F68B25 /* Push Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Push Notifications.swift"; sourceTree = "<group>"; };
 		DD372A7F22CC09CC00F68B25 /* NewsItemPushNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItemPushNotification.swift; sourceTree = "<group>"; };
 		DD372A8122CC247900F68B25 /* CoreData (KeyPaths).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CoreData (KeyPaths).swift"; sourceTree = "<group>"; };
+		DD372A8322CC281600F68B25 /* OAuth2Grant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuth2Grant.swift; sourceTree = "<group>"; };
+		DD372A8522CC286500F68B25 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		DD4BF0C62163B0A9008475E3 /* Storyboards Segues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Storyboards Segues.swift"; sourceTree = "<group>"; };
 		DD9F476B206BFC25006B0DCA /* Example Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Example Project.xcdatamodel"; sourceTree = "<group>"; };
 		DDA4D02B2235AF28005EE2B6 /* AutoModel.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoModel.generated.swift; sourceTree = "<group>"; };
@@ -212,6 +216,7 @@
 			children = (
 				DD34733220373EC50035A2CD /* APIClient.swift */,
 				DD34733320373EC50035A2CD /* APIRouter.swift */,
+				DD372A8322CC281600F68B25 /* OAuth2Grant.swift */,
 				DD34733720373EC50035A2CD /* OAuth2RetryHandler.swift */,
 			);
 			path = Network;
@@ -313,6 +318,7 @@
 		DD34735F20373FC80035A2CD /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				DD372A8522CC286500F68B25 /* TestData.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -579,10 +585,12 @@
 				DD372A7D22CC083600F68B25 /* Push Notifications.swift in Sources */,
 				DDA4D02E2235AFF6005EE2B6 /* CoreData.swift in Sources */,
 				DD372A7422CBFA1700F68B25 /* CoreDataApplicationService.swift in Sources */,
+				DD372A8622CC286500F68B25 /* TestData.swift in Sources */,
 				DD34735620373F250035A2CD /* Environment.swift in Sources */,
 				DD34735520373F250035A2CD /* Settings.swift in Sources */,
 				DD347380203908E90035A2CD /* Storyboards Scenes.swift in Sources */,
 				DD34734920373EC60035A2CD /* OAuth2RetryHandler.swift in Sources */,
+				DD372A8422CC281600F68B25 /* OAuth2Grant.swift in Sources */,
 				DD347381203908EA0035A2CD /* Assets.swift in Sources */,
 				DD34737F203908E90035A2CD /* Strings.swift in Sources */,
 				DD34734520373EC60035A2CD /* APIRouter.swift in Sources */,

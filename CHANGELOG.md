@@ -18,6 +18,7 @@ All notable changes to this project will be documented in this file.
 * Use new `Identifiable` protocol.
 * Move view models into `ViewModel` namespace.
 * Example of user-scoped settings.
+* Move OAuth2 grant into it's own file.
 
 ### 10 March 2019
 
