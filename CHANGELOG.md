@@ -17,6 +17,7 @@ All notable changes to this project will be documented in this file.
 * Use new CoreData SwiftGen templates.
 * Use new `Identifiable` protocol.
 * Move view models into `ViewModel` namespace.
+* Example of user-scoped settings.
 
 ### 10 March 2019
 

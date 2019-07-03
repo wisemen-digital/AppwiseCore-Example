@@ -12,6 +12,7 @@ import CoreData
 extension Settings {
 	private enum DefaultsKey: String {
 		case currentUserID
+		case walkthrough
 	}
 }
 
@@ -31,5 +32,24 @@ extension Settings {
 		set {
 			defaults.set(newValue?.rawValue, forKey: DefaultsKey.currentUserID.rawValue)
 		}
+	}
+}
+
+// MARK: - Others
+
+extension Settings {
+	var walkthrough: Bool {
+		get {
+			return defaults.bool(forKey: userScoped(key: .walkthrough))
+		}
+		set {
+			defaults.set(newValue, forKey: userScoped(key: .walkthrough))
+		}
+	}
+}
+
+extension Settings {
+	private func userScoped(key: DefaultsKey) -> String {
+		return "\(key.rawValue)_\(currentUserID ?? 0)"
 	}
 }
