@@ -41,6 +41,7 @@
 		DD372A8222CC247900F68B25 /* CoreData (KeyPaths).swift in Sources */ = {isa = PBXBuildFile; fileRef = DD372A8122CC247900F68B25 /* CoreData (KeyPaths).swift */; };
 		DD372A8422CC281600F68B25 /* OAuth2Grant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD372A8322CC281600F68B25 /* OAuth2Grant.swift */; };
 		DD372A8622CC286500F68B25 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD372A8522CC286500F68B25 /* TestData.swift */; };
+		DD372A8822CC294C00F68B25 /* Hack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD372A8722CC294C00F68B25 /* Hack.swift */; };
 		DD4BF0C72163B0A9008475E3 /* Storyboards Segues.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4BF0C62163B0A9008475E3 /* Storyboards Segues.swift */; };
 		DD9F476C206BFC26006B0DCA /* Example Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD9F476A206BFC25006B0DCA /* Example Project.xcdatamodeld */; };
 		DDA4D02C2235AF28005EE2B6 /* AutoModel.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4D02B2235AF28005EE2B6 /* AutoModel.generated.swift */; };
@@ -101,6 +102,7 @@
 		DD372A8122CC247900F68B25 /* CoreData (KeyPaths).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CoreData (KeyPaths).swift"; sourceTree = "<group>"; };
 		DD372A8322CC281600F68B25 /* OAuth2Grant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuth2Grant.swift; sourceTree = "<group>"; };
 		DD372A8522CC286500F68B25 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
+		DD372A8722CC294C00F68B25 /* Hack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hack.swift; sourceTree = "<group>"; };
 		DD4BF0C62163B0A9008475E3 /* Storyboards Segues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Storyboards Segues.swift"; sourceTree = "<group>"; };
 		DD9F476B206BFC25006B0DCA /* Example Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Example Project.xcdatamodel"; sourceTree = "<group>"; };
 		DDA4D02B2235AF28005EE2B6 /* AutoModel.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoModel.generated.swift; sourceTree = "<group>"; };
@@ -318,6 +320,7 @@
 		DD34735F20373FC80035A2CD /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				DD372A8722CC294C00F68B25 /* Hack.swift */,
 				DD372A8522CC286500F68B25 /* TestData.swift */,
 			);
 			path = Other;
@@ -605,6 +608,7 @@
 				DD372A8222CC247900F68B25 /* CoreData (KeyPaths).swift in Sources */,
 				DD372A7B22CC073600F68B25 /* Local Notifications.swift in Sources */,
 				DD34734420373EC60035A2CD /* APIClient.swift in Sources */,
+				DD372A8822CC294C00F68B25 /* Hack.swift in Sources */,
 				DD347377203906B00035A2CD /* Then.swift in Sources */,
 				DD372A7022CBF95700F68B25 /* NetworkDebugApplicationService.swift in Sources */,
 				DD347384203908F20035A2CD /* AutoViewModel.generated.swift in Sources */,

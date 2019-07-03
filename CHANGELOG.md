@@ -19,6 +19,7 @@ All notable changes to this project will be documented in this file.
 * Move view models into `ViewModel` namespace.
 * Example of user-scoped settings.
 * Move OAuth2 grant into it's own file.
+* Add an example hack file.
 
 ### 10 March 2019
 
