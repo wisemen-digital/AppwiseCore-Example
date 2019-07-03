@@ -20,6 +20,7 @@ All notable changes to this project will be documented in this file.
 * Example of user-scoped settings.
 * Move OAuth2 grant into it's own file.
 * Add an example hack file.
+* Add an example user repository.
 
 ### 10 March 2019
 

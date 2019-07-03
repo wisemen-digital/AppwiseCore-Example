@@ -11,28 +11,28 @@ import AppwiseCore
 
 enum APIRouter: AppwiseCore.Router {
 	static var baseURLString = env(
-		.dev("https://test.com"),
-		.stg("https://test.com"),
-		.prd("https://test.com")
+		.dev("https://test.com/api"),
+		.stg("https://test.com/api"),
+		.prd("https://test.com/api")
 	)
 
-	case test
-	case tester(user: User)
+	case user
+	case tester(user: User.ID)
 }
 
 extension APIRouter {
 	var path: String {
 		switch self {
-		case .test:
-			return "/test/test"
-		case .tester(let user):
-			return "/tester/\(user.id)"
+		case .user:
+			return "user/me"
+		case .tester(let userID):
+			return "tester/\(userID)"
 		}
 	}
 
 	var method: HTTPMethod {
 		switch self {
-		case .test:
+		case .tester:
 			return .post
 		default:
 			return .get
@@ -41,7 +41,7 @@ extension APIRouter {
 
 	var params: Parameters? {
 		switch self {
-		case .test:
+		case .tester:
 			return [
 				"test": 1
 			]
