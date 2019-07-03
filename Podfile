@@ -34,8 +34,10 @@ target 'Example Project' do
 	pod 'Nuke-Alamofire-Plugin'
 	pod 'OneSignal'
 	pod 'p2.OAuth2'
+	pod 'PaginationTracker'
 	pod 'Reusable'
 	pod 'SnapKit'
+	pod 'StatefulUI'
 
 	# Scripts
 	script_phase :name => 'Check Strings',

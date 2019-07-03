@@ -25,6 +25,7 @@ All notable changes to this project will be documented in this file.
 * Add an extension to easily present an error.
 * Add some permission keys to the `Info.plist`, the contacts one fixes a sporadic crash when creating an event.
 * Add a styling application service.
+* Add `StatefulUI` and `PaginationTracker` as dependencies.
 
 ### 10 March 2019
 

@@ -19,6 +19,27 @@ final class StyleApplicationService: NSObject, ApplicationService {
 			$0.shadowImage = UIImage()
 		}
 
+		StateEmptyView.appearance().do {
+			$0.titleColor = .white
+			$0.subtitleColor = .white
+			$0.buttonBackgroundColor = Asset.Style.secondary.color
+			$0.tintColor = .white
+		}
+
+		StateErrorView.appearance().do {
+			$0.titleColor = .white
+			$0.subtitleColor = .white
+			$0.buttonBackgroundColor = Asset.Style.secondary.color
+			$0.tintColor = .white
+		}
+
+		StateLoadingView.appearance().do {
+			$0.activityIndicatorColor = .white
+			$0.titleColor = .white
+			$0.subtitleColor = .white
+			$0.tintColor = .white
+		}
+
 		return true
 	}
 }
