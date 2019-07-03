@@ -12,17 +12,44 @@ import CoreData
 extension Settings {
 	private enum DefaultsKey: String {
 		case currentUserID
+		case walkthrough
+	}
+}
+
+// Current stuff
+
+extension Settings {
+	mutating func logout() {
+		currentUserID = nil
+		// reset user related stuff
 	}
 
-	var currentUserID: NSManagedObjectID? {
+	var currentUserID: User.ID? {
 		get {
-			guard let url = defaults.url(forKey: DefaultsKey.currentUserID.rawValue),
-				let coordinator = DB.main.persistentStoreCoordinator else { return nil }
-			return coordinator.managedObjectID(forURIRepresentation: url)
+			guard let value = defaults.object(forKey: DefaultsKey.currentUserID.rawValue) as? Int else { return nil }
+			return User.ID(Int64(value))
 		}
 		set {
-			defaults.set(newValue?.uriRepresentation(), forKey: DefaultsKey.currentUserID.rawValue)
-			defaults.synchronize()
+			defaults.set(newValue?.rawValue, forKey: DefaultsKey.currentUserID.rawValue)
 		}
+	}
+}
+
+// MARK: - Others
+
+extension Settings {
+	var walkthrough: Bool {
+		get {
+			return defaults.bool(forKey: userScoped(key: .walkthrough))
+		}
+		set {
+			defaults.set(newValue, forKey: userScoped(key: .walkthrough))
+		}
+	}
+}
+
+extension Settings {
+	private func userScoped(key: DefaultsKey) -> String {
+		return "\(key.rawValue)_\(currentUserID ?? 0)"
 	}
 }

@@ -27,9 +27,9 @@ final class FabricApplicationService: NSObject, ApplicationService {
 extension Crashlytics: CrashlyticsProtocol {
 	public func log(_ format: String, args: CVaListPointer) {
 		#if DEBUG
-			CLSNSLogv(format, args)
+		CLSNSLogv(format, args)
 		#else
-			CLSLogv(format, args)
+		CLSLogv(format, args)
 		#endif
 	}
 }

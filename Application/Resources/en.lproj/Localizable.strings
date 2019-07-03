@@ -1,16 +1,32 @@
-// Common
+
+"authentication.error.access-denied" = "The resource owner or authorization server denied the request.";
+
+"authentication.error.forbidden" = "Forbidden.";
+
+"authentication.error.temporarily-unavailable" = "The authorization server is currently unable to handle the request due to a temporary overloading or maintenance of the server.";
+
+"authentication.error.unauthorized-client" = "Unauthorized.";
+
+"authentication.error.wrong-username-password" = "The username or password is incorrect.";
+
 "common.button.cancel" = "Cancel";
+
 "common.button.no" = "No";
+
 "common.button.ok" = "OK";
+
 "common.button.save" = "Save";
+
 "common.button.yes" = "Yes";
+
 "common.message.error" = "Error: %@";
+
 "common.message.loading" = "Loading...";
+
 "common.message.tap-to-refresh" = "Tap to refresh...";
 
-// Login
-"login.button.sign-in" = "Sign-in";
-"login.message.logging-in" = "Logging in...";
-
-// Example
 "example.stuff.items" = "%ld items";
+
+"login.button.sign-in" = "Sign-in";
+
+"login.message.logging-in" = "Logging in...";

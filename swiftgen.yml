@@ -1,15 +1,12 @@
 input_dir: Application/Resources
 output_dir: Application/Sources/Generated/SwiftGen
-colors:
-  inputs: Colors.json
-  outputs:
-    templateName: literals-swift4
-    output: Colors.swift
 coredata:
   inputs: Example Project.xcdatamodeld
   outputs:
-    templateName: swift4
-    output: CoreData.swift
+    - templatePath: ../SwiftGen/CoreData.stencil
+      output: CoreData.swift
+    - templatePath: ../SwiftGen/CoreData (KeyPaths).stencil
+      output: CoreData (KeyPaths).swift
 ib:
   inputs: .
   outputs:
@@ -23,7 +20,9 @@ strings:
     templateName: structured-swift4
     output: Strings.swift
 xcassets:
-  inputs: Assets.xcassets
+  inputs:
+    - Images.xcassets
+    - Style.xcassets
   outputs:
     templateName: swift4
     output: Assets.swift

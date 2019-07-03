@@ -2,6 +2,31 @@
 
 All notable changes to this project will be documented in this file.
 
+### 2 July 2019
+
+* Split up asset catalog into one for images and one for style (colors). Also get rid of old `Colors.json` file. Updated SwiftGen accordingly.
+* Switch to BartyCrouch instead of LocalizableCheck.
+* Add SwiftFormat to ensure styling is the same everywhere.
+* Add Bagel for easier network debugging.
+* CocoaPods 1.7 with a CDN source (for quicker installs/updates).
+* SwiftLint 0.33 with new rules.
+* Add a CoreData application service with some sample transformers.
+* Update the keyboard application service to only enable IQKeyboardManager in specific view controllers.
+* Add push handling example code.
+* Set Swift version to 5.0.
+* Use new CoreData SwiftGen templates.
+* Use new `Identifiable` protocol.
+* Move view models into `ViewModel` namespace.
+* Example of user-scoped settings.
+* Move OAuth2 grant into it's own file.
+* Add an example hack file.
+* Add an example user repository.
+* Add some example formatters.
+* Add an extension to easily present an error.
+* Add some permission keys to the `Info.plist`, the contacts one fixes a sporadic crash when creating an event.
+* Add a styling application service.
+* Add `StatefulUI` and `PaginationTracker` as dependencies.
+
 ### 10 March 2019
 
 * Generate Core Data files using SwiftGen.

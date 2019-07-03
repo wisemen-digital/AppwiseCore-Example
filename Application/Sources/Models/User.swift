@@ -9,13 +9,6 @@
 import AppwiseCore
 import CoreData
 
-extension User {
-	static var current: User? {
-		return current(in: DB.main)
-	}
-
-	static func current(in moc: NSManagedObjectContext) -> User? {
-		guard let userID = Settings.shared.currentUserID else { return nil }
-		return moc.object(with: userID) as? User
-	}
+extension User: Identifiable {
+	typealias RawIdentifier = Int64
 }

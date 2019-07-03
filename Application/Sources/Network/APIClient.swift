@@ -8,48 +8,16 @@
 
 import Alamofire
 import AppwiseCore
-import CocoaLumberjack
 import Nuke
 import NukeAlamofirePlugin
-import p2_OAuth2
 
 final class APIClient: Client {
 	typealias RouterType = APIRouter
 
 	static let shared = APIClient()
 
-	let oauth2 = OAuth2CodeGrant(settings: env(
-		.dev([
-			"client_id": "",
-			"client_secret": "",
-			"authorize_uri": "https://test.com/authorize",
-			"token_uri": "https://test.com/token",
-			"redirect_uris": ["https://test.com/authorization_callback"]
-		]),
-		.stg([
-			"client_id": "",
-			"client_secret": "",
-			"authorize_uri": "https://test.com/authorize",
-			"token_uri": "https://test.com/token",
-			"redirect_uris": ["https://test.com/authorization_callback"]
-		]),
-		.prd([
-			"client_id": "",
-			"client_secret": "",
-			"authorize_uri": "https://test.com/authorize",
-			"token_uri": "https://test.com/token",
-			"redirect_uris": ["https://test.com/authorization_callback"]
-		])
-	)).then {
-		$0.authConfig.authorizeEmbedded = true
-		$0.clientConfig.secretInBody = true
-		#if DEBUG
-		$0.logger = OAuth2DebugLogger(.trace)
-		#endif
-		}
-
 	private(set) lazy var sessionManager: SessionManager = SessionManager().then {
-		let retrier = OAuth2RetryHandler(oauth2: self.oauth2)
+		let retrier = OAuth2RetryHandler(oauth2: OAuth2Grant.grant)
 		$0.adapter = retrier
 		$0.retrier = retrier
 	}
@@ -60,7 +28,7 @@ final class APIClient: Client {
 
 	func nukeOptions(placeholder: Image? = nil, transition: ImageLoadingOptions.Transition? = nil, failureImage: Image? = nil, failureImageTransition: ImageLoadingOptions.Transition? = nil, contentModes: ImageLoadingOptions.ContentModes? = nil) -> ImageLoadingOptions {
 		var options = ImageLoadingOptions(placeholder: placeholder, transition: transition, failureImage: failureImage, failureImageTransition: failureImageTransition, contentModes: contentModes)
-		options.pipeline = self.nuke
+		options.pipeline = nuke
 		return options
 	}
 }

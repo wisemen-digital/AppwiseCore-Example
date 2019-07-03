@@ -36,6 +36,12 @@ function fixSourcery {
 	sed -i.bak -e "s/\.\.\//Pods\/AppwiseCore\//g" .sourcery.yml && rm .sourcery.yml.bak
 }
 
+function fixSwiftGen {
+	echo "Fixing SwiftGen..."
+
+	sed -i.bak -e "s/\.\.\//Pods\/AppwiseCore\//g" swiftgen.yml && rm swiftgen.yml.bak
+}
+
 # move files to new locations, we handle up to 2 levels deep of renaming
 function relocateFiles {
 	echo "Moving files..."
@@ -104,6 +110,8 @@ read -rsn1 -p "Press any key to continue";echo
 
 deintegratePods
 fixPodfile
+fixSourcery
+fixSwiftGen
 relocateFiles
 
 # replace name in files

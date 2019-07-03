@@ -1,6 +1,7 @@
 platform :ios, '11.0'
 
 inhibit_all_warnings!
+source 'https://cdn.cocoapods.org/'
 
 target 'Example Project' do
 	project 'Example Project',
@@ -17,10 +18,13 @@ target 'Example Project' do
 	pod 'AppwiseCore/UI', :path => '../'
 
 	# Tools
-	pod 'LocalizableCheck'
+	pod 'BartyCrouch'
 	pod 'Sourcery'
+	pod 'SwiftFormat/CLI'
 	pod 'SwiftGen'
 	pod 'SwiftLint'
+	pod 'Bagel', :modular_headers => true, :configurations => ['Development-Debug', 'Staging-Debug', 'Production-Debug']
+	pod 'CocoaAsyncSocket', :modular_headers => true, :configurations => ['Development-Debug', 'Staging-Debug', 'Production-Debug']
 
 	# Other
 	pod 'BonMot'
@@ -30,13 +34,15 @@ target 'Example Project' do
 	pod 'Nuke-Alamofire-Plugin'
 	pod 'OneSignal'
 	pod 'p2.OAuth2'
+	pod 'PaginationTracker'
 	pod 'Reusable'
 	pod 'SnapKit'
+	pod 'StatefulUI'
 
 	# Scripts
 	script_phase :name => 'Check Strings',
 		:execution_position => :before_compile,
-		:script => '"${PODS_ROOT}/LocalizableCheck/bin/LocalizableCheck" "${SRCROOT}/Application/Resources"'
+		:script => '"${PODS_ROOT}/BartyCrouch/bartycrouch" update -x;"${PODS_ROOT}/BartyCrouch/bartycrouch" lint -x'
 
 	script_phase :name => 'SwiftGen',
 		:execution_position => :before_compile,
@@ -45,6 +51,10 @@ target 'Example Project' do
 	script_phase :name => 'Sourcery',
 		:execution_position => :before_compile,
 		:script => '"${PODS_ROOT}/Sourcery/bin/sourcery"'
+
+	script_phase :name => 'SwiftFormat',
+		:execution_position => :before_compile,
+		:script => '"${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat" .'
 
 	script_phase :name => 'SwiftLint',
 		:execution_position => :before_compile,

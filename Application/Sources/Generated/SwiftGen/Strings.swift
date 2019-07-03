@@ -12,6 +12,21 @@ import Foundation
 // swiftlint:disable nesting type_body_length type_name
 internal enum L10n {
 
+  internal enum Authentication {
+    internal enum Error {
+      /// The resource owner or authorization server denied the request.
+      internal static let accessDenied = L10n.tr("Localizable", "authentication.error.access-denied")
+      /// Forbidden.
+      internal static let forbidden = L10n.tr("Localizable", "authentication.error.forbidden")
+      /// The authorization server is currently unable to handle the request due to a temporary overloading or maintenance of the server.
+      internal static let temporarilyUnavailable = L10n.tr("Localizable", "authentication.error.temporarily-unavailable")
+      /// Unauthorized.
+      internal static let unauthorizedClient = L10n.tr("Localizable", "authentication.error.unauthorized-client")
+      /// The username or password is incorrect.
+      internal static let wrongUsernamePassword = L10n.tr("Localizable", "authentication.error.wrong-username-password")
+    }
+  }
+
   internal enum Common {
     internal enum Button {
       /// Cancel

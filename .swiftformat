@@ -1,0 +1,24 @@
+--swiftversion 5
+
+# format options
+--commas inline
+--patternlet inline
+--ranges no-space
+--stripunusedargs closure-only
+
+--binarygrouping none
+--decimalgrouping 3,4
+--hexgrouping none
+--octalgrouping none
+
+--ifdef no-indent
+--indent tabs
+
+--wraparguments before-first
+--wrapcollections before-first
+
+# file options
+--exclude Pods,Application/Sources/Generated
+
+# rules
+--disable emptyBraces,specifiers
