@@ -2,8 +2,21 @@
 /* Display name */
 "CFBundleDisplayName" = "Example Project";
 
+/* Calendar permission */
+"NSCalendarsUsageDescription" = "The app can add events you've subscribed to, to your calendar.";
+
 /* Camera permission */
-"NSCameraUsageDescription" = "Example Project needs access to your camera for uploading photos for caes, or for your profile picture.";
+"NSCameraUsageDescription" = "The app needs access to your camera for your profile picture.";
+
+/* Contacts permission */
+"NSContactsUsageDescription" = "The app needs access to your address book for adding people to an event (in your calendar).";
 
 /* Photo library permission */
-"NSPhotoLibraryUsageDescription" = "Example Project needs access to your photo library for uploading photos for caes, or for your profile picture.";
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "The app uses your location to show nearby events and push notifications if possible.";
+
+"NSLocationAlwaysUsageDescription" = "The app uses your location to show nearby events and push notifications if possible.";
+
+"NSLocationWhenInUseUsageDescription" = "The app uses your location to show nearby events and push notifications if possible.";
+
+/* Photo library permission */
+"NSPhotoLibraryUsageDescription" = "The app needs access to your photo library for your profile picture.";

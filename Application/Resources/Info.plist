@@ -18,10 +18,6 @@
 	<string>1.0.0</string>
 	<key>CFBundleVersion</key>
 	<string>0</string>
-	<key>NSCameraUsageDescription</key>
-	<string>Example Project needs access to your camera for uploading photos for caes, or for your profile picture.</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Example Project needs access to your photo library for uploading photos for caes, or for your profile picture.</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>ITSAppUsesNonExemptEncryption</key>
@@ -61,5 +57,19 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSCalendarsUsageDescription</key>
+	<string>The app can add events you've subscribed to, to your calendar.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>The app needs access to your camera for your profile picture.</string>
+	<key>NSContactsUsageDescription</key>
+	<string>The app needs access to your address book for adding people to an event (in your calendar).</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>The app uses your location to show nearby events and push notifications if possible.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>The app uses your location to show nearby events and push notifications if possible.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>The app uses your location to show nearby events and push notifications if possible.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>The app needs access to your photo library for your profile picture.</string>
 </dict>
 </plist>
