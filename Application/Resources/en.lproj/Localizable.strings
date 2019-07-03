@@ -1,4 +1,14 @@
 
+"authentication.error.access-denied" = "The resource owner or authorization server denied the request.";
+
+"authentication.error.forbidden" = "Forbidden.";
+
+"authentication.error.temporarily-unavailable" = "The authorization server is currently unable to handle the request due to a temporary overloading or maintenance of the server.";
+
+"authentication.error.unauthorized-client" = "Unauthorized.";
+
+"authentication.error.wrong-username-password" = "The username or password is incorrect.";
+
 "common.button.cancel" = "Cancel";
 
 "common.button.no" = "No";

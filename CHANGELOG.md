@@ -22,6 +22,7 @@ All notable changes to this project will be documented in this file.
 * Add an example hack file.
 * Add an example user repository.
 * Add some example formatters.
+* Add an extension to easily present an error.
 
 ### 10 March 2019
 
