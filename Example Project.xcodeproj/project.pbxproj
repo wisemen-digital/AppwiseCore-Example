@@ -32,6 +32,7 @@
 		DD3473862039095A0035A2CD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3473852039095A0035A2CD /* User.swift */; };
 		DD347388203909720035A2CD /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD347387203909720035A2CD /* UserViewModel.swift */; };
 		DD372A7022CBF95700F68B25 /* NetworkDebugApplicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD372A6F22CBF95700F68B25 /* NetworkDebugApplicationService.swift */; };
+		DD372A7222CBF98A00F68B25 /* StyleApplicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD372A7122CBF98A00F68B25 /* StyleApplicationService.swift */; };
 		DD372A7422CBFA1700F68B25 /* CoreDataApplicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD372A7322CBFA1700F68B25 /* CoreDataApplicationService.swift */; };
 		DD372A7622CBFA6900F68B25 /* PushNotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD372A7522CBFA6900F68B25 /* PushNotificationService.swift */; };
 		DD372A7822CBFC1500F68B25 /* Style.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD372A7722CBFC1500F68B25 /* Style.xcassets */; };
@@ -98,6 +99,7 @@
 		DD3473852039095A0035A2CD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DD347387203909720035A2CD /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		DD372A6F22CBF95700F68B25 /* NetworkDebugApplicationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDebugApplicationService.swift; sourceTree = "<group>"; };
+		DD372A7122CBF98A00F68B25 /* StyleApplicationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleApplicationService.swift; sourceTree = "<group>"; };
 		DD372A7322CBFA1700F68B25 /* CoreDataApplicationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataApplicationService.swift; sourceTree = "<group>"; };
 		DD372A7522CBFA6900F68B25 /* PushNotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationService.swift; sourceTree = "<group>"; };
 		DD372A7722CBFC1500F68B25 /* Style.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Style.xcassets; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 				DD34733D20373EC50035A2CD /* FabricApplicationService.swift */,
 				DD34733C20373EC50035A2CD /* KeyboardManagerApplicationService.swift */,
 				DD372A6F22CBF95700F68B25 /* NetworkDebugApplicationService.swift */,
+				DD372A7122CBF98A00F68B25 /* StyleApplicationService.swift */,
 				DD372A7522CBFA6900F68B25 /* PushNotificationService.swift */,
 			);
 			path = "Application Services";
@@ -625,6 +628,7 @@
 				DD372A8F22CCB3EC00F68B25 /* Formatter.swift in Sources */,
 				DD34734520373EC60035A2CD /* APIRouter.swift in Sources */,
 				DDA4D02C2235AF28005EE2B6 /* AutoModel.generated.swift in Sources */,
+				DD372A7222CBF98A00F68B25 /* StyleApplicationService.swift in Sources */,
 				DD34734F20373EC60035A2CD /* ViewController.swift in Sources */,
 				DD347388203909720035A2CD /* UserViewModel.swift in Sources */,
 				DD372A7622CBFA6900F68B25 /* PushNotificationService.swift in Sources */,

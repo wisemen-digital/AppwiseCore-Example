@@ -16,6 +16,7 @@ final class AppDelegate: AppwiseCore.AppDelegate<Config> {
 			FabricApplicationService(),
 			KeyboardManagerApplicationService(),
 			NetworkDebugApplicationService(),
+			StyleApplicationService(),
 			PushNotificationsApplicationService()
 		]
 	}
