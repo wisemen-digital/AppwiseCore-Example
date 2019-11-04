@@ -1,7 +1,6 @@
 platform :ios, '11.0'
 
 inhibit_all_warnings!
-source 'https://cdn.cocoapods.org/'
 
 target 'Example Project' do
 	project 'Example Project',
@@ -70,17 +69,19 @@ target 'Example Project' do
 end
 
 post_install do | installer |
-    require 'fileutils'
+	# Silence Xcode warnings about low deployment targets
+	installer.generated_projects.each do |project|
+		project.build_configurations.each do |config|
+			config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '8.0' if config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'].to_f < 8.0
+		end
+		project.targets.each do |target|
+			target.build_configurations.each do |config|
+				config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '8.0' if config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'].to_f < 8.0
+			end
+		end
+	end
 
-    installer.pods_project.targets.each do |target|
-        target.build_configurations.each do |config|
-            # Silence Xcode warnings about low deployment targets
-            if config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'].to_f < 8.0
-                config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '8.0'
-            end
-        end
-    end
-
-    # generate acknowledgements
-    FileUtils.cp_r('Pods/Target Support Files/Pods-Example Project/Pods-Example Project-Acknowledgements.plist', 'Application/Resources/Settings.bundle/Acknowledgements.plist', :remove_destination => true)
+	# generate acknowledgements
+	require 'fileutils'
+	FileUtils.cp_r('Pods/Target Support Files/Pods-Example Project/Pods-Example Project-Acknowledgements.plist', 'Application/Resources/Settings.bundle/Acknowledgements.plist', :remove_destination => true)
 end
