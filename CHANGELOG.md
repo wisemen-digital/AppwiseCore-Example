@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 ### 4 November 2019
 
 * CocoaPods 1.8.
+* SwiftLint 0.36 with some new rules.
 
 ### 2 July 2019
 
