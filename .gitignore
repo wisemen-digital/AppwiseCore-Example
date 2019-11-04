@@ -39,3 +39,6 @@ fastlane/Preview.html
 fastlane/test_output
 fastlane/README.md
 fastlane/build
+
+# Certificates
+*.p12

@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 * CocoaPods 1.8.
 * SwiftLint 0.36 with some new rules.
+* Ignore certificate files for Git.
 
 ### 2 July 2019
 
