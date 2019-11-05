@@ -9,31 +9,24 @@
 import p2_OAuth2
 
 enum OAuth2Grant {
-	static let grant = OAuth2CodeGrant(settings: env(
+	static let grant = OAuth2PasswordGrant(settings: env(
 		.dev([
 			"client_id": "",
 			"client_secret": "",
-			"authorize_uri": "https://test.com/authorize",
-			"token_uri": "https://test.com/token",
-			"redirect_uris": ["https://test.com/authorization_callback"]
+			"token_uri": "https://test.development.appwi.se/oauth/token"
 		]),
 		.stg([
 			"client_id": "",
 			"client_secret": "",
-			"authorize_uri": "https://test.com/authorize",
-			"token_uri": "https://test.com/token",
-			"redirect_uris": ["https://test.com/authorization_callback"]
+			"token_uri": "https://test.staging.appwi.se/oauth/token"
 		]),
 		.prd([
 			"client_id": "",
 			"client_secret": "",
-			"authorize_uri": "https://test.com/authorize",
-			"token_uri": "https://test.com/token",
-			"redirect_uris": ["https://test.com/authorization_callback"]
+			"token_uri": "https://test.production.appwi.se/oauth/token"
 		])
 	))
 		.then {
-			$0.authConfig.authorizeEmbedded = true
 			$0.clientConfig.secretInBody = false
 			#if DEBUG
 			$0.logger = OAuth2DebugLogger(.trace)

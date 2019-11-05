@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD1890B12371AF9A007781D6 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1890B02371AF99007781D6 /* StartViewController.swift */; };
+		DD1890B62371B020007781D6 /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD1890B82371B020007781D6 /* Start.storyboard */; };
+		DD1890BF2371B114007781D6 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD1890C12371B114007781D6 /* Authentication.storyboard */; };
+		DD1890C52371B662007781D6 /* APIClient (Authentication).swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1890C42371B662007781D6 /* APIClient (Authentication).swift */; };
+		DD1890C82371B85F007781D6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1890C72371B85F007781D6 /* LoginViewController.swift */; };
 		DD34731320372FFE0035A2CD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD34730A20372FFE0035A2CD /* Images.xcassets */; };
 		DD34731420372FFE0035A2CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD34730B20372FFE0035A2CD /* LaunchScreen.storyboard */; };
 		DD34731520372FFE0035A2CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD34730D20372FFE0035A2CD /* Main.storyboard */; };
@@ -15,7 +20,7 @@
 		DD34734920373EC60035A2CD /* OAuth2RetryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD34733720373EC50035A2CD /* OAuth2RetryHandler.swift */; };
 		DD34734D20373EC60035A2CD /* KeyboardManagerApplicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD34733C20373EC50035A2CD /* KeyboardManagerApplicationService.swift */; };
 		DD34734E20373EC60035A2CD /* FabricApplicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD34733D20373EC50035A2CD /* FabricApplicationService.swift */; };
-		DD34734F20373EC60035A2CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD34733F20373EC60035A2CD /* ViewController.swift */; };
+		DD34734F20373EC60035A2CD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD34733F20373EC60035A2CD /* MainViewController.swift */; };
 		DD34735020373EC60035A2CD /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD34734120373EC60035A2CD /* Config.swift */; };
 		DD34735120373EC60035A2CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD34734220373EC60035A2CD /* AppDelegate.swift */; };
 		DD34735520373F250035A2CD /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD34735220373F250035A2CD /* Settings.swift */; };
@@ -63,6 +68,14 @@
 		D922F0437CA6B7E35190147E /* Pods-Example Project.development-release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example Project.development-release.xcconfig"; path = "Pods/Target Support Files/Pods-Example Project/Pods-Example Project.development-release.xcconfig"; sourceTree = "<group>"; };
 		D95E1C411D88E71A00F94976 /* Example Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D95E1C891D88F39300F94976 /* AppwiseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppwiseCore.framework; path = "../build/Debug-iphoneos/AppwiseCore.framework"; sourceTree = "<group>"; };
+		DD1890B02371AF99007781D6 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		DD1890B72371B020007781D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Start.storyboard; sourceTree = "<group>"; };
+		DD1890BA2371B022007781D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Start.strings; sourceTree = "<group>"; };
+		DD1890BC2371B02F007781D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		DD1890C02371B114007781D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Authentication.storyboard; sourceTree = "<group>"; };
+		DD1890C32371B12F007781D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Authentication.strings; sourceTree = "<group>"; };
+		DD1890C42371B662007781D6 /* APIClient (Authentication).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIClient (Authentication).swift"; sourceTree = "<group>"; };
+		DD1890C72371B85F007781D6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DD34730A20372FFE0035A2CD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DD34730C20372FFE0035A2CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD34730E20372FFE0035A2CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -82,7 +95,7 @@
 		DD34733720373EC50035A2CD /* OAuth2RetryHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth2RetryHandler.swift; sourceTree = "<group>"; };
 		DD34733C20373EC50035A2CD /* KeyboardManagerApplicationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardManagerApplicationService.swift; sourceTree = "<group>"; };
 		DD34733D20373EC50035A2CD /* FabricApplicationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FabricApplicationService.swift; sourceTree = "<group>"; };
-		DD34733F20373EC60035A2CD /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DD34733F20373EC60035A2CD /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		DD34734120373EC60035A2CD /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		DD34734220373EC60035A2CD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD34735220373F250035A2CD /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
@@ -174,6 +187,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DD1890B22371AFC3007781D6 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				DD1890B02371AF99007781D6 /* StartViewController.swift */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		DD1890B32371AFCD007781D6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DD34733F20373EC60035A2CD /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		DD1890C62371B854007781D6 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				DD1890C72371B85F007781D6 /* LoginViewController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 		DD34730520372FFE0035A2CD /* Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				DD34733220373EC50035A2CD /* APIClient.swift */,
+				DD1890C42371B662007781D6 /* APIClient (Authentication).swift */,
 				DD372A8C22CC2AA300F68B25 /* APIClient (User).swift */,
 				DD34733320373EC50035A2CD /* APIRouter.swift */,
 				DD372A8322CC281600F68B25 /* OAuth2Grant.swift */,
@@ -245,8 +283,8 @@
 				DD34733D20373EC50035A2CD /* FabricApplicationService.swift */,
 				DD34733C20373EC50035A2CD /* KeyboardManagerApplicationService.swift */,
 				DD372A6F22CBF95700F68B25 /* NetworkDebugApplicationService.swift */,
-				DD372A7122CBF98A00F68B25 /* StyleApplicationService.swift */,
 				DD372A7522CBFA6900F68B25 /* PushNotificationService.swift */,
+				DD372A7122CBF98A00F68B25 /* StyleApplicationService.swift */,
 			);
 			path = "Application Services";
 			sourceTree = "<group>";
@@ -254,7 +292,9 @@
 		DD34733E20373EC60035A2CD /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				DD34733F20373EC60035A2CD /* ViewController.swift */,
+				DD1890C62371B854007781D6 /* Authentication */,
+				DD1890B32371AFCD007781D6 /* Main */,
+				DD1890B22371AFC3007781D6 /* Start */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -348,7 +388,9 @@
 			isa = PBXGroup;
 			children = (
 				DD34730B20372FFE0035A2CD /* LaunchScreen.storyboard */,
+				DD1890C12371B114007781D6 /* Authentication.storyboard */,
 				DD34730D20372FFE0035A2CD /* Main.storyboard */,
+				DD1890B82371B020007781D6 /* Start.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -474,11 +516,13 @@
 			files = (
 				DD3473702038FE390035A2CD /* Localizable.strings in Resources */,
 				DD34736D2038FE350035A2CD /* InfoPlist.strings in Resources */,
+				DD1890B62371B020007781D6 /* Start.storyboard in Resources */,
 				DD3473612038FB9F0035A2CD /* Settings.bundle in Resources */,
 				DD372A7822CBFC1500F68B25 /* Style.xcassets in Resources */,
 				DD34731520372FFE0035A2CD /* Main.storyboard in Resources */,
 				DD34731320372FFE0035A2CD /* Images.xcassets in Resources */,
 				DD34731420372FFE0035A2CD /* LaunchScreen.storyboard in Resources */,
+				DD1890BF2371B114007781D6 /* Authentication.storyboard in Resources */,
 				DD3473732038FE3D0035A2CD /* Localizable.stringsdict in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -611,6 +655,7 @@
 			files = (
 				DD34734D20373EC60035A2CD /* KeyboardManagerApplicationService.swift in Sources */,
 				DD9F476C206BFC26006B0DCA /* Example Project.xcdatamodeld in Sources */,
+				DD1890C52371B662007781D6 /* APIClient (Authentication).swift in Sources */,
 				DD34735120373EC60035A2CD /* AppDelegate.swift in Sources */,
 				DD34735020373EC60035A2CD /* Config.swift in Sources */,
 				DD372A7D22CC083600F68B25 /* Push Notifications.swift in Sources */,
@@ -631,17 +676,19 @@
 				DD34734520373EC60035A2CD /* APIRouter.swift in Sources */,
 				DDA4D02C2235AF28005EE2B6 /* AutoModel.generated.swift in Sources */,
 				DD372A7222CBF98A00F68B25 /* StyleApplicationService.swift in Sources */,
-				DD34734F20373EC60035A2CD /* ViewController.swift in Sources */,
+				DD34734F20373EC60035A2CD /* MainViewController.swift in Sources */,
 				DD347388203909720035A2CD /* UserViewModel.swift in Sources */,
 				DD372A7622CBFA6900F68B25 /* PushNotificationService.swift in Sources */,
 				DD34734E20373EC60035A2CD /* FabricApplicationService.swift in Sources */,
 				DD372A9322CCB50100F68B25 /* Show Error.swift in Sources */,
+				DD1890C82371B85F007781D6 /* LoginViewController.swift in Sources */,
 				DD372A8022CC09CC00F68B25 /* NewsItemPushNotification.swift in Sources */,
 				DD4BF0C72163B0A9008475E3 /* Storyboards Segues.swift in Sources */,
 				DD3473862039095A0035A2CD /* User.swift in Sources */,
 				DD372A8222CC247900F68B25 /* CoreData (KeyPaths).swift in Sources */,
 				DD372A7B22CC073600F68B25 /* Local Notifications.swift in Sources */,
 				DD34734420373EC60035A2CD /* APIClient.swift in Sources */,
+				DD1890B12371AF9A007781D6 /* StartViewController.swift in Sources */,
 				DD372A8822CC294C00F68B25 /* Hack.swift in Sources */,
 				DD347377203906B00035A2CD /* Then.swift in Sources */,
 				DD372A7022CBF95700F68B25 /* NetworkDebugApplicationService.swift in Sources */,
@@ -652,6 +699,24 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		DD1890B82371B020007781D6 /* Start.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD1890B72371B020007781D6 /* Base */,
+				DD1890BA2371B022007781D6 /* en */,
+			);
+			name = Start.storyboard;
+			sourceTree = "<group>";
+		};
+		DD1890C12371B114007781D6 /* Authentication.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD1890C02371B114007781D6 /* Base */,
+				DD1890C32371B12F007781D6 /* en */,
+			);
+			name = Authentication.storyboard;
+			sourceTree = "<group>";
+		};
 		DD34730B20372FFE0035A2CD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -664,6 +729,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				DD34730E20372FFE0035A2CD /* Base */,
+				DD1890BC2371B02F007781D6 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

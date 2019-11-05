@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "Login Screen"; ObjectID = "CDG-Ql-8u4"; */
+"CDG-Ql-8u4.text" = "Login Screen";
+
+/* Class = "UINavigationItem"; title = "Login"; ObjectID = "nkw-cf-dk4"; */
+"nkw-cf-dk4.title" = "Login";
+
+/* Class = "UIButton"; normalTitle = "Log In"; ObjectID = "YOe-0a-JHk"; */
+"YOe-0a-JHk.normalTitle" = "Log In";

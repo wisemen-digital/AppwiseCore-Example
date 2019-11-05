@@ -12,6 +12,16 @@ import UIKit
 
 // swiftlint:disable explicit_type_interface identifier_name line_length type_body_length type_name
 internal enum StoryboardSegue {
+  internal enum Authentication: String, SegueType {
+    case finishedLogin = "Finished Login"
+  }
+  internal enum Main: String, SegueType {
+    case logOut = "Log Out"
+  }
+  internal enum Start: String, SegueType {
+    case openAuthentication = "Open Authentication"
+    case openMain = "Open Main"
+  }
 }
 // swiftlint:enable explicit_type_interface identifier_name line_length type_body_length type_name
 

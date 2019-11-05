@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 ### 5 November 2019
 
 * Add a check to the network request retrier to see if the session expired.
+* Add an example of the efficient startup flow (skip load if we have local data).
 
 ### 4 November 2019
 

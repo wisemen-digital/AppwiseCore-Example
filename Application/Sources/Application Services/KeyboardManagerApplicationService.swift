@@ -16,7 +16,7 @@ final class KeyboardManagerApplicationService: NSObject, ApplicationService {
 
 		// only enable for specific screens
 		IQKeyboardManager.shared.enabledDistanceHandlingClasses.append(contentsOf: [
-			ViewController.self
+			MainViewController.self
 		])
 
 		return true
