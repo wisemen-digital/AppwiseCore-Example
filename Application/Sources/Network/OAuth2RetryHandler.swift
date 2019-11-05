@@ -9,7 +9,7 @@
 import Alamofire
 import p2_OAuth2
 
-class OAuth2RetryHandler: RequestRetrier, RequestAdapter {
+final class OAuth2RetryHandler: RequestRetrier, RequestAdapter {
 	let loader: OAuth2DataLoader
 
 	init(oauth2: OAuth2) {
@@ -25,17 +25,24 @@ class OAuth2RetryHandler: RequestRetrier, RequestAdapter {
 			return
 		}
 
-		// delete access token
-		loader.oauth2.clientConfig.accessToken = nil
-
 		var dataRequest = OAuth2DataRequest(request: req) { _ in }
 		dataRequest.context = completion
 		loader.enqueue(request: dataRequest)
-		loader.attemptToAuthorize { authParams, _ in
+		loader.attemptToAuthorize { authParams, error in
+			guard error != .alreadyAuthorizing else {
+				// Don't dequeue requests if we are waiting for other authorization request
+				return
+			}
+
 			self.loader.dequeueAndApply { req in
 				if let comp = req.context as? RequestRetryCompletion {
 					comp(authParams != nil, 0.0)
 				}
+			}
+
+			// check if we actually have expired our session
+			if let error = error, error.isSessionExpired {
+				Notification.SessionExpired().post()
 			}
 		}
 	}
@@ -46,5 +53,54 @@ class OAuth2RetryHandler: RequestRetrier, RequestAdapter {
 			return urlRequest
 		}
 		return try urlRequest.signed(with: loader.oauth2)
+	}
+}
+
+extension OAuth2Error {
+	var isSessionExpired: Bool {
+		switch self {
+		case .accessDenied,
+		     .forbidden,
+		     .invalidGrant,
+		     .invalidScope,
+		     .noPasswordGrantDelegate,
+		     .unauthorizedClient:
+			return true
+		case .generic,
+		     .nsError,
+		     .invalidURLComponents,
+		     .noClientId,
+		     .noClientSecret,
+		     .noRedirectURL,
+		     .noUsername,
+		     .noPassword,
+		     .alreadyAuthorizing,
+		     .noAuthorizationContext,
+		     .invalidAuthorizationContext,
+		     .invalidRedirectURL,
+		     .noAccessToken,
+		     .noRefreshToken,
+		     .noRegistrationURL,
+		     .invalidLoginController,
+		     .notUsingTLS,
+		     .unableToOpenAuthorizeURL,
+		     .invalidRequest,
+		     .requestCancelled,
+		     .noTokenType,
+		     .unsupportedTokenType,
+		     .noDataInResponse,
+		     .prerequisiteFailed,
+		     .missingState,
+		     .invalidState,
+		     .jsonParserError,
+		     .utf8EncodeError,
+		     .utf8DecodeError,
+		     .wrongUsernamePassword,
+		     .unsupportedResponseType,
+		     .serverError,
+		     .temporarilyUnavailable,
+		     .responseError:
+			return false
+		}
 	}
 }
