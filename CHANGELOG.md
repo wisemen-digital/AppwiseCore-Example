@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 * Add a check to the network request retrier to see if the session expired.
 * Add an example of the efficient startup flow (skip load if we have local data).
+* Set the min. iOS version to 12.4.
 
 ### 4 November 2019
 
