@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 * Some fixes to bootstrap script, and add an initialize git step.
 * Gitignore .DS_Store files.
+* Removed the pre-set development team.
 
 ### 5 November 2019
 

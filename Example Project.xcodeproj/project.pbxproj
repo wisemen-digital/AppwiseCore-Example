@@ -485,7 +485,6 @@
 				TargetAttributes = {
 					D95E1C401D88E71A00F94976 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = JF4JXY8D87;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
@@ -779,7 +778,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 779FBFEE7FAFD5A1421060A2 /* Pods-Example Project.development-debug.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = JF4JXY8D87;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Application/Resources/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "be.appwise.Example-Project-Development";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -791,7 +790,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 190E04BF69414D9C78D3A0B5 /* Pods-Example Project.staging-release.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = JF4JXY8D87;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Application/Resources/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "be.appwise.Example-Project-Staging";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -810,7 +809,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E6D5962A85FD8AE138F6CBF4 /* Pods-Example Project.production-debug.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = JF4JXY8D87;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Application/Resources/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "be.appwise.Example-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -829,7 +828,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D922F0437CA6B7E35190147E /* Pods-Example Project.development-release.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = JF4JXY8D87;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Application/Resources/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "be.appwise.Example-Project-Development";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -848,7 +847,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F441F0FA1310DA2AA9D0A068 /* Pods-Example Project.staging-debug.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = JF4JXY8D87;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Application/Resources/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "be.appwise.Example-Project-Staging";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -867,7 +866,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 58FB55D6388E1A2BE1FBA734 /* Pods-Example Project.production-release.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = JF4JXY8D87;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Application/Resources/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "be.appwise.Example-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
