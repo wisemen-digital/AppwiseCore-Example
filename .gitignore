@@ -40,5 +40,8 @@ fastlane/test_output
 fastlane/README.md
 fastlane/build
 
+# macOS
+.DS_Store
+
 # Certificates
 *.p12

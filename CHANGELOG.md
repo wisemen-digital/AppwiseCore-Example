@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 ### 6 November 2019
 
 * Some fixes to bootstrap script, and add an initialize git step.
+* Gitignore .DS_Store files.
 
 ### 5 November 2019
 
