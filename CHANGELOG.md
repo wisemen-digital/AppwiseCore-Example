@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+### 6 November 2019
+
+* Some fixes to bootstrap script, and add an initialize git step.
+
 ### 5 November 2019
 
 * Add a check to the network request retrier to see if the session expired.

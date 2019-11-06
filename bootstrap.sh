@@ -62,7 +62,7 @@ function relocateFiles {
 function replaceText {
 	echo "Replacing '$1' with '$2'..."
 
-	grep -rl --null "$1" --exclude-dir="$podsDir" --exclude="rename.sh" . | xargs -0 sed -i '' "s/$1/$2/g"
+	grep -rl --null "$1" --exclude-dir=".git" --exclude-dir="$podsDir" --exclude="bootstrap.sh" . | LC_CTYPE=C LANG=C xargs -0 sed -i '' "s/$1/$2/g"
 }
 
 function configureFastlane {
@@ -86,6 +86,14 @@ function cleanup {
 	rm -f "LICENSE"
 	rm -f "README.md"
 	rm -f "bootstrap.sh"
+}
+
+function initializeGit {
+	echo "Initializing Git..."
+	rm -rf ".git"
+	git init >/dev/null
+	git add "*" >/dev/null
+	git commit -m "Initial commit" >/dev/null
 }
 
 #### Start of flow ####
@@ -122,5 +130,6 @@ replaceText "$oldBundle" "$newBundle"
 configureFastlane
 podInstall
 cleanup
+initializeGit
 
 echo "Done!"
