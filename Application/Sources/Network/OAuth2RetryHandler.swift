@@ -25,6 +25,9 @@ final class OAuth2RetryHandler: RequestRetrier, RequestAdapter {
 			return
 		}
 
+		// delete access token
+		loader.oauth2.clientConfig.accessToken = nil
+
 		var dataRequest = OAuth2DataRequest(request: req) { _ in }
 		dataRequest.context = completion
 		loader.enqueue(request: dataRequest)

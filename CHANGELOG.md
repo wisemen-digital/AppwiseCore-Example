@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+### 15 November 2019
+
+* Re-add some code to network retrier to avoid authentication loops.
+
 ### 6 November 2019
 
 * Some fixes to bootstrap script, and add an initialize git step.
