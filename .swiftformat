@@ -13,6 +13,7 @@
 
 --ifdef no-indent
 --indent tabs
+--tabwidth 4
 
 --wraparguments before-first
 --wrapcollections before-first
