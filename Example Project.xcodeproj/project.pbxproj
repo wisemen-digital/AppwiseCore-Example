@@ -536,7 +536,7 @@
 			name = "[CP-User] SwiftFormat";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat\" .";
+			shellScript = "\"../Scripts/swiftformat.sh\"";
 		};
 		327ED3EA505C1F8958BF4340 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -575,7 +575,7 @@
 			name = "[CP-User] SwiftLint";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\" lint --config \"${PROJECT_DIR}/.swiftlint.yml\" --path \"${PROJECT_DIR}\"";
+			shellScript = "\"../Scripts/swiftlint.sh\"";
 			showEnvVarsInLog = 0;
 		};
 		B125D8ACB6B416B3319D5ED8 /* [CP-User] Check Strings */ = {
@@ -586,7 +586,7 @@
 			name = "[CP-User] Check Strings";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/BartyCrouch/bartycrouch\" update -x;\"${PODS_ROOT}/BartyCrouch/bartycrouch\" lint -x";
+			shellScript = "\"../Scripts/check_strings.sh\"";
 			showEnvVarsInLog = 0;
 		};
 		D8AFDBB5298E16A421756E0A /* [CP] Copy Pods Resources */ = {
@@ -617,7 +617,7 @@
 			name = "[CP-User] SwiftGen";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftGen/bin/swiftgen\"";
+			shellScript = "\"../Scripts/swiftgen.sh\"";
 			showEnvVarsInLog = 0;
 		};
 		FD07CF5B36E34FF92EF79A78 /* [CP-User] Sourcery */ = {
@@ -628,7 +628,7 @@
 			name = "[CP-User] Sourcery";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Sourcery/bin/sourcery\"";
+			shellScript = "\"../Scripts/sourcery.sh\"";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

@@ -12,6 +12,7 @@ All notable changes to this project will be documented in this file.
   * Remove Info.plist key.
   * Remove Fabric build step.
   * Update fastlane `Appfile` & `Fastfile`
+* Use appwise-core built-in build step scripts.
 
 ### 15 November 2019
 
