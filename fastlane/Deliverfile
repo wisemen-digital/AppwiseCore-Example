@@ -1,2 +1,0 @@
-app_identifier 'be.appwise.Example-Project'
-username ENV['USER_APPLE_ID'] # your Apple ID user

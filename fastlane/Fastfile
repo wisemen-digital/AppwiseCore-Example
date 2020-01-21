@@ -1,39 +1,44 @@
-fastlane_version '2.100.0'
+fastlane_version '2.137.0'
 default_platform :ios
 
 platform :ios do
   desc 'Submit a new Development Build to Apple TestFlight'
   lane :development do
-    archiveAndUpload(scheme: 'Example Project-Development')
+    scheme = CredentialsManager::AppfileConfig.try_fetch_value(:scheme)
+    archiveAndUpload(scheme: scheme)
   end
 
   desc 'Submit a new Development Build to Apple TestFlight'
   lane :staging do
-    archiveAndUpload(scheme: 'Example Project-Staging')
+    scheme = CredentialsManager::AppfileConfig.try_fetch_value(:scheme)
+    archiveAndUpload(scheme: scheme)
   end
 
   desc 'Submit a new Production Build to Apple TestFlight'
   lane :production do
-    archiveAndUpload(scheme: 'Example Project-Production')
+    scheme = CredentialsManager::AppfileConfig.try_fetch_value(:scheme)
+    archiveAndUpload(scheme: scheme)
   end
 
   desc 'Deploy a new version to the App Store'
   lane :release do
+    version_number = get_version_number
+    sentry_project = CredentialsManager::AppfileConfig.try_fetch_value(:sentry_project)
+
     upload_to_app_store(
       submit_for_review: true,
       skip_binary_upload: true,
       force: true
     )
+    sentry_finalize_release(
+      version: "#{sentry_project}@#{version_number}"
+    )
   end
 
-  desc 'Download dSYMs from iTC and upload them to Crashlytics'
+  desc 'Download dSYMs from iTC and upload them to Sentry'
   lane :refresh_dsyms do
-    identifiers = [
-      'be.appwise.Example-Project-Development',
-      'be.appwise.Example-Project-Staging',
-      'be.appwise.Example-Project'
-    ]
-    
+    identifiers = CredentialsManager::AppfileConfig.try_fetch_value(:identifiers)
+
     identifiers.each do |identifier|
       syncDsyms(identifier: identifier)
     end
@@ -41,6 +46,8 @@ platform :ios do
 
   private_lane :archiveAndUpload do |options|
     scheme = options[:scheme]
+    version_number = get_version_number
+    sentry_project = CredentialsManager::AppfileConfig.try_fetch_value(:sentry_project)
 
     get_provisioning_profile(
       output_path: 'fastlane/build'
@@ -55,6 +62,9 @@ platform :ios do
     upload_to_testflight(
       skip_waiting_for_build_processing: true
     )
+    sentry_create_release(
+      version: "#{sentry_project}@#{version_number}"
+    )
   end
 
   private_lane :syncDsyms do |options|
@@ -64,7 +74,8 @@ platform :ios do
       app_identifier: identifier,
       output_directory: 'fastlane/build'
     )
-    upload_symbols_to_crashlytics
+    sentry_upload_dsym
     clean_build_artifacts
+    lane_context[SharedValues::DSYM_PATHS] = []
   end
 end

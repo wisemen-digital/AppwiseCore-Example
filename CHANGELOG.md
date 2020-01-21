@@ -11,6 +11,7 @@ All notable changes to this project will be documented in this file.
   * Replace application service (and update application delegate).
   * Remove Info.plist key.
   * Remove Fabric build step.
+  * Update fastlane `Appfile` & `Fastfile`
 
 ### 15 November 2019
 
