@@ -47,12 +47,12 @@ PODS:
     - Groot/Swift (= 3.0.1)
   - Groot/Swift (3.0.1)
   - IBAnimatable (5.2.1)
-  - IQKeyboardManagerSwift (6.5.4)
+  - IQKeyboardManagerSwift (6.5.5)
   - Nuke (7.6.3)
   - Nuke-Alamofire-Plugin (4.2):
     - Alamofire (~> 4.0)
     - Nuke (~> 7.0)
-  - OneSignal (2.12.2)
+  - OneSignal (2.12.5)
   - p2.OAuth2 (5.0.0)
   - PaginationTracker (1.0.1):
     - PaginationTracker/Core (= 1.0.1)
@@ -149,10 +149,10 @@ SPEC CHECKSUMS:
   Fabric: 706c8b8098fff96c33c0db69cbf81f9c551d0d74
   Groot: a668afbcf0be88d76c0a26c714cfa4638ceaca66
   IBAnimatable: a46b835ec6875178516cf7e014a40194d6bfa3fc
-  IQKeyboardManagerSwift: 2dde0fc70110e8eac7ccce2a46fdbec6a850b414
+  IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
   Nuke: 44130e95e09463f8773ae4b96b90de1eba6b3350
   Nuke-Alamofire-Plugin: ee83df6e81e70488ca33033ac98b3f86a2ab1597
-  OneSignal: b2c1511c6b5db2d3b0ce1859f574dcf190dde5f3
+  OneSignal: 1de998c42bb06ed630bb38dd1bc933a667437dbb
   p2.OAuth2: 5d203b46c2857b4bbcca3e521089959e7b3b5a5c
   PaginationTracker: fef5fce9315c4cdfc61a58605033d9f06f37acc8
   Reusable: 82be188f29d96dc5eff0db7b2393bcc08d2cdd5b
@@ -164,6 +164,6 @@ SPEC CHECKSUMS:
   SwiftLint: 4105f061f9812b214568b736dab580ab2c73a582
   Then: 90cd104fd951cec1980a03f57704ad8f784d4d79
 
-PODFILE CHECKSUM: 4208ce8887c98587b0cddb657acf72f2ca151f99
+PODFILE CHECKSUM: 39c49a98886ec31cc231f1b6c2fc2f2c3633284f
 
 COCOAPODS: 1.8.4
