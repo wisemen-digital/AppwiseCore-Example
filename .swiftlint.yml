@@ -1,4 +1,4 @@
-swiftlint_version: 0.38.0
+swiftlint_version: 0.38.2
 
 disabled_rules:
   - line_length
@@ -51,8 +51,10 @@ opt_in_rules:
   - number_separator
   - object_literal
   - operator_usage_whitespace
+  - optional_enum_case_matching
   - overridden_super_call
   - override_in_extension
+  - prefer_self_type_over_type_of_self
   - private_action
   - private_outlet
   - prohibited_super_call
