@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+### 21 January 2020
+
+* Update SwiftFormat to 0.44 (with some configuration changes).
+
 ### 15 November 2019
 
 * Re-add some code to network retrier to avoid authentication loops.

@@ -3,7 +3,7 @@
 # format options
 --commas inline
 --patternlet inline
---ranges no-space
+--nospaceoperators ...,..<
 --stripunusedargs closure-only
 
 --binarygrouping none
@@ -15,8 +15,9 @@
 --indent tabs
 --tabwidth 4
 
---wraparguments before-first
+--wraparguments preserve
 --wrapcollections before-first
+--wrapparameters before-first
 
 # file options
 --exclude Pods,Application/Sources/Generated
