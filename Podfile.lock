@@ -14,7 +14,7 @@ PODS:
     - AppwiseCore/Common
     - CocoaLumberjack/Swift (~> 3.5)
     - CodableAlamofire (~> 1.1)
-    - CrashlyticsRecorder (~> 2.3)
+    - Sentry
     - Then (~> 2.4)
   - AppwiseCore/CoreData (1.1.1):
     - AppwiseCore/Common
@@ -39,10 +39,6 @@ PODS:
     - CocoaLumberjack/Core
   - CodableAlamofire (1.1.2):
     - Alamofire (~> 4.0)
-  - Crashlytics (3.14.0):
-    - Fabric (~> 1.10.2)
-  - CrashlyticsRecorder (2.3.0)
-  - Fabric (1.10.2)
   - Groot (3.0.1):
     - Groot/Swift (= 3.0.1)
   - Groot/Swift (3.0.1)
@@ -68,6 +64,9 @@ PODS:
     - Reusable/View (= 4.1.0)
   - Reusable/Storyboard (4.1.0)
   - Reusable/View (4.1.0)
+  - Sentry (4.4.3):
+    - Sentry/Core (= 4.4.3)
+  - Sentry/Core (4.4.3)
   - SnapKit (5.0.1)
   - Sourcery (0.17.0)
   - StatefulUI (1.0.3):
@@ -87,7 +86,6 @@ DEPENDENCIES:
   - BartyCrouch
   - BonMot
   - CocoaAsyncSocket
-  - Crashlytics
   - IQKeyboardManagerSwift
   - Nuke
   - Nuke-Alamofire-Plugin
@@ -95,6 +93,7 @@ DEPENDENCIES:
   - p2.OAuth2
   - PaginationTracker
   - Reusable
+  - Sentry
   - SnapKit
   - Sourcery
   - StatefulUI
@@ -111,9 +110,6 @@ SPEC REPOS:
     - CocoaAsyncSocket
     - CocoaLumberjack
     - CodableAlamofire
-    - Crashlytics
-    - CrashlyticsRecorder
-    - Fabric
     - Groot
     - IBAnimatable
     - IQKeyboardManagerSwift
@@ -123,6 +119,7 @@ SPEC REPOS:
     - p2.OAuth2
     - PaginationTracker
     - Reusable
+    - Sentry
     - SnapKit
     - Sourcery
     - StatefulUI
@@ -137,16 +134,13 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
-  AppwiseCore: 64ac8fe0a677227238cd8842d626a2e0f9f77341
+  AppwiseCore: 3c25bf4260ba2a25c4c4a42ef48c2e4d4055ea28
   Bagel: 199e0105ac694d6eee9db54dd006c940da6ce81b
   BartyCrouch: 3f3501276901326bf4150341ad801467da972e43
   BonMot: aa82119ff2ffa184223d8a31c72aed84fbb009e0
   CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
   CocoaLumberjack: 78b0c238666f4f58db069738ec176f4519557516
   CodableAlamofire: b7adfb2e5e980392014b4b3f3b8b62c01b9de4aa
-  Crashlytics: 540b7e5f5da5a042647227a5e3ac51d85eed06df
-  CrashlyticsRecorder: 842adffa8b0ddc0099bcc23ad4930b9803fdacff
-  Fabric: 706c8b8098fff96c33c0db69cbf81f9c551d0d74
   Groot: a668afbcf0be88d76c0a26c714cfa4638ceaca66
   IBAnimatable: a46b835ec6875178516cf7e014a40194d6bfa3fc
   IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
@@ -156,6 +150,7 @@ SPEC CHECKSUMS:
   p2.OAuth2: 5d203b46c2857b4bbcca3e521089959e7b3b5a5c
   PaginationTracker: fef5fce9315c4cdfc61a58605033d9f06f37acc8
   Reusable: 82be188f29d96dc5eff0db7b2393bcc08d2cdd5b
+  Sentry: 14bdd673870e8cf64932b149fad5bbbf39a9b390
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   Sourcery: 3ed61be7c8a1218fce349266139379dba477efe0
   StatefulUI: cab5727ed27ffe648b47302e7ccacd8dd2d2b07d

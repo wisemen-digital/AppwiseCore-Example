@@ -19,7 +19,7 @@
 		DD34734520373EC60035A2CD /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD34733320373EC50035A2CD /* APIRouter.swift */; };
 		DD34734920373EC60035A2CD /* OAuth2RetryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD34733720373EC50035A2CD /* OAuth2RetryHandler.swift */; };
 		DD34734D20373EC60035A2CD /* KeyboardManagerApplicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD34733C20373EC50035A2CD /* KeyboardManagerApplicationService.swift */; };
-		DD34734E20373EC60035A2CD /* FabricApplicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD34733D20373EC50035A2CD /* FabricApplicationService.swift */; };
+		DD34734E20373EC60035A2CD /* SentryApplicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD34733D20373EC50035A2CD /* SentryApplicationService.swift */; };
 		DD34734F20373EC60035A2CD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD34733F20373EC60035A2CD /* MainViewController.swift */; };
 		DD34735020373EC60035A2CD /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD34734120373EC60035A2CD /* Config.swift */; };
 		DD34735120373EC60035A2CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD34734220373EC60035A2CD /* AppDelegate.swift */; };
@@ -94,7 +94,7 @@
 		DD34733320373EC50035A2CD /* APIRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		DD34733720373EC50035A2CD /* OAuth2RetryHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth2RetryHandler.swift; sourceTree = "<group>"; };
 		DD34733C20373EC50035A2CD /* KeyboardManagerApplicationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardManagerApplicationService.swift; sourceTree = "<group>"; };
-		DD34733D20373EC50035A2CD /* FabricApplicationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FabricApplicationService.swift; sourceTree = "<group>"; };
+		DD34733D20373EC50035A2CD /* SentryApplicationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SentryApplicationService.swift; sourceTree = "<group>"; };
 		DD34733F20373EC60035A2CD /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		DD34734120373EC60035A2CD /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		DD34734220373EC60035A2CD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -280,10 +280,10 @@
 			isa = PBXGroup;
 			children = (
 				DD372A7322CBFA1700F68B25 /* CoreDataApplicationService.swift */,
-				DD34733D20373EC50035A2CD /* FabricApplicationService.swift */,
 				DD34733C20373EC50035A2CD /* KeyboardManagerApplicationService.swift */,
 				DD372A6F22CBF95700F68B25 /* NetworkDebugApplicationService.swift */,
 				DD372A7522CBFA6900F68B25 /* PushNotificationService.swift */,
+				DD34733D20373EC50035A2CD /* SentryApplicationService.swift */,
 				DD372A7122CBF98A00F68B25 /* StyleApplicationService.swift */,
 			);
 			path = "Application Services";
@@ -461,7 +461,6 @@
 				D95E1C3E1D88E71A00F94976 /* Frameworks */,
 				D95E1C3F1D88E71A00F94976 /* Resources */,
 				551F369F80832143286644CB /* [CP-User] Update Version Number */,
-				8F7706C7239F0465538C113B /* [CP-User] Fabric */,
 				D8AFDBB5298E16A421756E0A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -568,17 +567,6 @@
 			shellScript = "\"../Scripts/update_build_number.sh\"";
 			showEnvVarsInLog = 0;
 		};
-		8F7706C7239F0465538C113B /* [CP-User] Fabric */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			name = "[CP-User] Fabric";
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Fabric/run\" 0000000000000000000000000000000000000000 0000000000000000000000000000000000000000000000000000000000000000";
-			showEnvVarsInLog = 0;
-		};
 		A4BD1FEE0158802547C32541 /* [CP-User] SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -609,13 +597,11 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Example Project/Pods-Example Project-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/AppwiseCore/AppwiseCore-Core.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/StatefulUI/StatefulUIResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AppwiseCore-Core.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManagerSwift.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/StatefulUIResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -678,7 +664,7 @@
 				DD34734F20373EC60035A2CD /* MainViewController.swift in Sources */,
 				DD347388203909720035A2CD /* UserViewModel.swift in Sources */,
 				DD372A7622CBFA6900F68B25 /* PushNotificationService.swift in Sources */,
-				DD34734E20373EC60035A2CD /* FabricApplicationService.swift in Sources */,
+				DD34734E20373EC60035A2CD /* SentryApplicationService.swift in Sources */,
 				DD372A9322CCB50100F68B25 /* Show Error.swift in Sources */,
 				DD1890C82371B85F007781D6 /* LoginViewController.swift in Sources */,
 				DD372A8022CC09CC00F68B25 /* NewsItemPushNotification.swift in Sources */,

@@ -12,8 +12,8 @@ import AppwiseCore
 final class AppDelegate: AppwiseCore.AppDelegate<Config> {
 	override var services: [ApplicationService] {
 		return [
+			SentryApplicationService(),
 			CoreDataApplicationService(),
-			FabricApplicationService(),
 			KeyboardManagerApplicationService(),
 			NetworkDebugApplicationService(),
 			StyleApplicationService(),

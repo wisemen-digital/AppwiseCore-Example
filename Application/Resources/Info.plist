@@ -18,26 +18,12 @@
 	<string>1.0.0</string>
 	<key>CFBundleVersion</key>
 	<string>0</string>
-	<key>Fabric</key>
-	<dict>
-		<key>APIKey</key>
-		<string>0000000000000000000000000000000000000000</string>
-		<key>Kits</key>
-		<array>
-			<dict>
-				<key>KitInfo</key>
-				<dict/>
-				<key>KitName</key>
-				<string>Crashlytics</string>
-			</dict>
-		</array>
-	</dict>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCalendarsUsageDescription</key>
-	<string>The app can add events you've subscribed to, to your calendar.</string>
+	<string>The app can add events you&apos;ve subscribed to, to your calendar.</string>
 	<key>NSCameraUsageDescription</key>
 	<string>The app needs access to your camera for your profile picture.</string>
 	<key>NSContactsUsageDescription</key>

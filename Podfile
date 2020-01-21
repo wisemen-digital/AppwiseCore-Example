@@ -27,7 +27,6 @@ target 'Example Project' do
 
 	# Other
 	pod 'BonMot'
-	pod 'Crashlytics'
 	pod 'IQKeyboardManagerSwift'
 	pod 'Nuke'
 	pod 'Nuke-Alamofire-Plugin'
@@ -35,6 +34,7 @@ target 'Example Project' do
 	pod 'p2.OAuth2'
 	pod 'PaginationTracker'
 	pod 'Reusable'
+	pod 'Sentry', :modular_headers => true
 	pod 'SnapKit'
 	pod 'StatefulUI'
 
@@ -62,10 +62,6 @@ target 'Example Project' do
 	script_phase :name => 'Update Version Number',
 		:execution_position => :after_compile,
 		:script => '"../Scripts/update_build_number.sh"'
-
-	script_phase :name => 'Fabric',
-		:execution_position => :after_compile,
-		:script => '"${PODS_ROOT}/Fabric/run" 0000000000000000000000000000000000000000 0000000000000000000000000000000000000000000000000000000000000000'
 end
 
 post_install do | installer |

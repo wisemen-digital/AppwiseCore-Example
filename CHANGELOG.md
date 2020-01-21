@@ -6,6 +6,11 @@ All notable changes to this project will be documented in this file.
 
 * Update SwiftFormat to 0.44 (with some configuration changes).
 * Latest SwiftLint 0.38.2 rules.
+* Replace Crashlytics/Fabric with Sentry:
+  * Change dependency in Podfile.
+  * Replace application service (and update application delegate).
+  * Remove Info.plist key.
+  * Remove Fabric build step.
 
 ### 15 November 2019
 
