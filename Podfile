@@ -3,14 +3,6 @@ platform :ios, '12.0'
 inhibit_all_warnings!
 
 target 'Example Project' do
-  project 'Example Project',
-    'Development-Debug' => :debug,
-    'Development-Release' => :release,
-    'Staging-Debug' => :debug,
-    'Staging-Release' => :release,
-    'Production-Debug' => :debug,
-    'Production-Release' => :release
-
   pod 'AppwiseCore', :path => '../'
   pod 'AppwiseCore/CoreData', :path => '../'
   pod 'AppwiseCore/DeepLink', :path => '../'
@@ -46,8 +38,9 @@ pre_install do |installer|
 end
 
 # Pre-compile pods
-plugin 'cocoapods-rome', {
+plugin 'cocoapods-rome',
   :pre_compile => Proc.new { |installer|
+    # ensure we have bitcode
     installer.pods_project.targets.each do |target|
       target.build_configurations.each do |config|
         config.build_settings['BITCODE_GENERATION_MODE'] = 'bitcode'
@@ -55,12 +48,14 @@ plugin 'cocoapods-rome', {
     end
     installer.pods_project.save
   },
-  dsym: true,
-  configuration: 'Release'
-}
+  :post_compile => Proc.new { |installer|
+    # generate project
+    require './../Scripts/generate_project.rb'
+    generate_project(installer)
 
-post_install do | installer |
-  # generate acknowledgements
-  require 'fileutils'
-  FileUtils.cp_r('Pods/Target Support Files/Pods-Example Project/Pods-Example Project-Acknowledgements.plist', 'Application/Resources/Settings.bundle/Acknowledgements.plist', :remove_destination => true)
-end
+    # generate acknowledgements
+    require 'fileutils'
+    FileUtils.cp_r('Pods/Target Support Files/Pods-Example Project/Pods-Example Project-Acknowledgements.plist', 'Application/Resources/Settings.bundle/Acknowledgements.plist', :remove_destination => true)
+  },
+  :dsym => true,
+  :configuration => 'Release'

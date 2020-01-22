@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D95E1C401D88E71A00F94976"
+               BlueprintIdentifier = "6142411EA3A48E9C5430EBB3"
                BuildableName = "Example Project.app"
                BlueprintName = "Example Project"
                ReferencedContainer = "container:Example Project.xcodeproj">
@@ -23,14 +23,14 @@
       </BuildActionEntries>
    </BuildAction>
    <TestAction
-      buildConfiguration = "Staging-Debug"
+      buildConfiguration = "Development-Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D95E1C401D88E71A00F94976"
+            BlueprintIdentifier = "6142411EA3A48E9C5430EBB3"
             BuildableName = "Example Project.app"
             BlueprintName = "Example Project"
             ReferencedContainer = "container:Example Project.xcodeproj">
@@ -40,7 +40,7 @@
       </Testables>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Staging-Debug"
+      buildConfiguration = "Development-Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -53,7 +53,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D95E1C401D88E71A00F94976"
+            BlueprintIdentifier = "6142411EA3A48E9C5430EBB3"
             BuildableName = "Example Project.app"
             BlueprintName = "Example Project"
             ReferencedContainer = "container:Example Project.xcodeproj">
@@ -61,7 +61,7 @@
       </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
-      buildConfiguration = "Staging-Release"
+      buildConfiguration = "Development-Release"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
@@ -70,7 +70,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D95E1C401D88E71A00F94976"
+            BlueprintIdentifier = "6142411EA3A48E9C5430EBB3"
             BuildableName = "Example Project.app"
             BlueprintName = "Example Project"
             ReferencedContainer = "container:Example Project.xcodeproj">
@@ -78,10 +78,10 @@
       </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
-      buildConfiguration = "Staging-Debug">
+      buildConfiguration = "Development-Debug">
    </AnalyzeAction>
    <ArchiveAction
-      buildConfiguration = "Staging-Release"
+      buildConfiguration = "Development-Release"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

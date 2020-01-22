@@ -1,0 +1,47 @@
+include:
+  - projectDependencies.yml
+  - ../XcodeGen/target-templates.yml
+name: Example Project
+options:
+  settingPresets: none
+  groupSortPosition: top
+configs:
+  Development-Debug: debug
+  Development-Release: release
+  Staging-Debug: debug
+  Staging-Release: release
+  Production-Debug: debug
+  Production-Release: release
+configFiles:
+  Development-Debug: Application/Supporting Files/Settings-Development (Debug).xcconfig
+  Development-Release: Application/Supporting Files/Settings-Development (Release).xcconfig
+  Staging-Debug: Application/Supporting Files/Settings-Staging (Debug).xcconfig
+  Staging-Release: Application/Supporting Files/Settings-Staging (Release).xcconfig
+  Production-Debug: Application/Supporting Files/Settings-Production (Debug).xcconfig
+  Production-Release: Application/Supporting Files/Settings-Production (Release).xcconfig
+targets:
+  Example Project:
+    templates:
+      - iOS App
+    sources:
+      - path: Application
+        excludes:
+          - "**/.gitkeep"
+    settings:
+      base:
+        DEVELOPMENT_TEAM: XXXXXXXXXX
+        INFOPLIST_FILE: Application/Resources/Info.plist
+        PRODUCT_NAME: $(TARGET_NAME)
+        SWIFT_VERSION: 5.0
+      configs:
+        Development:
+          PRODUCT_BUNDLE_IDENTIFIER: be.appwise.Example-Project-Development
+        Staging:
+          PRODUCT_BUNDLE_IDENTIFIER: be.appwise.Example-Project-Staging
+        Production:
+          PRODUCT_BUNDLE_IDENTIFIER: be.appwise.Example-Project
+    scheme:
+      configVariants:
+        - Development
+        - Staging
+        - Production

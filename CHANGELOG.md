@@ -15,6 +15,7 @@ All notable changes to this project will be documented in this file.
 * Use appwise-core built-in build step scripts.
 * Switch to Cocoapods Rome for much faster build times.
   * Note that this requires an additional build step "Strip Architectures" for release builds.
+* Use XcodeGen to generate project.
 
 ### 15 November 2019
 
