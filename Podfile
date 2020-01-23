@@ -1,16 +1,8 @@
-platform :ios, '11.0'
+platform :ios, '12.0'
 
 inhibit_all_warnings!
 
 target 'Example Project' do
-  project 'Example Project',
-    'Development-Debug' => :debug,
-    'Development-Release' => :release,
-    'Staging-Debug' => :debug,
-    'Staging-Release' => :release,
-    'Production-Debug' => :debug,
-    'Production-Release' => :release
-
   pod 'AppwiseCore', :path => '../'
   pod 'AppwiseCore/CoreData', :path => '../'
   pod 'AppwiseCore/DeepLink', :path => '../'
@@ -22,8 +14,8 @@ target 'Example Project' do
   pod 'SwiftFormat/CLI'
   pod 'SwiftGen'
   pod 'SwiftLint'
-  pod 'Bagel', :modular_headers => true, :configurations => ['Development-Debug', 'Staging-Debug', 'Production-Debug']
-  pod 'CocoaAsyncSocket', :modular_headers => true, :configurations => ['Development-Debug', 'Staging-Debug', 'Production-Debug']
+  pod 'Bagel'
+  pod 'CocoaAsyncSocket'
 
   # Other
   pod 'BonMot'
@@ -34,50 +26,36 @@ target 'Example Project' do
   pod 'p2.OAuth2'
   pod 'PaginationTracker'
   pod 'Reusable'
-  pod 'Sentry', :modular_headers => true
   pod 'SnapKit'
   pod 'StatefulUI'
-
-  # Scripts
-  script_phase :name => 'Check Strings',
-    :execution_position => :before_compile,
-    :script => '"../Scripts/check_strings.sh"'
-
-  script_phase :name => 'SwiftGen',
-    :execution_position => :before_compile,
-    :script => '"../Scripts/swiftgen.sh"'
-
-  script_phase :name => 'Sourcery',
-    :execution_position => :before_compile,
-    :script => '"../Scripts/sourcery.sh"'
-
-  script_phase :name => 'SwiftFormat',
-    :execution_position => :before_compile,
-    :script => '"../Scripts/swiftformat.sh"'
-
-  script_phase :name => 'SwiftLint',
-    :execution_position => :before_compile,
-    :script => '"../Scripts/swiftlint.sh"'
-
-  script_phase :name => 'Update Version Number',
-    :execution_position => :after_compile,
-    :script => '"../Scripts/update_build_number.sh"'
 end
 
-post_install do | installer |
-  # Silence Xcode warnings about low deployment targets
-  installer.generated_projects.each do |project|
-    project.build_configurations.each do |config|
-      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '8.0' if config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'].to_f < 8.0
-    end
-    project.targets.each do |target|
+# Pods with no defined swift version are set to 4.2
+pre_install do |installer|
+  installer.analysis_result.specifications.each do |s|
+    s.swift_versions << '4.2' if s.swift_versions.empty?
+  end
+end
+
+# Pre-compile pods
+plugin 'cocoapods-rome',
+  :pre_compile => Proc.new { |installer|
+    # ensure we have bitcode
+    installer.pods_project.targets.each do |target|
       target.build_configurations.each do |config|
-        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '8.0' if config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'].to_f < 8.0
+        config.build_settings['BITCODE_GENERATION_MODE'] = 'bitcode'
       end
     end
-  end
+    installer.pods_project.save
+  },
+  :post_compile => Proc.new { |installer|
+    # generate project
+    require './../Scripts/generate_project.rb'
+    generate_project(installer)
 
-  # generate acknowledgements
-  require 'fileutils'
-  FileUtils.cp_r('Pods/Target Support Files/Pods-Example Project/Pods-Example Project-Acknowledgements.plist', 'Application/Resources/Settings.bundle/Acknowledgements.plist', :remove_destination => true)
-end
+    # generate acknowledgements
+    require 'fileutils'
+    FileUtils.cp_r('Pods/Target Support Files/Pods-Example Project/Pods-Example Project-Acknowledgements.plist', 'Application/Resources/Settings.bundle/Acknowledgements.plist', :remove_destination => true)
+  },
+  :dsym => true,
+  :configuration => 'Release'

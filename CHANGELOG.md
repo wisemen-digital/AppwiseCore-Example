@@ -13,6 +13,11 @@ All notable changes to this project will be documented in this file.
   * Remove Fabric build step.
   * Update fastlane `Appfile` & `Fastfile`
 * Use appwise-core built-in build step scripts.
+* Switch to Cocoapods Rome for much faster build times.
+  * Note: this requires an additional build step "Strip Architectures" for release builds.
+  * Warning: some (badly) configured pods need you to add loose resources from the 'Rome' directory to work correctly.
+* Use XcodeGen to generate project.
+  * This uses the `iOS App` target template provided within AppwiseCore, which includes most common steps.
 
 ### 15 November 2019
 

@@ -93,7 +93,6 @@ DEPENDENCIES:
   - p2.OAuth2
   - PaginationTracker
   - Reusable
-  - Sentry
   - SnapKit
   - Sourcery
   - StatefulUI
@@ -159,6 +158,6 @@ SPEC CHECKSUMS:
   SwiftLint: 8f5d2f903e1c9bcbc832fd16771e80a263ac6cbb
   Then: 90cd104fd951cec1980a03f57704ad8f784d4d79
 
-PODFILE CHECKSUM: 948d2bfc85d3bc749b7c43d319a4feac99a904bf
+PODFILE CHECKSUM: f38e27e7ed4162a816596b135090c25bc78ae0d0
 
 COCOAPODS: 1.8.4
