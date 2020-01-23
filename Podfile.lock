@@ -1,33 +1,33 @@
 PODS:
   - Alamofire (4.9.1)
-  - AppwiseCore (1.1.1):
-    - AppwiseCore/Behaviours (= 1.1.1)
-    - AppwiseCore/Core (= 1.1.1)
-    - AppwiseCore/UI (= 1.1.1)
-    - AppwiseCore/UIApplication (= 1.1.1)
-  - AppwiseCore/Behaviours (1.1.1):
+  - AppwiseCore (1.2.0):
+    - AppwiseCore/Behaviours (= 1.2.0)
+    - AppwiseCore/Core (= 1.2.0)
+    - AppwiseCore/UI (= 1.2.0)
+    - AppwiseCore/UIApplication (= 1.2.0)
+  - AppwiseCore/Behaviours (1.2.0):
     - AppwiseCore/Common
-    - Then (~> 2.4)
-  - AppwiseCore/Common (1.1.1)
-  - AppwiseCore/Core (1.1.1):
+    - Then (~> 2.6)
+  - AppwiseCore/Common (1.2.0)
+  - AppwiseCore/Core (1.2.0):
     - Alamofire (~> 4.8)
     - AppwiseCore/Common
-    - CocoaLumberjack/Swift (~> 3.5)
+    - CocoaLumberjack/Swift (~> 3.6)
     - CodableAlamofire (~> 1.1)
     - Sentry
-    - Then (~> 2.4)
-  - AppwiseCore/CoreData (1.1.1):
+    - Then (~> 2.6)
+  - AppwiseCore/CoreData (1.2.0):
     - AppwiseCore/Common
     - AppwiseCore/Core
     - Groot (~> 3.0)
-  - AppwiseCore/DeepLink (1.1.1):
+  - AppwiseCore/DeepLink (1.2.0):
     - AppwiseCore/Behaviours
     - AppwiseCore/Common
-  - AppwiseCore/UI (1.1.1):
+  - AppwiseCore/UI (1.2.0):
     - AppwiseCore/Behaviours
     - AppwiseCore/Core
-    - IBAnimatable (~> 5.2)
-  - AppwiseCore/UIApplication (1.1.1):
+    - IBAnimatable (~> 6.0)
+  - AppwiseCore/UIApplication (1.2.0):
     - AppwiseCore/Core
   - Bagel (1.3.2):
     - CocoaAsyncSocket
@@ -42,7 +42,7 @@ PODS:
   - Groot (3.0.1):
     - Groot/Swift (= 3.0.1)
   - Groot/Swift (3.0.1)
-  - IBAnimatable (5.2.1)
+  - IBAnimatable (6.0.0)
   - IQKeyboardManagerSwift (6.5.5)
   - Nuke (7.6.3)
   - Nuke-Alamofire-Plugin (4.2):
@@ -133,7 +133,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
-  AppwiseCore: 3c25bf4260ba2a25c4c4a42ef48c2e4d4055ea28
+  AppwiseCore: 947345748a93ee578422163f9f3ce593f0ccefcb
   Bagel: 199e0105ac694d6eee9db54dd006c940da6ce81b
   BartyCrouch: 3f3501276901326bf4150341ad801467da972e43
   BonMot: aa82119ff2ffa184223d8a31c72aed84fbb009e0
@@ -141,7 +141,7 @@ SPEC CHECKSUMS:
   CocoaLumberjack: 78b0c238666f4f58db069738ec176f4519557516
   CodableAlamofire: b7adfb2e5e980392014b4b3f3b8b62c01b9de4aa
   Groot: a668afbcf0be88d76c0a26c714cfa4638ceaca66
-  IBAnimatable: a46b835ec6875178516cf7e014a40194d6bfa3fc
+  IBAnimatable: d49f9fee0c401b5b08d31b77256b77fb067e0e92
   IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
   Nuke: 44130e95e09463f8773ae4b96b90de1eba6b3350
   Nuke-Alamofire-Plugin: ee83df6e81e70488ca33033ac98b3f86a2ab1597
@@ -158,6 +158,6 @@ SPEC CHECKSUMS:
   SwiftLint: 8f5d2f903e1c9bcbc832fd16771e80a263ac6cbb
   Then: 90cd104fd951cec1980a03f57704ad8f784d4d79
 
-PODFILE CHECKSUM: f38e27e7ed4162a816596b135090c25bc78ae0d0
+PODFILE CHECKSUM: f78d4bf7f16c3cb8e88b21fa89011a618f5fac15
 
 COCOAPODS: 1.8.4

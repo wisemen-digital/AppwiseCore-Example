@@ -1,6 +1,6 @@
 platform :ios, '12.0'
 
-inhibit_all_warnings!
+raise 'Please use bundle exec to run the pod command' unless defined?(Bundler)
 
 target 'Example Project' do
   pod 'AppwiseCore', :path => '../'

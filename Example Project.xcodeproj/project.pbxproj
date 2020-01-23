@@ -848,7 +848,7 @@
 				);
 				INFOPLIST_FILE = Application/Resources/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "be.appwise.Example-Project-Staging";
-				PRODUCT_NAME = "Example Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
 			name = "Staging-Release";
@@ -863,7 +863,7 @@
 				);
 				INFOPLIST_FILE = Application/Resources/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "be.appwise.Example-Project";
-				PRODUCT_NAME = "Example Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
 			name = "Production-Debug";
@@ -885,7 +885,7 @@
 				);
 				INFOPLIST_FILE = Application/Resources/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "be.appwise.Example-Project";
-				PRODUCT_NAME = "Example Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
 			name = "Production-Release";
@@ -900,7 +900,7 @@
 				);
 				INFOPLIST_FILE = Application/Resources/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "be.appwise.Example-Project-Staging";
-				PRODUCT_NAME = "Example Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
 			name = "Staging-Debug";
@@ -922,7 +922,7 @@
 				);
 				INFOPLIST_FILE = Application/Resources/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "be.appwise.Example-Project-Development";
-				PRODUCT_NAME = "Example Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
 			name = "Development-Debug";
@@ -951,7 +951,7 @@
 				);
 				INFOPLIST_FILE = Application/Resources/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "be.appwise.Example-Project-Development";
-				PRODUCT_NAME = "Example Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
 			name = "Development-Release";
