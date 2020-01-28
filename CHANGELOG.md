@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+### 28 January 2020
+
+* Added fastlane steps for exporting & importing translations.
+
 ### 21 January 2020
 
 * Update SwiftFormat to 0.44 (with some configuration changes).
