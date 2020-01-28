@@ -27,29 +27,42 @@ done
 
 #### Steps ####
 
-function deintegratePods {
-  command -v pod >/dev/null 2>&1 || { echo >&2 "I require CocoaPods but it's not installed.  Aborting."; exit 1; }
-  echo "Deintegrating pods..."
-  pod deintegrate >/dev/null
-}
-
 function fixPodfile {
   echo "Fixing Podfile..."
 
+  # remove local pod path
   sed -i.bak -e "s#, :path => '\.\./'##g" Podfile && rm Podfile.bak
-  sed -i.bak -e "s#\\\"\.\./#\\\"\\\${PODS_ROOT}/AppwiseCore/#g" Podfile && rm Podfile.bak
+
+  # point scripts to right path
+  sed -i.bak -e "s#\.\./Scripts#Pods/AppwiseCore/Scripts#g" Podfile && rm Podfile.bak
+}
+
+function fixProjectfile {
+  echo "Fixing project file..."
+
+  # project template files
+  sed -i.bak -e "s#\.\./XcodeGen#Pods/AppwiseCore/XcodeGen#g" project.yml && rm project.yml.bak
+}
+
+function fixFastfile {
+  echo "Fixing Fastfile..."
+
+  # point scripts to right path
+  sed -i.bak -e "s#\.\./Scripts#Pods/AppwiseCore/Scripts#g" fastlane/Fastfile && rm fastlane/Fastfile.bak
 }
 
 function fixSourcery {
   echo "Fixing Sourcery..."
 
-  sed -i.bak -e "s#\.\./#Pods/AppwiseCore/#g" .sourcery.yml && rm .sourcery.yml.bak
+  # template files
+  sed -i.bak -e "s#\.\./Sourcery#Pods/AppwiseCore/Sourcery#g" .sourcery.yml && rm .sourcery.yml.bak
 }
 
 function fixSwiftGen {
   echo "Fixing SwiftGen..."
 
-  sed -i.bak -e "s#\.\./#Pods/AppwiseCore/#g" swiftgen.yml && rm swiftgen.yml.bak
+  # template files
+  sed -i.bak -e "s#\.\./SwiftGen#Pods/AppwiseCore/SwiftGen#g" swiftgen.yml && rm swiftgen.yml.bak
 }
 
 # move files to new locations, we handle up to 2 levels deep of renaming
@@ -84,10 +97,10 @@ USER_APPLE_ID=$appleID
 EOL
 }
 
-function podInstall {
+function podUpdate {
   command -v pod >/dev/null 2>&1 || { echo >&2 "I require CocoaPods but it's not installed.  Aborting."; exit 1; }
   echo "Installing pods..."
-  pod install >/dev/null
+  pod update >/dev/null
 }
 
 function cleanup {
@@ -130,8 +143,9 @@ echo "- Sentry Project slug: $newSentryProject"
 echo "- Sentry DSN: $newSentryDSN"
 read -rsn1 -p "Press any key to continue";echo
 
-deintegratePods
 fixPodfile
+fixFastfile
+fixProjectfile
 fixSourcery
 fixSwiftGen
 relocateFiles
@@ -144,7 +158,7 @@ replaceText "$oldSentryProject" "$newSentryProject"
 replaceText "$oldSentryDSN" "$newSentryDSN"
 
 configureFastlane
-podInstall
+podUpdate
 cleanup
 initializeGit
 
