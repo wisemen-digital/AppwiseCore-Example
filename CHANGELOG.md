@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 * Add fastlane actions from AppwiseCore.
 * Some fixes for bootstrap script (path issues).
+* Link commits to sentry release.
 
 ### 21 January 2020
 

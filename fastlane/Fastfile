@@ -77,6 +77,9 @@ platform :ios do
     sentry_create_release(
       version: "#{sentry_project}@#{version_number}"
     )
+    sentry_auto_set_commits(
+      version: "#{sentry_project}@#{version_number}"
+    )
   end
 
   private_lane :syncDsyms do |options|
