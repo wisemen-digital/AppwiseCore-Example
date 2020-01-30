@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 
 ### 28 January 2020
 
-* Added fastlane steps for exporting & importing translations.
+* Add fastlane actions from AppwiseCore.
 * Some fixes for bootstrap script (path issues).
 
 ### 21 January 2020
