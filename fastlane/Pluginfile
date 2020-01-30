@@ -1,2 +1,1 @@
-gem 'fastlane-plugin-localization'
 gem 'fastlane-plugin-sentry'
