@@ -1,6 +1,9 @@
-platform :ios, '12.0'
+require 'fileutils'
+require './../Scripts/cocoapods_rome.rb'
 
 raise 'Please use bundle exec to run the pod command' unless defined?(Bundler)
+
+platform :ios, '12.0'
 
 target 'Example Project' do
   pod 'AppwiseCore', :path => '../'
@@ -40,21 +43,17 @@ end
 # Pre-compile pods
 plugin 'cocoapods-rome',
   :pre_compile => Proc.new { |installer|
+    # fix interface builder
+    interface_builder_integration(installer)
+
     # ensure we have bitcode
-    installer.pods_project.targets.each do |target|
-      target.build_configurations.each do |config|
-        config.build_settings['BITCODE_GENERATION_MODE'] = 'bitcode'
-      end
-    end
-    installer.pods_project.save
+    force_bitcode(installer)
   },
   :post_compile => Proc.new { |installer|
     # generate project
-    require './../Scripts/generate_project.rb'
     generate_project(installer)
 
     # generate acknowledgements
-    require 'fileutils'
     FileUtils.cp_r('Pods/Target Support Files/Pods-Example Project/Pods-Example Project-Acknowledgements.plist', 'Application/Resources/Settings.bundle/Acknowledgements.plist', :remove_destination => true)
   },
   :dsym => true,

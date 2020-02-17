@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+### 17 February 2020
+
+* Use new rome integration script that includes IB fixes.
+
 ### 28 January 2020
 
 * Add fastlane actions from AppwiseCore.
