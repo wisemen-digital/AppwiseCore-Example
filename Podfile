@@ -1,6 +1,3 @@
-require 'fileutils'
-require './../Scripts/cocoapods_rome.rb'
-
 raise 'Please use bundle exec to run the pod command' unless defined?(Bundler)
 
 platform :ios, '12.0'
@@ -43,6 +40,8 @@ end
 # Pre-compile pods
 plugin 'cocoapods-rome',
   :pre_compile => Proc.new { |installer|
+    require './../Scripts/cocoapods_rome.rb'
+
     # fix interface builder
     interface_builder_integration(installer)
 
@@ -50,6 +49,9 @@ plugin 'cocoapods-rome',
     force_bitcode(installer)
   },
   :post_compile => Proc.new { |installer|
+    require 'fileutils'
+    require './../Scripts/cocoapods_rome.rb'
+
     # generate project
     generate_project(installer)
 
