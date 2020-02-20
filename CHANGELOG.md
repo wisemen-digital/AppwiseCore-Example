@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+### 20 February 2020
+
+* Update swiftlint config to ignore Rome folder.
+
 ### 17 February 2020
 
 * Use new rome integration script that includes IB fixes.
