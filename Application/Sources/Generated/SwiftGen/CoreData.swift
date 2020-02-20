@@ -25,7 +25,7 @@ internal class User: NSManagedObject {
   }
 
   // swiftlint:disable discouraged_optional_boolean discouraged_optional_collection
-  internal var id: User.ID {
+  internal dynamic var id: User.ID {
     get {
       let key = "id"
       willAccessValue(forKey: key)

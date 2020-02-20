@@ -40,7 +40,7 @@ extension Settings {
 extension Settings {
 	var walkthrough: Bool {
 		get {
-			return defaults.bool(forKey: userScoped(key: .walkthrough))
+			defaults.bool(forKey: userScoped(key: .walkthrough))
 		}
 		set {
 			defaults.set(newValue, forKey: userScoped(key: .walkthrough))
@@ -50,6 +50,6 @@ extension Settings {
 
 extension Settings {
 	private func userScoped(key: DefaultsKey) -> String {
-		return "\(key.rawValue)_\(currentUserID ?? 0)"
+		"\(key.rawValue)_\(currentUserID ?? 0)"
 	}
 }

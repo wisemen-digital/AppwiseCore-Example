@@ -16,7 +16,7 @@ final class StartViewController: UIViewController {
 	}
 
 	override var preferredStatusBarStyle: UIStatusBarStyle {
-		return .lightContent
+		.lightContent
 	}
 
 	private func checkLogin() {
@@ -36,7 +36,7 @@ final class StartViewController: UIViewController {
 extension StartViewController {
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 		switch StoryboardSegue.Start(segue) {
-		case .openAuthentication?:
+		case .openAuthentication:
 			segue.destination.presentationController?.delegate = self
 		default:
 			break

@@ -36,7 +36,7 @@ enum OAuth2Grant {
 		}
 
 	static var haveValidCredentials: Bool {
-		return grant.refreshToken != nil
+		grant.refreshToken != nil
 	}
 
 	private static func loadTokensFromEnvironment(into grant: OAuth2Base) {
