@@ -3,7 +3,6 @@
 // Copyright © 2021 Appwise
 //
 
-import Alamofire
 import AppwiseCore
 import CoreData
 
@@ -17,7 +16,7 @@ extension Repository {
 			let objectID: Model.User.ID
 			let context: NSManagedObjectContext
 
-			func refresh(then handler: @escaping (Result<Model.User>) -> Void) {
+			func refresh(then handler: @escaping (Result<Model.User, Error>) -> Void) {
 				// we only have a refresh call for the current user
 				precondition(objectID == Settings.shared.currentUserID, "Trying to refresh a user that isn't the main user.")
 
@@ -25,7 +24,7 @@ extension Repository {
 					handler(result)
 
 					// Notify listeners that we've updated the current user
-					if let user = result.value {
+					if let user = try? result.get() {
 						Notification.UserUpdated(payload: user).post()
 					}
 				}

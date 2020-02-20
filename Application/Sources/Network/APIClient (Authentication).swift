@@ -8,10 +8,10 @@ import AppwiseCore
 import p2_OAuth2
 
 extension APIClient {
-	func loginAndLoadUser(email: String, password: String, then handler: @escaping (Result<User>) -> Void) {
+	func loginAndLoadUser(email: String, password: String, then handler: @escaping (Swift.Result<User, Error>) -> Void) {
 		login(email: email, password: password) { error in
 			if let error = error {
-				handler(Result.failure(error))
+				handler(.failure(error))
 			} else {
 				self.user(then: handler)
 			}
