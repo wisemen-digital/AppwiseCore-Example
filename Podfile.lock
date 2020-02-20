@@ -1,41 +1,41 @@
 PODS:
   - Alamofire (4.9.1)
-  - AppwiseCore (1.2.0):
-    - AppwiseCore/Behaviours (= 1.2.0)
-    - AppwiseCore/Core (= 1.2.0)
-    - AppwiseCore/UI (= 1.2.0)
-    - AppwiseCore/UIApplication (= 1.2.0)
-  - AppwiseCore/Behaviours (1.2.0):
+  - AppwiseCore (1.2.2):
+    - AppwiseCore/Behaviours (= 1.2.2)
+    - AppwiseCore/Core (= 1.2.2)
+    - AppwiseCore/UI (= 1.2.2)
+    - AppwiseCore/UIApplication (= 1.2.2)
+  - AppwiseCore/Behaviours (1.2.2):
     - AppwiseCore/Common
     - Then (~> 2.6)
-  - AppwiseCore/Common (1.2.0)
-  - AppwiseCore/Core (1.2.0):
+  - AppwiseCore/Common (1.2.2)
+  - AppwiseCore/Core (1.2.2):
     - Alamofire (~> 4.8)
     - AppwiseCore/Common
     - CocoaLumberjack/Swift (~> 3.6)
     - CodableAlamofire (~> 1.1)
     - Sentry
     - Then (~> 2.6)
-  - AppwiseCore/CoreData (1.2.0):
+  - AppwiseCore/CoreData (1.2.2):
     - AppwiseCore/Common
     - AppwiseCore/Core
     - Groot (~> 3.0)
-  - AppwiseCore/DeepLink (1.2.0):
+  - AppwiseCore/DeepLink (1.2.2):
     - AppwiseCore/Behaviours
     - AppwiseCore/Common
-  - AppwiseCore/UI (1.2.0):
+  - AppwiseCore/UI (1.2.2):
     - AppwiseCore/Behaviours
     - AppwiseCore/Core
     - IBAnimatable (~> 6.0)
-  - AppwiseCore/UIApplication (1.2.0):
+  - AppwiseCore/UIApplication (1.2.2):
     - AppwiseCore/Core
   - Bagel (1.3.2):
     - CocoaAsyncSocket
   - BartyCrouch (4.0.2)
-  - BonMot (5.4.1)
-  - CocoaAsyncSocket (7.6.3)
-  - CocoaLumberjack/Core (3.6.0)
-  - CocoaLumberjack/Swift (3.6.0):
+  - BonMot (5.5)
+  - CocoaAsyncSocket (7.6.4)
+  - CocoaLumberjack/Core (3.6.1)
+  - CocoaLumberjack/Swift (3.6.1):
     - CocoaLumberjack/Core
   - CodableAlamofire (1.1.2):
     - Alamofire (~> 4.0)
@@ -48,7 +48,7 @@ PODS:
   - Nuke-Alamofire-Plugin (4.2):
     - Alamofire (~> 4.0)
     - Nuke (~> 7.0)
-  - OneSignal (2.12.5)
+  - OneSignal (2.12.6)
   - p2.OAuth2 (5.0.0)
   - PaginationTracker (1.0.1):
     - PaginationTracker/Core (= 1.0.1)
@@ -72,9 +72,9 @@ PODS:
   - StatefulUI (1.0.3):
     - IBAnimatable
     - Reusable
-  - SwiftFormat/CLI (0.44.0)
+  - SwiftFormat/CLI (0.44.3)
   - SwiftGen (6.1.0)
-  - SwiftLint (0.38.2)
+  - SwiftLint (0.39.1)
   - Then (2.6.0)
 
 DEPENDENCIES:
@@ -133,19 +133,19 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
-  AppwiseCore: 947345748a93ee578422163f9f3ce593f0ccefcb
+  AppwiseCore: 5d50fa8ffcff2856b668aec133444b4fbd26d920
   Bagel: 199e0105ac694d6eee9db54dd006c940da6ce81b
   BartyCrouch: 3f3501276901326bf4150341ad801467da972e43
-  BonMot: aa82119ff2ffa184223d8a31c72aed84fbb009e0
-  CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
-  CocoaLumberjack: 78b0c238666f4f58db069738ec176f4519557516
+  BonMot: 58a86daf442518ff78e00cf54430fd03de37945a
+  CocoaAsyncSocket: 694058e7c0ed05a9e217d1b3c7ded962f4180845
+  CocoaLumberjack: b17ae15142558d08bbacf69775fa10c4abbebcc9
   CodableAlamofire: b7adfb2e5e980392014b4b3f3b8b62c01b9de4aa
   Groot: a668afbcf0be88d76c0a26c714cfa4638ceaca66
   IBAnimatable: d49f9fee0c401b5b08d31b77256b77fb067e0e92
   IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
   Nuke: 44130e95e09463f8773ae4b96b90de1eba6b3350
   Nuke-Alamofire-Plugin: ee83df6e81e70488ca33033ac98b3f86a2ab1597
-  OneSignal: 1de998c42bb06ed630bb38dd1bc933a667437dbb
+  OneSignal: a6df91542d1cf133b9dd19d89f2b533d8f2d3163
   p2.OAuth2: 5d203b46c2857b4bbcca3e521089959e7b3b5a5c
   PaginationTracker: fef5fce9315c4cdfc61a58605033d9f06f37acc8
   Reusable: 82be188f29d96dc5eff0db7b2393bcc08d2cdd5b
@@ -153,11 +153,11 @@ SPEC CHECKSUMS:
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   Sourcery: 3ed61be7c8a1218fce349266139379dba477efe0
   StatefulUI: cab5727ed27ffe648b47302e7ccacd8dd2d2b07d
-  SwiftFormat: 180a4d17bcfa2c9f61b202dac7dddd2087ff920a
+  SwiftFormat: a18012d0de9f988d065f52bfe43c934b0c15b8c3
   SwiftGen: f872ca75cbd17bf7103c17f13dcfa0d9a15667b0
-  SwiftLint: 8f5d2f903e1c9bcbc832fd16771e80a263ac6cbb
+  SwiftLint: 55e96a4a4d537d4a3156859fc1c54bd24851a046
   Then: 90cd104fd951cec1980a03f57704ad8f784d4d79
 
-PODFILE CHECKSUM: f78d4bf7f16c3cb8e88b21fa89011a618f5fac15
+PODFILE CHECKSUM: 9c4169fbe9c6f8d13212c6e0c5e63497e225d79c
 
 COCOAPODS: 1.8.4
