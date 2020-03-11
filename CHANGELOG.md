@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+### 11 March 2020
+
+* Use Sentry environment variable for configuring fastlane
+
 ### 17 February 2020
 
 * Use new rome integration script that includes IB fixes.
