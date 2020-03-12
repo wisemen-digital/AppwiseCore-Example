@@ -26,8 +26,8 @@ extension APIClient {
 		OAuth2Grant.grant.password = password
 
 		OAuth2Grant.grant.authorize { (_: OAuth2JSON?, error: OAuth2Error?) in
-            OAuth2Grant.grant.username = nil
-            OAuth2Grant.grant.password = nil
+			OAuth2Grant.grant.username = nil
+			OAuth2Grant.grant.password = nil
 			handler(error)
 		}
 	}
