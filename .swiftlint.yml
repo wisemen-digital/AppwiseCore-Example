@@ -84,6 +84,7 @@ opt_in_rules:
 
 excluded:
   - Pods
+  - Rome
   - Application/Sources/Generated
   - fastlane
 
