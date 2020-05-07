@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+### 19 March 2020
+
+* Exclude Rome directory from SwiftLint
+
+### 11 March 2020
+
+* Use Sentry environment variable for configuring fastlane
+
 ### 20 February 2020
 
 * Update swiftlint config to ignore Rome folder.

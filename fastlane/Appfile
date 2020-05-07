@@ -3,11 +3,16 @@ apple_id ENV['USER_APPLE_ID'] # Your Apple email address
 team_name 'Example BVBA'
 itc_team_name 'Example BVBA'
 
+# Environment settings for Sentry
+ENV['SENTRY_URL'] = 'https://sentry.appwi.se'
+ENV['SENTRY_ORG_SLUG'] = 'appwise'
+ENV['SENTRY_PROJECT_SLUG'] = 'example-project-ios'
+
 # lane specific settings
 for_platform :ios do
   app_identifier 'be.appwise.Example-Project'
   setter(:scheme, 'Example Project-Production')
-  setter(:sentry_project, 'example-project-ios')
+  setter(:sentry_project, ENV['SENTRY_PROJECT_SLUG'])
 
   setter(:identifiers, [
     'be.appwise.Example-Project-Development',
@@ -25,8 +30,3 @@ for_platform :ios do
     setter(:scheme, 'Example Project-Staging')
   end
 end
-
-# Environment settings for sentry
-ENV['SENTRY_URL'] = 'https://sentry.appwi.se'
-ENV['SENTRY_ORG_SLUG'] = 'appwise'
-ENV['SENTRY_PROJECT_SLUG'] = 'example-project-ios'
