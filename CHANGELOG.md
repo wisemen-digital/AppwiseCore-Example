@@ -2,13 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+### 7 May 2020
+
+* Update Sentry client code.
+
 ### 19 March 2020
 
-* Exclude Rome directory from SwiftLint
+* Exclude Rome directory from SwiftLint.
 
 ### 11 March 2020
 
-* Use Sentry environment variable for configuring fastlane
+* Use Sentry environment variable for configuring fastlane.
 
 ### 20 February 2020
 

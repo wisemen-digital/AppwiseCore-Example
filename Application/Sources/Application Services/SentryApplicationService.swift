@@ -13,27 +13,22 @@ import Sentry
 final class SentryApplicationService: NSObject, ApplicationService {
 	// swiftlint:disable:next discouraged_optional_collection
 	func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
-		do {
-			Sentry.Client.shared = try Sentry.Client(dsn: "https://<key>@sentry.io/<project>").then {
-				$0.environment = env(
-					.dev("development"),
-					.stg("staging"),
-					.prd("production")
-				)
-				#if DEBUG
-				$0.tags = ["debug": "yes"]
-				#else
-				$0.tags = ["debug": "no"]
-				#endif
-				$0.releaseName = "example-project-ios@\(Config.shared.appVersion)"
-				$0.trackMemoryPressureAsEvent()
-				$0.enableAutomaticBreadcrumbTracking()
-			}
+		#if DEBUG
+		#else
+		SentrySDK.start(options: [
+			"dsn": "https://<key>@sentry.io/<project>",
+			"release": "example-project-ios@\(Config.shared.appVersion)",
+			"enableAutoSessionTracking": true
+		])
 
-			try Sentry.Client.shared?.startCrashHandler()
-		} catch {
-			DDLogError("\(error)")
+		SentrySDK.configureScope { scope in
+			scope.setEnvironment(env(
+				.dev("development"),
+				.stg("staging"),
+				.prd("production")
+			))
 		}
+		#endif
 
 		return true
 	}
