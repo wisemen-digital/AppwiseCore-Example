@@ -5,6 +5,7 @@ name: Example Project
 options:
   settingPresets: none
   groupSortPosition: top
+  xcodeVersion: "1140"
 configs:
   Development-Debug: debug
   Development-Release: release
@@ -27,6 +28,9 @@ targets:
       - path: Application
         excludes:
           - "**/.gitkeep"
+      - path: Rome
+        excludes:
+          - "*.framework"
     settings:
       base:
         DEVELOPMENT_TEAM: XXXXXXXXXX

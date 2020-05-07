@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 ### 7 May 2020
 
 * Update Sentry client code.
+* Update Rome usage code in Podfile.
 
 ### 19 March 2020
 

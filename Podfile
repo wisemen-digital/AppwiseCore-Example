@@ -32,31 +32,24 @@ end
 
 # Pods with no defined swift version are set to 4.2
 pre_install do |installer|
-  installer.analysis_result.specifications.each do |s|
-    s.swift_versions << '4.2' if s.swift_versions.empty?
+  installer.pod_targets.select(&:uses_swift?).each do |target|
+    target.root_spec.swift_versions << '4.2' if target.root_spec.swift_versions.empty?
+    target.instance_variable_set(:@swift_version, '4.2') unless target.swift_version
   end
 end
 
 # Pre-compile pods
 plugin 'cocoapods-rome',
-  :pre_compile => Proc.new { |installer|
-    require './../Scripts/cocoapods_rome.rb'
-
-    # fix interface builder
-    interface_builder_integration(installer)
-
-    # ensure we have bitcode
-    force_bitcode(installer)
-  },
   :post_compile => Proc.new { |installer|
-    require 'fileutils'
-    require './../Scripts/cocoapods_rome.rb'
-
     # generate project
+    require './../Scripts/cocoapods_rome.rb'
     generate_project(installer)
 
     # generate acknowledgements
+    require 'fileutils'
     FileUtils.cp_r('Pods/Target Support Files/Pods-Example Project/Pods-Example Project-Acknowledgements.plist', 'Application/Resources/Settings.bundle/Acknowledgements.plist', :remove_destination => true)
   },
   :dsym => true,
-  :configuration => 'Release'
+  :configuration => 'Release',
+  :fix_interface_builder => true,
+  :force_bitcode => true
