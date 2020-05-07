@@ -138,6 +138,7 @@
 		0588DE5B8DBC94BDDC223AC5 /* StatefulUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StatefulUI.framework; path = Rome/StatefulUI.framework; sourceTree = "<group>"; };
 		068102742AB9DFE5E5A379B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A4F5D24E253E4CC8ECBDD2A /* Settings (Debug).xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Settings (Debug).xcconfig"; sourceTree = "<group>"; };
+		0C79178F193DE89533798F75 /* sourcery_output.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = sourcery_output.xcfilelist; sourceTree = "<group>"; };
 		0EB8F5C073EEF3CA1EEC9D93 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		15E7A8B5360D1CD5EB125027 /* Then.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Then.swift; sourceTree = "<group>"; };
 		16A201080E842D7110B492BB /* KeyboardManagerApplicationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardManagerApplicationService.swift; sourceTree = "<group>"; };
@@ -146,18 +147,16 @@
 		1F77B0530B9F992B0F2C29FB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		2022A536B286F08853D585CD /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		21EC027C9C8C6920A8C11732 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IQKeyboardManagerSwift.framework; path = Rome/IQKeyboardManagerSwift.framework; sourceTree = "<group>"; };
-		23108115EFA66CBC9E6AA4C2 /* Settings-Production (Release).xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Settings-Production (Release).xcconfig"; sourceTree = "<group>"; };
 		27BEDD914B4BEA26F9186CEE /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		29B2E45CAF623789CA4C9440 /* Settings-Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Settings-Staging.xcconfig"; sourceTree = "<group>"; };
 		2B10275A665968EF4A91E3C3 /* Example Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Example Project.xcdatamodel"; sourceTree = "<group>"; };
 		2B90A15C393219938F7B212F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2F1D580FD751105F54A764DA /* Settings-Staging (Debug).xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Settings-Staging (Debug).xcconfig"; sourceTree = "<group>"; };
 		2F5626D122480F49C3AEC6E0 /* p2_OAuth2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = p2_OAuth2.framework; path = Rome/p2_OAuth2.framework; sourceTree = "<group>"; };
 		33414E142A98B28CBCDA5ADF /* Storyboards Segues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboards Segues.swift"; sourceTree = "<group>"; };
 		3739916D4FC9AD0F740832E3 /* AutoViewModel.generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoViewModel.generated.swift; sourceTree = "<group>"; };
 		38FB868F0CB4676D5BD31E30 /* NewsItemPushNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItemPushNotification.swift; sourceTree = "<group>"; };
 		3974955973FB5DBABF947F36 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		3F93508FF66000074FD00E87 /* Settings-Development (Release).xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Settings-Development (Release).xcconfig"; sourceTree = "<group>"; };
+		3CB0F7DCA89CA715E026F780 /* swiftlint_input.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = swiftlint_input.xcfilelist; sourceTree = "<group>"; };
 		429A9A5B83B5EBE217D84C5E /* Push Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Push Notifications.swift"; sourceTree = "<group>"; };
 		45589EDEE9CE2DEF88AB2D57 /* Groot.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Groot.framework; path = Rome/Groot.framework; sourceTree = "<group>"; };
 		492508C9E55D485A0A7C83E6 /* SentryApplicationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentryApplicationService.swift; sourceTree = "<group>"; };
@@ -175,8 +174,9 @@
 		6771B9B37D36F9845CDACDCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Authentication.storyboard; sourceTree = "<group>"; };
 		6C1F7DD6A487E1BB791E0961 /* Settings (Release).xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Settings (Release).xcconfig"; sourceTree = "<group>"; };
 		6FBB48857938624E54DA44A6 /* Settings-Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Settings-Production.xcconfig"; sourceTree = "<group>"; };
-		7EF4919D85E3F795010F3261 /* Settings-Staging (Release).xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Settings-Staging (Release).xcconfig"; sourceTree = "<group>"; };
+		77765AFD1E7F60B9A1096B29 /* check_strings_output.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = check_strings_output.xcfilelist; sourceTree = "<group>"; };
 		800A7AEB9F9EEB7C1503DE42 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		81134666A5E45AC5C3D4ECD3 /* swiftgen_input.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = swiftgen_input.xcfilelist; sourceTree = "<group>"; };
 		821858A08D51A88A66188CFF /* Show Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Show Error.swift"; sourceTree = "<group>"; };
 		82214996488F6362EA089053 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Start.storyboard; sourceTree = "<group>"; };
 		82D6513E3FBB1F54AA126E35 /* APIClient (Authentication).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIClient (Authentication).swift"; sourceTree = "<group>"; };
@@ -187,6 +187,7 @@
 		96DEEA5179191EE8B9907B36 /* Nuke.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nuke.framework; path = Rome/Nuke.framework; sourceTree = "<group>"; };
 		98D99FEAAC024E844F64D960 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		A5BF2684ABCD0D052C87EA61 /* CodableAlamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CodableAlamofire.framework; path = Rome/CodableAlamofire.framework; sourceTree = "<group>"; };
+		A86E6BED7C0C51D98CEE3C64 /* check_strings_input.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = check_strings_input.xcfilelist; sourceTree = "<group>"; };
 		A8933F5B7C05FC2FA0901181 /* BonMot.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BonMot.framework; path = Rome/BonMot.framework; sourceTree = "<group>"; };
 		AD4788C25219F3F8FF5447FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Authentication.strings; sourceTree = "<group>"; };
 		AD756B0382D47C826F85212F /* IBAnimatable.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IBAnimatable.framework; path = Rome/IBAnimatable.framework; sourceTree = "<group>"; };
@@ -204,20 +205,21 @@
 		CA15AAD54BC7D226923A732B /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CBA358903E5A2FFD48A026AE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D15B658CE49FFFE056EF9C40 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		D980966FF2AC2D9726888513 /* Settings-Development (Debug).xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Settings-Development (Debug).xcconfig"; sourceTree = "<group>"; };
+		D2CAC8D548320FF334A59CDD /* swiftlint_output.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = swiftlint_output.xcfilelist; sourceTree = "<group>"; };
 		DCB7A81BBF3776D7BF8AA43F /* CoreData (KeyPaths).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreData (KeyPaths).swift"; sourceTree = "<group>"; };
 		DF4E495D7B489111DCDE31FE /* APIClient (User).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIClient (User).swift"; sourceTree = "<group>"; };
 		E2CB0532D27F32984DA9D2F2 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		E92AF22CF117275B4B54C0DF /* Style.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Style.xcassets; sourceTree = "<group>"; };
 		EEC639B5ABE49A190CAE0BBA /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		EF6EEDB6F8C064EE4B2FEF98 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Rome/SnapKit.framework; sourceTree = "<group>"; };
-		EF87215CF02CDAAED1859AC7 /* Settings-Production (Debug).xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Settings-Production (Debug).xcconfig"; sourceTree = "<group>"; };
 		F05C20F7CE959AD21A517690 /* AutoModel.generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoModel.generated.swift; sourceTree = "<group>"; };
 		F166A94AAC744A1089C8890B /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjack.framework; path = Rome/CocoaLumberjack.framework; sourceTree = "<group>"; };
 		F6482FA2ED58FF868945C0CD /* PaginationTracker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PaginationTracker.framework; path = Rome/PaginationTracker.framework; sourceTree = "<group>"; };
 		F77213CA7D42315B32566951 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		F8BF3ABB778CA26EAA4DA336 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		F9C269A988DE8291F093E1CC /* Then.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Then.framework; path = Rome/Then.framework; sourceTree = "<group>"; };
+		FBFA09F6A84B73DFE2925B65 /* swiftgen_output.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = swiftgen_output.xcfilelist; sourceTree = "<group>"; };
+		FC7C79318F08CE0D43ED40F5 /* sourcery_input.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = sourcery_input.xcfilelist; sourceTree = "<group>"; };
 		FF38B6821C4383BA3FE98C32 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -261,6 +263,13 @@
 				15E7A8B5360D1CD5EB125027 /* Then.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1A3FE704C24AA2343C67FD19 /* Rome */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Rome;
 			sourceTree = "<group>";
 		};
 		2363161FE6E9DB90754457FF /* ModelRepositories */ = {
@@ -374,16 +383,11 @@
 		7C7297A3AC64989C7C9CAE52 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C7B05B37AC4E9998EC025E3E /* FileLists */,
 				0A4F5D24E253E4CC8ECBDD2A /* Settings (Debug).xcconfig */,
 				6C1F7DD6A487E1BB791E0961 /* Settings (Release).xcconfig */,
-				D980966FF2AC2D9726888513 /* Settings-Development (Debug).xcconfig */,
-				3F93508FF66000074FD00E87 /* Settings-Development (Release).xcconfig */,
 				952E5F1CBBDF9F148A64D621 /* Settings-Development.xcconfig */,
-				EF87215CF02CDAAED1859AC7 /* Settings-Production (Debug).xcconfig */,
-				23108115EFA66CBC9E6AA4C2 /* Settings-Production (Release).xcconfig */,
 				6FBB48857938624E54DA44A6 /* Settings-Production.xcconfig */,
-				2F1D580FD751105F54A764DA /* Settings-Staging (Debug).xcconfig */,
-				7EF4919D85E3F795010F3261 /* Settings-Staging (Release).xcconfig */,
 				29B2E45CAF623789CA4C9440 /* Settings-Staging.xcconfig */,
 				556A786D5FC998DDEFE870E1 /* Settings.xcconfig */,
 			);
@@ -460,8 +464,24 @@
 			children = (
 				7CE0298F3F5AAFE7714175A1 /* Resources */,
 				30340B7042A342AD16FBCB30 /* Sources */,
+				7C7297A3AC64989C7C9CAE52 /* Supporting Files */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		C7B05B37AC4E9998EC025E3E /* FileLists */ = {
+			isa = PBXGroup;
+			children = (
+				A86E6BED7C0C51D98CEE3C64 /* check_strings_input.xcfilelist */,
+				77765AFD1E7F60B9A1096B29 /* check_strings_output.xcfilelist */,
+				FC7C79318F08CE0D43ED40F5 /* sourcery_input.xcfilelist */,
+				0C79178F193DE89533798F75 /* sourcery_output.xcfilelist */,
+				81134666A5E45AC5C3D4ECD3 /* swiftgen_input.xcfilelist */,
+				FBFA09F6A84B73DFE2925B65 /* swiftgen_output.xcfilelist */,
+				3CB0F7DCA89CA715E026F780 /* swiftlint_input.xcfilelist */,
+				D2CAC8D548320FF334A59CDD /* swiftlint_output.xcfilelist */,
+			);
+			path = FileLists;
 			sourceTree = "<group>";
 		};
 		D53E4A271AE7498E70B893B5 /* SwiftGen */ = {
@@ -521,6 +541,7 @@
 			isa = PBXGroup;
 			children = (
 				BDE993A4FE294A1EF8EBD2C0 /* Application */,
+				1A3FE704C24AA2343C67FD19 /* Rome */,
 				7C7297A3AC64989C7C9CAE52 /* Supporting Files */,
 				43CEC1F55D666B870C18EE3B /* Frameworks */,
 				F7E1F0FD97C05A5FEB0AB9C7 /* Products */,
@@ -537,7 +558,6 @@
 				2EF31E9DD354D9E6876D4F4E /* Check Strings */,
 				178BB27B09AF5B09C8D71331 /* SwiftGen */,
 				05F76CD946C540BE5CFC54C7 /* Sourcery */,
-				309F1EBB552609BB20AD8512 /* SwiftFormat */,
 				86FCBB9A7C2155F1894E0507 /* SwiftLint */,
 				0534806F563A075A1BE95CD1 /* Sources */,
 				F0FCF6B502A095085DA3EDDC /* Resources */,
@@ -561,7 +581,7 @@
 		84AA0FA9C4B5FC9343710AA3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1140;
 				TargetAttributes = {
 					6142411EA3A48E9C5430EBB3 = {
 						DevelopmentTeam = XXXXXXXXXX;
@@ -612,11 +632,13 @@
 			files = (
 			);
 			inputFileListPaths = (
+				"Application/Supporting Files/FileLists/sourcery_input.xcfilelist",
 			);
 			inputPaths = (
 			);
 			name = Sourcery;
 			outputFileListPaths = (
+				"Application/Supporting Files/FileLists/sourcery_output.xcfilelist",
 			);
 			outputPaths = (
 			);
@@ -631,11 +653,13 @@
 			files = (
 			);
 			inputFileListPaths = (
+				"Application/Supporting Files/FileLists/swiftgen_input.xcfilelist",
 			);
 			inputPaths = (
 			);
 			name = SwiftGen;
 			outputFileListPaths = (
+				"Application/Supporting Files/FileLists/swiftgen_output.xcfilelist",
 			);
 			outputPaths = (
 			);
@@ -660,7 +684,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/usr/bin/env bash\n\nset -euo pipefail\n\n# skip if we run in debug\necho \"Config: $CONFIGURATION\"\nif [[ \"$CONFIGURATION\" == *\"Debug\"* ]]; then\n  echo \"Skip frameworks cleaning in debug version\"\n  exit 0\nfi\n\nAPP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK; do\n  FRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\n  FRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\n  echo \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\n  EXTRACTED_ARCHS=()\n\n  for ARCH in $ARCHS; do\n    echo \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\n    lipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\n    EXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\n  done\n\n  echo \"Merging extracted architectures: ${ARCHS}\"\n  lipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\n  rm \"${EXTRACTED_ARCHS[@]}\"\n\n  echo \"Replacing original executable with thinned version\"\n  rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n  mv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\ndone\n";
+			shellScript = "#!/usr/bin/env bash\n\nset -euo pipefail\n\n# skip if we run in debug\necho \"Config: $CONFIGURATION\"\nif [[ \"$CONFIGURATION\" == *\"Debug\"* ]]; then\n  echo \"Skip frameworks cleaning in debug version\"\n  exit 0\nfi\n\nAPP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK; do\n  FRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\n  FRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\n  echo \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\n  # skip if non-fat binary\n  [[ $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\") == *\"Non-fat\"* ]] && continue;\n\n  EXTRACTED_ARCHS=()\n\n  for ARCH in $ARCHS; do\n    echo \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\n    lipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\n    EXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\n  done\n\n  echo \"Merging extracted architectures: ${ARCHS}\"\n  lipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\n  rm \"${EXTRACTED_ARCHS[@]}\"\n\n  echo \"Replacing original executable with thinned version\"\n  rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n  mv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\ndone\n";
 			showEnvVarsInLog = 0;
 		};
 		2EF31E9DD354D9E6876D4F4E /* Check Strings */ = {
@@ -669,36 +693,19 @@
 			files = (
 			);
 			inputFileListPaths = (
+				"Application/Supporting Files/FileLists/check_strings_input.xcfilelist",
 			);
 			inputPaths = (
 			);
 			name = "Check Strings";
 			outputFileListPaths = (
+				"Application/Supporting Files/FileLists/check_strings_output.xcfilelist",
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "#!/usr/bin/env bash\n\nset -euo pipefail\n\nPODS_ROOT=${PODS_ROOT:-Pods}\nBARTYCROUCH=\"$PODS_ROOT/BartyCrouch/bartycrouch\"\n\n# Avoid running on CI\nif [[ ${CI:-} ]]; then\n  echo \"Not executing BartyCrouch on CI.\"\n  exit 0\nfi\n\n# Check if we have the executable\nif [ ! -f \"$BARTYCROUCH\" ]; then\n  echo \"error: BartyCrouch is not installed. Visit https://github.com/Flinesoft/BartyCrouch to learn more.\"\n  exit 1\nfi\n\n# Only execute during normal builds (not archives)\nif [ \"$ACTION\" != \"install\" ]; then\n  \"$BARTYCROUCH\" update -x\n  \"$BARTYCROUCH\" lint -x\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		309F1EBB552609BB20AD8512 /* SwiftFormat */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = SwiftFormat;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "#!/usr/bin/env bash\n\nset -euo pipefail\n\nPODS_ROOT=${PODS_ROOT:-Pods}\nSWIFTFORMAT=\"$PODS_ROOT/SwiftFormat/CommandLineTool/swiftformat\"\n\n# Avoid running on CI\nif [[ ${CI:-} ]]; then\n  echo \"Not executing SwiftFormat on CI.\"\n  exit 0\nfi\n\n# Check if we have the executable\nif [ ! -f \"$SWIFTFORMAT\" ]; then\n  echo \"error: SwiftFormat is not installed. Visit https://github.com/nicklockwood/SwiftFormat to learn more.\"\n  exit 1\nfi\n\n# Only execute during normal builds (not archives)\nif [ \"$ACTION\" != \"install\" ]; then\n  \"$SWIFTFORMAT\" .\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		785F5D32EDBA2AD531B76F82 /* Update Version Number */ = {
@@ -726,17 +733,19 @@
 			files = (
 			);
 			inputFileListPaths = (
+				"Application/Supporting Files/FileLists/swiftlint_input.xcfilelist",
 			);
 			inputPaths = (
 			);
 			name = SwiftLint;
 			outputFileListPaths = (
+				"Application/Supporting Files/FileLists/swiftlint_output.xcfilelist",
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/usr/bin/env bash\n\nset -euo pipefail\n\nPODS_ROOT=${PODS_ROOT:-Pods}\nSWIFTLINT=\"$PODS_ROOT/SwiftLint/swiftlint\"\n\n# Avoid running on CI\nif [[ ${CI:-} ]]; then\n  echo \"Not executing SwiftLint on CI.\"\n  exit 0\nfi\n\n# Check if we have the executable\nif [ ! -f \"$SWIFTLINT\" ]; then\n  echo \"error: SwiftLint is not installed. Visit https://github.com/realm/SwiftLint to learn more.\"\n  exit 1\nfi\n\n# Only execute during normal builds (not archives)\nif [ \"$ACTION\" != \"install\" ]; then\n  \"$SWIFTLINT\" autocorrect --quiet\n  \"$SWIFTLINT\" lint --quiet\nfi\n";
+			shellScript = "#!/usr/bin/env bash\n\nset -euo pipefail\n\nPODS_ROOT=${PODS_ROOT:-Pods}\nSWIFTLINT=\"$PODS_ROOT/SwiftLint/swiftlint\"\n\n# Avoid running on CI\nif [[ ${CI:-} ]]; then\n  echo \"Not executing SwiftLint on CI.\"\n  exit 0\nfi\n\n# Check if we have the executable\nif [ ! -f \"$SWIFTLINT\" ]; then\n  echo \"error: SwiftLint is not installed. Visit https://github.com/realm/SwiftLint to learn more.\"\n  exit 1\nfi\n\n# Only execute during normal builds (not archives)\nif [ \"$ACTION\" != \"install\" ]; then\n  \"$SWIFTLINT\" lint --quiet\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -833,13 +842,14 @@
 /* Begin XCBuildConfiguration section */
 		1036B277E52AD375C7B72070 /* Production-Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 23108115EFA66CBC9E6AA4C2 /* Settings-Production (Release).xcconfig */;
+			baseConfigurationReference = 6C1F7DD6A487E1BB791E0961 /* Settings (Release).xcconfig */;
 			buildSettings = {
 			};
 			name = "Production-Release";
 		};
 		2E5D1DC45CBB7BE98320F212 /* Staging-Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29B2E45CAF623789CA4C9440 /* Settings-Staging.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = XXXXXXXXXX;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -855,6 +865,7 @@
 		};
 		31BC7465955F10AD589EBD1E /* Production-Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FBB48857938624E54DA44A6 /* Settings-Production.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = XXXXXXXXXX;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -870,13 +881,14 @@
 		};
 		3C54E677ECE9070FC5640896 /* Staging-Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F1D580FD751105F54A764DA /* Settings-Staging (Debug).xcconfig */;
+			baseConfigurationReference = 0A4F5D24E253E4CC8ECBDD2A /* Settings (Debug).xcconfig */;
 			buildSettings = {
 			};
 			name = "Staging-Debug";
 		};
 		79319FA08117B40E5A4B3CA1 /* Production-Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FBB48857938624E54DA44A6 /* Settings-Production.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = XXXXXXXXXX;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -892,6 +904,7 @@
 		};
 		941258CC1689E3096E876927 /* Staging-Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29B2E45CAF623789CA4C9440 /* Settings-Staging.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = XXXXXXXXXX;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -907,13 +920,14 @@
 		};
 		AA92F24FF4B18C6F4962409E /* Staging-Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7EF4919D85E3F795010F3261 /* Settings-Staging (Release).xcconfig */;
+			baseConfigurationReference = 6C1F7DD6A487E1BB791E0961 /* Settings (Release).xcconfig */;
 			buildSettings = {
 			};
 			name = "Staging-Release";
 		};
 		B99C6BB66FD414F15C7CF213 /* Development-Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 952E5F1CBBDF9F148A64D621 /* Settings-Development.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = XXXXXXXXXX;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -929,20 +943,21 @@
 		};
 		C1D6A58E6D98782F68123AB6 /* Development-Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D980966FF2AC2D9726888513 /* Settings-Development (Debug).xcconfig */;
+			baseConfigurationReference = 0A4F5D24E253E4CC8ECBDD2A /* Settings (Debug).xcconfig */;
 			buildSettings = {
 			};
 			name = "Development-Debug";
 		};
 		DB3447F43066D3257167F9CC /* Development-Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3F93508FF66000074FD00E87 /* Settings-Development (Release).xcconfig */;
+			baseConfigurationReference = 6C1F7DD6A487E1BB791E0961 /* Settings (Release).xcconfig */;
 			buildSettings = {
 			};
 			name = "Development-Release";
 		};
 		F4DCBE20AB96FB43B5284177 /* Development-Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 952E5F1CBBDF9F148A64D621 /* Settings-Development.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = XXXXXXXXXX;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -958,7 +973,7 @@
 		};
 		FC86D7B26E8CB346CBEB6164 /* Production-Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EF87215CF02CDAAED1859AC7 /* Settings-Production (Debug).xcconfig */;
+			baseConfigurationReference = 0A4F5D24E253E4CC8ECBDD2A /* Settings (Debug).xcconfig */;
 			buildSettings = {
 			};
 			name = "Production-Debug";
@@ -990,7 +1005,7 @@
 				2E5D1DC45CBB7BE98320F212 /* Staging-Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "";
+			defaultConfigurationName = "Development-Debug";
 		};
 /* End XCConfigurationList section */
 
