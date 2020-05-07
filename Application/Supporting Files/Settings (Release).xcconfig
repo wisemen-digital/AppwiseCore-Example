@@ -1,3 +1,5 @@
+#include "Settings.xcconfig"
+
 // Building & Deployment
 VALIDATE_PRODUCT = YES
 COPY_PHASE_STRIP = YES

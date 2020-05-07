@@ -1,3 +1,5 @@
+#include "Settings.xcconfig"
+
 // Building & Deployment
 ONLY_ACTIVE_ARCH = YES
 COPY_PHASE_STRIP = NO

@@ -14,12 +14,12 @@ configs:
   Production-Debug: debug
   Production-Release: release
 configFiles:
-  Development-Debug: Application/Supporting Files/Settings-Development (Debug).xcconfig
-  Development-Release: Application/Supporting Files/Settings-Development (Release).xcconfig
-  Staging-Debug: Application/Supporting Files/Settings-Staging (Debug).xcconfig
-  Staging-Release: Application/Supporting Files/Settings-Staging (Release).xcconfig
-  Production-Debug: Application/Supporting Files/Settings-Production (Debug).xcconfig
-  Production-Release: Application/Supporting Files/Settings-Production (Release).xcconfig
+  Development-Debug: Application/Supporting Files/Settings (Debug).xcconfig
+  Development-Release: Application/Supporting Files/Settings (Release).xcconfig
+  Staging-Debug: Application/Supporting Files/Settings (Debug).xcconfig
+  Staging-Release: Application/Supporting Files/Settings (Release).xcconfig
+  Production-Debug: Application/Supporting Files/Settings (Debug).xcconfig
+  Production-Release: Application/Supporting Files/Settings (Release).xcconfig
 targets:
   Example Project:
     templates:
@@ -44,6 +44,13 @@ targets:
           PRODUCT_BUNDLE_IDENTIFIER: be.appwise.Example-Project-Staging
         Production:
           PRODUCT_BUNDLE_IDENTIFIER: be.appwise.Example-Project
+    configFiles:
+      Development-Debug: Application/Supporting Files/Settings-Development.xcconfig
+      Development-Release: Application/Supporting Files/Settings-Development.xcconfig
+      Staging-Debug: Application/Supporting Files/Settings-Staging.xcconfig
+      Staging-Release: Application/Supporting Files/Settings-Staging.xcconfig
+      Production-Debug: Application/Supporting Files/Settings-Production.xcconfig
+      Production-Release: Application/Supporting Files/Settings-Production.xcconfig
     scheme:
       configVariants:
         - Development
