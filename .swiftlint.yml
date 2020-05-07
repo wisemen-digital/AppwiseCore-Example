@@ -87,6 +87,7 @@ excluded:
   - Rome
   - Application/Sources/Generated
   - fastlane
+  - .build
 
 identifier_name:
   excluded:
