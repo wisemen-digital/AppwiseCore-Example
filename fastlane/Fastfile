@@ -10,7 +10,7 @@ platform :ios do
     archiveAndUpload(scheme: scheme)
   end
 
-  desc 'Submit a new Development Build to Apple TestFlight'
+  desc 'Submit a new Staging Build to Apple TestFlight'
   lane :staging do
     scheme = CredentialsManager::AppfileConfig.try_fetch_value(:scheme)
     archiveAndUpload(scheme: scheme)
