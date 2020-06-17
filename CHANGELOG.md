@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+### 17 June 2020
+
+* Some fixes for bootstrap script (path issues).
+
 ### 7 May 2020
 
 * Update Sentry client code.

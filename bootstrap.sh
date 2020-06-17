@@ -48,7 +48,7 @@ function fixFastfile {
   echo "Fixing Fastfile..."
 
   # point scripts to right path
-  sed -i.bak -e "s#\.\./Scripts#Pods/AppwiseCore/Scripts#g" fastlane/Fastfile && rm fastlane/Fastfile.bak
+  sed -i.bak -e "s#\.\./Fastlane Actions#Pods/AppwiseCore/Fastlane Actions#g" fastlane/Fastfile && rm fastlane/Fastfile.bak
 }
 
 function fixSourcery {
