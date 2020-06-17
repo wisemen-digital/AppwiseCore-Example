@@ -1,33 +1,33 @@
 PODS:
   - Alamofire (4.9.1)
-  - AppwiseCore (1.3.0):
-    - AppwiseCore/Behaviours (= 1.3.0)
-    - AppwiseCore/Core (= 1.3.0)
-    - AppwiseCore/UI (= 1.3.0)
-    - AppwiseCore/UIApplication (= 1.3.0)
-  - AppwiseCore/Behaviours (1.3.0):
+  - AppwiseCore (1.3.2):
+    - AppwiseCore/Behaviours (= 1.3.2)
+    - AppwiseCore/Core (= 1.3.2)
+    - AppwiseCore/UI (= 1.3.2)
+    - AppwiseCore/UIApplication (= 1.3.2)
+  - AppwiseCore/Behaviours (1.3.2):
     - AppwiseCore/Common
     - Then (~> 2.6)
-  - AppwiseCore/Common (1.3.0)
-  - AppwiseCore/Core (1.3.0):
+  - AppwiseCore/Common (1.3.2)
+  - AppwiseCore/Core (1.3.2):
     - Alamofire (~> 4.8)
     - AppwiseCore/Common
     - CocoaLumberjack/Swift (~> 3.6)
     - CodableAlamofire (~> 1.1)
     - Sentry (~> 5.0)
     - Then (~> 2.6)
-  - AppwiseCore/CoreData (1.3.0):
+  - AppwiseCore/CoreData (1.3.2):
     - AppwiseCore/Common
     - AppwiseCore/Core
     - Groot (~> 3.0)
-  - AppwiseCore/DeepLink (1.3.0):
+  - AppwiseCore/DeepLink (1.3.2):
     - AppwiseCore/Behaviours
     - AppwiseCore/Common
-  - AppwiseCore/UI (1.3.0):
+  - AppwiseCore/UI (1.3.2):
     - AppwiseCore/Behaviours
     - AppwiseCore/Core
     - IBAnimatable (~> 6.1)
-  - AppwiseCore/UIApplication (1.3.0):
+  - AppwiseCore/UIApplication (1.3.2):
     - AppwiseCore/Core
   - Bagel (1.3.2):
     - CocoaAsyncSocket
@@ -48,7 +48,7 @@ PODS:
   - Nuke-Alamofire-Plugin (4.2):
     - Alamofire (~> 4.0)
     - Nuke (~> 7.0)
-  - OneSignal (2.13.1)
+  - OneSignal (2.14.2)
   - p2.OAuth2 (5.0.0)
   - PaginationTracker (1.0.2):
     - PaginationTracker/Core (= 1.0.2)
@@ -64,18 +64,18 @@ PODS:
     - Reusable/View (= 4.1.1)
   - Reusable/Storyboard (4.1.1)
   - Reusable/View (4.1.1)
-  - Sentry (5.0.1):
-    - Sentry/Core (= 5.0.1)
-  - Sentry/Core (5.0.1)
+  - Sentry (5.1.4):
+    - Sentry/Core (= 5.1.4)
+  - Sentry/Core (5.1.4)
   - SnapKit (5.0.1)
   - Sourcery (0.18.0)
   - StatefulUI (1.0.3):
     - IBAnimatable
     - Reusable
-  - SwiftFormat/CLI (0.44.9)
+  - SwiftFormat/CLI (0.44.13)
   - SwiftGen (6.1.0)
   - SwiftLint (0.39.2)
-  - Then (2.6.0)
+  - Then (2.7.0)
 
 DEPENDENCIES:
   - AppwiseCore (from `../`)
@@ -133,7 +133,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
-  AppwiseCore: c5d575b189d9830153b4b66c4f31bb63676dad64
+  AppwiseCore: ef24e318702d79ad302d19220c2bde8ed26c7b04
   Bagel: 199e0105ac694d6eee9db54dd006c940da6ce81b
   BartyCrouch: 7767d19c29a03aee031493574f084d50f217a529
   BonMot: 0d179476725af81f622a6d9f660f43048070016a
@@ -145,19 +145,19 @@ SPEC CHECKSUMS:
   IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
   Nuke: 44130e95e09463f8773ae4b96b90de1eba6b3350
   Nuke-Alamofire-Plugin: ee83df6e81e70488ca33033ac98b3f86a2ab1597
-  OneSignal: fa98eaa90372bb367b6a4a1c1622ffb9832c7600
+  OneSignal: 1dcb1fd96f9c15a5c352dcfcab9106a7c15eced7
   p2.OAuth2: 5d203b46c2857b4bbcca3e521089959e7b3b5a5c
   PaginationTracker: ceda867f3ef0374a2934919048a71e63c1c4313d
   Reusable: 53a9acf5c536f229b31b5865782414b508252ddb
-  Sentry: 034dd10cb5c272962c023bbf0508bb3d3d4cc98f
+  Sentry: 74f2ad93a20a5567a1badaedf5b3f60b142ad082
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   Sourcery: e0e8658a1ce6d9f475156ad3ffce4c68f1261b3e
   StatefulUI: cab5727ed27ffe648b47302e7ccacd8dd2d2b07d
-  SwiftFormat: e415b539c50e7a956a44b023544c9846c0c037d7
+  SwiftFormat: 87e745cb2f6509894a44ac4f311a8722a9ebcb8b
   SwiftGen: f872ca75cbd17bf7103c17f13dcfa0d9a15667b0
   SwiftLint: 22ccbbe3b8008684be5955693bab135e0ed6a447
-  Then: 90cd104fd951cec1980a03f57704ad8f784d4d79
+  Then: acfe0be7e98221c6204e12f8161459606d5d822d
 
 PODFILE CHECKSUM: 7fb99aacf095bde5eae7b01f0a2a760823d5e874
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.9.3
