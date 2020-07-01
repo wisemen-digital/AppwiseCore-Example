@@ -43,13 +43,13 @@ plugin 'cocoapods-rome',
   :post_compile => Proc.new { |installer|
     # generate project
     require './../Scripts/cocoapods_rome.rb'
-    generate_project(installer)
+    generate_project(installer) unless ENV.key?('CI')
 
     # generate acknowledgements
     require 'fileutils'
     FileUtils.cp_r('Pods/Target Support Files/Pods-Example Project/Pods-Example Project-Acknowledgements.plist', 'Application/Resources/Settings.bundle/Acknowledgements.plist', :remove_destination => true)
   },
-  :dsym => true,
-  :configuration => 'Release',
+  :dsym => !ENV.key?('CI'),
+  :configuration => ENV.key?('CI') ? 'Release' : 'Debug',
   :fix_interface_builder => true,
   :force_bitcode => true

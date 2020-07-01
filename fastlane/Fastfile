@@ -63,7 +63,7 @@ platform :ios do
 
     get_provisioning_profile(
       output_path: 'fastlane/build'
-    )
+    ) unless ENV.key?('CI')
     build_ios_app(
       scheme: scheme,
       include_bitcode: true,

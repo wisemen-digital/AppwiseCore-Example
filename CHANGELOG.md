@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+### 1 July 2020
+
+* Better Podfile/Fastlane integration for on CI and local builds. This ensures that local builds use a `debug` configuration, whereas CI builds will use `release` configuration.
+
 ### 17 June 2020
 
 * Some fixes for bootstrap script (path issues).
