@@ -64,9 +64,9 @@ PODS:
     - Reusable/View (= 4.1.1)
   - Reusable/Storyboard (4.1.1)
   - Reusable/View (4.1.1)
-  - Sentry (5.1.4):
-    - Sentry/Core (= 5.1.4)
-  - Sentry/Core (5.1.4)
+  - Sentry (5.1.6):
+    - Sentry/Core (= 5.1.6)
+  - Sentry/Core (5.1.6)
   - SnapKit (5.0.1)
   - Sourcery (0.18.0)
   - StatefulUI (1.0.3):
@@ -149,7 +149,7 @@ SPEC CHECKSUMS:
   p2.OAuth2: 5d203b46c2857b4bbcca3e521089959e7b3b5a5c
   PaginationTracker: ceda867f3ef0374a2934919048a71e63c1c4313d
   Reusable: 53a9acf5c536f229b31b5865782414b508252ddb
-  Sentry: 74f2ad93a20a5567a1badaedf5b3f60b142ad082
+  Sentry: e5796ec31a481474d2f94553213278470f9e302d
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   Sourcery: e0e8658a1ce6d9f475156ad3ffce4c68f1261b3e
   StatefulUI: cab5727ed27ffe648b47302e7ccacd8dd2d2b07d
@@ -158,6 +158,6 @@ SPEC CHECKSUMS:
   SwiftLint: 22ccbbe3b8008684be5955693bab135e0ed6a447
   Then: acfe0be7e98221c6204e12f8161459606d5d822d
 
-PODFILE CHECKSUM: 7fb99aacf095bde5eae7b01f0a2a760823d5e874
+PODFILE CHECKSUM: 85ba9853f403d861fc0eb818e910f2c488583f1e
 
 COCOAPODS: 1.9.3

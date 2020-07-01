@@ -15,18 +15,15 @@ final class SentryApplicationService: NSObject, ApplicationService {
 	func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
 		#if DEBUG
 		#else
-		SentrySDK.start(options: [
-			"dsn": "https://<key>@sentry.io/<project>",
-			"release": "example-project-ios@\(Config.shared.appVersion)",
-			"enableAutoSessionTracking": true
-		])
-
-		SentrySDK.configureScope { scope in
-			scope.setEnvironment(env(
+		SentrySDK.start { options in
+			options.dsn = "https://<key>@sentry.io/<project>"
+			options.releaseName = "example-project-ios@\(Config.shared.appVersion)"
+			options.environment = env(
 				.dev("development"),
 				.stg("staging"),
 				.prd("production")
-			))
+			)
+			options.enableAutoSessionTracking = true
 		}
 		#endif
 

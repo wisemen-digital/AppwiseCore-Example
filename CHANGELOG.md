@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 * Better Podfile/Fastlane integration for on CI and local builds. This ensures that local builds use a `debug` configuration, whereas CI builds will use `release` configuration.
 * Use swift 5 templates from SwiftGen 6.2.
+* Update Sentry client code.
 
 ### 17 June 2020
 
