@@ -10,19 +10,19 @@ coredata:
 ib:
   inputs: .
   outputs:
-    - templateName: scenes-swift4
+    - templateName: scenes-swift5
       output: Storyboards Scenes.swift
-    - templateName: segues-swift4
+    - templateName: segues-swift5
       output: Storyboards Segues.swift
 strings:
   inputs: en.lproj/Localizable.strings
   outputs:
-    templateName: structured-swift4
+    templateName: structured-swift5
     output: Strings.swift
 xcassets:
   inputs:
     - Images.xcassets
     - Style.xcassets
   outputs:
-    templateName: swift4
+    templateName: swift5
     output: Assets.swift

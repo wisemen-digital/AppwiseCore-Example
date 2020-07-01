@@ -48,7 +48,7 @@ PODS:
   - Nuke-Alamofire-Plugin (4.2):
     - Alamofire (~> 4.0)
     - Nuke (~> 7.0)
-  - OneSignal (2.14.2)
+  - OneSignal (2.14.3)
   - p2.OAuth2 (5.0.0)
   - PaginationTracker (1.0.2):
     - PaginationTracker/Core (= 1.0.2)
@@ -72,8 +72,8 @@ PODS:
   - StatefulUI (1.0.3):
     - IBAnimatable
     - Reusable
-  - SwiftFormat/CLI (0.44.13)
-  - SwiftGen (6.1.0)
+  - SwiftFormat/CLI (0.44.14)
+  - SwiftGen (6.2.0)
   - SwiftLint (0.39.2)
   - Then (2.7.0)
 
@@ -145,7 +145,7 @@ SPEC CHECKSUMS:
   IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
   Nuke: 44130e95e09463f8773ae4b96b90de1eba6b3350
   Nuke-Alamofire-Plugin: ee83df6e81e70488ca33033ac98b3f86a2ab1597
-  OneSignal: 1dcb1fd96f9c15a5c352dcfcab9106a7c15eced7
+  OneSignal: 7dfe466265c05f02b95a274b9c997a0619ad2117
   p2.OAuth2: 5d203b46c2857b4bbcca3e521089959e7b3b5a5c
   PaginationTracker: ceda867f3ef0374a2934919048a71e63c1c4313d
   Reusable: 53a9acf5c536f229b31b5865782414b508252ddb
@@ -153,8 +153,8 @@ SPEC CHECKSUMS:
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   Sourcery: e0e8658a1ce6d9f475156ad3ffce4c68f1261b3e
   StatefulUI: cab5727ed27ffe648b47302e7ccacd8dd2d2b07d
-  SwiftFormat: 87e745cb2f6509894a44ac4f311a8722a9ebcb8b
-  SwiftGen: f872ca75cbd17bf7103c17f13dcfa0d9a15667b0
+  SwiftFormat: a5ab293a7f6a812bec6f4ffc5507b7ed08f7f6e1
+  SwiftGen: 77e88c8609381660cc1084c5ba8e1dc6065de692
   SwiftLint: 22ccbbe3b8008684be5955693bab135e0ed6a447
   Then: acfe0be7e98221c6204e12f8161459606d5d822d
 
