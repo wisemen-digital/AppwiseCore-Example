@@ -13,7 +13,7 @@ import CoreData
 extension Repository {
 	enum User {
 		static func current(context: NSManagedObjectContext = DB.shared.view) -> Single? {
-			Settings.shared.currentUserID.flatMap { Single(objectID: $0) }
+			Settings.shared.currentUserID.flatMap { Single(objectID: $0, context: context) }
 		}
 
 		struct Single: SingleObjectRepository {
