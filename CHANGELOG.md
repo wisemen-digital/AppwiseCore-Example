@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 * Fixed the default user repository (missing context).
 * Add a sample issuetracker file (for Jira integration).
+* Updated Swiftlint (new rules), SwiftFormat (some options) and SwiftGen (support for stringsdict).
 
 ### 1 July 2020
 

@@ -464,7 +464,6 @@
 			children = (
 				7CE0298F3F5AAFE7714175A1 /* Resources */,
 				30340B7042A342AD16FBCB30 /* Sources */,
-				7C7297A3AC64989C7C9CAE52 /* Supporting Files */,
 			);
 			path = Application;
 			sourceTree = "<group>";

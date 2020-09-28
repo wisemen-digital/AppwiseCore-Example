@@ -1,4 +1,4 @@
-swiftlint_version: 0.39.2
+swiftlint_version: 0.40.3
 
 disabled_rules:
   - line_length
@@ -11,6 +11,7 @@ opt_in_rules:
   - closure_end_indentation
   - closure_spacing
   - collection_alignment
+  - computed_accessors_order
   - contains_over_filter_count
   - contains_over_filter_is_empty
   - contains_over_first_not_nil
@@ -55,6 +56,7 @@ opt_in_rules:
   - overridden_super_call
   - override_in_extension
   - prefer_self_type_over_type_of_self
+  - prefer_zero_over_explicit_init
   - private_action
   - private_outlet
   - prohibited_super_call
@@ -71,6 +73,7 @@ opt_in_rules:
   - trailing_closure
   - unavailable_function
   - unneeded_parentheses_in_closure_argument
+  - unneeded_notification_center_removal
   - unowned_variable_capture
   - unused_capture_list
   - unused_control_flow_label

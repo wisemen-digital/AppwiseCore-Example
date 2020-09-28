@@ -1,4 +1,4 @@
---swiftversion 5
+--swiftversion 5.3
 
 # format options
 --commas inline
@@ -20,7 +20,7 @@
 --wrapparameters before-first
 
 # file options
---exclude Pods,Application/Sources/Generated
+--exclude Pods,Rome,Application/Sources/Generated
 
 # rules
---disable emptyBraces,specifiers
+--disable emptyBraces,modifierOrder,wrapMultilineStatementBraces
