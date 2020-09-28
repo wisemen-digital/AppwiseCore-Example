@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 ### 29 September 2020
 
 * Fixed the default user repository (missing context).
+* Add a sample issuetracker file (for Jira integration).
 
 ### 1 July 2020
 
