@@ -36,7 +36,7 @@ extension Repository {
 
 			var haveCompleteUser: Bool {
 				// implement whatever check you need here
-				return object != nil
+				object != nil
 			}
 		}
 	}

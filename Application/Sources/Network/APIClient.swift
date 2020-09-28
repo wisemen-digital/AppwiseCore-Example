@@ -16,13 +16,13 @@ final class APIClient: Client {
 
 	static let shared = APIClient()
 
-	private(set) lazy var sessionManager: SessionManager = SessionManager().then {
+	private(set) lazy var sessionManager = SessionManager().then {
 		let retrier = OAuth2RetryHandler(oauth2: OAuth2Grant.grant)
 		$0.adapter = retrier
 		$0.retrier = retrier
 	}
 
-	private(set) lazy var nuke: Nuke.ImagePipeline = Nuke.ImagePipeline {
+	private(set) lazy var nuke = Nuke.ImagePipeline {
 		$0.dataLoader = NukeAlamofirePlugin.AlamofireDataLoader(manager: self.sessionManager)
 	}
 
