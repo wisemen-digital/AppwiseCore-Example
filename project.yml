@@ -4,8 +4,11 @@ include:
 name: Example Project
 options:
   settingPresets: none
+  groupOrdering:
+    - pattern: '^Application$'
+      order: [Sources, Resources]
   groupSortPosition: top
-  xcodeVersion: "1140"
+  xcodeVersion: "1200"
 configs:
   Development-Debug: debug
   Development-Release: release
@@ -35,6 +38,7 @@ targets:
       base:
         DEVELOPMENT_TEAM: XXXXXXXXXX
         INFOPLIST_FILE: Application/Resources/Info.plist
+        CODE_SIGN_ENTITLEMENTS: Application/Resources/Entitlements.entitlements
         PRODUCT_NAME: $(TARGET_NAME)
         SWIFT_VERSION: 5.0
       configs:
