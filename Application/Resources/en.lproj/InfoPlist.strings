@@ -2,21 +2,12 @@
 /* Display name */
 "CFBundleDisplayName" = "Example Project";
 
-/* Calendar permission */
-"NSCalendarsUsageDescription" = "The app can add events you've subscribed to, to your calendar.";
-
-/* Camera permission */
-"NSCameraUsageDescription" = "The app needs access to your camera for your profile picture.";
-
-/* Contacts permission */
-"NSContactsUsageDescription" = "The app needs access to your address book for adding people to an event (in your calendar).";
-
-/* Photo library permission */
-"NSLocationAlwaysAndWhenInUseUsageDescription" = "The app uses your location to show nearby events and push notifications if possible.";
-
-"NSLocationAlwaysUsageDescription" = "The app uses your location to show nearby events and push notifications if possible.";
-
-"NSLocationWhenInUseUsageDescription" = "The app uses your location to show nearby events and push notifications if possible.";
-
-/* Photo library permission */
-"NSPhotoLibraryUsageDescription" = "The app needs access to your photo library for your profile picture.";
+/* UNUSED */
+"NSCalendarsUsageDescription" = "MAKE SURE TO FILL THIS IN!";
+"NSCameraUsageDescription" = "MAKE SURE TO FILL THIS IN!";
+"NSContactsUsageDescription" = "MAKE SURE TO FILL THIS IN!";
+"NSLocalNetworkUsageDescription" = "MAKE SURE TO FILL THIS IN!";
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "MAKE SURE TO FILL THIS IN!";
+"NSLocationAlwaysUsageDescription" = "MAKE SURE TO FILL THIS IN!";
+"NSLocationWhenInUseUsageDescription" = "MAKE SURE TO FILL THIS IN!";
+"NSPhotoLibraryUsageDescription" = "MAKE SURE TO FILL THIS IN!";

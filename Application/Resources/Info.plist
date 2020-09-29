@@ -22,20 +22,26 @@
 	<false/>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSBonjourServices</key>
+	<array>
+		<string>_Bagel._tcp</string>
+	</array>
 	<key>NSCalendarsUsageDescription</key>
-	<string>The app can add events you&apos;ve subscribed to, to your calendar.</string>
+	<string>MAKE SURE TO FILL THIS IN!</string>
 	<key>NSCameraUsageDescription</key>
-	<string>The app needs access to your camera for your profile picture.</string>
+	<string>MAKE SURE TO FILL THIS IN!</string>
 	<key>NSContactsUsageDescription</key>
-	<string>The app needs access to your address book for adding people to an event (in your calendar).</string>
+	<string>MAKE SURE TO FILL THIS IN!</string>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>MAKE SURE TO FILL THIS IN!</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>The app uses your location to show nearby events and push notifications if possible.</string>
+	<string>MAKE SURE TO FILL THIS IN!</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>The app uses your location to show nearby events and push notifications if possible.</string>
+	<string>MAKE SURE TO FILL THIS IN!</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>The app uses your location to show nearby events and push notifications if possible.</string>
+	<string>MAKE SURE TO FILL THIS IN!</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>The app needs access to your photo library for your profile picture.</string>
+	<string>MAKE SURE TO FILL THIS IN!</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
