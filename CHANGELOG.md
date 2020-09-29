@@ -8,6 +8,7 @@ All notable changes to this project will be documented in this file.
 * Add a sample issuetracker file (for Jira integration).
 * Updated Swiftlint (new rules), SwiftFormat (some options) and SwiftGen (support for stringsdict).
 * Add an entitlements file to silence warnings from appstoreconnect.
+* Move app version to settings.xcconfig file.
 
 ### 1 July 2020
 
