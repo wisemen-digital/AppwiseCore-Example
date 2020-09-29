@@ -1,33 +1,33 @@
 PODS:
   - Alamofire (4.9.1)
-  - AppwiseCore (1.3.3):
-    - AppwiseCore/Behaviours (= 1.3.3)
-    - AppwiseCore/Core (= 1.3.3)
-    - AppwiseCore/UI (= 1.3.3)
-    - AppwiseCore/UIApplication (= 1.3.3)
-  - AppwiseCore/Behaviours (1.3.3):
+  - AppwiseCore (1.3.4):
+    - AppwiseCore/Behaviours (= 1.3.4)
+    - AppwiseCore/Core (= 1.3.4)
+    - AppwiseCore/UI (= 1.3.4)
+    - AppwiseCore/UIApplication (= 1.3.4)
+  - AppwiseCore/Behaviours (1.3.4):
     - AppwiseCore/Common
     - Then (~> 2.6)
-  - AppwiseCore/Common (1.3.3)
-  - AppwiseCore/Core (1.3.3):
+  - AppwiseCore/Common (1.3.4)
+  - AppwiseCore/Core (1.3.4):
     - Alamofire (~> 4.8)
     - AppwiseCore/Common
     - CocoaLumberjack/Swift (~> 3.6)
     - CodableAlamofire (~> 1.1)
     - Sentry (~> 5.0)
     - Then (~> 2.6)
-  - AppwiseCore/CoreData (1.3.3):
+  - AppwiseCore/CoreData (1.3.4):
     - AppwiseCore/Common
     - AppwiseCore/Core
     - Groot (~> 3.0)
-  - AppwiseCore/DeepLink (1.3.3):
+  - AppwiseCore/DeepLink (1.3.4):
     - AppwiseCore/Behaviours
     - AppwiseCore/Common
-  - AppwiseCore/UI (1.3.3):
+  - AppwiseCore/UI (1.3.4):
     - AppwiseCore/Behaviours
     - AppwiseCore/Core
     - IBAnimatable (~> 6.1)
-  - AppwiseCore/UIApplication (1.3.3):
+  - AppwiseCore/UIApplication (1.3.4):
     - AppwiseCore/Core
   - Bagel (1.3.2):
     - CocoaAsyncSocket
@@ -133,7 +133,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
-  AppwiseCore: 5105e6f06dff4f1c621c26d89b61a5e8013990c1
+  AppwiseCore: d59b0c29f1cbcf390a9efa61591d216a72569a7b
   Bagel: 199e0105ac694d6eee9db54dd006c940da6ce81b
   BartyCrouch: ec4979c1a3d05b09fd26ada79c7ed6f024301554
   BonMot: 2217a66e5ddc6a8d2ffb759fe8c85a8528e0d3e7
