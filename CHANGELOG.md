@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+### 12 Oktober 2020
+
+* Fastlane: replace the import/export lanes with one `sync_translations` lane.
+
 ### 29 September 2020
 
 * Fixed the default user repository (missing context).

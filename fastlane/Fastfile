@@ -46,14 +46,9 @@ platform :ios do
     end
   end
 
-  desc "Extracts localizations from the xcode project"
-  lane :export_translations do
-    export_localizations()
-  end
-
-  desc "Imports localizations into the xcode project"
-  lane :import_translations do
-    import_localizations()
+  desc "Imports, and then extracts localizations from the xcode project"
+  lane :sync_translations do
+    sync_localizations()
   end
 
   private_lane :archiveAndUpload do |options|
