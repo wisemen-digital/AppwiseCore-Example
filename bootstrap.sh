@@ -114,7 +114,8 @@ function cleanup {
 function initializeGit {
   echo "Initializing Git..."
   rm -rf ".git"
-  git init --initial-branch="main" >/dev/null
+  git init >/dev/null
+  git checkout -b "main" >/dev/null
   git add "*" >/dev/null
 
   echo "Adding commit hooks..."
