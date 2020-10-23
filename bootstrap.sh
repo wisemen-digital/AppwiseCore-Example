@@ -174,3 +174,5 @@ cleanup
 initializeGit
 
 echo "Done!"
+echo ""
+echo "Don't forget to set your Apple Team Name & ID if you have it (in project.yml, bitrise.yml and fastlane/Appfile)."

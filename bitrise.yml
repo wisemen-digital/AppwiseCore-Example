@@ -1,0 +1,106 @@
+---
+format_version: '8'
+default_step_lib_source: https://github.com/bitrise-io/bitrise-steplib.git
+project_type: ios
+app:
+  envs:
+  - FASTLANE_USER: buildbot@appwise.be
+  - TEAM_ID: XXXXXXXXX
+  - BITRISE_PROJECT_PATH: Example Project.xcodeproj
+  - SLACK_CHANNEL: "#some-slack-channel"
+trigger_map:
+- push_branch: development
+  workflow: development
+- push_branch: staging
+  workflow: staging
+- push_branch: main
+  workflow: production
+workflows:
+  development:
+    title: Create a new "Development" archive and upload to Testflight
+    envs:
+    - BITRISE_SCHEME: Example Project Development
+    - FASTLANE_LANE: development
+    - PILOT_APPLE_ID: '1234 SOME ID HERE'
+    after_run:
+    - _deploy_common
+  staging:
+    title: Create a new "Staging" archive and upload to Testflight
+    envs:
+    - BITRISE_SCHEME: Example Project Staging
+    - FASTLANE_LANE: staging
+    - PILOT_APPLE_ID: '1234 SOME ID HERE'
+    after_run:
+    - _deploy_common
+  production:
+    title: Create a new "Production" archive and upload to Testflight
+    envs:
+    - BITRISE_SCHEME: Example Project Production
+    - FASTLANE_LANE: production
+    - PILOT_APPLE_ID: '1234 SOME ID HERE'
+    after_run:
+    - _deploy_common
+  _prepare:
+    steps:
+    - activate-ssh-key@4:
+        run_if: '{{getenv "SSH_RSA_PRIVATE_KEY" | ne ""}}'
+    - certificate-and-profile-installer@1: {}
+    - git-clone@4:
+        inputs:
+        - update_submodules: 'no'
+    - script@1:
+        inputs:
+        - content: |-
+            #!/usr/bin/env bash
+            set -ex
+            RBENV_DIR="`cd $(rbenv which ruby)/../..;pwd`"
+            envman add --key GEM_CACHE_PATH --value $RBENV_DIR
+            envman add --key CERT_KEYCHAIN_PASSWORD --value $BITRISE_KEYCHAIN_PASSWORD
+        title: Set environment variables
+    - cache-pull@2: {}
+    - script@1:
+        inputs:
+        - content: |-
+            #!/usr/bin/env bash
+            set -ex
+            bundle config set path 'vendor/bundle'
+            bundle install
+            curl -sL https://sentry.io/get-cli/ | bash
+        title: Install tooling
+    - script@1:
+        inputs:
+        - content: bundle exec pod install
+        title: Install dependencies
+    - cache-push@2:
+        inputs:
+        - compress_archive: 'true'
+        - cache_paths: |-
+            $BITRISE_CACHE_DIR
+            $GEM_CACHE_PATH -> ./Gemfile.lock
+            ./vendor -> ./Gemfile.lock
+            ./Pods -> ./Podfile.lock
+            ./Rome -> ./Podfile.lock
+  _deploy_common:
+    before_run:
+    - _prepare
+    steps:
+    - ios-auto-provision@1:
+        inputs:
+        - distribution_type: app-store
+        - team_id: "$TEAM_ID"
+    - script@1:
+        inputs:
+        - content: bundle exec fastlane ios $FASTLANE_LANE
+        title: Fastlane
+    - slack@3:
+        inputs:
+        - channel_on_error: "$SLACK_CHANNEL"
+        - api_token: "$SLACK_BOT_TOKEN"
+        - fields: |
+            App|${BITRISE_APP_TITLE}
+            Tag|${BITRISE_GIT_TAG}
+            Branch|${BITRISE_GIT_BRANCH}
+            Workflow|${BITRISE_TRIGGERED_WORKFLOW_ID}
+    - deploy-to-bitrise-io@1:
+        inputs:
+        - is_enable_public_page: 'false'
