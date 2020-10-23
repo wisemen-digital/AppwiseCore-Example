@@ -27,8 +27,6 @@ targets:
         embed: true
       - framework: Rome/OneSignal.framework
         embed: false
-      - framework: Rome/PaginationTracker.framework
-        embed: true
       - framework: Rome/Reusable.framework
         embed: true
       - framework: Rome/Sentry.framework

@@ -1,41 +1,41 @@
 PODS:
   - Alamofire (4.9.1)
-  - AppwiseCore (1.3.4):
-    - AppwiseCore/Behaviours (= 1.3.4)
-    - AppwiseCore/Core (= 1.3.4)
-    - AppwiseCore/UI (= 1.3.4)
-    - AppwiseCore/UIApplication (= 1.3.4)
-  - AppwiseCore/Behaviours (1.3.4):
+  - AppwiseCore (1.3.6):
+    - AppwiseCore/Behaviours (= 1.3.6)
+    - AppwiseCore/Core (= 1.3.6)
+    - AppwiseCore/UI (= 1.3.6)
+    - AppwiseCore/UIApplication (= 1.3.6)
+  - AppwiseCore/Behaviours (1.3.6):
     - AppwiseCore/Common
     - Then (~> 2.6)
-  - AppwiseCore/Common (1.3.4)
-  - AppwiseCore/Core (1.3.4):
+  - AppwiseCore/Common (1.3.6)
+  - AppwiseCore/Core (1.3.6):
     - Alamofire (~> 4.8)
     - AppwiseCore/Common
     - CocoaLumberjack/Swift (~> 3.6)
     - CodableAlamofire (~> 1.1)
     - Sentry (~> 5.0)
     - Then (~> 2.6)
-  - AppwiseCore/CoreData (1.3.4):
+  - AppwiseCore/CoreData (1.3.6):
     - AppwiseCore/Common
     - AppwiseCore/Core
     - Groot (~> 3.0)
-  - AppwiseCore/DeepLink (1.3.4):
+  - AppwiseCore/DeepLink (1.3.6):
     - AppwiseCore/Behaviours
     - AppwiseCore/Common
-  - AppwiseCore/UI (1.3.4):
+  - AppwiseCore/UI (1.3.6):
     - AppwiseCore/Behaviours
     - AppwiseCore/Core
     - IBAnimatable (~> 6.1)
-  - AppwiseCore/UIApplication (1.3.4):
+  - AppwiseCore/UIApplication (1.3.6):
     - AppwiseCore/Core
   - Bagel (1.3.2):
     - CocoaAsyncSocket
-  - BartyCrouch (4.3.0)
+  - BartyCrouch (4.3.1)
   - BonMot (5.6.0)
   - CocoaAsyncSocket (7.6.4)
-  - CocoaLumberjack/Core (3.6.2)
-  - CocoaLumberjack/Swift (3.6.2):
+  - CocoaLumberjack/Core (3.7.0)
+  - CocoaLumberjack/Swift (3.7.0):
     - CocoaLumberjack/Core
   - CodableAlamofire (1.1.2):
     - Alamofire (~> 4.0)
@@ -48,17 +48,8 @@ PODS:
   - Nuke-Alamofire-Plugin (4.2):
     - Alamofire (~> 4.0)
     - Nuke (~> 7.0)
-  - OneSignal (2.15.3)
+  - OneSignal (2.15.4)
   - p2.OAuth2 (5.0.0)
-  - PaginationTracker (1.0.2):
-    - PaginationTracker/Core (= 1.0.2)
-    - PaginationTracker/CoreData (= 1.0.2)
-  - PaginationTracker/Core (1.0.2):
-    - Alamofire (~> 4.8)
-    - StatefulUI
-  - PaginationTracker/CoreData (1.0.2):
-    - AppwiseCore/CoreData
-    - PaginationTracker/Core
   - Reusable (4.1.1):
     - Reusable/Storyboard (= 4.1.1)
     - Reusable/View (= 4.1.1)
@@ -72,8 +63,8 @@ PODS:
   - StatefulUI (1.0.3):
     - IBAnimatable
     - Reusable
-  - SwiftFormat/CLI (0.46.3)
-  - SwiftGen (6.3.0)
+  - SwiftFormat/CLI (0.47.0)
+  - SwiftGen (6.4.0)
   - SwiftLint (0.40.3)
   - Then (2.7.0)
 
@@ -91,7 +82,6 @@ DEPENDENCIES:
   - Nuke-Alamofire-Plugin
   - OneSignal
   - p2.OAuth2
-  - PaginationTracker
   - Reusable
   - SnapKit
   - Sourcery
@@ -116,7 +106,6 @@ SPEC REPOS:
     - Nuke-Alamofire-Plugin
     - OneSignal
     - p2.OAuth2
-    - PaginationTracker
     - Reusable
     - Sentry
     - SnapKit
@@ -133,31 +122,30 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
-  AppwiseCore: d59b0c29f1cbcf390a9efa61591d216a72569a7b
+  AppwiseCore: 246d929b766e596e96f4f1408cc58eb57ef6b362
   Bagel: 199e0105ac694d6eee9db54dd006c940da6ce81b
-  BartyCrouch: ec4979c1a3d05b09fd26ada79c7ed6f024301554
+  BartyCrouch: 8153d127b1dbaac6850f82bbd68b26be095d7941
   BonMot: 2217a66e5ddc6a8d2ffb759fe8c85a8528e0d3e7
   CocoaAsyncSocket: 694058e7c0ed05a9e217d1b3c7ded962f4180845
-  CocoaLumberjack: bd155f2dd06c0e0b03f876f7a3ee55693122ec94
+  CocoaLumberjack: e8955b9d337ac307103b0a34fd141c32f27e53c5
   CodableAlamofire: b7adfb2e5e980392014b4b3f3b8b62c01b9de4aa
   Groot: a668afbcf0be88d76c0a26c714cfa4638ceaca66
   IBAnimatable: 99dddd4c0625884a301ba3ecbc1615f8a390368e
   IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
   Nuke: 44130e95e09463f8773ae4b96b90de1eba6b3350
   Nuke-Alamofire-Plugin: ee83df6e81e70488ca33033ac98b3f86a2ab1597
-  OneSignal: d85b81aa313ed8040522b884f556267883d652c2
+  OneSignal: 6647275955d0f06d9e17c90dc93af9d85ecfd2b9
   p2.OAuth2: 5d203b46c2857b4bbcca3e521089959e7b3b5a5c
-  PaginationTracker: ceda867f3ef0374a2934919048a71e63c1c4313d
   Reusable: 53a9acf5c536f229b31b5865782414b508252ddb
   Sentry: 8fa58a051237554f22507fb483b9a1de0171a2dc
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   Sourcery: 928a146ea9b777fa64b0c6ce915c4128b4488cff
   StatefulUI: cab5727ed27ffe648b47302e7ccacd8dd2d2b07d
-  SwiftFormat: b639417da9e024b9e782f917bc9a080cf75bcb37
-  SwiftGen: 3d5024a47ea79e408cded20763d7a17d18a4548c
+  SwiftFormat: cb9bd6f3aa76ad9b24043f1f89305ea3449c17b8
+  SwiftGen: 67860cc7c3cfc2ed25b9b74cfd55495fc89f9108
   SwiftLint: dfd554ff0dff17288ee574814ccdd5cea85d76f7
   Then: acfe0be7e98221c6204e12f8161459606d5d822d
 
-PODFILE CHECKSUM: dd9a080e62c07f08f34192aba129b0536c265ab8
+PODFILE CHECKSUM: 4d7efd454a8f0374e15c8ff7b5c6a5d2af71b597
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.0

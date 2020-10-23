@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem 'cocoapods', '~> 1.9.0'
+gem 'cocoapods', '~> 1.10.0'
 gem 'cocoapods-rome', git: 'https://github.com/djbe/Rome'
 gem 'fastlane', '~> 2.134'
 

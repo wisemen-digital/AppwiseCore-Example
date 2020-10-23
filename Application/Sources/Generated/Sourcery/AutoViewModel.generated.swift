@@ -1,8 +1,9 @@
-// Generated using Sourcery 0.17.0 — https://github.com/krzysztofzablocki/Sourcery
+// Generated using Sourcery 1.0.0 — https://github.com/krzysztofzablocki/Sourcery
 // DO NOT EDIT
 
 import AppwiseCore
 
+// swiftlint:disable all
 // MARK: - ViewModel.User
 
 extension ViewModel.User {
@@ -15,3 +16,4 @@ extension ViewModel.User {
 	}
 }
 
+// swiftlint:enable all

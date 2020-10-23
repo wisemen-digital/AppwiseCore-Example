@@ -41,7 +41,6 @@
 		5CD35BF9FEE738D24891DA98 /* SentryApplicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492508C9E55D485A0A7C83E6 /* SentryApplicationService.swift */; };
 		61FE882EB195365517A7A8F9 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F166A94AAC744A1089C8890B /* CocoaLumberjack.framework */; };
 		6210AAF32F30E7DFBEC83743 /* Example Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4562AB4E833231100792D43D /* Example Project.xcdatamodeld */; };
-		62188789533AE452BE3E2EED /* PaginationTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6482FA2ED58FF868945C0CD /* PaginationTracker.framework */; };
 		629A646BAE3F00A6F3550554 /* NukeAlamofirePlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C42F4BF3EC2008A9F3538AB4 /* NukeAlamofirePlugin.framework */; };
 		6B1656A93FFD709587AF1F3D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F77B0530B9F992B0F2C29FB /* MainViewController.swift */; };
 		6EC93B164614CFA4E05B614F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBA358903E5A2FFD48A026AE /* Images.xcassets */; };
@@ -89,7 +88,6 @@
 		EBA1CC83AC5314810C9FA2E5 /* Show Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821858A08D51A88A66188CFF /* Show Error.swift */; };
 		EEFF7A9BD87B123265CD913B /* Push Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429A9A5B83B5EBE217D84C5E /* Push Notifications.swift */; };
 		EF4D0FC151CC14E90780516A /* p2_OAuth2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5626D122480F49C3AEC6E0 /* p2_OAuth2.framework */; };
-		F0663F373AFFFAC9B9B66AD2 /* PaginationTracker.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6482FA2ED58FF868945C0CD /* PaginationTracker.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F2544411E0052663DB93AF95 /* CodableAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5BF2684ABCD0D052C87EA61 /* CodableAlamofire.framework */; };
 		F3914BAB42417882C93F2CAE /* CodableAlamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A5BF2684ABCD0D052C87EA61 /* CodableAlamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F60ECA69301A5D23CFEC0D3D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 013A9610742509A102A8CBEF /* Settings.bundle */; };
@@ -117,7 +115,6 @@
 				4C6DC8C8BDA1E1073626E40F /* IQKeyboardManagerSwift.framework in Embed Frameworks */,
 				34C3435F913598E138F30F8D /* Nuke.framework in Embed Frameworks */,
 				AA302317BB4929479A011C56 /* NukeAlamofirePlugin.framework in Embed Frameworks */,
-				F0663F373AFFFAC9B9B66AD2 /* PaginationTracker.framework in Embed Frameworks */,
 				BC6AB677C2F033FA2F9B8E57 /* Reusable.framework in Embed Frameworks */,
 				4D07479D92644C2FAA567FBF /* Sentry.framework in Embed Frameworks */,
 				257E8260A90234BD656417C9 /* SnapKit.framework in Embed Frameworks */,
@@ -165,6 +162,7 @@
 		50A265FCD89D77C0E0D4E02C /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Rome/Alamofire.framework; sourceTree = "<group>"; };
 		5148C9E6DD233C567FEFAE9F /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
 		52D03A4C9F0150E35C4C516A /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		5445FEF472BC1648588A12B4 /* Entitlements.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Entitlements.entitlements; sourceTree = "<group>"; };
 		556A786D5FC998DDEFE870E1 /* Settings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Settings.xcconfig; sourceTree = "<group>"; };
 		564C7BE6175E843F5E478A77 /* Hack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hack.swift; sourceTree = "<group>"; };
 		5A53D14C24D672367969A691 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
@@ -214,7 +212,6 @@
 		EF6EEDB6F8C064EE4B2FEF98 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Rome/SnapKit.framework; sourceTree = "<group>"; };
 		F05C20F7CE959AD21A517690 /* AutoModel.generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoModel.generated.swift; sourceTree = "<group>"; };
 		F166A94AAC744A1089C8890B /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjack.framework; path = Rome/CocoaLumberjack.framework; sourceTree = "<group>"; };
-		F6482FA2ED58FF868945C0CD /* PaginationTracker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PaginationTracker.framework; path = Rome/PaginationTracker.framework; sourceTree = "<group>"; };
 		F77213CA7D42315B32566951 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		F8BF3ABB778CA26EAA4DA336 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		F9C269A988DE8291F093E1CC /* Then.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Then.framework; path = Rome/Then.framework; sourceTree = "<group>"; };
@@ -241,7 +238,6 @@
 				7F0CA7FA0BA0F06583F8C423 /* Nuke.framework in Frameworks */,
 				629A646BAE3F00A6F3550554 /* NukeAlamofirePlugin.framework in Frameworks */,
 				CBDC1578A727DF1086B7E76D /* OneSignal.framework in Frameworks */,
-				62188789533AE452BE3E2EED /* PaginationTracker.framework in Frameworks */,
 				56B5686AEB7EFA6D6790B858 /* Reusable.framework in Frameworks */,
 				71E5C0C81A80CAA21AA9504F /* Sentry.framework in Frameworks */,
 				9CF7058CEE05F949E5D86317 /* SnapKit.framework in Frameworks */,
@@ -340,7 +336,6 @@
 				C42F4BF3EC2008A9F3538AB4 /* NukeAlamofirePlugin.framework */,
 				B37475157FB5C765D4C588C2 /* OneSignal.framework */,
 				2F5626D122480F49C3AEC6E0 /* p2_OAuth2.framework */,
-				F6482FA2ED58FF868945C0CD /* PaginationTracker.framework */,
 				49947E819BC7C617A906FA0E /* Reusable.framework */,
 				8EA9D18CD4D08636ED8C3F1F /* Sentry.framework */,
 				EF6EEDB6F8C064EE4B2FEF98 /* SnapKit.framework */,
@@ -399,6 +394,7 @@
 			isa = PBXGroup;
 			children = (
 				C7DFF8EECCD27F9AF256CF4B /* Authentication.storyboard */,
+				5445FEF472BC1648588A12B4 /* Entitlements.entitlements */,
 				4562AB4E833231100792D43D /* Example Project.xcdatamodeld */,
 				CBA358903E5A2FFD48A026AE /* Images.xcassets */,
 				B8A1D56E0C5970759B190798 /* Info.plist */,
@@ -462,8 +458,8 @@
 		BDE993A4FE294A1EF8EBD2C0 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				7CE0298F3F5AAFE7714175A1 /* Resources */,
 				30340B7042A342AD16FBCB30 /* Sources */,
+				7CE0298F3F5AAFE7714175A1 /* Resources */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -850,6 +846,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 29B2E45CAF623789CA4C9440 /* Settings-Staging.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Application/Resources/Entitlements.entitlements;
 				DEVELOPMENT_TEAM = XXXXXXXXXX;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -866,6 +863,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6FBB48857938624E54DA44A6 /* Settings-Production.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Application/Resources/Entitlements.entitlements;
 				DEVELOPMENT_TEAM = XXXXXXXXXX;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -889,6 +887,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6FBB48857938624E54DA44A6 /* Settings-Production.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Application/Resources/Entitlements.entitlements;
 				DEVELOPMENT_TEAM = XXXXXXXXXX;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -905,6 +904,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 29B2E45CAF623789CA4C9440 /* Settings-Staging.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Application/Resources/Entitlements.entitlements;
 				DEVELOPMENT_TEAM = XXXXXXXXXX;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -928,6 +928,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 952E5F1CBBDF9F148A64D621 /* Settings-Development.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Application/Resources/Entitlements.entitlements;
 				DEVELOPMENT_TEAM = XXXXXXXXXX;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -958,6 +959,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 952E5F1CBBDF9F148A64D621 /* Settings-Development.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Application/Resources/Entitlements.entitlements;
 				DEVELOPMENT_TEAM = XXXXXXXXXX;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
