@@ -118,11 +118,11 @@ function initializeGit {
   git checkout -b "main" >/dev/null
   git add "*" >/dev/null
 
-  echo "Adding commit hooks..."
-  swift run komondor install
-
   echo "Creating initial commit."
   git commit -m "Initial commit" >/dev/null
+
+  echo "Adding commit hooks..."
+  swift run komondor install
 
   echo "Creating branches."
   git branch "staging"

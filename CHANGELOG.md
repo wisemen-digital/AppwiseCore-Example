@@ -2,7 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
-### 12 Oktober 2020
+### 23 October 2020
+
+* Bootstrap: fix issue with Komondor/initial commit.
+
+### 12 October 2020
 
 * Fastlane: replace the import/export lanes with one `sync_translations` lane.
 
