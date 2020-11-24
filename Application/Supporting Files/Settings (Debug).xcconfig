@@ -4,6 +4,7 @@
 ONLY_ACTIVE_ARCH = YES
 COPY_PHASE_STRIP = NO
 ENABLE_TESTABILITY = YES
+DEBUG_INFORMATION_FORMAT[sdk=iphonesimulator*] = dwarf
 
 // Linking & Code generation
 GCC_OPTIMIZATION_LEVEL = 0
