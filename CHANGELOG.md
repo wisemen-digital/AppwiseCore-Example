@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+### 24 November 2020
+
+* Update min. iOS version to 13.
+
 ### 23 October 2020
 
 * Bootstrap: fix issue with Komondor/initial commit.
