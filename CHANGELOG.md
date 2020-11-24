@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 ### 24 November 2020
 
 * Update min. iOS version to 13.
+* Fastlane: fix scheme names.
 
 ### 23 October 2020
 

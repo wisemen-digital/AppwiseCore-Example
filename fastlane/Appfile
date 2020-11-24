@@ -11,7 +11,7 @@ ENV['SENTRY_PROJECT_SLUG'] = 'example-project-ios'
 # lane specific settings
 for_platform :ios do
   app_identifier 'be.appwise.Example-Project'
-  setter(:scheme, 'Example Project-Production')
+  setter(:scheme, 'Example Project Production')
   setter(:sentry_project, ENV['SENTRY_PROJECT_SLUG'])
 
   setter(:identifiers, [
@@ -21,12 +21,12 @@ for_platform :ios do
   ])
 
   for_lane :development do
-    app_identifier 'be.appwise.Example-Project-Development'
+    app_identifier 'be.appwise.Example Project-Development'
     setter(:scheme, 'Example Project-Development')
   end
 
   for_lane :staging do
-    app_identifier 'be.appwise.Example-Project-Staging'
+    app_identifier 'be.appwise.Example Project-Staging'
     setter(:scheme, 'Example Project-Staging')
   end
 end
