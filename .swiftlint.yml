@@ -1,4 +1,4 @@
-swiftlint_version: 0.40.3
+swiftlint_version: 0.41.0
 
 disabled_rules:
   - line_length
@@ -73,7 +73,6 @@ opt_in_rules:
   - trailing_closure
   - unavailable_function
   - unneeded_parentheses_in_closure_argument
-  - unneeded_notification_center_removal
   - unowned_variable_capture
   - unused_capture_list
   - unused_control_flow_label
@@ -91,6 +90,7 @@ excluded:
   - Application/Sources/Generated
   - fastlane
   - .build
+  - Package.swift
 
 identifier_name:
   excluded:

@@ -15,7 +15,6 @@ target 'Example Project' do
   pod 'SwiftGen'
   pod 'SwiftLint'
   pod 'Bagel'
-  pod 'CocoaAsyncSocket'
 
   # Other
   pod 'BonMot'

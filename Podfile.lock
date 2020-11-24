@@ -1,35 +1,35 @@
 PODS:
   - Alamofire (4.9.1)
-  - AppwiseCore (1.3.6):
-    - AppwiseCore/Behaviours (= 1.3.6)
-    - AppwiseCore/Core (= 1.3.6)
-    - AppwiseCore/UI (= 1.3.6)
-    - AppwiseCore/UIApplication (= 1.3.6)
-  - AppwiseCore/Behaviours (1.3.6):
+  - AppwiseCore (1.3.8):
+    - AppwiseCore/Behaviours (= 1.3.8)
+    - AppwiseCore/Core (= 1.3.8)
+    - AppwiseCore/UI (= 1.3.8)
+    - AppwiseCore/UIApplication (= 1.3.8)
+  - AppwiseCore/Behaviours (1.3.8):
     - AppwiseCore/Common
     - Then (~> 2.6)
-  - AppwiseCore/Common (1.3.6)
-  - AppwiseCore/Core (1.3.6):
+  - AppwiseCore/Common (1.3.8)
+  - AppwiseCore/Core (1.3.8):
     - Alamofire (~> 4.8)
     - AppwiseCore/Common
     - CocoaLumberjack/Swift (~> 3.6)
     - CodableAlamofire (~> 1.1)
     - Sentry (~> 5.0)
     - Then (~> 2.6)
-  - AppwiseCore/CoreData (1.3.6):
+  - AppwiseCore/CoreData (1.3.8):
     - AppwiseCore/Common
     - AppwiseCore/Core
     - Groot (~> 3.0)
-  - AppwiseCore/DeepLink (1.3.6):
+  - AppwiseCore/DeepLink (1.3.8):
     - AppwiseCore/Behaviours
     - AppwiseCore/Common
-  - AppwiseCore/UI (1.3.6):
+  - AppwiseCore/UI (1.3.8):
     - AppwiseCore/Behaviours
     - AppwiseCore/Core
     - IBAnimatable (~> 6.1)
-  - AppwiseCore/UIApplication (1.3.6):
+  - AppwiseCore/UIApplication (1.3.8):
     - AppwiseCore/Core
-  - Bagel (1.3.2):
+  - Bagel (1.4.0):
     - CocoaAsyncSocket
   - BartyCrouch (4.3.1)
   - BonMot (5.6.0)
@@ -48,7 +48,7 @@ PODS:
   - Nuke-Alamofire-Plugin (4.2):
     - Alamofire (~> 4.0)
     - Nuke (~> 7.0)
-  - OneSignal (2.15.4)
+  - OneSignal (2.16.0)
   - p2.OAuth2 (5.0.0)
   - Reusable (4.1.1):
     - Reusable/Storyboard (= 4.1.1)
@@ -60,12 +60,12 @@ PODS:
   - Sentry/Core (5.2.2)
   - SnapKit (5.0.1)
   - Sourcery (1.0.0)
-  - StatefulUI (1.0.3):
+  - StatefulUI (1.0.4):
     - IBAnimatable
     - Reusable
-  - SwiftFormat/CLI (0.47.0)
+  - SwiftFormat/CLI (0.47.4)
   - SwiftGen (6.4.0)
-  - SwiftLint (0.40.3)
+  - SwiftLint (0.41.0)
   - Then (2.7.0)
 
 DEPENDENCIES:
@@ -76,7 +76,6 @@ DEPENDENCIES:
   - Bagel
   - BartyCrouch
   - BonMot
-  - CocoaAsyncSocket
   - IQKeyboardManagerSwift
   - Nuke
   - Nuke-Alamofire-Plugin
@@ -122,8 +121,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
-  AppwiseCore: 246d929b766e596e96f4f1408cc58eb57ef6b362
-  Bagel: 199e0105ac694d6eee9db54dd006c940da6ce81b
+  AppwiseCore: b8a3d97a11b22292e3a2048f6788c74cb345818e
+  Bagel: c3fa6bcbd52db9ca976edbafd7638f0553ded101
   BartyCrouch: 8153d127b1dbaac6850f82bbd68b26be095d7941
   BonMot: 2217a66e5ddc6a8d2ffb759fe8c85a8528e0d3e7
   CocoaAsyncSocket: 694058e7c0ed05a9e217d1b3c7ded962f4180845
@@ -134,18 +133,18 @@ SPEC CHECKSUMS:
   IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
   Nuke: 44130e95e09463f8773ae4b96b90de1eba6b3350
   Nuke-Alamofire-Plugin: ee83df6e81e70488ca33033ac98b3f86a2ab1597
-  OneSignal: 6647275955d0f06d9e17c90dc93af9d85ecfd2b9
+  OneSignal: 3326e3f3b6418ea12809c232559bba5e226f2951
   p2.OAuth2: 5d203b46c2857b4bbcca3e521089959e7b3b5a5c
   Reusable: 53a9acf5c536f229b31b5865782414b508252ddb
   Sentry: 8fa58a051237554f22507fb483b9a1de0171a2dc
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   Sourcery: 928a146ea9b777fa64b0c6ce915c4128b4488cff
-  StatefulUI: cab5727ed27ffe648b47302e7ccacd8dd2d2b07d
-  SwiftFormat: cb9bd6f3aa76ad9b24043f1f89305ea3449c17b8
+  StatefulUI: d5ba0c5d90755f4fd3d88248d942e030e0134fe8
+  SwiftFormat: 43c9302b7dbca1cda59acfc2ac63ac86e281fb14
   SwiftGen: 67860cc7c3cfc2ed25b9b74cfd55495fc89f9108
-  SwiftLint: dfd554ff0dff17288ee574814ccdd5cea85d76f7
+  SwiftLint: c585ebd615d9520d7fbdbe151f527977b0534f1e
   Then: acfe0be7e98221c6204e12f8161459606d5d822d
 
-PODFILE CHECKSUM: 4d7efd454a8f0374e15c8ff7b5c6a5d2af71b597
+PODFILE CHECKSUM: 84c33656db10afabfa765e07e2eb33f72582882b
 
 COCOAPODS: 1.10.0
