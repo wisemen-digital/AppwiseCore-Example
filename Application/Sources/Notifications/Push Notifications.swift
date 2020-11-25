@@ -1,10 +1,5 @@
-//
-//  Push Notifications.swift
-//  Example Project
-//
-//  Created by David Jennes on 02/07/2019.
-//  Copyright © 2019 Appwise. All rights reserved.
-//
+//  // Example Project
+// Copyright © 2020 Appwise //
 
 import AppwiseCore
 
@@ -22,8 +17,8 @@ extension PushNotification {
 
 	static func create(for info: [AnyHashable: Any]) -> PushNotificationType? {
 		guard let typeID = info[Key.notificationType] as? String,
-			let type = types.first(where: { $0.typeIdentifiers.contains(typeID) }),
-			let data = info[Key.data] as? [AnyHashable: Any] else { return nil }
+		      let type = types.first(where: { $0.typeIdentifiers.contains(typeID) }),
+		      let data = info[Key.data] as? [AnyHashable: Any] else { return nil }
 
 		return type.init(type: typeID, data: data)
 	}

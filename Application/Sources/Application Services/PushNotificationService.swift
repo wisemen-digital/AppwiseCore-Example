@@ -1,10 +1,5 @@
-//
-//  PushNotificationService.swift
-//  Example Project
-//
-//  Created by David Jennes on 02/07/2019.
-//  Copyright © 2019 Appwise. All rights reserved.
-//
+//  // Example Project
+// Copyright © 2020 Appwise //
 
 import AppwiseCore
 import CocoaLumberjack
@@ -56,14 +51,14 @@ extension PushNotificationsApplicationService: OSSubscriptionObserver {
 private extension PushNotificationsApplicationService {
 	func receivedNotification(_ notification: OSNotification?) {
 		guard let data = notification?.payload.additionalData,
-			let pushNotification = PushNotification.create(for: data) else { return }
+		      let pushNotification = PushNotification.create(for: data) else { return }
 
 		pushNotification.handle()
 	}
 
 	func openNotification(_ result: OSNotificationOpenedResult?) {
 		guard let data = result?.notification?.payload.additionalData,
-			let pushNotification = PushNotification.create(for: data) else { return }
+		      let pushNotification = PushNotification.create(for: data) else { return }
 
 		pushNotification.open()
 	}
@@ -72,8 +67,8 @@ private extension PushNotificationsApplicationService {
 extension PushNotificationsApplicationService: UNUserNotificationCenterDelegate {
 	func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
 		guard let data = notification.request.content.userInfo["custom"] as? [String: Any],
-			let json = data["a"] as? [String: Any],
-			let pushNotification = PushNotification.create(for: json) else { return }
+		      let json = data["a"] as? [String: Any],
+		      let pushNotification = PushNotification.create(for: json) else { return }
 
 		if !pushNotification.canShow {
 			completionHandler(.sound)

@@ -5,6 +5,6 @@ import AppwiseCore
 
 // swiftlint:disable all
 enum Model {
-	typealias User = RemeCare.User
+	typealias User = Example_Project.User
 }
 // swiftlint:enable all

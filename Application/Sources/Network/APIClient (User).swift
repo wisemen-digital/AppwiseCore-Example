@@ -1,10 +1,5 @@
-//
-//  APIClient (User).swift
-//  Example Project
-//
-//  Created by David Jennes on 03/07/2019.
-//  Copyright © 2019 Appwise. All rights reserved.
-//
+//  // Example Project
+// Copyright © 2020 Appwise //
 
 import Alamofire
 import AppwiseCore

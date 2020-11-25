@@ -1,10 +1,5 @@
-//
-//  OAuth2RetryHandler.swift
-//  Example Project
-//
-//  Created by David Jennes on 20/03/2017.
-//  Copyright © 2019 Appwise. All rights reserved.
-//
+//  // Example Project
+// Copyright © 2020 Appwise //
 
 import Alamofire
 import p2_OAuth2
@@ -19,8 +14,8 @@ final class OAuth2RetryHandler: RequestRetrier, RequestAdapter {
 	/// Intercept 401 and do an OAuth2 authorization.
 	func should(_ manager: SessionManager, retry request: Request, with error: Error, completion: @escaping RequestRetryCompletion) {
 		guard let response = request.task?.response as? HTTPURLResponse,
-			response.statusCode == 401,
-			let req = request.request else {
+		      response.statusCode == 401,
+		      let req = request.request else {
 			completion(false, 0.0)
 			return
 		}

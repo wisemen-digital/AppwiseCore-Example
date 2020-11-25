@@ -1,10 +1,5 @@
-//
-//  UserViewModel.swift
-//  Example Project
-//
-//  Created by David Jennes on 18/02/2018.
-//  Copyright © 2019 Appwise. All rights reserved.
-//
+//  // Example Project
+// Copyright © 2020 Appwise //
 
 import AppwiseCore
 
