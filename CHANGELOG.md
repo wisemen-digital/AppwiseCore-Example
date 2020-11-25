@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 * Update min. iOS version to 13.
 * Fastlane: fix scheme names.
 * Slightly faster simulator debug builds.
+* Configure a simpler common file header.
 
 ### 23 October 2020
 

@@ -97,6 +97,13 @@ identifier_name:
     - vc
     - nvc
 
+file_header:
+  required_pattern: |
+                    \/\/
+                    \/\/ Example Project
+                    \/\/ Copyright © 2020 Appwise
+                    \/\/
+
 nesting:
   type_level: 2
 
