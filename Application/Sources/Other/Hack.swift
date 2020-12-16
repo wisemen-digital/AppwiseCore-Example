@@ -1,5 +1,7 @@
-//  // Example Project
-// Copyright © 2020 Appwise //
+//
+// Example Project
+// Copyright © 2020 Appwise
+//
 
 import UIKit
 
