@@ -16,10 +16,8 @@ final class PushNotificationsApplicationService: NSObject, ApplicationService {
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
 		UNUserNotificationCenter.current().delegate = self
 
-		OneSignal.initWithLaunchOptions(launchOptions, appId: oneSignalAppId, handleNotificationReceived: receivedNotification, handleNotificationAction: openNotification, settings: [
-			kOSSettingsKeyAutoPrompt: false,
-			kOSSettingsKeyInFocusDisplayOption: OSNotificationDisplayType.notification.rawValue
-		])
+		OneSignal.initWithLaunchOptions(launchOptions)
+		OneSignal.setAppId(oneSignalAppId)
 		OneSignal.add(self)
 
 		return true
@@ -46,32 +44,41 @@ extension PushNotificationsApplicationService: OSSubscriptionObserver {
 	static func anonimizeUser() {
 		OneSignal.removeExternalUserId()
 	}
-}
 
-private extension PushNotificationsApplicationService {
-	func receivedNotification(_ notification: OSNotification?) {
-		guard let data = notification?.payload.additionalData,
-		      let pushNotification = PushNotification.create(for: data) else { return }
-
-		pushNotification.handle()
-	}
-
-	func openNotification(_ result: OSNotificationOpenedResult?) {
-		guard let data = result?.notification?.payload.additionalData,
-		      let pushNotification = PushNotification.create(for: data) else { return }
-
-		pushNotification.open()
+	static func promptForPushNotifications() {
+		OneSignal.promptForPushNotifications { granted in
+			guard granted else { return }
+			registerUser()
+		}
 	}
 }
 
 extension PushNotificationsApplicationService: UNUserNotificationCenterDelegate {
 	func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
-		guard let data = notification.request.content.userInfo["custom"] as? [String: Any],
-		      let json = data["a"] as? [String: Any],
-		      let pushNotification = PushNotification.create(for: json) else { return }
+		let info = notification.request.content.userInfo
 
-		if !pushNotification.canShow {
-			completionHandler(.sound)
+		if let pushNotification = PushNotification.create(for: info) {
+			// always try to handle push
+			pushNotification.handle()
+
+			// if not show, ensure no options are set
+			if !pushNotification.canShow {
+				completionHandler([])
+			} else {
+				completionHandler([.alert, .badge, .sound])
+			}
+		} else {
+			completionHandler([.alert, .badge, .sound])
 		}
+	}
+
+	func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+		let info = response.notification.request.content.userInfo
+
+		if let pushNotification = PushNotification.create(for: info) {
+			pushNotification.open()
+		}
+
+		completionHandler()
 	}
 }

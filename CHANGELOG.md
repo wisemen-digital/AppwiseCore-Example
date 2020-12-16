@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+### 16 December 2020
+
+* Update libraries, inculding new OneSignal init. code.
+
 ### 24 November 2020
 
 * Update min. iOS version to 13.
