@@ -31,7 +31,7 @@ function fixPodfile {
   echo "Fixing Podfile..."
 
   # remove local pod path
-  sed -i.bak -e "s#, :path => '\.\./'##g" Podfile && rm Podfile.bak
+  sed -i.bak -e "s#, :path => '\.\./'#, '~> 1.3'#g" Podfile && rm Podfile.bak
 
   # point scripts to right path
   sed -i.bak -e "s#\.\./Scripts#Pods/AppwiseCore/Scripts#g" Podfile && rm Podfile.bak
