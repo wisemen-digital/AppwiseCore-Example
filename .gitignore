@@ -47,3 +47,7 @@ fastlane/build
 
 # Certificates
 *.p12
+
+# Xcode projects (because we use XcodeGen)
+*.xcodeproj
+*.xcworkspace

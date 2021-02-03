@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+### 03 January 2021
+
+* Switch from CocoaPods Rome to Alexandria.
+
 ### 16 December 2020
 
 * Update libraries, inculding new OneSignal init. code.

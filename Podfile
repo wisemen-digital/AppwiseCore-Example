@@ -1,8 +1,15 @@
-raise 'Please use bundle exec to run the pod command' unless defined?(Bundler)
 
 platform :ios, '12.0'
+inhibit_all_warnings!
+ensure_bundler! '> 2.0'
+plugin 'cocoapods-alexandria'
 
 target 'Example Project' do
+  project 'Example Project',
+    'Development-Debug' => :debug, 'Development-Release' => :release,
+    'Staging-Debug' => :debug, 'Staging-Release' => :release,
+    'Production-Debug' => :debug, 'Production-Release' => :release
+
   pod 'AppwiseCore', :path => '../'
   pod 'AppwiseCore/CoreData', :path => '../'
   pod 'AppwiseCore/DeepLink', :path => '../'
@@ -36,18 +43,7 @@ pre_install do |installer|
   end
 end
 
-# Pre-compile pods
-plugin 'cocoapods-rome',
-  :post_compile => Proc.new { |installer|
-    # generate project
-    require './../Scripts/cocoapods_rome.rb'
-    generate_project(installer) unless ENV.key?('CI')
-
-    # generate acknowledgements
-    require 'fileutils'
-    FileUtils.cp_r('Pods/Target Support Files/Pods-Example Project/Pods-Example Project-Acknowledgements.plist', 'Application/Resources/Settings.bundle/Acknowledgements.plist', :remove_destination => true)
-  },
-  :dsym => !ENV.key?('CI'),
-  :configuration => ENV.key?('CI') ? 'Release' : 'Debug',
-  :fix_interface_builder => true,
-  :force_bitcode => true
+post_install do |installer|
+  require 'fileutils'
+  FileUtils.cp_r('Pods/Target Support Files/Pods-Example Project/Pods-Example Project-Acknowledgements.plist', 'Application/Resources/Settings.bundle/Acknowledgements.plist', :remove_destination => true)
+end
