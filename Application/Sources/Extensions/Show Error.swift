@@ -1,6 +1,6 @@
 //
 // Example Project
-// Copyright © 2020 Appwise
+// Copyright © 2021 Appwise
 //
 
 import p2_OAuth2
