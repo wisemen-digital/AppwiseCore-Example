@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 ### 18 February 2021
 
 * Update libraries.
+* Smarter CI cache (now that we use alexandria).
 
 ### 03 January 2021
 

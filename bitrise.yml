@@ -79,8 +79,8 @@ workflows:
             $BITRISE_CACHE_DIR
             $GEM_CACHE_PATH -> ./Gemfile.lock
             ./vendor -> ./Gemfile.lock
-            ./Pods -> ./Podfile.lock
-            ./Rome -> ./Podfile.lock
+            ./Pods
+            ./Rome
   _deploy_common:
     before_run:
     - _prepare
