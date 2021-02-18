@@ -1,5 +1,5 @@
-
 platform :ios, '12.0'
+
 inhibit_all_warnings!
 ensure_bundler! '> 2.0'
 plugin 'cocoapods-alexandria'

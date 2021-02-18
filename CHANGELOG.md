@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+### 18 February 2021
+
+* Update libraries.
+
 ### 03 January 2021
 
 * Switch from CocoaPods Rome to Alexandria.
