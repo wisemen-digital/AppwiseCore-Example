@@ -10,6 +10,11 @@ while [ -z "$newBundle" ]; do
   read -p "Please provide a new bundle identifier (be.appwise.My-Project): " newBundle
 done
 
+unset newTeamID
+while [ -z "$newTeamID" ]; do
+  read -p "Please provide a new Apple Team ID (XXXXXXXXXX): " newTeamID
+done
+
 unset appleID
 while [ -z "$appleID" ]; do
   read -p "Please provide your Apple ID (your.email@address.com): " appleID
@@ -25,44 +30,49 @@ while [ -z "$newSentryDSN" ]; do
   read -p "Please provide your Sentry DSN (https://<key>@sentry.appwi.se/<project>): " newSentryDSN
 done
 
+unset sentryToken
+while [ -z "$sentryToken" ]; do
+  read -p "Please provide your Sentry OAuth Token: " sentryToken
+done
+
 #### Steps ####
 
 function fixPodfile {
   echo "Fixing Podfile..."
 
   # remove local pod path
-  sed -i.bak -e "s#, :path => '\.\./'#, '~> 1.3'#g" Podfile && rm Podfile.bak
-
-  # point scripts to right path
-  sed -i.bak -e "s#\.\./Scripts#Pods/AppwiseCore/Scripts#g" Podfile && rm Podfile.bak
+  sed -i '' -e "s#, :path => '\.\./'#, '~> 1.3'#g" Podfile
 }
 
 function fixProjectfile {
   echo "Fixing project file..."
 
   # project template files
-  sed -i.bak -e "s#\.\./XcodeGen#Pods/AppwiseCore/XcodeGen#g" project.yml && rm project.yml.bak
+  sed -i '' \
+   -e "s#\.\./XcodeGen#Pods/AppwiseCore/XcodeGen#g" \
+   -e "s#3JQPC5UP5E#$newTeamID#g" \
+   project.yml
 }
 
 function fixFastfile {
   echo "Fixing Fastfile..."
 
   # point scripts to right path
-  sed -i.bak -e "s#\.\./Fastlane Actions#Pods/AppwiseCore/Fastlane Actions#g" fastlane/Fastfile && rm fastlane/Fastfile.bak
+  sed -i '' -e "s#\.\./Fastlane Actions#Pods/AppwiseCore/Fastlane Actions#g" fastlane/Fastfile
 }
 
 function fixSourcery {
   echo "Fixing Sourcery..."
 
   # template files
-  sed -i.bak -e "s#\.\./Sourcery#Pods/AppwiseCore/Sourcery#g" .sourcery.yml && rm .sourcery.yml.bak
+  sed -i '' -e "s#\.\./Sourcery#Pods/AppwiseCore/Sourcery#g" .sourcery.yml
 }
 
 function fixSwiftGen {
   echo "Fixing SwiftGen..."
 
   # template files
-  sed -i.bak -e "s#\.\./SwiftGen#Pods/AppwiseCore/SwiftGen#g" swiftgen.yml && rm swiftgen.yml.bak
+  sed -i '' -e "s#\.\./SwiftGen#Pods/AppwiseCore/SwiftGen#g" swiftgen.yml
 }
 
 # move files to new locations, we handle up to 2 levels deep of renaming
@@ -94,13 +104,20 @@ function configureFastlane {
   cat >.env <<EOL
 # Your Apple email address
 USER_APPLE_ID=$appleID
+
+# Sentry configuration
+SENTRY_AUTH_TOKEN=$sentryToken
 EOL
 }
 
 function podUpdate {
-  command -v pod >/dev/null 2>&1 || { echo >&2 "I require CocoaPods but it's not installed.  Aborting."; exit 1; }
+  command -v bundle >/dev/null 2>&1 || { echo >&2 "I require Bundler but it's not installed.  Aborting."; exit 1; }
+
+  echo "Installing gems..."
+  bundle update >/dev/null
+
   echo "Installing pods..."
-  pod update >/dev/null
+  bundle exec pod update >/dev/null
 }
 
 function cleanup {
@@ -122,7 +139,7 @@ function initializeGit {
   git commit -m "Initial commit" >/dev/null
 
   echo "Adding commit hooks..."
-  swift run komondor install
+  swift run komondor install >/dev/null
 
   echo "Creating branches."
   git branch "staging"
@@ -136,6 +153,7 @@ function initializeGit {
 podsDir="./Pods"
 oldName="Example Project"
 oldModuleName="Example_Project"
+oldTeamID="XXXXXXXXXX"
 oldBundle="be.appwise.Example-Project"
 oldSentryProject="example-project-ios"
 oldSentryDSN="https://<key>@sentry.io/<project>"
@@ -145,13 +163,15 @@ if [[ $newModuleName =~ ^[0-9] ]]; then
   newModuleName="_${newModuleName:1}"
 fi
 
-echo "Bootstrapping project:"
-echo "- Target: $newName"
-echo "- Module: $newModuleName"
-echo "- Bundle: $newBundle"
-echo "- Apple ID: $appleID"
-echo "- Sentry Project slug: $newSentryProject"
-echo "- Sentry DSN: $newSentryDSN"
+echo "Bootstrapping project:
+- Target: $newName
+- Module: $newModuleName
+- Bundle: $newBundle
+- Apple Team: $newTeamID
+- Apple ID: $appleID
+- Sentry Project slug: $newSentryProject
+- Sentry DSN: $newSentryDSN
+- Sentry OAuth Token: $sentryToken"
 read -rsn1 -p "Press any key to continue";echo
 
 fixPodfile
@@ -164,6 +184,7 @@ relocateFiles
 # replace name in files
 replaceText "$oldName" "$newName"
 replaceText "$oldModuleName" "$newModuleName"
+replaceText "$oldTeamID" "$newTeamID"
 replaceText "$oldBundle" "$newBundle"
 replaceText "$oldSentryProject" "$newSentryProject"
 replaceText "$oldSentryDSN" "$newSentryDSN"
@@ -173,6 +194,6 @@ podUpdate
 cleanup
 initializeGit
 
-echo "Done!"
-echo ""
-echo "Don't forget to set your Apple Team Name & ID if you have it (in project.yml, bitrise.yml and fastlane/Appfile)."
+echo "
+Done!
+"

@@ -31,7 +31,7 @@ final class PushNotificationsApplicationService: NSObject, ApplicationService {
 }
 
 extension PushNotificationsApplicationService: OSSubscriptionObserver {
-	func onOSSubscriptionChanged(_ stateChanges: OSSubscriptionStateChanges!) {
+	func onOSSubscriptionChanged(_ stateChanges: OSSubscriptionStateChanges) {
 		guard let token = stateChanges.to.pushToken else { return }
 		DDLogInfo("Received APNS token: \(token)")
 

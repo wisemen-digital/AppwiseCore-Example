@@ -38,7 +38,7 @@ targets:
           - "*.xcframework"
     settings:
       base:
-        DEVELOPMENT_TEAM: XXXXXXXXXX
+        DEVELOPMENT_TEAM: 3JQPC5UP5E
         INFOPLIST_FILE: Application/Resources/Info.plist
         CODE_SIGN_ENTITLEMENTS: Application/Resources/Entitlements.entitlements
         PRODUCT_NAME: $(TARGET_NAME)
