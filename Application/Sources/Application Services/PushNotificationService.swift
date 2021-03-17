@@ -10,6 +10,7 @@ import OneSignal
 final class PushNotificationsApplicationService: NSObject, ApplicationService {
 	let oneSignalAppId = env(
 		.dev("..."),
+		.tst("..."),
 		.stg("..."),
 		.prd("...")
 	)

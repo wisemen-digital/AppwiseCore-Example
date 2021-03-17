@@ -17,6 +17,7 @@ final class SentryApplicationService: NSObject, ApplicationService {
 			options.releaseName = "example-project-ios@\(Config.shared.appVersion)"
 			options.environment = env(
 				.dev("development"),
+				.tst("test"),
 				.stg("staging"),
 				.prd("production")
 			)

@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 ### 17 March 2021
 
 * Switch from Bagel to Proxyman.
+* Added a Test environment (next to dev/stg/prd).
 
 ### 18 February 2021
 

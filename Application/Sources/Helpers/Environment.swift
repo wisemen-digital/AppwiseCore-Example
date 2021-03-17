@@ -7,6 +7,7 @@ import Foundation
 
 enum EnvironmentValue<T> {
 	case dev(T)
+	case tst(T)
 	case stg(T)
 	case prd(T)
 }
@@ -18,6 +19,10 @@ func env<T>(_ envs: EnvironmentValue<T>...) -> T {
 		switch environment {
 		case .dev(let value):
 			#if ENVIRONMENT_DEVELOPMENT
+			return value
+			#endif
+		case .tst(let value):
+			#if ENVIRONMENT_TEST
 			return value
 			#endif
 		case .stg(let value):

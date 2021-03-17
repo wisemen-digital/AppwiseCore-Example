@@ -11,6 +11,8 @@ app:
 trigger_map:
 - push_branch: development
   workflow: development
+- push_branch: test
+  workflow: test
 - push_branch: staging
   workflow: staging
 - push_branch: main
@@ -21,6 +23,14 @@ workflows:
     envs:
     - BITRISE_SCHEME: Example Project Development
     - FASTLANE_LANE: development
+    - PILOT_APPLE_ID: '1234 SOME ID HERE'
+    after_run:
+    - _deploy_common
+  test:
+    title: Create a new "Test" archive and upload to Testflight
+    envs:
+    - BITRISE_SCHEME: Example Project Test
+    - FASTLANE_LANE: test
     - PILOT_APPLE_ID: '1234 SOME ID HERE'
     after_run:
     - _deploy_common

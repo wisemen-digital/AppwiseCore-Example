@@ -12,6 +12,8 @@ options:
 configs:
   Development-Debug: debug
   Development-Release: release
+  Test-Debug: debug
+  Test-Release: release
   Staging-Debug: debug
   Staging-Release: release
   Production-Debug: debug
@@ -19,6 +21,8 @@ configs:
 configFiles:
   Development-Debug: Supporting Files/Settings (Debug).xcconfig
   Development-Release: Supporting Files/Settings (Release).xcconfig
+  Test-Debug: Supporting Files/Settings (Debug).xcconfig
+  Test-Release: Supporting Files/Settings (Release).xcconfig
   Staging-Debug: Supporting Files/Settings (Debug).xcconfig
   Staging-Release: Supporting Files/Settings (Release).xcconfig
   Production-Debug: Supporting Files/Settings (Debug).xcconfig
@@ -46,6 +50,8 @@ targets:
       configs:
         Development:
           PRODUCT_BUNDLE_IDENTIFIER: be.appwise.Example-Project-Development
+        Test:
+          PRODUCT_BUNDLE_IDENTIFIER: be.appwise.Example-Project-Test
         Staging:
           PRODUCT_BUNDLE_IDENTIFIER: be.appwise.Example-Project-Staging
         Production:
@@ -53,5 +59,6 @@ targets:
     scheme:
       configVariants:
         - Development
+        - Test
         - Staging
         - Production

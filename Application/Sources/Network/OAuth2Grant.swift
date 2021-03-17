@@ -12,6 +12,11 @@ enum OAuth2Grant {
 			"client_secret": "",
 			"token_uri": "https://test.development.appwi.se/oauth/token"
 		]),
+		.tst([
+			"client_id": "",
+			"client_secret": "",
+			"token_uri": "https://test.test.appwi.se/oauth/token"
+		]),
 		.stg([
 			"client_id": "",
 			"client_secret": "",

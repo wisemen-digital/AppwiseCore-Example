@@ -9,6 +9,7 @@ import AppwiseCore
 enum APIRouter: AppwiseCore.Router {
 	static var baseURLString = env(
 		.dev("https://test.development.appwi.se/api/"),
+		.stg("https://test.test.appwi.se/api/"),
 		.stg("https://test.staging.appwi.se/api/"),
 		.prd("https://test.production.appwi.se/api/")
 	)
