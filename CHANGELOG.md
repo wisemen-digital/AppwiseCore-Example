@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+### 17 March 2021
+
+* Switch from Bagel to Proxyman.
+
 ### 18 February 2021
 
 * Update libraries.

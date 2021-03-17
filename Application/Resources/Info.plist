@@ -24,7 +24,7 @@
 	<true/>
 	<key>NSBonjourServices</key>
 	<array>
-		<string>_Bagel._tcp</string>
+		<string>_Proxyman._tcp</string>
 	</array>
 	<key>NSCalendarsUsageDescription</key>
 	<string>MAKE SURE TO FILL THIS IN!</string>

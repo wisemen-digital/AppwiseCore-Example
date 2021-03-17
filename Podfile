@@ -16,12 +16,12 @@ target 'Example Project' do
   pod 'AppwiseCore/UI', :path => '../'
 
   # Tools
+  pod 'atlantis-proxyman'
   pod 'BartyCrouch'
   pod 'Sourcery'
   pod 'SwiftFormat/CLI'
   pod 'SwiftGen'
   pod 'SwiftLint'
-  pod 'Bagel'
 
   # Other
   pod 'BonMot'
