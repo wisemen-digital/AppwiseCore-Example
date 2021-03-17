@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 * Switch from Bagel to Proxyman.
 * Added a Test environment (next to dev/stg/prd).
+* Fix swiftlint commit hook.
 
 ### 18 February 2021
 

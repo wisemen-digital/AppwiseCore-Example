@@ -26,7 +26,7 @@ let config = PackageConfiguration([
 	"komondor": [
 		"pre-commit": [
 			"./Pods/SwiftFormat/CommandLineTool/swiftformat .",
-			"./Pods/SwiftLint/swiftlint autocorrect --quiet"
+			"./Pods/SwiftLint/swiftlint --fix --quiet"
 		]
 	]
 ]).write()
