@@ -21,7 +21,6 @@ final class SentryApplicationService: NSObject, ApplicationService {
 				.stg("staging"),
 				.prd("production")
 			)
-			options.enableAutoSessionTracking = true
 		}
 		#endif
 
