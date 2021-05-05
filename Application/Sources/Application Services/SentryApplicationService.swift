@@ -16,10 +16,10 @@ final class SentryApplicationService: NSObject, ApplicationService {
 			options.dsn = "https://<key>@sentry.io/<project>"
 			options.releaseName = "example-project-ios@\(Config.shared.appVersion)"
 			options.environment = env(
-				.dev("development"),
-				.tst("test"),
-				.stg("staging"),
-				.prd("production")
+				.dev("development"), .tst("test"), .stg("staging"), .prd("production")
+			)
+			options.tracesSampleRate = env(
+				.dev(1.0), .tst(1.0), .stg(1.0), .prd(0.1)
 			)
 		}
 		#endif

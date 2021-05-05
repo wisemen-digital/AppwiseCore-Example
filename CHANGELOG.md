@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+### 6 May 2021
+
+* Upgrade to Sentry 7, and configure a trace sample rate.
+
 ### 17 March 2021
 
 * Switch from Bagel to Proxyman.
