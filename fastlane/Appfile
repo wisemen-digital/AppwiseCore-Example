@@ -23,16 +23,16 @@ for_platform :ios do
 
   for_lane :development do
     app_identifier 'be.appwise.Example Project-Development'
-    setter(:scheme, 'Example Project-Development')
+    setter(:scheme, 'Example Project Development')
   end
 
   for_lane :test do
     app_identifier 'be.appwise.Example Project-Test'
-    setter(:scheme, 'Example Project-Test')
+    setter(:scheme, 'Example Project Test')
   end
 
   for_lane :staging do
     app_identifier 'be.appwise.Example Project-Staging'
-    setter(:scheme, 'Example Project-Staging')
+    setter(:scheme, 'Example Project Staging')
   end
 end

@@ -8,25 +8,25 @@ options:
     - pattern: '^Application$'
       order: [Sources, Resources]
   groupSortPosition: top
-  xcodeVersion: "1240"
+  xcodeVersion: "1250"
 configs:
-  Development-Debug: debug
-  Development-Release: release
-  Test-Debug: debug
-  Test-Release: release
-  Staging-Debug: debug
-  Staging-Release: release
-  Production-Debug: debug
-  Production-Release: release
+  Development Debug: debug
+  Development Release: release
+  Test Debug: debug
+  Test Release: release
+  Staging Debug: debug
+  Staging Release: release
+  Production Debug: debug
+  Production Release: release
 configFiles:
-  Development-Debug: Supporting Files/Settings (Debug).xcconfig
-  Development-Release: Supporting Files/Settings (Release).xcconfig
-  Test-Debug: Supporting Files/Settings (Debug).xcconfig
-  Test-Release: Supporting Files/Settings (Release).xcconfig
-  Staging-Debug: Supporting Files/Settings (Debug).xcconfig
-  Staging-Release: Supporting Files/Settings (Release).xcconfig
-  Production-Debug: Supporting Files/Settings (Debug).xcconfig
-  Production-Release: Supporting Files/Settings (Release).xcconfig
+  Development Debug: Supporting Files/Settings (Debug).xcconfig
+  Development Release: Supporting Files/Settings (Release).xcconfig
+  Test Debug: Supporting Files/Settings (Debug).xcconfig
+  Test Release: Supporting Files/Settings (Release).xcconfig
+  Staging Debug: Supporting Files/Settings (Debug).xcconfig
+  Staging Release: Supporting Files/Settings (Release).xcconfig
+  Production Debug: Supporting Files/Settings (Debug).xcconfig
+  Production Release: Supporting Files/Settings (Release).xcconfig
 targets:
   Example Project:
     templates:

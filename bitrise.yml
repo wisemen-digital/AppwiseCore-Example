@@ -10,8 +10,6 @@ app:
   - SLACK_CHANNEL: "#some-slack-channel"
 trigger_map:
 - push_branch: development
-  workflow: development
-- push_branch: test
   workflow: test
 - push_branch: staging
   workflow: staging
