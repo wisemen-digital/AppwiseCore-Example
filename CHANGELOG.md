@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+### 19 May 2021
+
+* Upgrade xcodegen (on CI).
+
 ### 6 May 2021
 
 * Upgrade to Sentry 7, and configure a trace sample rate.
