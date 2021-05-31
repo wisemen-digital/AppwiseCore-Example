@@ -24,7 +24,7 @@ extension Repository {
 					handler(result)
 
 					// Notify listeners that we've updated the current user
-					if let user = try? result.get() {
+					if let user = result.value {
 						Notification.UserUpdated(payload: user).post()
 					}
 				}

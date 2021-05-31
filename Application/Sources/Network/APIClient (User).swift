@@ -7,7 +7,7 @@ import Alamofire
 import AppwiseCore
 
 extension APIClient {
-	func user(then handler: @escaping (Swift.Result<User, Error>) -> Void) {
-		requestInsert(.user, type: User.self, then: handler)
+	func user(then handler: @escaping (Result<User, Error>) -> Void) {
+		requestInsert(.user, of: User.self, then: handler)
 	}
 }

@@ -74,12 +74,7 @@ extension StartViewController {
 			handler(true)
 		case (true, let user?):
 			user.refresh { result in
-				switch result {
-				case .success:
-					handler(true)
-				case .failure:
-					handler(false)
-				}
+				handler(result.isSuccess)
 			}
 		default:
 			handler(false)
