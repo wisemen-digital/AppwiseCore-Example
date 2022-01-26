@@ -105,7 +105,7 @@ file_header:
   required_pattern: |
                     \/\/
                     \/\/ Example Project
-                    \/\/ Copyright © 2021 Appwise
+                    \/\/ Copyright © 2022 Appwise
                     \/\/
 
 nesting:

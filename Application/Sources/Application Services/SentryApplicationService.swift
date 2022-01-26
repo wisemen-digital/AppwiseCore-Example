@@ -1,6 +1,6 @@
 //
 // Example Project
-// Copyright © 2021 Appwise
+// Copyright © 2022 Appwise
 //
 
 import AppwiseCore
@@ -18,9 +18,8 @@ final class SentryApplicationService: NSObject, ApplicationService {
 			options.environment = env(
 				.dev("development"), .tst("test"), .stg("staging"), .prd("production")
 			)
-			options.tracesSampleRate = env(
-				.dev(1.0), .tst(1.0), .stg(1.0), .prd(0.1)
-			)
+			options.enableAutoSessionTracking = true
+			options.tracesSampleRate = env(.dev(1.0), .tst(1.0), .stg(1.0), .prd(0.1))
 		}
 		#endif
 
