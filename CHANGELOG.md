@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+### 26 January 2022
+
+* Update dependencies (spm, gems, cocoapods).
+
 ### 19 May 2021
 
 * Upgrade xcodegen (on CI).

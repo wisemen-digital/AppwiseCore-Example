@@ -36,7 +36,7 @@ extension PushNotificationsApplicationService: OSSubscriptionObserver {
 		guard let token = stateChanges.to.pushToken else { return }
 		DDLogInfo("Received APNS token: \(token)")
 
-		PushNotificationsApplicationService.registerUser()
+		Self.registerUser()
 	}
 
 	static func registerUser() {

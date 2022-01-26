@@ -33,7 +33,7 @@ enum OAuth2Grant {
 			#if DEBUG
 			$0.logger = OAuth2DebugLogger(.trace)
 
-			OAuth2Grant.loadTokensFromEnvironment(into: $0)
+			Self.loadTokensFromEnvironment(into: $0)
 			#endif
 		}
 
