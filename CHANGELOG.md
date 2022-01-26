@@ -4,6 +4,7 @@ All notable changes to this project will be documented in this file.
 
 ### 26 January 2022
 
+* Update bitrise config.
 * Update dependencies (spm, gems, cocoapods).
 
 ### 19 May 2021

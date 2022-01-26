@@ -8,7 +8,7 @@ options:
     - pattern: '^Application$'
       order: [Sources, Resources]
   groupSortPosition: top
-  xcodeVersion: "1250"
+  xcodeVersion: "1320"
 configs:
   Development Debug: debug
   Development Release: release

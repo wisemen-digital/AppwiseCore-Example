@@ -53,7 +53,7 @@ workflows:
     - activate-ssh-key@4:
         run_if: '{{getenv "SSH_RSA_PRIVATE_KEY" | ne ""}}'
     - certificate-and-profile-installer@1: {}
-    - git-clone@4:
+    - git-clone@6:
         inputs:
         - update_submodules: 'no'
     - script@1:
@@ -73,7 +73,7 @@ workflows:
             set -ex
             bundle config set path 'vendor/bundle'
             bundle install
-            curl -L -o /tmp/xcodegen.zip "https://github.com/yonaskolb/XcodeGen/releases/download/2.22.0/xcodegen.zip" && unzip -q /tmp/xcodegen.zip -d /tmp && /tmp/xcodegen/install.sh
+            curl -L -o /tmp/xcodegen.zip "https://github.com/yonaskolb/XcodeGen/releases/download/2.25.0/xcodegen.zip" && unzip -q /tmp/xcodegen.zip -d /tmp && /tmp/xcodegen/install.sh
             curl -sL https://sentry.io/get-cli/ | bash
         title: Install tooling
     - script@1:
@@ -93,7 +93,7 @@ workflows:
     before_run:
     - _prepare
     steps:
-    - ios-auto-provision@1:
+    - ios-auto-provision@2:
         inputs:
         - distribution_type: app-store
         - team_id: "$TEAM_ID"
@@ -110,6 +110,9 @@ workflows:
             Tag|${BITRISE_GIT_TAG}
             Branch|${BITRISE_GIT_BRANCH}
             Workflow|${BITRISE_TRIGGERED_WORKFLOW_ID}
-    - deploy-to-bitrise-io@1:
+    - deploy-to-bitrise-io@2:
         inputs:
         - is_enable_public_page: 'false'
+meta:
+  bitrise.io:
+    stack: osx-xcode-13.2.x
