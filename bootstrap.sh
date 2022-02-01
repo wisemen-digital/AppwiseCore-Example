@@ -41,7 +41,7 @@ function fixPodfile {
   echo "Fixing Podfile..."
 
   # remove local pod path
-  sed -i '' -e "s#, :path => '\.\./'#, '~> 1.3'#g" Podfile
+  sed -i '' -e "s#, :path => '\.\./'#, '~> 2.0'#g" Podfile
 }
 
 function fixProjectfile {
