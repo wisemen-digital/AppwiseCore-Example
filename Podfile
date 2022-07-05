@@ -1,4 +1,4 @@
-platform :ios, '12.0'
+platform :ios, '15.0'
 
 inhibit_all_warnings!
 ensure_bundler! '> 2.0'
@@ -17,12 +17,14 @@ target 'Example Project' do
   pod 'AppwiseCore/UI', :path => '../'
 
   # Tools
-  pod 'atlantis-proxyman'
-  pod 'BartyCrouch'
-  pod 'Sourcery'
-  pod 'SwiftFormat/CLI'
-  pod 'SwiftGen'
-  pod 'SwiftLint'
+  unless ENV['CI'].present?
+    pod 'atlantis-proxyman'
+    pod 'BartyCrouch', '4.8.0'
+    pod 'Sourcery'
+    pod 'SwiftFormat/CLI'
+    pod 'SwiftGen'
+    pod 'SwiftLint'
+  end
 
   # Other
   pod 'BonMot'
