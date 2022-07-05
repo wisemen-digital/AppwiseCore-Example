@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 * Update bitrise config.
 * Update dependencies (spm, gems, cocoapods).
 * Avoid installing tooling on CI.
+* Restructure XcodeGen project definition a bit.
 
 ### 01 February 2022
 

@@ -3,6 +3,7 @@ include:
   - ../XcodeGen/target-templates.yml
 name: Example Project
 options:
+  createIntermediateGroups: true
   settingPresets: none
   groupOrdering:
     - pattern: '^Application$'
@@ -27,12 +28,20 @@ configFiles:
   Staging Release: Supporting Files/Settings (Release).xcconfig
   Production Debug: Supporting Files/Settings (Debug).xcconfig
   Production Release: Supporting Files/Settings (Release).xcconfig
-targets:
-  Example Project:
-    templates:
-      - iOS App
+settings:
+  configs:
+    Development:
+      APP_BUNDLE_IDENTIFIER: be.appwise.Example-Project-Development
+    Test:
+      APP_BUNDLE_IDENTIFIER: be.appwise.Example-Project-Test
+    Staging:
+      APP_BUNDLE_IDENTIFIER: be.appwise.Example-Project-Staging
+    Production:
+      APP_BUNDLE_IDENTIFIER: be.appwise.Example-Project
+targetTemplates:
+  Common:
     sources:
-      - path: Application
+      - path: ${target_dir}
         excludes:
           - "**/.gitkeep"
       - path: Rome
@@ -40,22 +49,22 @@ targets:
         excludes:
           - "*.framework"
           - "*.xcframework"
+          - "*.a"
+    entitlements:
+      path: ${target_dir}/Resources/Entitlements.entitlements
     settings:
       base:
-        DEVELOPMENT_TEAM: 3JQPC5UP5E
-        INFOPLIST_FILE: Application/Resources/Info.plist
-        CODE_SIGN_ENTITLEMENTS: Application/Resources/Entitlements.entitlements
-        PRODUCT_NAME: $(TARGET_NAME)
-        SWIFT_VERSION: 5.0
-      configs:
-        Development:
-          PRODUCT_BUNDLE_IDENTIFIER: be.appwise.Example-Project-Development
-        Test:
-          PRODUCT_BUNDLE_IDENTIFIER: be.appwise.Example-Project-Test
-        Staging:
-          PRODUCT_BUNDLE_IDENTIFIER: be.appwise.Example-Project-Staging
-        Production:
-          PRODUCT_BUNDLE_IDENTIFIER: be.appwise.Example-Project
+        DEVELOPMENT_TEAM: XXXXXXXXXX
+targets:
+  Example Project:
+    templates:
+      - iOS App
+      - Common
+    templateAttributes:
+      target_dir: Application
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: $(APP_BUNDLE_IDENTIFIER)
     scheme:
       configVariants:
         - Development
