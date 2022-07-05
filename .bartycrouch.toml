@@ -2,18 +2,18 @@
 tasks = ["interfaces", "normalize"]
 
 [update.interfaces]
-path = "Application/Resources"
+paths = ["Application/Resources"]
 defaultToBase = false
 ignoreEmptyStrings = false
 unstripped = false
 
 [update.normalize]
-path = "Application/Resources"
+paths = ["Application/Resources"]
 sourceLocale = "en"
 harmonizeWithSource = true
 sortByKeys = true
 
 [lint]
-path = "Application/Resources"
+paths = ["Application/Resources"]
 duplicateKeys = true
 emptyValues = true

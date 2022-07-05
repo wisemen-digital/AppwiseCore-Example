@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## 5 July 2022
+
+* Update bitrise config.
+* Update dependencies (spm, gems, cocoapods).
+
 ### 01 February 2022
 
 * Update bootstrap script to use AppwiseCore version 2.0.
