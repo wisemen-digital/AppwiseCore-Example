@@ -20,7 +20,7 @@ target 'Example Project' do
   unless ENV['CI'].present?
     pod 'atlantis-proxyman'
     pod 'BartyCrouch', '4.8.0'
-    pod 'Sourcery'
+    pod 'Sourcery/CLI-Only', '1.8.2'
     pod 'SwiftFormat/CLI'
     pod 'SwiftGen'
     pod 'SwiftLint'

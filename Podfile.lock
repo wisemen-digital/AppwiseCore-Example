@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (5.6.1)
+  - Alamofire (5.6.2)
   - AppwiseCore (2.0.3):
     - AppwiseCore/Behaviours (= 2.0.3)
     - AppwiseCore/Core (= 2.0.3)
@@ -28,7 +28,7 @@ PODS:
     - IBAnimatable (~> 6.1)
   - AppwiseCore/UIApplication (2.0.3):
     - AppwiseCore/Core
-  - atlantis-proxyman (1.18.0)
+  - atlantis-proxyman (1.18.2)
   - BartyCrouch (4.8.0)
   - BonMot (6.1.1)
   - CocoaLumberjack/Core (3.7.4)
@@ -59,19 +59,17 @@ PODS:
     - Reusable/View (= 4.1.2)
   - Reusable/Storyboard (4.1.2)
   - Reusable/View (4.1.2)
-  - Sentry (7.19.0):
-    - Sentry/Core (= 7.19.0)
-  - Sentry/Core (7.19.0)
+  - Sentry (7.27.1):
+    - Sentry/Core (= 7.27.1)
+  - Sentry/Core (7.27.1)
   - SnapKit (5.6.0)
-  - Sourcery (1.8.1):
-    - Sourcery/CLI-Only (= 1.8.1)
-  - Sourcery/CLI-Only (1.8.1)
+  - Sourcery/CLI-Only (1.8.2)
   - StatefulUI (1.0.5):
     - IBAnimatable
     - Reusable
-  - SwiftFormat/CLI (0.49.10)
-  - SwiftGen (6.5.1)
-  - SwiftLint (0.47.1)
+  - SwiftFormat/CLI (0.50.1)
+  - SwiftGen (6.6.2)
+  - SwiftLint (0.49.1)
   - Then (3.0.0)
 
 DEPENDENCIES:
@@ -89,7 +87,7 @@ DEPENDENCIES:
   - p2.OAuth2
   - Reusable
   - SnapKit
-  - Sourcery
+  - Sourcery/CLI-Only (= 1.8.2)
   - StatefulUI
   - SwiftFormat/CLI
   - SwiftGen
@@ -124,9 +122,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
   AppwiseCore: 4458a559be13d535a824063d9e0a27bd9a05e4cf
-  atlantis-proxyman: 5ea31297fad1fa49009c46e3f0f36a85174330ca
+  atlantis-proxyman: 2b6120eef28ade1f121a71b1075550345094623e
   BartyCrouch: b4c397071aaa502ac534a72d8764171b6527ac26
   BonMot: 42c7134bab1da1d1d8805b02113635c12f0200cc
   CocoaLumberjack: 543c79c114dadc3b1aba95641d8738b06b05b646
@@ -138,15 +136,15 @@ SPEC CHECKSUMS:
   OneSignal: 8861a1407c321ca1ae59d3adca6286eb7caf9d6e
   p2.OAuth2: d74bba0192c0fa13ade07ba710f8c7dfbb101e16
   Reusable: 6bae6a5e8aa793c9c441db0213c863a64bce9136
-  Sentry: d6b16e66a0ad0c39a0b76d9a1194e68e78c37ce6
+  Sentry: bc644307e2eb6a4c9c55cf117a80b895bb2a25a7
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
-  Sourcery: 4d44d4ea26a682a4a9875ec7c1870a1e7b8e183f
+  Sourcery: ad4aba88367fbaf0c1ae6ec4ba3282db1b571624
   StatefulUI: b1ff3b68dd777c7670c0889b1cf38759c853ad03
-  SwiftFormat: 7e7b810d61b0518ea30d3753051ebde546ae4c0b
-  SwiftGen: a6d22010845f08fe18fbdf3a07a8e380fd22e0ea
-  SwiftLint: f80f1be7fa96d30e0aa68e58d45d4ea1ccaac519
+  SwiftFormat: e73212c71908404e333da34e303772b9e516ac9b
+  SwiftGen: 1366a7f71aeef49954ca5a63ba4bef6b0f24138c
+  SwiftLint: 32ee33ded0636d0905ef6911b2b67bbaeeedafa5
   Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
 
-PODFILE CHECKSUM: d36266f9300849f5ad352ee9305e5ede445ed2ee
+PODFILE CHECKSUM: 475d74cb897182acd5588910d369e8047b291b61
 
 COCOAPODS: 1.11.3
