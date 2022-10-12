@@ -67,7 +67,7 @@ platform :ios do
     ) unless ENV.key?('CI')
     build_ios_app(
       scheme: scheme,
-      include_bitcode: true,
+      include_bitcode: false,
       output_directory: 'fastlane/build',
       output_name: "#{scheme}.ipa",
       silent: true
@@ -75,6 +75,7 @@ platform :ios do
     upload_to_testflight(
       skip_waiting_for_build_processing: true
     )
+    sentry_upload_dsym
     sentry_create_release(
       version: "#{sentry_project}@#{version_number}"
     )

@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## 12 October 2022
+
+* Xcode 14 compatibility (remove bitcode, update Alexandria)
+
 ## 5 July 2022
 
 * Update bitrise config.

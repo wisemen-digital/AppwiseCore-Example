@@ -6,10 +6,10 @@ options:
   createIntermediateGroups: true
   settingPresets: none
   groupOrdering:
-    - pattern: '^Application$'
+    - pattern: '.*'
       order: [Sources, Resources]
   groupSortPosition: top
-  xcodeVersion: "1340"
+  xcodeVersion: "1400"
 configs:
   Development Debug: debug
   Development Release: release
