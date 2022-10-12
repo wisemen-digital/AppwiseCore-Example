@@ -59,7 +59,8 @@ platform :ios do
 
   private_lane :archiveAndUpload do |options|
     scheme = options[:scheme]
-    version_number = get_version_number
+    main_target = CredentialsManager::AppfileConfig.try_fetch_value(:main_target)
+    version_number = get_version_number(target: main_target)
     sentry_project = CredentialsManager::AppfileConfig.try_fetch_value(:sentry_project)
 
     get_provisioning_profile(

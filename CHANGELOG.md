@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 ## 12 October 2022
 
 * Xcode 14 compatibility (remove bitcode, update Alexandria)
+* Fastlane: avoid issues when there are multiple targets (such as extensions)
 
 ## 5 July 2022
 
