@@ -8,7 +8,7 @@ import Groot
 import UIKit
 
 final class CoreDataApplicationService: NSObject, ApplicationService {
-	// swiftlint:disable discouraged_optional_collection
+	// swiftlint:disable:next discouraged_optional_collection
 	func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
 		ValueTransformer.grt_setValueTransformer(withName: "date:timestamp", transform: Transformers.timestamp)
 		ValueTransformer.grt_setValueTransformer(withName: "url", transform: Transformers.url)

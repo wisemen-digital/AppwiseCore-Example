@@ -8,6 +8,7 @@ All notable changes to this project will be documented in this file.
 * Update dependencies (gems, cocoapods).
 * Update copyright to 2023 Wisemen.
 * Komondor: set to fixed version 1.1.3.
+* Update SwiftLint ruleset to opt-out (instead of opt-in).
 
 ## 12 October 2022
 

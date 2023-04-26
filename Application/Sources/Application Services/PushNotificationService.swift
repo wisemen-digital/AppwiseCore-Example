@@ -15,7 +15,7 @@ final class PushNotificationsApplicationService: NSObject, ApplicationService {
 		.prd("...")
 	)
 
-	// swiftlint:disable discouraged_optional_collection
+	// swiftlint:disable:next discouraged_optional_collection
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
 		UNUserNotificationCenter.current().delegate = self
 
