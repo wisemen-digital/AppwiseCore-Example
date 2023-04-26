@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 * Update to latest Swift 5.8 & Xcode 14.3.
 * Update dependencies (gems, cocoapods).
 * Update copyright to 2023 Wisemen.
+* Komondor: set to fixed version 1.1.3.
 
 ## 12 October 2022
 

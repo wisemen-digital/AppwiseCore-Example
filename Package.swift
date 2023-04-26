@@ -5,7 +5,7 @@ import PackageDescription
 let package = Package(
 	name: "Example Project",
 	dependencies: [
-		.package(url: "https://github.com/shibapm/Komondor.git", from: "1.0.0")
+		.package(url: "https://github.com/shibapm/Komondor.git", exact: "1.1.3")
 	],
 	targets: [
 		// This is just an arbitrary Swift file in the app, that has
