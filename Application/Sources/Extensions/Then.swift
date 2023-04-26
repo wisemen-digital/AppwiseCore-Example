@@ -1,6 +1,6 @@
 //
 // Example Project
-// Copyright © 2022 Appwise
+// Copyright © 2023 Wisemen
 //
 
 import p2_OAuth2

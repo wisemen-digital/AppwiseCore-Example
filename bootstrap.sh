@@ -7,7 +7,7 @@ done
 
 unset newBundle
 while [ -z "$newBundle" ]; do
-  read -p "Please provide a new bundle identifier (be.appwise.My-Project): " newBundle
+  read -p "Please provide a new bundle identifier (digital.wisemen.My-Project): " newBundle
 done
 
 unset newTeamID
