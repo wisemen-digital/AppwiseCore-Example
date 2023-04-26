@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 ## 26 April 2022
 
 * Update to latest Swift 5.8 & Xcode 14.3.
+* Update dependencies (gems, cocoapods).
 
 ## 12 October 2022
 

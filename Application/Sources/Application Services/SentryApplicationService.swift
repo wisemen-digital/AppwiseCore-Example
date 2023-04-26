@@ -18,7 +18,6 @@ final class SentryApplicationService: NSObject, ApplicationService {
 			options.environment = env(
 				.dev("development"), .tst("test"), .stg("staging"), .prd("production")
 			)
-			options.enableAutoSessionTracking = true
 			options.tracesSampleRate = env(.dev(1.0), .tst(1.0), .stg(1.0), .prd(0.1))
 		}
 		#endif

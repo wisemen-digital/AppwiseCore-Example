@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (5.6.2)
+  - Alamofire (5.6.4)
   - AppwiseCore (2.0.3):
     - AppwiseCore/Behaviours (= 2.0.3)
     - AppwiseCore/Core (= 2.0.3)
@@ -13,7 +13,7 @@ PODS:
     - Alamofire (> 5.2)
     - AppwiseCore/Common
     - CocoaLumberjack/Swift (~> 3.6)
-    - Sentry (~> 7.0)
+    - Sentry (~> 8.0)
     - Then (~> 3.0)
   - AppwiseCore/CoreData (2.0.3):
     - AppwiseCore/Common
@@ -28,30 +28,30 @@ PODS:
     - IBAnimatable (~> 6.1)
   - AppwiseCore/UIApplication (2.0.3):
     - AppwiseCore/Core
-  - atlantis-proxyman (1.18.2)
-  - BartyCrouch (4.8.0)
-  - BonMot (6.1.1)
-  - CocoaLumberjack/Core (3.7.4)
-  - CocoaLumberjack/Swift (3.7.4):
+  - atlantis-proxyman (1.21.0)
+  - BartyCrouch (4.14.2)
+  - BonMot (6.1.2)
+  - CocoaLumberjack/Core (3.8.0)
+  - CocoaLumberjack/Swift (3.8.0):
     - CocoaLumberjack/Core
   - Groot (3.0.1):
     - Groot/Swift (= 3.0.1)
   - Groot/Swift (3.0.1)
   - IBAnimatable (6.1.0)
-  - IQKeyboardManagerSwift (6.5.10)
+  - IQKeyboardManagerSwift (6.5.11)
   - Nuke (9.5.0)
   - Nuke-Alamofire-Plugin (5.0.0):
     - Alamofire (~> 5.0)
     - Nuke (~> 9.0)
-  - OneSignal (3.11.2):
-    - OneSignal/OneSignalCore (= 3.11.2)
-    - OneSignal/OneSignalExtension (= 3.11.2)
-    - OneSignal/OneSignalOutcomes (= 3.11.2)
-  - OneSignal/OneSignalCore (3.11.2)
-  - OneSignal/OneSignalExtension (3.11.2):
+  - OneSignal (3.12.5):
+    - OneSignal/OneSignalCore (= 3.12.5)
+    - OneSignal/OneSignalExtension (= 3.12.5)
+    - OneSignal/OneSignalOutcomes (= 3.12.5)
+  - OneSignal/OneSignalCore (3.12.5)
+  - OneSignal/OneSignalExtension (3.12.5):
     - OneSignal/OneSignalCore
     - OneSignal/OneSignalOutcomes
-  - OneSignal/OneSignalOutcomes (3.11.2):
+  - OneSignal/OneSignalOutcomes (3.12.5):
     - OneSignal/OneSignalCore
   - p2.OAuth2 (5.3.1)
   - Reusable (4.1.2):
@@ -59,17 +59,20 @@ PODS:
     - Reusable/View (= 4.1.2)
   - Reusable/Storyboard (4.1.2)
   - Reusable/View (4.1.2)
-  - Sentry (7.27.1):
-    - Sentry/Core (= 7.27.1)
-  - Sentry/Core (7.27.1)
+  - Sentry (8.5.0):
+    - Sentry/Core (= 8.5.0)
+    - SentryPrivate (= 8.5.0)
+  - Sentry/Core (8.5.0):
+    - SentryPrivate (= 8.5.0)
+  - SentryPrivate (8.5.0)
   - SnapKit (5.6.0)
-  - Sourcery/CLI-Only (1.8.2)
+  - Sourcery/CLI-Only (2.0.2)
   - StatefulUI (1.0.5):
     - IBAnimatable
     - Reusable
-  - SwiftFormat/CLI (0.50.1)
+  - SwiftFormat/CLI (0.51.6)
   - SwiftGen (6.6.2)
-  - SwiftLint (0.49.1)
+  - SwiftLint (0.51.0)
   - Then (3.0.0)
 
 DEPENDENCIES:
@@ -78,7 +81,7 @@ DEPENDENCIES:
   - AppwiseCore/DeepLink (from `../`)
   - AppwiseCore/UI (from `../`)
   - atlantis-proxyman
-  - BartyCrouch (= 4.8.0)
+  - BartyCrouch
   - BonMot
   - IQKeyboardManagerSwift
   - Nuke
@@ -87,7 +90,7 @@ DEPENDENCIES:
   - p2.OAuth2
   - Reusable
   - SnapKit
-  - Sourcery/CLI-Only (= 1.8.2)
+  - Sourcery/CLI-Only
   - StatefulUI
   - SwiftFormat/CLI
   - SwiftGen
@@ -109,6 +112,7 @@ SPEC REPOS:
     - p2.OAuth2
     - Reusable
     - Sentry
+    - SentryPrivate
     - SnapKit
     - Sourcery
     - StatefulUI
@@ -122,29 +126,30 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
-  AppwiseCore: 4458a559be13d535a824063d9e0a27bd9a05e4cf
-  atlantis-proxyman: 2b6120eef28ade1f121a71b1075550345094623e
-  BartyCrouch: b4c397071aaa502ac534a72d8764171b6527ac26
-  BonMot: 42c7134bab1da1d1d8805b02113635c12f0200cc
-  CocoaLumberjack: 543c79c114dadc3b1aba95641d8738b06b05b646
+  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
+  AppwiseCore: a9d028ae1a06f69815ea2c7280a3da4fb4bdbae6
+  atlantis-proxyman: e1cc5dcba2dfce81401ce29f17499454e5b08ed6
+  BartyCrouch: d5437154b46acfb79ad80ce64b3e8fbcb17b1644
+  BonMot: d2920df6476104efc5e379abdb834cbf475c81ab
+  CocoaLumberjack: 78abfb691154e2a9df8ded4350d504ee19d90732
   Groot: a668afbcf0be88d76c0a26c714cfa4638ceaca66
   IBAnimatable: 99dddd4c0625884a301ba3ecbc1615f8a390368e
-  IQKeyboardManagerSwift: 52962c76ab33532f15ad9f3ff4e5715eda5335bb
+  IQKeyboardManagerSwift: c7955c0bdbf7b2eb29bb7daaa44e3d90f55a9a85
   Nuke: 6f400a4ea957e09149ec335a3c6acdcc814d89e4
   Nuke-Alamofire-Plugin: f30d8aa02fc505bb70461a76015f2bf91a59b177
-  OneSignal: 8861a1407c321ca1ae59d3adca6286eb7caf9d6e
+  OneSignal: 36f1f46ea4be161a5c00ed0af63f8d31653f0c1d
   p2.OAuth2: d74bba0192c0fa13ade07ba710f8c7dfbb101e16
   Reusable: 6bae6a5e8aa793c9c441db0213c863a64bce9136
-  Sentry: bc644307e2eb6a4c9c55cf117a80b895bb2a25a7
+  Sentry: 3be3f42e40e5a552935552e115744d5810a216d9
+  SentryPrivate: 8c9463280e282527f938d1a5d1d60f8e10ff279b
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
-  Sourcery: ad4aba88367fbaf0c1ae6ec4ba3282db1b571624
+  Sourcery: 9ae7eb711f830e8c3c02b98dc28fbd7e32e9d971
   StatefulUI: b1ff3b68dd777c7670c0889b1cf38759c853ad03
-  SwiftFormat: e73212c71908404e333da34e303772b9e516ac9b
+  SwiftFormat: b2062ab08a5c83c075e32355175c58b99e52187f
   SwiftGen: 1366a7f71aeef49954ca5a63ba4bef6b0f24138c
-  SwiftLint: 32ee33ded0636d0905ef6911b2b67bbaeeedafa5
+  SwiftLint: 1b7561918a19e23bfed960e40759086e70f4dba5
   Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
 
-PODFILE CHECKSUM: 475d74cb897182acd5588910d369e8047b291b61
+PODFILE CHECKSUM: f3f785f659a5019ea14f3f12dfd35483026366d5
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.12.1
