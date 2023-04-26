@@ -9,7 +9,7 @@ unstripped = false
 
 [update.normalize]
 paths = ["Application/Resources"]
-sourceLocale = "en"
+sourceLocale = "Base"
 harmonizeWithSource = true
 sortByKeys = true
 

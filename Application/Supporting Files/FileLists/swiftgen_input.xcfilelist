@@ -1,5 +1,15 @@
-Application/Resources/Base.lproj
-Application/Resources/en.lproj/Localizable.strings
-Application/Resources/Images.xcassets
-Application/Resources/Style.xcassets
-Application/Resources/Example Project.xcdatamodeld
+# coredata
+$(SRCROOT)/Application/Resources/Example Project.xcdatamodeld
+Pods/AppwiseCore/SwiftGen/CoreData (KeyPaths).stencil
+Pods/AppwiseCore/SwiftGen/CoreData.stencil
+
+# ib
+$(SRCROOT)/Application/Resources/Base.lproj
+
+# strings
+$(SRCROOT)/Application/Resources/Base.lproj/Localizable.strings
+$(SRCROOT)/Application/Resources/Base.lproj/Localizable.stringsdict
+
+# xcassets
+$(SRCROOT)/Application/Resources/Images.xcassets
+$(SRCROOT)/Application/Resources/Style.xcassets

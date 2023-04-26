@@ -16,8 +16,8 @@ ib:
       output: Storyboards Segues.swift
 strings:
   inputs:
-    - en.lproj/Localizable.strings
-    - en.lproj/Localizable.stringsdict
+    - Base.lproj/Localizable.strings
+    - Base.lproj/Localizable.stringsdict
   outputs:
     templateName: structured-swift5
     output: Strings.swift

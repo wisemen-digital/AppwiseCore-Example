@@ -1,6 +1,13 @@
-Application/Sources/Generated/SwiftGen/Assets.swift
-Application/Sources/Generated/SwiftGen/CoreData (KeyPaths).swift
-Application/Sources/Generated/SwiftGen/CoreData.swift
-Application/Sources/Generated/SwiftGen/Storyboard Scenes.swift
-Application/Sources/Generated/SwiftGen/Storyboard Segues.swift
-Application/Sources/Generated/SwiftGen/Strings.swift
+# coredata
+$(SRCROOT)/Application/Sources/Generated/SwiftGen/CoreData (KeyPaths).swift
+$(SRCROOT)/Application/Sources/Generated/SwiftGen/CoreData.swift
+
+# ib
+$(SRCROOT)/Application/Sources/Generated/SwiftGen/Storyboards Scenes.swift
+$(SRCROOT)/Application/Sources/Generated/SwiftGen/Storyboards Segues.swift
+
+# strings
+$(SRCROOT)/Application/Sources/Generated/SwiftGen/Strings.swift
+
+# xcassets
+$(SRCROOT)/Application/Sources/Generated/SwiftGen/Assets.swift
