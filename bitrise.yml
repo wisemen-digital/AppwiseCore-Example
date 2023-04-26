@@ -115,4 +115,4 @@ workflows:
         - is_enable_public_page: 'false'
 meta:
   bitrise.io:
-    stack: osx-xcode-14.0.x
+    stack: osx-xcode-14.3.x-ventura

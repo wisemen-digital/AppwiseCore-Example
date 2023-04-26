@@ -19,7 +19,7 @@ final class OAuth2Authenticator: Authenticator {
 
 	func refresh(_ credential: OAuth2, for session: Session, completion: @escaping (Result<OAuth2, Error>) -> Void) {
 		credential.authorize { _, error in
-			if let error = error {
+			if let error {
 				completion(.failure(error))
 
 				if error.isSessionExpired {

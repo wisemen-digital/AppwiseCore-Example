@@ -14,7 +14,7 @@ final class APIClient: Client {
 	static let shared = APIClient()
 
 	private let interceptor = AuthenticationInterceptor(authenticator: OAuth2Authenticator(), credential: OAuth2Grant.grant)
-	private(set) lazy var session: Session = Session(interceptor: interceptor)
+	private(set) lazy var session = Session(interceptor: interceptor)
 	private(set) lazy var nuke = Nuke.ImagePipeline {
 		$0.dataLoader = NukeAlamofirePlugin.AlamofireDataLoader(session: self.session)
 	}

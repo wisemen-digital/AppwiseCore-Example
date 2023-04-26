@@ -9,7 +9,7 @@ options:
     - pattern: '.*'
       order: [Sources, Resources]
   groupSortPosition: top
-  xcodeVersion: "1400"
+  xcodeVersion: "14.3"
 configs:
   Development Debug: debug
   Development Release: release
@@ -29,6 +29,9 @@ configFiles:
   Production Debug: Supporting Files/Settings (Debug).xcconfig
   Production Release: Supporting Files/Settings (Release).xcconfig
 settings:
+  settings:
+    base:
+      DEVELOPMENT_TEAM: XXXXXXXXXX
   configs:
     Development:
       APP_BUNDLE_IDENTIFIER: be.appwise.Example-Project-Development
@@ -52,9 +55,6 @@ targetTemplates:
           - "*.a"
     entitlements:
       path: ${target_dir}/Resources/Entitlements.entitlements
-    settings:
-      base:
-        DEVELOPMENT_TEAM: XXXXXXXXXX
 targets:
   Example Project:
     templates:

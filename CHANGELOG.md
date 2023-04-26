@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## 26 April 2022
+
+* Update to latest Swift 5.8 & Xcode 14.3.
+
 ## 12 October 2022
 
 * Xcode 14 compatibility (remove bitcode, update Alexandria)

@@ -6,7 +6,7 @@
 import AppwiseCore
 
 struct Config: AppwiseCore.Config {
-	static let shared = Config()
+	static let shared = Self()
 
 	func initialize() {
 		// do some init stuff
