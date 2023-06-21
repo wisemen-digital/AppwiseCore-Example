@@ -14,9 +14,15 @@ final class APIClient: Client {
 	static let shared = APIClient()
 
 	private let interceptor = AuthenticationInterceptor(authenticator: OAuth2Authenticator(), credential: OAuth2Grant.grant)
-	private(set) lazy var session = Session(interceptor: interceptor)
-	private(set) lazy var nuke = Nuke.ImagePipeline {
-		$0.dataLoader = NukeAlamofirePlugin.AlamofireDataLoader(session: self.session)
+
+	let session: Session
+	let nuke: ImagePipeline
+
+	init() {
+		let newSession = Session(interceptor: interceptor)
+
+		session = newSession
+		nuke = .init { $0.dataLoader = AlamofireDataLoader(session: newSession) }
 	}
 
 	func nukeOptions(placeholder: PlatformImage? = nil, transition: ImageLoadingOptions.Transition? = nil, failureImage: PlatformImage? = nil, failureImageTransition: ImageLoadingOptions.Transition? = nil, contentModes: ImageLoadingOptions.ContentModes? = nil) -> ImageLoadingOptions {
