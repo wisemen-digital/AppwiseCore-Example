@@ -5,7 +5,7 @@ itc_team_name 'Example BVBA'
 
 # Environment settings for Sentry
 ENV['SENTRY_URL'] = 'https://sentry.appwi.se'
-ENV['SENTRY_ORG_SLUG'] = 'appwise'
+ENV['SENTRY_ORG_SLUG'] = 'wisemen'
 ENV['SENTRY_PROJECT_SLUG'] = 'example-project-ios'
 
 # lane specific settings
