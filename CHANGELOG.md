@@ -6,6 +6,8 @@ All notable changes to this project will be documented in this file.
 
 * Fastlane: update Sentry organisation (URL slug) to wisemen.
 * Network: fix race condition in session initialization.
+* SwiftLint: disable annoying "else" rule.
+* Update dependencies (gems, cocoapods).
 
 ## 26 April 2022
 
