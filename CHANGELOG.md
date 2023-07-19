@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## 19 July 2023
+
+* Fastlane: update Sentry organisation (URL slug) to wisemen.
+* Network: fix race condition in session initialization.
+
 ## 26 April 2022
 
 * Update to latest Swift 5.8 & Xcode 14.3.
