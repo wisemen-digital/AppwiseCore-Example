@@ -4,12 +4,16 @@ inhibit_all_warnings!
 ensure_bundler! '> 2.0'
 plugin 'cocoapods-alexandria'
 
-target 'Example Project' do
+def project_common
   project 'Example Project',
-    'Development Debug' => :debug, 'Development Release' => :release,
-    'Test Debug' => :debug, 'Test Release' => :release,
-    'Staging Debug' => :debug, 'Staging Release' => :release,
-    'Production Debug' => :debug, 'Production Release' => :release
+  'Development Debug' => :debug, 'Development Release' => :release,
+  'Test Debug' => :debug, 'Test Release' => :release,
+  'Staging Debug' => :debug, 'Staging Release' => :release,
+  'Production Debug' => :debug, 'Production Release' => :release
+end
+
+target 'Example Project' do
+  project_common
 
   pod 'AppwiseCore', :path => '../'
   pod 'AppwiseCore/CoreData', :path => '../'
@@ -36,6 +40,16 @@ target 'Example Project' do
   pod 'Reusable'
   pod 'SnapKit'
   pod 'StatefulUI'
+end
+
+target 'Tests' do
+  project_common
+end
+
+target 'UITests' do
+  project_common
+
+  pod 'OHHTTPStubs'
 end
 
 # Pods with no defined swift version are set to 4.2

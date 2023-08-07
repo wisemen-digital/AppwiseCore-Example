@@ -7,14 +7,14 @@ PODS:
     - AppwiseCore/UIApplication (= 2.0.3)
   - AppwiseCore/Behaviours (2.0.3):
     - AppwiseCore/Common
-    - Then (~> 3.0)
+    - Then (~> 2.6)
   - AppwiseCore/Common (2.0.3)
   - AppwiseCore/Core (2.0.3):
     - Alamofire (> 5.2)
     - AppwiseCore/Common
     - CocoaLumberjack/Swift (~> 3.6)
-    - Sentry (~> 8.0)
-    - Then (~> 3.0)
+    - Sentry (~> 7.0)
+    - Then (~> 2.6)
   - AppwiseCore/CoreData (2.0.3):
     - AppwiseCore/Common
     - AppwiseCore/Core
@@ -43,6 +43,19 @@ PODS:
   - Nuke-Alamofire-Plugin (5.0.0):
     - Alamofire (~> 5.0)
     - Nuke (~> 9.0)
+  - OHHTTPStubs (9.1.0):
+    - OHHTTPStubs/Default (= 9.1.0)
+  - OHHTTPStubs/Core (9.1.0)
+  - OHHTTPStubs/Default (9.1.0):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (9.1.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (9.1.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (9.1.0)
   - OneSignal (3.12.5):
     - OneSignal/OneSignalCore (= 3.12.5)
     - OneSignal/OneSignalExtension (= 3.12.5)
@@ -59,12 +72,9 @@ PODS:
     - Reusable/View (= 4.1.2)
   - Reusable/Storyboard (4.1.2)
   - Reusable/View (4.1.2)
-  - Sentry (8.5.0):
-    - Sentry/Core (= 8.5.0)
-    - SentryPrivate (= 8.5.0)
-  - Sentry/Core (8.5.0):
-    - SentryPrivate (= 8.5.0)
-  - SentryPrivate (8.5.0)
+  - Sentry (7.31.5):
+    - Sentry/Core (= 7.31.5)
+  - Sentry/Core (7.31.5)
   - SnapKit (5.6.0)
   - Sourcery/CLI-Only (2.0.2)
   - StatefulUI (1.0.5):
@@ -73,19 +83,20 @@ PODS:
   - SwiftFormat/CLI (0.51.6)
   - SwiftGen (6.6.2)
   - SwiftLint (0.51.0)
-  - Then (3.0.0)
+  - Then (2.7.0)
 
 DEPENDENCIES:
-  - AppwiseCore (from `../`)
-  - AppwiseCore/CoreData (from `../`)
-  - AppwiseCore/DeepLink (from `../`)
-  - AppwiseCore/UI (from `../`)
+  - AppwiseCore
+  - AppwiseCore/CoreData
+  - AppwiseCore/DeepLink
+  - AppwiseCore/UI
   - atlantis-proxyman
   - BartyCrouch
   - BonMot
   - IQKeyboardManagerSwift
   - Nuke
   - Nuke-Alamofire-Plugin
+  - OHHTTPStubs
   - OneSignal
   - p2.OAuth2
   - Reusable
@@ -99,6 +110,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - AppwiseCore
     - atlantis-proxyman
     - BartyCrouch
     - BonMot
@@ -108,11 +120,11 @@ SPEC REPOS:
     - IQKeyboardManagerSwift
     - Nuke
     - Nuke-Alamofire-Plugin
+    - OHHTTPStubs
     - OneSignal
     - p2.OAuth2
     - Reusable
     - Sentry
-    - SentryPrivate
     - SnapKit
     - Sourcery
     - StatefulUI
@@ -121,13 +133,9 @@ SPEC REPOS:
     - SwiftLint
     - Then
 
-EXTERNAL SOURCES:
-  AppwiseCore:
-    :path: "../"
-
 SPEC CHECKSUMS:
   Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
-  AppwiseCore: a9d028ae1a06f69815ea2c7280a3da4fb4bdbae6
+  AppwiseCore: 045f38c8c9f99891533c8b41a8127982be9a8579
   atlantis-proxyman: e1cc5dcba2dfce81401ce29f17499454e5b08ed6
   BartyCrouch: d5437154b46acfb79ad80ce64b3e8fbcb17b1644
   BonMot: d2920df6476104efc5e379abdb834cbf475c81ab
@@ -137,19 +145,19 @@ SPEC CHECKSUMS:
   IQKeyboardManagerSwift: c7955c0bdbf7b2eb29bb7daaa44e3d90f55a9a85
   Nuke: 6f400a4ea957e09149ec335a3c6acdcc814d89e4
   Nuke-Alamofire-Plugin: f30d8aa02fc505bb70461a76015f2bf91a59b177
+  OHHTTPStubs: 90eac6d8f2c18317baeca36698523dc67c513831
   OneSignal: 36f1f46ea4be161a5c00ed0af63f8d31653f0c1d
   p2.OAuth2: d74bba0192c0fa13ade07ba710f8c7dfbb101e16
   Reusable: 6bae6a5e8aa793c9c441db0213c863a64bce9136
-  Sentry: 3be3f42e40e5a552935552e115744d5810a216d9
-  SentryPrivate: 8c9463280e282527f938d1a5d1d60f8e10ff279b
+  Sentry: 4c9babff9034785067c896fd580b1f7de44da020
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   Sourcery: 9ae7eb711f830e8c3c02b98dc28fbd7e32e9d971
   StatefulUI: b1ff3b68dd777c7670c0889b1cf38759c853ad03
   SwiftFormat: b2062ab08a5c83c075e32355175c58b99e52187f
   SwiftGen: 1366a7f71aeef49954ca5a63ba4bef6b0f24138c
   SwiftLint: 1b7561918a19e23bfed960e40759086e70f4dba5
-  Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
+  Then: acfe0be7e98221c6204e12f8161459606d5d822d
 
-PODFILE CHECKSUM: f3f785f659a5019ea14f3f12dfd35483026366d5
+PODFILE CHECKSUM: 23c972ddea14db408482b0da06e0b2c381e60565
 
 COCOAPODS: 1.12.1

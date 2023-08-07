@@ -1,6 +1,6 @@
 include:
   - projectDependencies.yml
-  - ../XcodeGen/target-templates.yml
+  - Pods/AppwiseCore/XcodeGen/target-templates.yml
 name: Example Project
 options:
   createIntermediateGroups: true
@@ -53,8 +53,6 @@ targetTemplates:
           - "*.framework"
           - "*.xcframework"
           - "*.a"
-    entitlements:
-      path: ${target_dir}/Resources/Entitlements.entitlements
 targets:
   Example Project:
     templates:
@@ -71,3 +69,34 @@ targets:
         - Test
         - Staging
         - Production
+      testTargets:
+        - name: Tests
+          parallelizable: true
+          randomExecutionOrder: true
+        - name: UITests
+          parallelizable: true
+          randomExecutionOrder: true
+    entitlements:
+      path: ${target_dir}/Resources/Entitlements.entitlements
+  Tests:
+    type: bundle.unit-test
+    platform: iOS
+    templates:
+      - Common
+    templateAttributes:
+      target_dir: Tests
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: $(APP_BUNDLE_IDENTIFIER).Tests
+        PRODUCT_NAME: $(TARGET_NAME)
+  UITests:
+    type: bundle.ui-testing
+    platform: iOS
+    templates:
+      - Common
+    templateAttributes:
+      target_dir: UITests
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: $(APP_BUNDLE_IDENTIFIER).UITests
+        PRODUCT_NAME: $(TARGET_NAME)
