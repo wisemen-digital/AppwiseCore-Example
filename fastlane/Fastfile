@@ -1,7 +1,7 @@
 fastlane_version '2.137.0'
 default_platform :ios
 
-actions_path('../Pods/AppwiseCore/Fastlane Actions')
+actions_path('./../../Fastlane Actions')
 
 platform :ios do
   desc 'Submit a new Development Build to Apple TestFlight'
