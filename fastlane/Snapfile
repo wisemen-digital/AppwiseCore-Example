@@ -1,0 +1,13 @@
+devices([
+  #"iPhone 8 Plus",
+  "iPhone 14 Pro",
+])
+
+languages([
+  "en-US",
+  #"nl-BE"
+])
+
+derived_data_path('./fastlane/build/derived_data')
+clear_previous_screenshots(true)
+override_status_bar(true)

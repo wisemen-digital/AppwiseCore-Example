@@ -1,7 +1,7 @@
 fastlane_version '2.137.0'
 default_platform :ios
 
-actions_path('./../../Fastlane Actions')
+actions_path('../Pods/AppwiseCore/Fastlane Actions')
 
 platform :ios do
   desc 'Submit a new Development Build to Apple TestFlight'
@@ -41,6 +41,34 @@ platform :ios do
     sentry_finalize_release(
       version: "#{sentry_project}@#{version_number}"
     )
+  end
+
+  desc 'Run tests'
+  lane :run_testing do
+    scheme = CredentialsManager::AppfileConfig.try_fetch_value(:scheme)
+
+    run_tests(
+      scheme: scheme,
+      testplan: "App"
+    )
+  end
+
+  desc 'Make App Store screenshots'
+  lane :make_screenshots do
+    scheme = CredentialsManager::AppfileConfig.try_fetch_value(:scheme)
+
+    capture_ios_screenshots(
+      scheme: scheme,
+      testplan: 'Screenshots',
+      number_of_retries: 0,
+      test_without_building: false,
+      localize_simulator: true
+    )
+  end
+
+  desc 'Upload App Store screenshots'
+  lane :upload_screenshots do
+    upload_to_app_store
   end
 
   desc 'Download dSYMs from iTC and upload them to Sentry'
