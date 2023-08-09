@@ -60,6 +60,8 @@ targets:
       - Common
     templateAttributes:
       target_dir: Application
+    sources: 
+      - path: Testing Plans
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: $(APP_BUNDLE_IDENTIFIER)
@@ -69,6 +71,10 @@ targets:
         - Test
         - Staging
         - Production
+      testPlans:
+        - path: Testing Plans/App.xctestplan
+          defaultPlan: true
+        - path: Testing Plans/Screenshots.xctestplan
       testTargets:
         - name: Tests
           parallelizable: true
@@ -100,3 +106,4 @@ targets:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: $(APP_BUNDLE_IDENTIFIER).UITests
         PRODUCT_NAME: $(TARGET_NAME)
+        TEST_TARGET_NAME: Example Project
