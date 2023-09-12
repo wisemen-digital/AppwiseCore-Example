@@ -73,8 +73,8 @@ targets:
         - Production
       testPlans:
         - path: Testing Plans/App.xctestplan
-          defaultPlan: true
         - path: Testing Plans/Screenshots.xctestplan
+          defaultPlan: true
       testTargets:
         - name: Tests
           parallelizable: true
