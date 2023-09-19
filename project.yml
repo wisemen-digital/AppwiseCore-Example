@@ -79,8 +79,6 @@ targets:
       - Common
     templateAttributes:
       target_dir: Application
-    sources: 
-      - path: Testing Plans
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: $(APP_BUNDLE_IDENTIFIER)
@@ -91,8 +89,8 @@ targets:
         - Staging
         - Production
       testPlans:
-        - path: Testing Plans/App.xctestplan
-        - path: Testing Plans/Screenshots.xctestplan
+        - path: Application/Testing Plans/App.xctestplan
+        - path: Application/Testing Plans/Screenshots.xctestplan
           defaultPlan: true
       testTargets:
         - name: Tests
@@ -104,8 +102,8 @@ targets:
     entitlements:
       path: ${target_dir}/Resources/Entitlements.entitlements
     dependencies:
-      - target: Testing
-  Testing:
+      - target: TestHelpers
+  TestHelpers:
     templates:
       - Framework
   Tests:
@@ -132,4 +130,4 @@ targets:
         PRODUCT_NAME: $(TARGET_NAME)
         TEST_TARGET_NAME: Example Project
     dependencies:
-      - target: Testing
+      - target: TestHelpers
