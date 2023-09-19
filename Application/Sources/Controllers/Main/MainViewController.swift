@@ -6,7 +6,7 @@
 import AppwiseCore
 import UIKit
 
-final class MainViewController: UIViewController {
+final class MainViewController: UITabBarController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 

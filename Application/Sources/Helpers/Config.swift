@@ -4,12 +4,15 @@
 //
 
 import AppwiseCore
+import TestHelpers
 
 struct Config: AppwiseCore.Config {
 	static let shared = Self()
 
 	func initialize() {
-		// do some init stuff
+		if LaunchEnvironmentData.bool(.resetData, default: false) {
+			teardownForReset()
+		}
 	}
 
 	func teardownForReset() {
