@@ -6,7 +6,7 @@
 import XCTest
 
 extension XCTActivity {
-	func attachScreenshot() {
+	func attachScreenshot(withFastlane: Bool = false) {
 		// attach screenshot
 		let screenshot = XCUIScreen.main.screenshot()
 		let attachment = XCTAttachment(screenshot: screenshot)
@@ -14,6 +14,8 @@ extension XCTActivity {
 		add(attachment)
 
 		// fastlane snapshot
-		snapshot(name, waitForLoadingIndicator: false)
+		if withFastlane {
+			snapshot(name, waitForLoadingIndicator: false)
+		}
 	}
 }
