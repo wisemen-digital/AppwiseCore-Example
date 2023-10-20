@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (5.6.4)
+  - Alamofire (5.8.0)
   - AppwiseCore (2.0.3):
     - AppwiseCore/Behaviours (= 2.0.3)
     - AppwiseCore/Core (= 2.0.3)
@@ -28,34 +28,21 @@ PODS:
     - IBAnimatable (~> 6.1)
   - AppwiseCore/UIApplication (2.0.3):
     - AppwiseCore/Core
-  - atlantis-proxyman (1.21.0)
-  - BartyCrouch (4.14.2)
-  - BonMot (6.1.2)
-  - CocoaLumberjack/Core (3.8.0)
-  - CocoaLumberjack/Swift (3.8.0):
+  - atlantis-proxyman (1.22.0)
+  - BartyCrouch (4.15.0)
+  - BonMot (6.1.3)
+  - CocoaLumberjack/Core (3.8.1)
+  - CocoaLumberjack/Swift (3.8.1):
     - CocoaLumberjack/Core
   - Groot (3.0.1):
     - Groot/Swift (= 3.0.1)
   - Groot/Swift (3.0.1)
   - IBAnimatable (6.1.0)
-  - IQKeyboardManagerSwift (6.5.11)
+  - IQKeyboardManagerSwift (6.5.16)
   - Nuke (9.5.0)
   - Nuke-Alamofire-Plugin (5.0.0):
     - Alamofire (~> 5.0)
     - Nuke (~> 9.0)
-  - OHHTTPStubs (9.1.0):
-    - OHHTTPStubs/Default (= 9.1.0)
-  - OHHTTPStubs/Core (9.1.0)
-  - OHHTTPStubs/Default (9.1.0):
-    - OHHTTPStubs/Core
-    - OHHTTPStubs/JSON
-    - OHHTTPStubs/NSURLSession
-    - OHHTTPStubs/OHPathHelpers
-  - OHHTTPStubs/JSON (9.1.0):
-    - OHHTTPStubs/Core
-  - OHHTTPStubs/NSURLSession (9.1.0):
-    - OHHTTPStubs/Core
-  - OHHTTPStubs/OHPathHelpers (9.1.0)
   - OneSignal (3.12.5):
     - OneSignal/OneSignalCore (= 3.12.5)
     - OneSignal/OneSignalExtension (= 3.12.5)
@@ -76,13 +63,13 @@ PODS:
     - Sentry/Core (= 7.31.5)
   - Sentry/Core (7.31.5)
   - SnapKit (5.6.0)
-  - Sourcery/CLI-Only (2.0.2)
+  - Sourcery/CLI-Only (2.1.1)
   - StatefulUI (1.0.5):
     - IBAnimatable
     - Reusable
-  - SwiftFormat/CLI (0.51.6)
+  - SwiftFormat/CLI (0.52.8)
   - SwiftGen (6.6.2)
-  - SwiftLint (0.51.0)
+  - SwiftLint (0.53.0)
   - Then (2.7.0)
 
 DEPENDENCIES:
@@ -96,7 +83,6 @@ DEPENDENCIES:
   - IQKeyboardManagerSwift
   - Nuke
   - Nuke-Alamofire-Plugin
-  - OHHTTPStubs
   - OneSignal
   - p2.OAuth2
   - Reusable
@@ -120,7 +106,6 @@ SPEC REPOS:
     - IQKeyboardManagerSwift
     - Nuke
     - Nuke-Alamofire-Plugin
-    - OHHTTPStubs
     - OneSignal
     - p2.OAuth2
     - Reusable
@@ -134,30 +119,29 @@ SPEC REPOS:
     - Then
 
 SPEC CHECKSUMS:
-  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
+  Alamofire: 0e92e751b3e9e66d7982db43919d01f313b8eb91
   AppwiseCore: 045f38c8c9f99891533c8b41a8127982be9a8579
-  atlantis-proxyman: e1cc5dcba2dfce81401ce29f17499454e5b08ed6
-  BartyCrouch: d5437154b46acfb79ad80ce64b3e8fbcb17b1644
-  BonMot: d2920df6476104efc5e379abdb834cbf475c81ab
-  CocoaLumberjack: 78abfb691154e2a9df8ded4350d504ee19d90732
+  atlantis-proxyman: 9a90620999a83ac35f71cbd332fa083ba7505f5e
+  BartyCrouch: c6af540fb6cf0206daa280f0c36a5ee9d0ba56b1
+  BonMot: 1534503509ef48d3c4d0fbec2d0ea35f2887b4ea
+  CocoaLumberjack: 5c7e64cdb877770859bddec4d3d5a0d7c9299df9
   Groot: a668afbcf0be88d76c0a26c714cfa4638ceaca66
   IBAnimatable: 99dddd4c0625884a301ba3ecbc1615f8a390368e
-  IQKeyboardManagerSwift: c7955c0bdbf7b2eb29bb7daaa44e3d90f55a9a85
+  IQKeyboardManagerSwift: 12d89768845bb77b55cc092ecc2b1f9370f06b76
   Nuke: 6f400a4ea957e09149ec335a3c6acdcc814d89e4
   Nuke-Alamofire-Plugin: f30d8aa02fc505bb70461a76015f2bf91a59b177
-  OHHTTPStubs: 90eac6d8f2c18317baeca36698523dc67c513831
   OneSignal: 36f1f46ea4be161a5c00ed0af63f8d31653f0c1d
   p2.OAuth2: d74bba0192c0fa13ade07ba710f8c7dfbb101e16
   Reusable: 6bae6a5e8aa793c9c441db0213c863a64bce9136
   Sentry: 4c9babff9034785067c896fd580b1f7de44da020
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
-  Sourcery: 9ae7eb711f830e8c3c02b98dc28fbd7e32e9d971
+  Sourcery: 3a6e2e9bd439caeee302e8150dc712d2f8ef45b3
   StatefulUI: b1ff3b68dd777c7670c0889b1cf38759c853ad03
-  SwiftFormat: b2062ab08a5c83c075e32355175c58b99e52187f
+  SwiftFormat: e60dbe6a704faf75f3089744e5f508aae0be4ad5
   SwiftGen: 1366a7f71aeef49954ca5a63ba4bef6b0f24138c
-  SwiftLint: 1b7561918a19e23bfed960e40759086e70f4dba5
+  SwiftLint: 5ce4d6a8ff83f1b5fd5ad5dbf30965d35af65e44
   Then: acfe0be7e98221c6204e12f8161459606d5d822d
 
-PODFILE CHECKSUM: 23c972ddea14db408482b0da06e0b2c381e60565
+PODFILE CHECKSUM: 8d3697e15d5abb0a11a8efd80606c7b4de74c872
 
-COCOAPODS: 1.12.1
+COCOAPODS: 1.13.0

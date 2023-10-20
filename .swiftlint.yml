@@ -1,4 +1,4 @@
-swiftlint_version: 0.51.0
+swiftlint_version: 0.53.0
 
 disabled_rules:
   - anonymous_argument_in_multiline_closure
@@ -25,6 +25,7 @@ disabled_rules:
   - prohibited_interface_builder
   - required_deinit
   - strict_fileprivate
+  - superfluous_else
   - switch_case_on_newline
   - type_contents_order
   - untyped_error_in_catch
