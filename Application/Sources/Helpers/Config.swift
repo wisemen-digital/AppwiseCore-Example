@@ -10,7 +10,7 @@ struct Config: AppwiseCore.Config {
 	static let shared = Self()
 
 	func initialize() {
-		if LaunchEnvironmentData.resetData ?? false {
+		if LaunchEnvironmentData.current.resetData ?? false {
 			teardownForReset()
 		}
 	}

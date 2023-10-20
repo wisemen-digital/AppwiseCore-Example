@@ -13,8 +13,9 @@
   },
   "testTargets" : [
     {
-      "skippedTests" : [
-        "UITests"
+      "parallelizable" : true,
+      "selectedTests" : [
+        "ScreenshotTests\/testScreenshots()"
       ],
       "target" : {
         "containerPath" : "container:Example Project.xcodeproj",

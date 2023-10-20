@@ -9,7 +9,9 @@ import Foundation
 public struct LaunchEnvironmentData {
 	public private(set) var data: [String: String] = [:]
 
-	public static let `default` = Self()
+	public static var current: Self {
+		.init(data: ProcessInfo.processInfo.environment)
+	}
 
 	public init(data: [String: String] = [:]) {
 		self.data = data
@@ -45,72 +47,51 @@ public extension LaunchEnvironmentData {
 }
 
 public extension LaunchEnvironmentData {
-	static subscript(dynamicMember member: String) -> String? {
-		string(member)
-	}
-
-	// swiftlint:disable:next discouraged_optional_boolean
-	static subscript(dynamicMember member: String) -> Bool? {
-		bool(member)
-	}
-
-	static subscript(dynamicMember member: String) -> Int? {
-		integer(member)
-	}
-
-	static subscript(dynamicMember member: String) -> Double? {
-		double(member)
-	}
-
-	static subscript(dynamicMember member: String) -> Date? {
-		date(member)
-	}
-}
-
-public extension LaunchEnvironmentData {
-	static func string(_ key: Key) -> String? {
-		string(key.rawValue)
-	}
-
-	static func bool(_ key: Key, defaultValue: Bool = false) -> Bool {
-		bool(key.rawValue) ?? defaultValue
-	}
-
-	static func integer(_ key: Key) -> Int? {
-		integer(key.rawValue)
-	}
-
-	static func double(_ key: Key) -> Double? {
-		double(key.rawValue)
-	}
-
-	static func date(_ key: Key) -> Date? {
-		date(key.rawValue)
-	}
-
-	static func string(_ key: String) -> String? {
+	func string(_ key: String) -> String? {
 		#if DEBUG
-		return ProcessInfo.processInfo.environment[key]
+		return data[key]
 		#else
 		return nil
 		#endif
 	}
 
 	// swiftlint:disable:next discouraged_optional_boolean
-	static func bool(_ key: String) -> Bool? {
+	func bool(_ key: String) -> Bool? {
 		string(key).flatMap { .init($0) }
 	}
 
-	static func integer(_ key: String) -> Int? {
+	func integer(_ key: String) -> Int? {
 		string(key).flatMap { .init($0) }
 	}
 
-	static func double(_ key: String) -> Double? {
+	func double(_ key: String) -> Double? {
 		string(key).flatMap { .init($0) }
 	}
 
-	static func date(_ key: String) -> Date? {
+	func date(_ key: String) -> Date? {
 		double(key).map { .init(timeIntervalSince1970: $0) }
+	}
+}
+
+public extension LaunchEnvironmentData {
+	func string(_ key: Key) -> String? {
+		string(key.rawValue)
+	}
+
+	func bool(_ key: Key, defaultValue: Bool = false) -> Bool {
+		bool(key.rawValue) ?? defaultValue
+	}
+
+	func integer(_ key: Key) -> Int? {
+		integer(key.rawValue)
+	}
+
+	func double(_ key: Key) -> Double? {
+		double(key.rawValue)
+	}
+
+	func date(_ key: Key) -> Date? {
+		date(key.rawValue)
 	}
 }
 

@@ -8,7 +8,7 @@ import TestHelpers
 import XCTest
 
 enum AppHelper {
-	static func start(launchOptions: LaunchEnvironmentData = .default) -> XCUIApplication {
+	static func start(launchOptions: LaunchEnvironmentData = .init()) -> XCUIApplication {
 		let app = XCUIApplication()
 		app.launchEnvironment = launchOptions.data
 		app.launch()
@@ -16,7 +16,7 @@ enum AppHelper {
 		return app
 	}
 
-	static func startFastlaneScreenshots(launchOptions: LaunchEnvironmentData = .default, waitForAnimations: Bool = false) -> XCUIApplication {
+	static func startFastlaneScreenshots(launchOptions: LaunchEnvironmentData = .init(), waitForAnimations: Bool = false) -> XCUIApplication {
 		let app = XCUIApplication()
 		app.launchEnvironment = launchOptions.data
 
