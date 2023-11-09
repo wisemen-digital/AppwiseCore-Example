@@ -117,6 +117,10 @@ targets:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: $(APP_BUNDLE_IDENTIFIER).Tests
         PRODUCT_NAME: $(TARGET_NAME)
+        BUNDLE_LOADER: $(BUILT_PRODUCTS_DIR)/Example project.app/Example project
+        TEST_HOST: $(BUNDLE_LOADER)
+    dependencies:
+      - target: Example Project
   UITests:
     type: bundle.ui-testing
     platform: iOS
