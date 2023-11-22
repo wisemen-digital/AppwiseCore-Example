@@ -25,7 +25,7 @@ internal enum StoryboardScene {
   internal enum Main: StoryboardType {
     internal static let storyboardName = "Main"
 
-    internal static let initialScene = InitialSceneType<Example_Project.MainViewController>(storyboard: Self.self)
+    internal static let initialScene = InitialSceneType<UIKit.UITabBarController>(storyboard: Self.self)
   }
   internal enum Start: StoryboardType {
     internal static let storyboardName = "Start"

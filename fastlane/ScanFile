@@ -1,0 +1,5 @@
+derived_data_path('./fastlane/build/derived_data')
+
+devices([
+  'iPhone 14 Pro',
+])

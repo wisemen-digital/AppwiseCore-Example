@@ -32,17 +32,10 @@ enum OAuth2Grant {
 			$0.clientConfig.secretInBody = false
 			#if DEBUG
 			$0.logger = OAuth2DebugLogger(.trace)
-
-			Self.loadTokensFromEnvironment(into: $0)
 			#endif
 		}
 
 	static var haveValidCredentials: Bool {
 		grant.refreshToken != nil
-	}
-
-	private static func loadTokensFromEnvironment(into grant: OAuth2Base) {
-		guard let token = TestData.string(.refreshToken) else { return }
-		grant.refreshToken = token
 	}
 }

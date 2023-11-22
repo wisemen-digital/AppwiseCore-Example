@@ -43,6 +43,46 @@ platform :ios do
     )
   end
 
+  desc 'Run tests'
+  lane :run_testing do
+    scheme = CredentialsManager::AppfileConfig.try_fetch_value(:scheme)
+
+    run_tests(
+      scheme: scheme,
+      testplan: "App"
+    )
+  end
+
+  desc 'Make App Store screenshots'
+  lane :make_screenshots do
+    confirmation = prompt(text: 'Are you sure the screenshot testplan is set as default? (y/n)')
+
+    if confirmation != 'y'
+      UI.user_error!('User aborted')
+    end
+
+    scheme = CredentialsManager::AppfileConfig.try_fetch_value(:scheme)
+    test_plan = "Screenshots"
+
+    run_tests(
+      scheme: scheme,
+      testplan: test_plan,
+      build_for_testing: true,
+      suppress_xcode_output: true
+    )
+
+    capture_ios_screenshots(
+      scheme: scheme,
+      testplan: test_plan,
+      number_of_retries: 0
+    )
+  end
+
+  desc 'Upload App Store screenshots'
+  lane :upload_screenshots do
+    upload_to_app_store
+  end
+
   desc 'Download dSYMs from iTC and upload them to Sentry'
   lane :refresh_dsyms do
     identifiers = CredentialsManager::AppfileConfig.try_fetch_value(:identifiers)

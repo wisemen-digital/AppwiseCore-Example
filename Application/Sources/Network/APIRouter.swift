@@ -6,6 +6,7 @@
 import Alamofire
 import AppwiseCore
 
+@frozen
 enum APIRouter: AppwiseCore.Router {
 	static var baseURLString = env(
 		.dev("https://test.development.appwi.se/api/"),

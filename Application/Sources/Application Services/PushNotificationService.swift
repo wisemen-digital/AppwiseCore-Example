@@ -68,10 +68,10 @@ extension PushNotificationsApplicationService: UNUserNotificationCenterDelegate 
 			if !pushNotification.canShow {
 				completionHandler([])
 			} else {
-				completionHandler([.alert, .badge, .sound])
+				completionHandler([.list, .banner, .badge, .sound])
 			}
 		} else {
-			completionHandler([.alert, .badge, .sound])
+			completionHandler([.list, .banner, .badge, .sound])
 		}
 	}
 
