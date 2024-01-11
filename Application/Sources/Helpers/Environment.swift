@@ -5,6 +5,7 @@
 
 import Foundation
 
+@frozen
 enum EnvironmentValue<T> {
 	case dev(T)
 	case tst(T)

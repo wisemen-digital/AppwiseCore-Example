@@ -14,8 +14,8 @@ enum APIRouter: AppwiseCore.Router {
 		.prd("https://test.production.appwi.se/api/")
 	)
 
-	case user
 	case tester(user: User.ID)
+	case user
 }
 
 extension APIRouter {
