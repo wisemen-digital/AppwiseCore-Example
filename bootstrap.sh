@@ -141,11 +141,6 @@ function initializeGit {
 
   echo "Adding commit hooks..."
   swift run komondor install >/dev/null
-
-  echo "Creating branches."
-  git branch "staging"
-  git branch "development"
-  git checkout "development"
 }
 
 #### Start of flow ####
