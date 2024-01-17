@@ -125,6 +125,7 @@ function cleanup {
   rm -f "CHANGELOG.md"
   rm -f "LICENSE"
   rm -f "README.md"
+  rm -rf Docs
   rm -f "bootstrap.sh"
 }
 
