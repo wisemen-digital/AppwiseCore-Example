@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## 11 Januari 2024
+
+* Add custom podspec repo
+* Update dependencies (gems, cocoapods).
+
 ## 19 July 2023
 
 * Fastlane: update Sentry organisation (URL slug) to wisemen.
