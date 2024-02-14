@@ -5,12 +5,14 @@
 
 import Foundation
 
+// swiftlint:disable sorted_enum_cases
 enum EnvironmentValue<T> {
 	case dev(T)
 	case tst(T)
 	case stg(T)
 	case prd(T)
 }
+// swiftlint:enable sorted_enum_cases
 
 func env<T>(_ envs: EnvironmentValue<T>...) -> T {
 	var defaultValue: T!

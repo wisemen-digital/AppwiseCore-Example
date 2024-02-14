@@ -1,8 +1,12 @@
+source 'https://cdn.cocoapods.org/'
+source 'https://github.com/wisemen-digital/Podspecs.git'
+
 platform :ios, '15.0'
 
 inhibit_all_warnings!
 ensure_bundler! '> 2.0'
-plugin 'cocoapods-alexandria'
+plugin 'cocoapods-alexandria',
+  :minimum_ios_version => '13.0'
 
 target 'Example Project' do
   project 'Example Project',
@@ -30,6 +34,7 @@ target 'Example Project' do
   pod 'BonMot'
   pod 'IQKeyboardManagerSwift'
   pod 'Nuke'
+  pod 'NukeExtensions'
   pod 'Nuke-Alamofire-Plugin'
   pod 'OneSignal'
   pod 'p2.OAuth2'

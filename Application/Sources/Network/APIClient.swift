@@ -7,6 +7,7 @@ import Alamofire
 import AppwiseCore
 import Nuke
 import NukeAlamofirePlugin
+import NukeExtensions
 
 final class APIClient: Client {
 	typealias RouterType = APIRouter
