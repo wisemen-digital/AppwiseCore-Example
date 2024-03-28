@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## 28 March 2024
+
+* Add privacy manifest file
+
 ## 11 Januari 2024
 
 * Add custom podspec repo
