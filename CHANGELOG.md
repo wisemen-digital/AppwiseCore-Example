@@ -6,7 +6,7 @@ All notable changes to this project will be documented in this file.
 
 * Update dependencies (gems, cocoapods), including OneSignal 5.
 * Update to latest Swift 5.10 & Xcode 15.3.
-* Fastlane: Remove old lanes (`sync_translations`).
+* Fastlane: Remove old lanes (`release`, `sync_translations`).
 
 ## 28 March 2024
 

@@ -28,21 +28,6 @@ platform :ios do
     archiveAndUpload(scheme: scheme)
   end
 
-  desc 'Deploy a new version to the App Store'
-  lane :release do
-    version_number = get_version_number
-    sentry_project = CredentialsManager::AppfileConfig.try_fetch_value(:sentry_project)
-
-    upload_to_app_store(
-      submit_for_review: true,
-      skip_binary_upload: true,
-      force: true
-    )
-    sentry_finalize_release(
-      version: "#{sentry_project}@#{version_number}"
-    )
-  end
-
   desc 'Download dSYMs from iTC and upload them to Sentry'
   lane :refresh_dsyms do
     identifiers = CredentialsManager::AppfileConfig.try_fetch_value(:identifiers)
