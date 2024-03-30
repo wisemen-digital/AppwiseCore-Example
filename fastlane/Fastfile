@@ -52,11 +52,6 @@ platform :ios do
     end
   end
 
-  desc "Imports, and then extracts localizations from the xcode project"
-  lane :sync_translations do
-    sync_localizations()
-  end
-
   private_lane :archiveAndUpload do |options|
     scheme = options[:scheme]
     main_target = CredentialsManager::AppfileConfig.try_fetch_value(:main_target)
