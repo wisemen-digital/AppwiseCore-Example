@@ -28,15 +28,6 @@ platform :ios do
     archiveAndUpload(scheme: scheme)
   end
 
-  desc 'Download dSYMs from iTC and upload them to Sentry'
-  lane :refresh_dsyms do
-    identifiers = CredentialsManager::AppfileConfig.try_fetch_value(:identifiers)
-
-    identifiers.each do |identifier|
-      syncDsyms(identifier: identifier)
-    end
-  end
-
   private_lane :archiveAndUpload do |options|
     scheme = options[:scheme]
     main_target = CredentialsManager::AppfileConfig.try_fetch_value(:main_target)
@@ -63,17 +54,5 @@ platform :ios do
     sentry_auto_set_commits(
       version: "#{sentry_project}@#{version_number}"
     )
-  end
-
-  private_lane :syncDsyms do |options|
-    identifier = options[:identifier]
-
-    download_dsyms(
-      app_identifier: identifier,
-      output_directory: 'fastlane/build'
-    )
-    sentry_upload_dsym
-    clean_build_artifacts
-    lane_context[SharedValues::DSYM_PATHS] = []
   end
 end
