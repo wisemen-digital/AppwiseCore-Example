@@ -1,6 +1,6 @@
 //
 // Example Project
-// Copyright © 2023 Wisemen
+// Copyright © 2024 Wisemen
 //
 
 import p2_OAuth2
