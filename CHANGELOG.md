@@ -2,13 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
+## 30 March 2024
+
+* Update dependencies (gems, cocoapods), including OneSignal 5.
+* Update to latest Swift 5.10 & Xcode 15.3.
+* Fastlane: Remove old lanes (`refresh_dsyms`, `release`, `sync_translations`). `refresh_dsyms` is no longer needed since the removal of Bitcode.
+* Fastlane: make Sentry steps "failable".
+* App Icon: switch to single size.
+
 ## 28 March 2024
 
-* Add privacy manifest file
+* Add privacy manifest file.
 
 ## 11 Januari 2024
 
-* Add custom podspec repo
+* Add custom podspec repo.
 * Update dependencies (gems, cocoapods).
 
 ## 19 July 2023

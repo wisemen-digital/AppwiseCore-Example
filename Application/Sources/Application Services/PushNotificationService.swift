@@ -1,11 +1,11 @@
 //
 // Example Project
-// Copyright © 2023 Wisemen
+// Copyright © 2024 Wisemen
 //
 
 import AppwiseCore
 import CocoaLumberjack
-import OneSignal
+import OneSignalFramework
 
 final class PushNotificationsApplicationService: NSObject, ApplicationService {
 	let oneSignalAppId = env(
@@ -17,11 +17,11 @@ final class PushNotificationsApplicationService: NSObject, ApplicationService {
 
 	// swiftlint:disable:next discouraged_optional_collection
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
-		UNUserNotificationCenter.current().delegate = self
+		OneSignal.initialize(oneSignalAppId, withLaunchOptions: launchOptions)
 
-		OneSignal.initWithLaunchOptions(launchOptions)
-		OneSignal.setAppId(oneSignalAppId)
-		OneSignal.add(self)
+		OneSignal.User.pushSubscription.addObserver(self)
+		OneSignal.Notifications.addForegroundLifecycleListener(self)
+		OneSignal.Notifications.addClickListener(self)
 
 		return true
 	}
@@ -31,57 +31,53 @@ final class PushNotificationsApplicationService: NSObject, ApplicationService {
 	}
 }
 
-extension PushNotificationsApplicationService: OSSubscriptionObserver {
-	func onOSSubscriptionChanged(_ stateChanges: OSSubscriptionStateChanges) {
-		guard let token = stateChanges.to.pushToken else { return }
-		DDLogInfo("Received APNS token: \(token)")
-
-		Self.registerUser()
+extension PushNotificationsApplicationService: OSPushSubscriptionObserver {
+	func onPushSubscriptionDidChange(state: OneSignalUser.OSPushSubscriptionChangedState) {
+		guard state.current.token != nil else { return }
+		PushNotificationsApplicationService.login()
 	}
 
-	static func registerUser() {
+	static func login() {
 		guard let userID = Settings.shared.currentUserID else { return }
-		OneSignal.setExternalUserId(String(describing: userID))
+		OneSignal.login(String(describing: userID))
 	}
 
-	static func anonimizeUser() {
-		OneSignal.removeExternalUserId()
+	static func logout() {
+		OneSignal.logout()
 	}
 
 	static func promptForPushNotifications() {
-		OneSignal.promptForPushNotifications { granted in
+		OneSignal.Notifications.requestPermission { granted in
 			guard granted else { return }
-			registerUser()
+			login()
 		}
 	}
 }
 
-extension PushNotificationsApplicationService: UNUserNotificationCenterDelegate {
-	func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
-		let info = notification.request.content.userInfo
+extension PushNotificationsApplicationService: OSNotificationLifecycleListener, OSNotificationClickListener {
+	func onWillDisplay(event: OSNotificationWillDisplayEvent) {
+		let info = event.notification.rawPayload
 
 		if let pushNotification = PushNotification.create(for: info) {
 			// always try to handle push
 			pushNotification.handle()
 
 			// if not show, ensure no options are set
-			if !pushNotification.canShow {
-				completionHandler([])
+			if pushNotification.canShow {
+				event.preventDefault()
 			} else {
-				completionHandler([.alert, .badge, .sound])
+				event.notification.display()
 			}
 		} else {
-			completionHandler([.alert, .badge, .sound])
+			event.notification.display()
 		}
 	}
 
-	func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-		let info = response.notification.request.content.userInfo
+	func onClick(event: OSNotificationClickEvent) {
+		let info = event.notification.rawPayload
 
 		if let pushNotification = PushNotification.create(for: info) {
 			pushNotification.open()
 		}
-
-		completionHandler()
 	}
 }

@@ -92,7 +92,7 @@ workflows:
     before_run:
     - _prepare
     steps:
-    - manage-ios-code-signing@1:
+    - manage-ios-code-signing@2:
         inputs:
         - distribution_method: app-store
         - apple_service_connection: apple-id
@@ -101,7 +101,7 @@ workflows:
         inputs:
         - content: bundle exec fastlane ios $FASTLANE_LANE
         title: Fastlane
-    - slack@3:
+    - slack@4:
         inputs:
         - channel_on_error: "$SLACK_CHANNEL"
         - api_token: "$SLACK_BOT_TOKEN"
@@ -115,4 +115,6 @@ workflows:
         - is_enable_public_page: 'false'
 meta:
   bitrise.io:
-    stack: osx-xcode-14.3.x-ventura
+    stack: osx-xcode-15.3.x
+    machine_type_id: g2-m1.4core
+

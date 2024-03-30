@@ -1,6 +1,6 @@
 //
 // Example Project
-// Copyright © 2023 Wisemen
+// Copyright © 2024 Wisemen
 //
 
 import AppwiseCore
@@ -53,7 +53,7 @@ extension StartViewController {
 	private func logout() {
 		APIClient.shared.logout()
 		Settings.shared.logout()
-		PushNotificationsApplicationService.anonimizeUser()
+		PushNotificationsApplicationService.logout()
 	}
 }
 

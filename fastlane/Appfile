@@ -15,13 +15,6 @@ for_platform :ios do
   setter(:main_target, 'Example Project')
   setter(:sentry_project, ENV['SENTRY_PROJECT_SLUG'])
 
-  setter(:identifiers, [
-    'be.appwise.Example-Project-Development',
-    'be.appwise.Example-Project-Test',
-    'be.appwise.Example-Project-Staging',
-    'be.appwise.Example-Project'
-  ])
-
   for_lane :development do
     app_identifier 'be.appwise.Example Project-Development'
     setter(:scheme, 'Example Project Development')
