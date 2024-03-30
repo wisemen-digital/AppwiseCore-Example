@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 ## 30 March 2024
 
 * Update dependencies (gems, cocoapods), including OneSignal 5.
+* Update to latest Swift 5.10 & Xcode 15.3.
 
 ## 28 March 2024
 
