@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 * Update dependencies (gems, cocoapods), including OneSignal 5.
 * Update to latest Swift 5.10 & Xcode 15.3.
 * Fastlane: Remove old lanes (`refresh_dsyms`, `release`, `sync_translations`). `refresh_dsyms` is no longer needed since the removal of Bitcode.
+* Fastlane: make Sentry steps "failable".
 
 ## 28 March 2024
 

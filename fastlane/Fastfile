@@ -47,12 +47,17 @@ platform :ios do
     upload_to_testflight(
       skip_waiting_for_build_processing: true
     )
-    sentry_upload_dsym
-    sentry_create_release(
-      version: "#{sentry_project}@#{version_number}"
-    )
-    sentry_auto_set_commits(
-      version: "#{sentry_project}@#{version_number}"
-    )
+
+    begin
+      sentry_upload_dsym
+      sentry_create_release(
+        version: "#{sentry_project}@#{version_number}"
+      )
+      sentry_auto_set_commits(
+        version: "#{sentry_project}@#{version_number}"
+      )
+    rescue
+      # Potentiall handle error
+    end
   end
 end
