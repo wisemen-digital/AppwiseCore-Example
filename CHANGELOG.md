@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 
 ## 30 March 2024
 
-* Update dependencies (gems, cocoapods).
+* Update dependencies (gems, cocoapods), including OneSignal 5.
 
 ## 28 March 2024
 

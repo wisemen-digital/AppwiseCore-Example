@@ -53,7 +53,7 @@ extension StartViewController {
 	private func logout() {
 		APIClient.shared.logout()
 		Settings.shared.logout()
-		PushNotificationsApplicationService.anonimizeUser()
+		PushNotificationsApplicationService.logout()
 	}
 }
 
