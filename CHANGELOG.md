@@ -2,13 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## 30 March 2024
+
+* Update dependencies (gems, cocoapods).
+
 ## 28 March 2024
 
-* Add privacy manifest file
+* Add privacy manifest file.
 
 ## 11 Januari 2024
 
-* Add custom podspec repo
+* Add custom podspec repo.
 * Update dependencies (gems, cocoapods).
 
 ## 19 July 2023
