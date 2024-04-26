@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## 26 April 2024
+
+* CI: fix Bitrise builds caching the whole repository, causing builds with old code.
+
 ## 30 March 2024
 
 * Update dependencies (gems, cocoapods), including OneSignal 5.

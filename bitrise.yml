@@ -60,8 +60,6 @@ workflows:
         - content: |-
             #!/usr/bin/env bash
             set -ex
-            RBENV_DIR="`cd $(rbenv which ruby)/../..;pwd`"
-            envman add --key GEM_CACHE_PATH --value $RBENV_DIR
             envman add --key CERT_KEYCHAIN_PASSWORD --value $BITRISE_KEYCHAIN_PASSWORD
         title: Set environment variables
     - cache-pull@2: {}
@@ -83,8 +81,7 @@ workflows:
         inputs:
         - compress_archive: 'true'
         - cache_paths: |-
-            $BITRISE_CACHE_DIR
-            $GEM_CACHE_PATH -> ./Gemfile.lock
+            $BITRISE_CACHE_DIR 
             ./vendor -> ./Gemfile.lock
             ./Pods
             ./Rome
