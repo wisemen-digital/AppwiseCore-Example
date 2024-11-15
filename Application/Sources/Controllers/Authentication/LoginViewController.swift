@@ -23,7 +23,7 @@ final class LoginViewController: UIViewController {
 // MARK: - Actions
 
 extension LoginViewController {
-	@IBAction private func login(_ sender: UIButton) {
+	@IBAction private func login(_: UIButton) {
 		APIClient.shared.loginAndLoadUser(email: "foo", password: "bar") { [weak self] result in
 			switch result {
 			case .success:

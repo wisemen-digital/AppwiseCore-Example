@@ -2,6 +2,6 @@
 #
 # (note that '\' need to be escaped).
 
-[issuetracker "Jira Rule"]
-  regex = "(KS)-(\\d+)"
-  url = "https://appwise.atlassian.net/browse/$1-$2"
+[issuetracker "Linear Rule"]
+  regex = "(KMO)-(\\d+)"
+  url = "https://linear.app/wisemen/issue/$1-$2"

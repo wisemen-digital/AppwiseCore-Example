@@ -17,7 +17,7 @@ struct Config: AppwiseCore.Config {
 		OAuth2Grant.grant.forgetTokens()
 	}
 
-	func handleUpdate(from old: Version, to new: Version) {
+	func handleUpdate(from _: Version, to _: Version) {
 		// upgrade between versions
 	}
 }

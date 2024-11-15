@@ -12,7 +12,7 @@ extension PushNotification {
 
 		private let data: [AnyHashable: Any]
 
-		init?(type: String, data: [AnyHashable: Any]) {
+		init?(type _: String, data: [AnyHashable: Any]) {
 			self.data = data
 		}
 

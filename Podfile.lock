@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (5.9.0)
+  - Alamofire (5.10.1)
   - AppwiseCore (2.1.0):
     - AppwiseCore/Behaviours (= 2.1.0)
     - AppwiseCore/Core (= 2.1.0)
@@ -13,7 +13,7 @@ PODS:
     - Alamofire (> 5.2)
     - AppwiseCore/Common
     - CocoaLumberjack/Swift (~> 3.6)
-    - Sentry (~> 8.0)
+    - Sentry (~> 8.40)
     - Then (~> 3.0)
   - AppwiseCore/CoreData (2.1.0):
     - AppwiseCore/Common
@@ -28,7 +28,7 @@ PODS:
     - IBAnimatable (~> 6.1)
   - AppwiseCore/UIApplication (2.1.0):
     - AppwiseCore/Core
-  - atlantis-proxyman (1.24.0)
+  - atlantis-proxyman (1.25.2)
   - BartyCrouch (4.15.0)
   - BonMot (6.1.3)
   - CocoaLumberjack/Core (3.8.5)
@@ -38,50 +38,94 @@ PODS:
     - Groot/Swift (= 3.0.1)
   - Groot/Swift (3.0.1)
   - IBAnimatable (6.1.0)
-  - IQKeyboardManagerSwift (7.0.2)
-  - Nuke (12.2.0)
+  - IQKeyboardCore (1.0.5)
+  - IQKeyboardManagerSwift (8.0.0):
+    - IQKeyboardManagerSwift/Appearance (= 8.0.0)
+    - IQKeyboardManagerSwift/Core (= 8.0.0)
+    - IQKeyboardManagerSwift/IQKeyboardReturnManager (= 8.0.0)
+    - IQKeyboardManagerSwift/IQKeyboardToolbarManager (= 8.0.0)
+    - IQKeyboardManagerSwift/IQTextView (= 8.0.0)
+    - IQKeyboardManagerSwift/Resign (= 8.0.0)
+  - IQKeyboardManagerSwift/Appearance (8.0.0):
+    - IQKeyboardManagerSwift/Core
+  - IQKeyboardManagerSwift/Core (8.0.0):
+    - IQKeyboardNotification
+    - IQTextInputViewNotification
+  - IQKeyboardManagerSwift/IQKeyboardReturnManager (8.0.0):
+    - IQKeyboardReturnManager
+  - IQKeyboardManagerSwift/IQKeyboardToolbarManager (8.0.0):
+    - IQKeyboardManagerSwift/Core
+    - IQKeyboardToolbarManager
+  - IQKeyboardManagerSwift/IQTextView (8.0.0):
+    - IQTextView
+  - IQKeyboardManagerSwift/Resign (8.0.0):
+    - IQKeyboardManagerSwift/Core
+  - IQKeyboardNotification (1.0.3)
+  - IQKeyboardReturnManager (1.0.4):
+    - IQKeyboardCore (= 1.0.5)
+  - IQKeyboardToolbar (1.1.1):
+    - IQKeyboardCore
+    - IQKeyboardToolbar/Core (= 1.1.1)
+  - IQKeyboardToolbar/Core (1.1.1):
+    - IQKeyboardCore
+    - IQKeyboardToolbar/Placeholderable
+  - IQKeyboardToolbar/Placeholderable (1.1.1):
+    - IQKeyboardCore
+  - IQKeyboardToolbarManager (1.1.2):
+    - IQKeyboardToolbar
+    - IQTextInputViewNotification
+  - IQTextInputViewNotification (1.0.8):
+    - IQKeyboardCore
+  - IQTextView (1.0.5):
+    - IQKeyboardToolbar/Placeholderable
+  - Nuke (12.7.0)
   - Nuke-Alamofire-Plugin (8.0.0):
     - Alamofire (~> 5.0)
     - Nuke (~> 12.0)
-  - NukeExtensions (12.2.0):
-    - Nuke
-  - OneSignal (5.1.3):
-    - OneSignal/OneSignalComplete (= 5.1.3)
-  - OneSignal/OneSignal (5.1.3):
+  - NukeExtensions (12.7.0):
+    - Nuke (~> 12)
+  - OneSignal (5.2.7):
+    - OneSignal/OneSignalComplete (= 5.2.7)
+  - OneSignal/OneSignal (5.2.7):
     - OneSignal/OneSignalCore
     - OneSignal/OneSignalExtension
+    - OneSignal/OneSignalLiveActivities
     - OneSignal/OneSignalNotifications
     - OneSignal/OneSignalOSCore
     - OneSignal/OneSignalOutcomes
     - OneSignal/OneSignalUser
-  - OneSignal/OneSignalComplete (5.1.3):
+  - OneSignal/OneSignalComplete (5.2.7):
     - OneSignal/OneSignal
     - OneSignal/OneSignalInAppMessages
     - OneSignal/OneSignalLocation
-  - OneSignal/OneSignalCore (5.1.3)
-  - OneSignal/OneSignalExtension (5.1.3):
+  - OneSignal/OneSignalCore (5.2.7)
+  - OneSignal/OneSignalExtension (5.2.7):
     - OneSignal/OneSignalCore
     - OneSignal/OneSignalOutcomes
-  - OneSignal/OneSignalInAppMessages (5.1.3):
+  - OneSignal/OneSignalInAppMessages (5.2.7):
     - OneSignal/OneSignalCore
     - OneSignal/OneSignalNotifications
     - OneSignal/OneSignalOSCore
     - OneSignal/OneSignalOutcomes
     - OneSignal/OneSignalUser
-  - OneSignal/OneSignalLocation (5.1.3):
+  - OneSignal/OneSignalLiveActivities (5.2.7):
+    - OneSignal/OneSignalCore
+    - OneSignal/OneSignalOSCore
+    - OneSignal/OneSignalUser
+  - OneSignal/OneSignalLocation (5.2.7):
     - OneSignal/OneSignalCore
     - OneSignal/OneSignalNotifications
     - OneSignal/OneSignalOSCore
     - OneSignal/OneSignalUser
-  - OneSignal/OneSignalNotifications (5.1.3):
+  - OneSignal/OneSignalNotifications (5.2.7):
     - OneSignal/OneSignalCore
     - OneSignal/OneSignalExtension
     - OneSignal/OneSignalOutcomes
-  - OneSignal/OneSignalOSCore (5.1.3):
+  - OneSignal/OneSignalOSCore (5.2.7):
     - OneSignal/OneSignalCore
-  - OneSignal/OneSignalOutcomes (5.1.3):
+  - OneSignal/OneSignalOutcomes (5.2.7):
     - OneSignal/OneSignalCore
-  - OneSignal/OneSignalUser (5.1.3):
+  - OneSignal/OneSignalUser (5.2.7):
     - OneSignal/OneSignalCore
     - OneSignal/OneSignalNotifications
     - OneSignal/OneSignalOSCore
@@ -92,17 +136,17 @@ PODS:
     - Reusable/View (= 4.1.2)
   - Reusable/Storyboard (4.1.2)
   - Reusable/View (4.1.2)
-  - Sentry (8.22.4):
-    - Sentry/Core (= 8.22.4)
-  - Sentry/Core (8.22.4)
+  - Sentry (8.40.1):
+    - Sentry/Core (= 8.40.1)
+  - Sentry/Core (8.40.1)
   - SnapKit (5.7.1)
-  - Sourcery/CLI-Only (2.2.1)
+  - Sourcery/CLI-Only (2.2.5)
   - StatefulUI (1.0.5):
     - IBAnimatable
     - Reusable
-  - SwiftFormat/CLI (0.53.5)
+  - SwiftFormat/CLI (0.54.6)
   - SwiftGen (6.6.3)
-  - SwiftLint (0.54.0)
+  - SwiftLint (0.57.0)
   - Then (3.0.0)
 
 DEPENDENCIES:
@@ -140,7 +184,14 @@ SPEC REPOS:
     - CocoaLumberjack
     - Groot
     - IBAnimatable
+    - IQKeyboardCore
     - IQKeyboardManagerSwift
+    - IQKeyboardNotification
+    - IQKeyboardReturnManager
+    - IQKeyboardToolbar
+    - IQKeyboardToolbarManager
+    - IQTextInputViewNotification
+    - IQTextView
     - OneSignal
     - p2.OAuth2
     - Reusable
@@ -158,30 +209,37 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Alamofire: 02b772c9910e8eba1a079227c32fbd9e46c90a24
-  AppwiseCore: 6c04f4bd9a07c9c95dd9999def5f94dcb451af5a
-  atlantis-proxyman: 0aa5c86216f191e460ec0847d2c731ca4d7c1abf
+  Alamofire: 840d2a1ad82355b536ec6ba5f97e5bfa54600ca3
+  AppwiseCore: 3c7067413b7085d6e0cc430bc7fba58df307cdac
+  atlantis-proxyman: df011607fe74d25b0af4c42e6aa6f1e589252901
   BartyCrouch: c6af540fb6cf0206daa280f0c36a5ee9d0ba56b1
   BonMot: 1534503509ef48d3c4d0fbec2d0ea35f2887b4ea
   CocoaLumberjack: 6a459bc897d6d80bd1b8c78482ec7ad05dffc3f0
   Groot: a668afbcf0be88d76c0a26c714cfa4638ceaca66
   IBAnimatable: 99dddd4c0625884a301ba3ecbc1615f8a390368e
-  IQKeyboardManagerSwift: d338c11a896e9f29603443700c4567e32f830c22
-  Nuke: ba5eb9ded049cab2addfbae1f23f9cf7d5f255eb
+  IQKeyboardCore: 28c8bf3bcd8ba5aa1570b318cbc4da94b861711e
+  IQKeyboardManagerSwift: 0c6fbbaa2e60739e48d7cf59f25661471a7a3a65
+  IQKeyboardNotification: d7382c4466c5a5adef92c7452ebf861b36050088
+  IQKeyboardReturnManager: 972be48528ce9e7508ab3ab15ac7efac803f17f5
+  IQKeyboardToolbar: d4bdccfb78324aec2f3920659c77bb89acd33312
+  IQKeyboardToolbarManager: 6f4072ac620c2572d4af8c09f42a801f3e4909f7
+  IQTextInputViewNotification: f5e954d8881fd9808b744e49e024cc0d4bcfe572
+  IQTextView: ae13b4922f22e6f027f62c557d9f4f236b19d5c7
+  Nuke: 1e66ac31a75e3720931d5ddbe00d7fbaf9b93d20
   Nuke-Alamofire-Plugin: 3f67912c03764dc4cee6eb4f31caf4671e7f3f06
-  NukeExtensions: b02e09c32ad8d76051c5a60bc0e47aa203c37c1f
-  OneSignal: 5e11bd184a771b3c3f42d65111865c48b51bd832
+  NukeExtensions: 5cd79e41bdcdae5c4a8ab50489840b55d95c1c2f
+  OneSignal: 5376d644c641dcf9063035dab9a4dcfcaacf47ad
   p2.OAuth2: d74bba0192c0fa13ade07ba710f8c7dfbb101e16
   Reusable: 6bae6a5e8aa793c9c441db0213c863a64bce9136
-  Sentry: 85db685a43e3f42a5c814133131efdf6d998bb93
+  Sentry: e9215d7b17f7902692b4f8700e061e4f853e3521
   SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
-  Sourcery: e04f595d92c68e3f089351741f7c58ecf1c8a626
+  Sourcery: 088e2f5a70844da8bc439f9eb9d88f35fc702f93
   StatefulUI: b1ff3b68dd777c7670c0889b1cf38759c853ad03
-  SwiftFormat: 57d49d9a63f4249c625b1e623fb9fde0c30cae9d
+  SwiftFormat: 9f26de7d1d46de100e4d66bec289531b119fc057
   SwiftGen: 4993cbf71cbc4886f775e26f8d5c3a1188ec9f99
-  SwiftLint: c1de071d9d08c8aba837545f6254315bc900e211
+  SwiftLint: eb47480d47c982481592c195c221d11013a679cc
   Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
 
 PODFILE CHECKSUM: 66d47bc195b736add8b74d99dca6a1cc18a8c458
 
-COCOAPODS: 1.15.2
+COCOAPODS: 1.16.2

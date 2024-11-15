@@ -6,4 +6,4 @@
 import p2_OAuth2
 import Then
 
-extension OAuth2: Then {}
+extension OAuth2: @retroactive Then {}

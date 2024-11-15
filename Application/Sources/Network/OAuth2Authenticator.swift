@@ -6,7 +6,7 @@
 import Alamofire
 import p2_OAuth2
 
-extension OAuth2: AuthenticationCredential {
+extension OAuth2: @retroactive AuthenticationCredential {
 	public var requiresRefresh: Bool {
 		!hasUnexpiredAccessToken()
 	}
@@ -17,7 +17,7 @@ final class OAuth2Authenticator: Authenticator {
 		try? urlRequest.sign(with: credential)
 	}
 
-	func refresh(_ credential: OAuth2, for session: Session, completion: @escaping (Result<OAuth2, Error>) -> Void) {
+	func refresh(_ credential: OAuth2, for _: Session, completion: @escaping (Result<OAuth2, Error>) -> Void) {
 		credential.authorize { _, error in
 			if let error {
 				completion(.failure(error))
@@ -31,7 +31,7 @@ final class OAuth2Authenticator: Authenticator {
 		}
 	}
 
-	func didRequest(_ urlRequest: URLRequest, with response: HTTPURLResponse, failDueToAuthenticationError error: Error) -> Bool {
+	func didRequest(_: URLRequest, with response: HTTPURLResponse, failDueToAuthenticationError _: Error) -> Bool {
 		response.statusCode == 401
 	}
 

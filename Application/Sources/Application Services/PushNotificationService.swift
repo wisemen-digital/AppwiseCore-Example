@@ -16,7 +16,7 @@ final class PushNotificationsApplicationService: NSObject, ApplicationService {
 	)
 
 	// swiftlint:disable:next discouraged_optional_collection
-	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
+	func application(_: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
 		OneSignal.initialize(oneSignalAppId, withLaunchOptions: launchOptions)
 
 		OneSignal.User.pushSubscription.addObserver(self)

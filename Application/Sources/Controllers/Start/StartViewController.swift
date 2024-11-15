@@ -31,7 +31,7 @@ final class StartViewController: UIViewController {
 // MARK: - Actions
 
 extension StartViewController {
-	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+	override func prepare(for segue: UIStoryboardSegue, sender _: Any?) {
 		switch StoryboardSegue.Start(segue) {
 		case .openAuthentication:
 			segue.destination.presentationController?.delegate = self
@@ -40,13 +40,13 @@ extension StartViewController {
 		}
 	}
 
-	@IBAction private func finishedLogin(_ sender: UIStoryboardSegue) {
+	@IBAction private func finishedLogin(_: UIStoryboardSegue) {
 		DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [weak self] in
 			self?.checkLogin()
 		}
 	}
 
-	@IBAction private func logout(_ sender: UIStoryboardSegue) {
+	@IBAction private func logout(_: UIStoryboardSegue) {
 		logout()
 	}
 
@@ -58,7 +58,7 @@ extension StartViewController {
 }
 
 extension StartViewController: UIAdaptivePresentationControllerDelegate {
-	func presentationControllerDidDismiss(_ presentationController: UIPresentationController) {
+	func presentationControllerDidDismiss(_: UIPresentationController) {
 		checkLogin()
 	}
 }

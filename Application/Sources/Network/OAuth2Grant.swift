@@ -28,12 +28,12 @@ enum OAuth2Grant {
 			"token_uri": "https://test.production.appwi.se/oauth/token"
 		])
 	))
-		.then {
-			$0.clientConfig.secretInBody = false
+		.then { grant in
+			grant.clientConfig.secretInBody = false
 			#if DEBUG
-			$0.logger = OAuth2DebugLogger(.trace)
+			grant.logger = OAuth2DebugLogger(.trace)
 
-			Self.loadTokensFromEnvironment(into: $0)
+			Self.loadTokensFromEnvironment(into: grant)
 			#endif
 		}
 

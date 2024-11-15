@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## 15 November 2024
+
+* Update dependencies (gems, cocoapods).
+
 ## 26 April 2024
 
 * CI: fix Bitrise builds caching the whole repository, causing builds with old code.
