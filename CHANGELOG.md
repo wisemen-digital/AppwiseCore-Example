@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 ## 15 November 2024
 
 * Update dependencies (gems, cocoapods).
+* Swiftlint: disable rules `contrasted_opening_brace` and `no_empty_block`.
 
 ## 26 April 2024
 

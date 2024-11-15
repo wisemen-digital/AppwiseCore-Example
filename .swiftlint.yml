@@ -4,6 +4,7 @@ disabled_rules:
   - anonymous_argument_in_multiline_closure
   - conditional_returns_on_newline
   - discouraged_object_literal
+  - contrasted_opening_brace
   - explicit_acl
   - explicit_enum_raw_value
   - explicit_init
@@ -17,6 +18,7 @@ disabled_rules:
   - indentation_width
   - line_length
   - missing_docs
+  - no_empty_block
   - no_extension_access_modifier
   - no_grouping_extension
   - no_magic_numbers
