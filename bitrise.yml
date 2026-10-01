@@ -70,8 +70,14 @@ workflows:
             set -ex
             bundle config set path 'vendor/bundle'
             bundle install
-            curl -L -o /tmp/xcodegen.zip "https://github.com/yonaskolb/XcodeGen/releases/latest/download/xcodegen.zip" && unzip -q /tmp/xcodegen.zip -d /tmp && /tmp/xcodegen/install.sh
-            curl -sL https://sentry.io/get-cli/ | bash
+            curl -L -o /tmp/xcodegen.zip \
+            "https://github.com/yonaskolb/XcodeGen/releases/latest/download/xcodegen.zip"
+            rm -rf /tmp/xcodegen
+            unzip -q /tmp/xcodegen.zip -d /tmp
+            export PREFIX="$HOME/xcodegen"
+            rm -rf "$PREFIX"
+            /tmp/xcodegen/install.sh
+            export PATH="$PREFIX/bin:$PATH"
         title: Install tooling
     - script@1:
         inputs:
