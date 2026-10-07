@@ -55,7 +55,7 @@ file_header:
   required_pattern: |
                     \/\/
                     \/\/ Example Project
-                    \/\/ Copyright © 2024 Wisemen
+                    \/\/ Copyright © 2026 Wisemen
                     \/\/
 
 legacy_objc_type:
