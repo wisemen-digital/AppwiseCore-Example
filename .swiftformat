@@ -1,4 +1,4 @@
---swiftversion 5.10
+--swiftversion 6.3
 
 # format options
 --commas inline

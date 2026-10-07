@@ -34,7 +34,7 @@ final class PushNotificationsApplicationService: NSObject, ApplicationService {
 extension PushNotificationsApplicationService: OSPushSubscriptionObserver {
 	func onPushSubscriptionDidChange(state: OneSignalUser.OSPushSubscriptionChangedState) {
 		guard state.current.token != nil else { return }
-		PushNotificationsApplicationService.login()
+		Self.login()
 	}
 
 	static func login() {

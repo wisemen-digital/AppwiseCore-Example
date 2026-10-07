@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## 7 October 2026
+
+* Update dependencies, set min. iOS to 15 and Xcode 26.
+
+## 5 October 2026
+
+* CI: fix Bitrise install tooling step.
+
 ## 15 November 2024
 
 * Update dependencies (gems, cocoapods).
