@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 * Update dependencies, set min. iOS to 15 and Xcode 26.
 * CI: switch Bitrise to use API key instead of Apple account.
+* CI: trigger Bitrise only on `main` branch.
 * Linter: tweak config to avoid legacy warnings for NSNumber and such (used for formatters).
 
 ## 5 October 2026
