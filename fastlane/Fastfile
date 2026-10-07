@@ -34,6 +34,16 @@ platform :ios do
     version_number = get_version_number(target: main_target)
     sentry_project = CredentialsManager::AppfileConfig.try_fetch_value(:sentry_project)
 
+    if ENV.key?('APP_STORE_CONNECT_API_KEY_ID')
+      require 'base64'
+      key_content = Base64.decode64(ENV['APP_STORE_CONNECT_API_KEY_CONTENT'])
+      app_store_connect_api_key(
+        key_id: ENV['APP_STORE_CONNECT_API_KEY_ID'],
+        issuer_id: ENV['APP_STORE_CONNECT_API_KEY_ISSUER_ID'],
+        key_content: key_content
+      )
+    end
+
     get_provisioning_profile(
       output_path: 'fastlane/build'
     ) unless ENV.key?('CI')

@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 ## 7 October 2026
 
 * Update dependencies, set min. iOS to 15 and Xcode 26.
+* CI: switch Bitrise to use API key instead of Apple account.
 
 ## 5 October 2026
 
