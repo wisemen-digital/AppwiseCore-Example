@@ -58,6 +58,12 @@ file_header:
                     \/\/ Copyright © 2024 Wisemen
                     \/\/
 
+legacy_objc_type:
+  allowed_types:
+    - NSDecimalNumber
+    - NSCoder
+    - NSNumber
+
 nesting:
   type_level: 2
 
