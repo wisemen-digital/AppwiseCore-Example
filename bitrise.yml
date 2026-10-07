@@ -9,12 +9,8 @@ app:
   - BITRISE_PROJECT_PATH: Example Project.xcodeproj
   - SLACK_CHANNEL: "#some-slack-channel"
 trigger_map:
-- push_branch: development
-  workflow: test
-- push_branch: staging
-  workflow: staging
 - push_branch: main
-  workflow: production
+  workflow: development
 workflows:
   development:
     title: Create a new "Development" archive and upload to Testflight
