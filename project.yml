@@ -9,7 +9,7 @@ options:
     - pattern: '.*'
       order: [Sources, Resources]
   groupSortPosition: top
-  xcodeVersion: "16.0"
+  xcodeVersion: "26.0"
 configs:
   Development Debug: debug
   Development Release: release

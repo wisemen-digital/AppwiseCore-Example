@@ -6,7 +6,7 @@ platform :ios, '15.0'
 inhibit_all_warnings!
 ensure_bundler! '> 2.0'
 plugin 'cocoapods-alexandria',
-  :minimum_ios_version => '13.0'
+  :minimum_ios_version => '15.0'
 
 target 'Example Project' do
   project 'Example Project',

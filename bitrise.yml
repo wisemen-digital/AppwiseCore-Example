@@ -119,6 +119,5 @@ workflows:
         - is_enable_public_page: 'false'
 meta:
   bitrise.io:
-    stack: osx-xcode-16.0.x
-    machine_type_id: g2-m1.4core
-
+    stack: osx-xcode-26.6.x
+    machine_type_id: g2.mac.large
