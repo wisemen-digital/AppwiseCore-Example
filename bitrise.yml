@@ -99,7 +99,7 @@ workflows:
     - manage-ios-code-signing@2:
         inputs:
         - distribution_method: app-store
-        - apple_service_connection: apple-id
+        - apple_service_connection: api-key
         - apple_team_id: $TEAM_ID
     - script@1:
         inputs:
