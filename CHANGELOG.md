@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 ## 12 October 2026
 
 * Removed code to support older iOS versions
+* Switch to scene delegates, convert to app observers instead of app services.
 
 ## 7 October 2026
 

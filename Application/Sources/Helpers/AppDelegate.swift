@@ -6,15 +6,15 @@
 import AppwiseCore
 
 @UIApplicationMain
-final class AppDelegate: AppwiseCore.AppDelegate<Config> {
-	override var services: [ApplicationService] {
+final class AppDelegate: AppwiseCore.AppDelegate<Config, SceneDelegate> {
+	override var plugins: [ApplicationDelegatePlugin] {
 		[
-			SentryApplicationService(),
-			CoreDataApplicationService(),
-			KeyboardManagerApplicationService(),
-			NetworkDebugApplicationService(),
-			StyleApplicationService(),
-			PushNotificationsApplicationService()
+			SentryObserver(),
+			CoreDataObserver(),
+			KeyboardManagerObserver(),
+			NetworkDebugObserver(),
+			StyleObserver(),
+			RemoteNotificationObserver()
 		]
 	}
 }

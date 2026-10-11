@@ -7,9 +7,8 @@ import AppwiseCore
 import Groot
 import UIKit
 
-final class CoreDataApplicationService: NSObject, ApplicationService {
-	// swiftlint:disable:next discouraged_optional_collection
-	func application(_: UIApplication, willFinishLaunchingWithOptions _: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
+struct CoreDataObserver: ApplicationLifecycleObserver {
+	func application(_: UIApplication, willFinishLaunchingWithOptions _: [UIApplication.LaunchOptionsKey: Any]) -> Bool {
         // Note that these transforms don't change the data if it does not match the input type! So if the input expects a `String`,
         // but gets an `Int` instead, then it'll stay an `Int`, it will NOT become `nil`.
 		ValueTransformer.setValueTransformer(withName: "date:timestamp", transform: Transformers.timestamp)

@@ -7,9 +7,8 @@ import AppwiseCore
 import CocoaLumberjack
 import Sentry
 
-final class SentryApplicationService: NSObject, ApplicationService {
-	// swiftlint:disable:next discouraged_optional_collection
-	func application(_: UIApplication, willFinishLaunchingWithOptions _: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
+struct SentryObserver: ApplicationLifecycleObserver {
+	func application(_: UIApplication, willFinishLaunchingWithOptions _: [UIApplication.LaunchOptionsKey: Any]) -> Bool {
 		#if DEBUG
 		#else
 		SentrySDK.start { options in

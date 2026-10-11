@@ -7,17 +7,17 @@ import AppwiseCore
 import CocoaLumberjack
 import OneSignalFramework
 
-@MainActor
-final class PushNotificationsApplicationService: NSObject, ApplicationService {
+final class RemoteNotificationObserver: NSObject {
 	let oneSignalAppId = env(
 		.dev("..."),
 		.tst("..."),
 		.stg("..."),
 		.prd("...")
 	)
+}
 
-	// swiftlint:disable:next discouraged_optional_collection
-	func application(_: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
+extension RemoteNotificationObserver: ApplicationLifecycleObserver {
+	func application(_: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]) -> Bool {
 		OneSignal.initialize(oneSignalAppId, withLaunchOptions: launchOptions)
 
 		OneSignal.User.pushSubscription.addObserver(self)
@@ -26,19 +26,21 @@ final class PushNotificationsApplicationService: NSObject, ApplicationService {
 
 		return true
 	}
+}
 
-	func applicationDidBecomeActive(_: UIApplication) {
+extension RemoteNotificationObserver: SceneLifecycleObserver {
+	func sceneDidBecomeActive(_: UIScene) {
 		Task {
 			if #available(iOS 16.0, *) {
-				 try? await UNUserNotificationCenter.current().setBadgeCount(0)
-			 } else {
-				 UIApplication.shared.applicationIconBadgeNumber = 0
-			 }
+				try? await UNUserNotificationCenter.current().setBadgeCount(0)
+			} else {
+				UIApplication.shared.applicationIconBadgeNumber = 0
+			}
 		}
 	}
 }
 
-extension PushNotificationsApplicationService: OSPushSubscriptionObserver {
+extension RemoteNotificationObserver: OSPushSubscriptionObserver {
 	func onPushSubscriptionDidChange(state: OneSignalUser.OSPushSubscriptionChangedState) {
 		guard state.current.token != nil else { return }
 		Self.login()
@@ -61,7 +63,7 @@ extension PushNotificationsApplicationService: OSPushSubscriptionObserver {
 	}
 }
 
-extension PushNotificationsApplicationService: OSNotificationLifecycleListener, OSNotificationClickListener {
+extension RemoteNotificationObserver: OSNotificationLifecycleListener, OSNotificationClickListener {
 	func onWillDisplay(event: OSNotificationWillDisplayEvent) {
 		let info = event.notification.rawPayload
 

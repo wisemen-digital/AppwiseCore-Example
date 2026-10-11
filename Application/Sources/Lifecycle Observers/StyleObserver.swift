@@ -6,9 +6,8 @@
 import AppwiseCore
 import StatefulUI
 
-final class StyleApplicationService: NSObject, ApplicationService {
-	// swiftlint:disable:next discouraged_optional_collection
-	func application(_: UIApplication, willFinishLaunchingWithOptions _: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
+struct StyleObserver: ApplicationLifecycleObserver {
+	func application(_: UIApplication, willFinishLaunchingWithOptions _: [UIApplication.LaunchOptionsKey: Any]) -> Bool {
 		UINavigationBar.appearance(whenContainedInInstancesOf: [NavigationController.self]).do {
 			let appearance = UINavigationBarAppearance().then {
 				$0.backgroundColor = Asset.Style.background.color
