@@ -7,6 +7,7 @@ import AppwiseCore
 import CocoaLumberjack
 import OneSignalFramework
 
+@MainActor
 final class PushNotificationsApplicationService: NSObject, ApplicationService {
 	let oneSignalAppId = env(
 		.dev("..."),
@@ -26,8 +27,14 @@ final class PushNotificationsApplicationService: NSObject, ApplicationService {
 		return true
 	}
 
-	func applicationDidBecomeActive(_ application: UIApplication) {
-		application.applicationIconBadgeNumber = 0
+	func applicationDidBecomeActive(_: UIApplication) {
+		Task {
+			if #available(iOS 16.0, *) {
+				 try? await UNUserNotificationCenter.current().setBadgeCount(0)
+			 } else {
+				 UIApplication.shared.applicationIconBadgeNumber = 0
+			 }
+		}
 	}
 }
 

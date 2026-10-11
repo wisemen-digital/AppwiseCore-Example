@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## 12 October 2026
+
+* Removed code to support older iOS versions
+
 ## 7 October 2026
 
 * Update dependencies, set min. iOS to 15 and Xcode 26.
