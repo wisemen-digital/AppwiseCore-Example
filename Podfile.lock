@@ -25,7 +25,6 @@ PODS:
   - AppwiseCore/UI (2.1.1):
     - AppwiseCore/Behaviours
     - AppwiseCore/Core
-    - IBAnimatable (~> 6.1)
   - AppwiseCore/UIApplication (2.1.1):
     - AppwiseCore/Core
   - atlantis-proxyman (1.31.0)
@@ -213,7 +212,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: c5f37d8f438dc1d7fd3ff767f2f80fd01ca381d7
-  AppwiseCore: 5a371c13770f164292c335ba23fc4e34c87fffa4
+  AppwiseCore: f53d842152452663fb670e17dc36b4f11f5d9b3c
   atlantis-proxyman: 2e8a4432178b7a43dbf74cdf4741d0bb159c725e
   BartyCrouch: c6af540fb6cf0206daa280f0c36a5ee9d0ba56b1
   BonMot: 1534503509ef48d3c4d0fbec2d0ea35f2887b4ea
